@@ -26,6 +26,15 @@ body {
 
 /* Style the header, footer, and navbar */
 
+footer {
+    height: 100px;
+    color: darkgoldenrod;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -169,9 +178,13 @@ main {
 }
 
 #content-container {
+    margin-right: 16px;
+}
+
+#content {
     background-color: white;
     padding: 16px 16px 16px 16px;
-    margin-right: 16px;
+
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
