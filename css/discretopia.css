@@ -170,6 +170,7 @@ main {
 
 #content-container {
     margin-right: 16px;
+    width: 100%;
 }
 
 #content {
@@ -232,6 +233,21 @@ blockquote {
     background-color: #e8e8e8;
 }
 
+.math-definition, .math-notice {
+    font-size: 20px;
+    line-height: 1.61803;
+    padding: 16px;
+    margin: 16px;
+}
+
+.math-definition {
+    background-color: #cce8ec;
+}
+
+.math-notice {
+    background-color: #fffac9;
+}
+
 /* Style text elements */
 
 h1 {
@@ -256,6 +272,10 @@ a {
     text-decoration: none;
 }
 
+a:not([href]), a:not([href]):hover {
+    color: #c70000;
+}
+
 a:hover {
     color: darkgoldenrod;
     text-decoration: underline;
@@ -263,6 +283,13 @@ a:hover {
 
 .donation-type:hover {
     color: #e01067;
+}
+
+
+.journal-link {
+    display: block;
+    font-size: 20px;
+    line-height: 1.61803;
 }
 
 #wordmark a {
