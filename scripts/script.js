@@ -1,4 +1,29 @@
 window.addEventListener('DOMContentLoaded', () => {
+    // Get the table of contents div
+    const listOfContents = document.querySelector("#list-of-contents");
+
+    // Get all the h2 elements on the page
+    const h2Elements = document.querySelectorAll("h2");
+
+    // Loop through the h2 elements
+    for (const h2 of h2Elements) {
+        // Set the h2 element's id attribute to the modified inner HTML
+        h2.setAttribute("id", h2.innerHTML.toLowerCase().replace(/ /g, "-").replace('&amp;', 'and'));
+
+        if (listOfContents) {
+            // Create a new anchor element
+            const a = document.createElement("a");
+            // Set the href attribute to the h2 element's text content
+            a.setAttribute("href", "#" + h2.id);
+            a.classList.add('list-of-contents-link')
+            // Set the anchor element's text content to the h2 element's text content
+            a.innerHTML = h2.innerHTML;
+
+            // Append the anchor element to the table of contents div
+            listOfContents.appendChild(a);
+        }
+    }
+
     // Get a reference to the search field and search results
     const searchField = document.getElementById('search-field');
     const searchResults = document.getElementById('search-results');

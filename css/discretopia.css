@@ -233,6 +233,17 @@ blockquote {
     background-color: #e8e8e8;
 }
 
+#list-of-contents {
+    background-color: #e8e8e8;
+    display: inline-block;
+    padding: 16px;
+}
+
+.list-of-contents-link {
+    display: block;
+    line-height: 24px;
+}
+
 .math-definition, .math-notice {
     font-size: 20px;
     line-height: 1.61803;

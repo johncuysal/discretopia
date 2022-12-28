@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="author" content="John C. Uysal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../scripts/script.js"></script>
+    <script src="../../scripts/script.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="../css/discretopia.css">
-    <link rel="icon" href="../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal">
-    <title>Journal - Discretopia</title>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/inequality">
+    <title>Inequality - Discretopia</title>
 </head>
 <body>
     <header>
@@ -81,11 +81,11 @@
                         Main page
                     </a>
                     <br>
-                    <a class="sidebar-link" href="">
+                    <a class="sidebar-link" href="../">
                         View the journal
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../about">
+                    <a class="sidebar-link" href="../../about">
                         About Discretopia
                     </a>
                     <br>
@@ -98,47 +98,47 @@
                 <div class="sidebar-section">
                     Overview
                     <hr>
-                    <a class="sidebar-link" href="../journal#logic-and-proofs">
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
                         Logic & Proofs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#set-theory">
+                    <a class="sidebar-link" href="../../journal/#set-theory">
                         Set Theory
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#functions">
+                    <a class="sidebar-link" href="../../journal/#functions">
                         Functions
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#algorithms">
+                    <a class="sidebar-link" href="../../journal/#algorithms">
                         Algorithms
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#relations">
+                    <a class="sidebar-link" href="../../journal/#relations">
                         Relations
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#integer-properties">
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
                         Integer Properties
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#induction">
+                    <a class="sidebar-link" href="../../journal/#induction">
                         Induction
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#combinatorics">
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
                         Combinatorics
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#graphs">
+                    <a class="sidebar-link" href="../../journal/#graphs">
                         Graphs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#trees">
+                    <a class="sidebar-link" href="../../journal/#trees">
                         Trees
                     </a>
                     <br>
-                    <a class="sidebar-link" href="../journal#recursion">
+                    <a class="sidebar-link" href="../../journal/#recursion">
                         Recursion
                     </a>
                 </div>
@@ -152,7 +152,7 @@
                 <div class="sidebar-section">
                     Downloads
                     <hr>
-                    <a class="sidebar-link" href="../pdfs/symbol-cheat-sheet.pdf">
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
                         What's that symbol?
                     </a>
                 </div>
@@ -161,47 +161,26 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Journal</h1>
+                    <h1>Inequality</h1>
                     <hr>
-                    <i>Last Updated: 27 December 2022</i>
+                    <i>Last Updated: 28 December 2022</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        Welcome to the journal.
+                        An <b>inequality</b> is a <a href="../relation">relation</a> between two unequal numbers that indicates their relative sizes.
                     </p>
-                    <h2>Logic & Proofs</h2>
-                    <hr>
-                    <a class="journal-link" href="integer">Integer</a>
-                    <a class="journal-link" href="rational-number">Rational number</a>
-                    <a class="journal-link" href="inequality">Inequality</a>
-                    <a class="journal-link" href="real-number">Real number</a>
-                    <a class="journal-link" href="theorem">Theorem</a>
-                    <h2>Set Theory</h2>
-                    <hr>
-                    <h2>Functions</h2>
-                    <hr>
-                    <h2>Algorithms</h2>
-                    <hr>
-                    <h2>Relations</h2>
-                    <hr>
-                    <h2>Integer Properties</h2>
-                    <hr>
-                    <h2>Induction</h2>
-                    <hr>
-                    <h2>Combinatorics</h2>
-                    <hr>
-                    <h2>Graphs</h2>
-                    <hr>
-                    <h2>Trees</h2>
-                    <hr>
-                    <h2>Recursion</h2>
-                    <hr>
-                    <h2>Extras</h2>
-                    <hr>
-                    <h2>Guides</h2>
-                    <hr>
-                    <h2>Downloads</h2>
-                    <hr>
+                    <div class="math-definition">
+                        If \(a > b\), then \(a\) is greater than \(b\).<br>
+                        If \(a < b\), then \(a\) is less than \(b\).<br>
+                        If \(a \ge b\), then \(a\) is greater than or equal to \(b\), "at least" \(b\).<br>
+                        If \(a \le b\), then \(a\) is less than or equal to \(b\), "at most" \(b\).<br>
+                    </div>
+                    <p>
+                        Now, consider their negations. If it is not true that \(a > b\), then either \(a < b\) or \(a = b\), which can be translated into \(a \le b\). The same reasoning shows the negation of \(a < b\) is \(a \ge b\). Similarly, if it is not true that \(a \ge b\), it is only possible for \(a < b\) to be true. Finally, if \(a \le b\) is a false statement, then \(a > b\) is a true statement.
+                    </p>
+                    <p>
+                        If \(a > b\), it is also true that \(a \ge b\). This is because the "greater than <i>or</i> equal to" requirement has been satisfied by "greater than" being true. You can apply the same logic to \(a < b\) to obtain \(a \le b\).
+                    </p>
                 </div>
             </div>
         </div>
