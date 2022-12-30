@@ -259,6 +259,20 @@ blockquote {
     background-color: #fffac9;
 }
 
+.main-page-block-container {
+    background-color: red;
+    display: flex;
+    padding: 4px;
+}
+
+.main-page-block {
+    background-color: white;
+    font-size: 2em;
+    border: 4px solid;
+    border-image: linear-gradient(to bottom right, darkgoldenrod, #1390a1) 10%;
+    padding: 16px;
+}
+
 /* Style text elements */
 
 h1 {
@@ -296,6 +310,9 @@ a:hover {
     color: #e01067;
 }
 
+.donation-type {
+    display: none;
+}
 
 .journal-link {
     display: block;

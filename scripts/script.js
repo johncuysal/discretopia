@@ -44,8 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
         fetch('/journal/index.html')
             .then(response => response.text())
             .then(html => {
-                // Parse the HTML into a DOM tree
-                console.log("got here")
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
 
@@ -61,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     let searchResult = document.createElement('a')
                     searchResult.innerHTML = element.innerHTML;
                     searchResult.classList.add('search-result')
-                    searchResult.setAttribute('href', '../' + element.getAttribute('href'));
+                    searchResult.setAttribute('href', element.getAttribute('href'));
                     searchResults.appendChild(searchResult);
                 });
 
