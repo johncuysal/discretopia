@@ -259,12 +259,6 @@ blockquote {
     background-color: #fffac9;
 }
 
-.main-page-block-container {
-    background-color: red;
-    display: flex;
-    padding: 4px;
-}
-
 .main-page-block {
     background-color: white;
     font-size: 2em;
