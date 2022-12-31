@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Updated hyperlinks." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JA9iCITRzWSCDny71DcavTehWb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/john/WebstormProjects/discretopia/about&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/about" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/journal/theorem" />
+      <recent name="$PROJECT_DIR$/journal/real-number" />
+      <recent name="$PROJECT_DIR$/journal/inequality" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="" />
+      <created>1671510144651</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671510144651</updated>
+      <workItem from="1671510145698" duration="7000" />
+      <workItem from="1671510169107" duration="7000" />
+      <workItem from="1671510203498" duration="1511000" />
+      <workItem from="1671569540071" duration="170000" />
+      <workItem from="1671569716482" duration="5905000" />
+      <workItem from="1671589896608" duration="41000" />
+      <workItem from="1671589946798" duration="68000" />
+      <workItem from="1671590018491" duration="2939000" />
+      <workItem from="1671592981016" duration="7387000" />
+      <workItem from="1671646387807" duration="6233000" />
+      <workItem from="1671652682219" duration="6602000" />
+      <workItem from="1671673503227" duration="23368000" />
+      <workItem from="1671753271552" duration="5241000" />
+      <workItem from="1671856534881" duration="844000" />
+      <workItem from="1671857394464" duration="23000" />
+      <workItem from="1671857441022" duration="1222000" />
+      <workItem from="1671858688824" duration="13768000" />
+      <workItem from="1671920930971" duration="5155000" />
+      <workItem from="1671937369371" duration="33443000" />
+      <workItem from="1672159091123" duration="48066000" />
+      <workItem from="1672416630860" duration="1203000" />
+      <workItem from="1672423219603" duration="3309000" />
+    </task>
+    <task id="LOCAL-00001" summary="Created and styled a template page.">
+      <created>1671747337486</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671747337486</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated design.">
+      <created>1671857367095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671857367095</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added blockquotes.">
+      <created>1671937305971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671937305971</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Organized some code.">
+      <created>1672027553898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672027553898</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Finished basic template for pages.">
+      <created>1672159000141</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672159000141</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added integer and rational number pages.">
+      <created>1672207422002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672207422002</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added several new pages to the Logic &amp; Proofs category.">
+      <created>1672251339831</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672251339831</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added many new entries.">
+      <created>1672376280809</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672376280809</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Slightly edited integer and rational number entries.">
+      <created>1672416588978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672416588978</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated hyperlinks.">
+      <created>1672444586596</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672444586596</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created and styled a template page." />
+    <MESSAGE value="Updated design." />
+    <MESSAGE value="Added blockquotes." />
+    <MESSAGE value="Organized some code." />
+    <MESSAGE value="Finished basic template for pages." />
+    <MESSAGE value="Added integer and rational number pages." />
+    <MESSAGE value="Added several new pages to the Logic &amp; Proofs category." />
+    <MESSAGE value="Added many new entries." />
+    <MESSAGE value="Slightly edited integer and rational number entries." />
+    <MESSAGE value="Updated hyperlinks." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated hyperlinks." />
+  </component>
+</project>
