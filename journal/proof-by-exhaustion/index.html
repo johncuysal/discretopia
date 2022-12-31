@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/statement">
-    <title>Statement - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/proof-by-exhaustion">
+    <title>Proof by exhaustion - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,53 +161,24 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Statement</h1>
+                    <h1>Proof by exhaustion</h1>
                     <hr>
                     <i>Last Updated: 31 December 2022</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>statement</b> is the assertion behind a declarative sentence, being either true or false. Statements can be written in any language.
+                        A <b>proof by exhaustion</b> is a type of direct proof in which a <a href="../theorem">theorem</a> is shown to be true by checking each element in its domain individually. Proofs by exhaustion are only used to <a href="../proof">prove</a> a <a href="../statement#universal-statements">universal statement</a> when the domain is small. This brute-force method of proof isn't very clever and can't be used that often.
                     </p>
                     <p>
-                        Here are some statements:<br>
-                        <div class="math-definition">
-                            "The sky is blue."<br>
-                            "All rubber duckies are yellow."<br>
-                            "There exists a positive integer less than its square."
-                        </div>
-                    </p>
-                    <p>
-                        Now, some examples of <em>non</em>-statements:<br>
-                        <div class="math-definition">
-                            "How's it going?"<br>
-                            "BOOYAH!!!"
-                        </div>
-                    </p>
-                    <p>
-                        Statements can be modified with quantifiers, which alter the scope of the claim.
-                    </p>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>Universal statements</h2>
-                    <hr>
-                    <p>
-                        A statement with a universal quantifier is a universal statement. They involve claims about all elements in a set, that hold over an entire domain. Most theorems are universal statements.
+                        Here's an example of a proof by exhaustion:
                     </p>
                     <div class="math-definition">
-                        "All rubber duckies are yellow."
-                    </div>
-                    <h2>Existential statements</h2>
-                    <hr>
-                    <p>
-                        A statement with an existential quantifier is an existential statement. They claim that an element with certain properties exists in the domain.
-                    </p>
-                    <div class="math-definition">
-                        "There exists a positive integer less than its square."
+                        <b>Theorem</b>: For every \(n \in \{2, 4, 6\}\), \(n\) is even.<br>
+                        <b>Proof by exhaustion</b>: Let's check the theorem for every element in \(\{2, 4, 6\}\):
+                        $$n=2:2=2(1)\checkmark$$
+                        $$n=4:4=2(2)\checkmark$$
+                        $$n=6:6=2(3)\checkmark$$
+                        Thus, for every \(n \in \{2, 4, 6\}\), \(n\) is even. \(■\)
                     </div>
                 </div>
             </div>

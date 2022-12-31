@@ -170,7 +170,7 @@
                         A <b>proof</b> is a rigorous argument meant to convince readers that a <a href="../theorem">theorem</a> is true. They usually take the form of a step-by-step guide on how to reach a conclusion through the use of given assumptions. These assumptions can be <a href="axiom">axioms</a> or already-proven theorems.
                     </p>
                     <p>
-                        There are many types of proofs: direct proofs, proofs by contradiction, proofs by exhaustion, proofs by induction, and the list goes on. Soon, you'll be familiar with them all!
+                        There are many types of proofs: direct proofs, proofs by contradiction, <a href="../proof-by-exhaustion">proofs by exhaustion</a>, proofs by induction, and the list goes on. Soon, you'll be familiar with them all!
                     </p>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -181,11 +181,16 @@
                     <h2>Format</h2>
                     <hr>
                     <p>
-                        The format of a proof should be simple and clear. First, write "Theorem:" and state the theorem you intend to prove. Then, write "Proof:" and begin taking steps to reach the conclusion. After showing the theorem is true, end your proof with the end-of-proof symbol "■".
+                        The format of a proof should be simple and clear. First, write "Theorem:" and state the theorem you intend to prove. Then, write "Proof:" and begin taking steps to reach the conclusion. After showing the theorem is true, end your proof with the end-of-proof symbol "\(■\)".
                     </p>
                     <div class="math-definition">
-                        Theorem: (Your theorem goes here!)<br>
-                        Proof: (Your proof goes here!)$$...$$$$...$$$$...$$$$■$$
+                        <b>Theorem</b>: The sum of two odd integers is even.<br>
+                        <b>Proof</b>: Let \(n\) and \(m\) be odd integers, where \(n=2k+1\) for some integer \(k\) and \(m=2j+1\) for some integer \(j\).<br>
+                        Their sum must be:$$n+m$$
+                        Substituting in the definitions of \(n\) and \(m\):$$(2k+1)+(2j+1)$$$$2k+2j+2$$$$2(k+j+1)$$
+                        Since \(k\) and \(j\) are integers, \((k+j+1)\) must also be an integer, which we can rewrite as \(x\):$$2x$$
+                        Now, \(n+m\) has been represented in the form \(2x\), where \(x\) is an integer. This is the definition of an even integer.<br>
+                        Thus, the sum of any two odd integers is even. \(■\)
                     </div>
                 </div>
             </div>
