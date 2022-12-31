@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added placeholder .pdf file.">
-      <change afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/statement/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added proofs and statements.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/inequality/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/inequality/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/integer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/integer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/rational-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rational-number/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/real-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/real-number/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/theorem/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/theorem/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +87,7 @@
       <workItem from="1672159091123" duration="48066000" />
       <workItem from="1672416630860" duration="1203000" />
       <workItem from="1672423219603" duration="3309000" />
-      <workItem from="1672445064073" duration="10916000" />
+      <workItem from="1672445064073" duration="11529000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -185,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672451272117</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added proofs and statements.">
+      <created>1672517259943</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672517259943</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +199,7 @@
     <MESSAGE value="Updated hyperlinks." />
     <MESSAGE value="Added .cpanel.yml file." />
     <MESSAGE value="Added placeholder .pdf file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added placeholder .pdf file." />
+    <MESSAGE value="Added proofs and statements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added proofs and statements." />
   </component>
 </project>
