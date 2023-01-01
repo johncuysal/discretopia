@@ -24,6 +24,17 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Deal with td elements for truth tables and give them appropriate background colors.
+    const tdElements = document.querySelectorAll('td');
+
+    tdElements.forEach(td => {
+        if (td.innerHTML === 'T') {
+            td.style.backgroundColor = '#9fe0a5';
+        } else if (td.innerHTML === 'F') {
+            td.style.backgroundColor = '#e0a59f';
+        }
+    });
+
     // Get a reference to the search field and search results
     const searchField = document.getElementById('search-field');
     const searchResults = document.getElementById('search-results');

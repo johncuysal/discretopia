@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/logical-operation">
+    <title>Logical operation - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../../">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../../">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../../">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
+                        Integer Properties
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#recursion">
+                        Recursion
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Guides
+                    <hr>
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
+                        How to write a proof
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Downloads
+                    <hr>
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
+                        What's that symbol?
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Logical operation</h1>
+                    <hr>
+                    <i>Last Updated: 1 January 2023</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        A <b>logical operation</b> transforms individual <a href="../proposition">propositions</a> into compound propositions. Most logical operations are analogues to natural English expressions such as "not," "and," "or," and "if."
+                    </p>
+                    <p>
+                        Here's the order in which logical operations should be evaluated:
+                    </p>
+                    <ol>
+                        <li>Parentheses</li>
+                        <li>Negation (\(\lnot\))</li>
+                        <li>Conjunction (\(\land\))</li>
+                        <li>Disjunction (\(\lor\))</li>
+                        <li>Any other logical operation (It really shouldn't come to this point, parentheses should be used!)</li>
+                    </ol>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Negation</h2>
+                    <hr>
+                    <p>
+                        Negation is a logical operation that acts on only one proposition and reverses its truth value. The negation of a proposition \(p\) is denoted \(\lnot p\) and read as "not \(p\)".
+                    </p>
+                    <table>
+                        <tr>
+                            <th>\(p\)</th>
+                            <th>\(\lnot p\)</th>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>T</td>
+                        </tr>
+                    </table>
+                    <h2>Conjunction</h2>
+                    <hr>
+                    <p>
+                        Conjunction is a logical operation that acts on two propositions and results in a compound proposition that is true if and only if both of the starting propositions were true. The conjunction of propositions \(p\) and \(q\) is the proposition \(p \land q\) and is read "\(p\) and \(q\)". It is true only if both \(p\) and \(q\) are true, and false if \(p\) is false, \(q\) is false, or both \(p\) and \(q\) are false.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>\(p\)</th>
+                            <th>\(q\)</th>
+                            <th>\(p \land q\)</th>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>T</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+                    <p>
+                        "p and q," "p but q," "despite p, q," and "although p, q" are all conjunctions of p and q.
+                    </p>
+                    <h2>Disjunction</h2>
+                    <hr>
+                    <p>
+                        Disjunction is a logical operation that acts on two propositions and results in a compound proposition that is false if and only if both of the starting propositions were false. The disjunction of propositions \(p\) and \(q\) is the proposition \(p \lor q\) and is read "\(p\) or \(q\)". It is false only if both \(p\) and \(q\) are false, and true if \(p\) is true, \(q\) is true, or both \(p\) and \(q\) are true.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>\(p\)</th>
+                            <th>\(q\)</th>
+                            <th>\(p \lor q\)</th>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>F</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+                    <p>
+                        The disjunction operation corresponds to the "inclusive or."
+                    </p>
+                    <h2>Exclusive disjunction</h2>
+                    <hr>
+                    <p>
+                        Exclusive disjunction is a logical operation that acts on two propositions and results in a compound proposition that is true if and only if exactly one of the starting propositions is true. The exclusive disjunction of propositions \(p\) and \(q\) is the proposition \(p \oplus q\) and is read "\(p\) or \(q\)". It is true only if just \(p\) is true or just \(q\) is true, and false if both \(p\) and \(q\) are true, or both \(p\) and \(q\) are false.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>\(p\)</th>
+                            <th>\(q\)</th>
+                            <th>\(p \oplus q\)</th>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>T</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>F</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+                    <p>
+                        The disjunction operation corresponds to the "exclusive or."
+                    </p>
+                    <h2>Implication</h2>
+                    <hr>
+                    <p>
+                        The conditional operation, implication, is a logical operation that acts on two propositions and results in a  compound proposition (a conditional proposition) that is false if and only if the first proposition, the hypothesis, is true, while the second proposition, the conclusion, is false. The implication of propositions \(p\) and \(q\), where \(p\) is the hypothesis and \(q\) is the conclusion is the proposition \(p \rightarrow q\) and is read "if \(p\) then \(q\)". The proposition \(p \rightarrow q\) is false if and only if \(p\) is true and \(q\) is false, otherwise, it's true.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>\(p\)</th>
+                            <th>\(q\)</th>
+                            <th>\(p \rightarrow q\)</th>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>T</td>
+                        </tr>
+                    </table>
+                    <p>
+                        The final two rows of the truth table are known as "vacuous truths" where the conclusion was true or false even though the hypothesis never took effect.
+                    </p>
+                    <h2>Biconditional</h2>
+                    <hr>
+                    <p>
+                        The biconditional operation is a logical operation that acts on two propositions and results in a  compound proposition that is true if and only if the starting propositions are logically equivalent. The biconditional operation applied to propositions \(p\) and \(q\) results in the proposition \(p \leftrightarrow q\) which is read "\(p\) if and only if \(q\)". The proposition \(p \leftrightarrow q\) is true if and only if \(p \equiv q\).
+                    </p>
+                    <table>
+                        <tr>
+                            <th>\(p\)</th>
+                            <th>\(q\)</th>
+                            <th>\(p \leftrightarrow q\)</th>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>T</td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td>T</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>T</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>T</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2022 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

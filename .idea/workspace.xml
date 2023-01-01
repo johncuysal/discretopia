@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added counterexample, existence proof, and universal generalization entries.">
-      <change afterPath="$PROJECT_DIR$/journal/axiom/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/existential-instantiation/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added existential instantiation and axiom entries.">
+      <change afterPath="$PROJECT_DIR$/journal/logic/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/proposition/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/axiom/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/axiom/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/universal-generalization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/universal-generalization/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/axiom",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/logical-operation",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,11 +53,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/logical-operation" />
+      <recent name="$PROJECT_DIR$/journal/proposition" />
+      <recent name="$PROJECT_DIR$/journal/logic" />
       <recent name="$PROJECT_DIR$/journal/axiom" />
       <recent name="$PROJECT_DIR$/journal/existential-instantiation" />
-      <recent name="$PROJECT_DIR$/journal/existence-proof" />
-      <recent name="$PROJECT_DIR$/journal/counterexample" />
-      <recent name="$PROJECT_DIR$/journal/universal-generalization" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fonts" />
@@ -93,7 +95,8 @@
       <workItem from="1672416630860" duration="1203000" />
       <workItem from="1672423219603" duration="3309000" />
       <workItem from="1672445064073" duration="11529000" />
-      <workItem from="1672517352129" duration="16932000" />
+      <workItem from="1672517352129" duration="17003000" />
+      <workItem from="1672548663139" duration="14015000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -207,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672543713466</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added existential instantiation and axiom entries.">
+      <created>1672548633629</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672548633629</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +240,7 @@
     <MESSAGE value="Slight changes." />
     <MESSAGE value="Added proof by exhaustion entry." />
     <MESSAGE value="Added counterexample, existence proof, and universal generalization entries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added counterexample, existence proof, and universal generalization entries." />
+    <MESSAGE value="Added existential instantiation and axiom entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added existential instantiation and axiom entries." />
   </component>
 </project>
