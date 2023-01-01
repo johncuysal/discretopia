@@ -279,6 +279,10 @@ h2 {
     margin: 0.8em 0 0.8em 0;
 }
 
+h3 {
+    font-size: 1.25em;
+}
+
 p {
     color: black;
     font-size: 20px;

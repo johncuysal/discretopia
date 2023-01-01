@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Slight changes.">
-      <change afterPath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added proof by exhaustion entry.">
+      <change afterPath="$PROJECT_DIR$/journal/counterexample/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/existence-proof/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/universal-generalization/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/integer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/integer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/rational-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rational-number/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/statement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/statement/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/proof-by-exhaustion",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/existence-proof",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -50,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/existence-proof" />
+      <recent name="$PROJECT_DIR$/journal/counterexample" />
+      <recent name="$PROJECT_DIR$/journal/universal-generalization" />
       <recent name="$PROJECT_DIR$/journal/proof-by-exhaustion" />
       <recent name="$PROJECT_DIR$/journal/statement" />
-      <recent name="$PROJECT_DIR$/journal/proof" />
-      <recent name="$PROJECT_DIR$/about" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fonts" />
@@ -92,7 +97,7 @@
       <workItem from="1672416630860" duration="1203000" />
       <workItem from="1672423219603" duration="3309000" />
       <workItem from="1672445064073" duration="11529000" />
-      <workItem from="1672517352129" duration="5148000" />
+      <workItem from="1672517352129" duration="13849000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -192,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672517372664</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added proof by exhaustion entry.">
+      <created>1672528071822</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672528071822</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +225,7 @@
     <MESSAGE value="Added placeholder .pdf file." />
     <MESSAGE value="Added proofs and statements." />
     <MESSAGE value="Slight changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Slight changes." />
+    <MESSAGE value="Added proof by exhaustion entry." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added proof by exhaustion entry." />
   </component>
 </project>
