@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/universal-generalization">
-    <title>Universal generalization - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/axiom">
+    <title>Axiom - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,16 +161,22 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Universal generalization</h1>
+                    <h1>Axiom</h1>
                     <hr>
                     <i>Last Updated: 31 December 2022</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        <b>Universal generalization</b> is the practice of picking an arbitrary element in the domain (e.g. "let \(n\) be an <a href="../integer">integer</a>") and showing the <a href="../theorem">theorem</a> is true for that particular element, which then allows the <a href="../proof">proof</a> to apply to any element in the domain, since the choice was arbitrary. This is the most common way of proving <a href="../statement#universal-statements">universal statements</a>.
+                        <b>Axioms</b> are <a href="../statement">statements</a> that are allowed to be assumed true to aid in the formulation of <a href="../proof">proofs</a>. Depending on your audience, certain axioms may be so obvious that you don't need to mention them when they are used in a step of your proof. However, when a step is unclear, it's important to mention exactly which axiom or <a href="../theorem">theorem</a> you're using.
                     </p>
-                    <div class="math-notice">
-                        ⚠ Because of their similar-sounding names, <a href="../existential-instantiation">existential instantiation</a> may be incorrectly thought of as the opposite of universal generalization. Be careful. These are totally unrelated concepts!
+                    <div class="math-definition">
+                        Here's a list of some typical axioms:<br>
+                        <ul>
+                            <li>The rules of algebra always apply. (If you do complicated stuff, clarify it!)</li>
+                            <li>The set of integers is closed under addition, subtraction, and multiplication. (This means sums, differences, and products of integers are always integers!)</li>
+                            <li>All integers are either even or odd. (True because of the Division Algorithm!)</li>
+                            <li>If \(n\) is an integer, there is no integer between \(n\) and \(n+1\).</li>
+                        </ul>
                     </div>
                 </div>
             </div>

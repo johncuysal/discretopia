@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added proof by exhaustion entry.">
-      <change afterPath="$PROJECT_DIR$/journal/counterexample/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/existence-proof/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/universal-generalization/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added counterexample, existence proof, and universal generalization entries.">
+      <change afterPath="$PROJECT_DIR$/journal/axiom/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/existential-instantiation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/integer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/integer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/rational-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rational-number/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/statement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/statement/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/universal-generalization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/universal-generalization/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/existence-proof",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/axiom",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -55,11 +51,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/axiom" />
+      <recent name="$PROJECT_DIR$/journal/existential-instantiation" />
       <recent name="$PROJECT_DIR$/journal/existence-proof" />
       <recent name="$PROJECT_DIR$/journal/counterexample" />
       <recent name="$PROJECT_DIR$/journal/universal-generalization" />
-      <recent name="$PROJECT_DIR$/journal/proof-by-exhaustion" />
-      <recent name="$PROJECT_DIR$/journal/statement" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fonts" />
@@ -97,7 +93,7 @@
       <workItem from="1672416630860" duration="1203000" />
       <workItem from="1672423219603" duration="3309000" />
       <workItem from="1672445064073" duration="11529000" />
-      <workItem from="1672517352129" duration="13849000" />
+      <workItem from="1672517352129" duration="16932000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -204,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672528071822</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added counterexample, existence proof, and universal generalization entries.">
+      <created>1672543713466</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672543713466</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +229,7 @@
     <MESSAGE value="Added proofs and statements." />
     <MESSAGE value="Slight changes." />
     <MESSAGE value="Added proof by exhaustion entry." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added proof by exhaustion entry." />
+    <MESSAGE value="Added counterexample, existence proof, and universal generalization entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added counterexample, existence proof, and universal generalization entries." />
   </component>
 </project>
