@@ -336,6 +336,14 @@ a:hover {
     color: #e01067;
 }
 
+.donation-type {
+    display: none;
+}
+
+.search-keyword {
+    display: none;
+}
+
 .journal-link-container {
     display: flex;
     flex-wrap: wrap;
@@ -345,6 +353,7 @@ a:hover {
     width: calc(100% / 5);
     font-size: 20px;
     line-height: 1.61803;
+    border-radius: 8px;
 }
 
 #wordmark a {
@@ -357,11 +366,70 @@ a:hover {
     text-decoration: none;
 }
 
+.volunteer-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.volunteer-card {
+    background-color: black;
+    width: 256px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    align-items: center;
+}
+
+.volunteer-image {
+    margin: 16px;
+    width: 148px;
+    box-sizing: border-box;
+}
+
+.volunteer-name {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.volunteer-description {
+    font-style: italic;
+    color: white;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.volunteer-content {
+    color: white;
+    margin: 0 16px 0 16px;
+    padding-bottom: 16px;
+}
+
 .centered {
     text-align: center;
 }
 
 /* Adjust styles for smaller screens */
+
+@media only screen and (max-width: 1384px) {
+    .journal-link {
+        width: calc(100% / 4);
+    }
+}
+
+@media only screen and (max-width: 1168px) {
+    .journal-link {
+        width: calc(100% / 3);
+    }
+}
+
+@media only screen and (max-width: 676px) {
+    .journal-link {
+        width: calc(100% / 2);
+    }
+}
 
 @media only screen and (max-width: 1080px) {
     #side-container {
