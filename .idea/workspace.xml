@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added compound proposition, contradiction, logical equivalence, and tautology entries.">
-      <change afterPath="$PROJECT_DIR$/images/volunteer-johncuysal.png" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Modified .css and about page. Also, slightly edited a few entries.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/compound-proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/compound-proposition/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logical-equivalence/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-equivalence/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/logical-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proposition/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1672423219603" duration="3309000" />
       <workItem from="1672445064073" duration="11529000" />
       <workItem from="1672517352129" duration="17003000" />
-      <workItem from="1672548663139" duration="31552000" />
+      <workItem from="1672548663139" duration="34395000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -231,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672725226164</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Modified .css and about page. Also, slightly edited a few entries.">
+      <created>1672790321515</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1672790321515</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +261,7 @@
     <MESSAGE value="Added existential instantiation and axiom entries." />
     <MESSAGE value="Added logic, proposition, and logical operation entries." />
     <MESSAGE value="Added compound proposition, contradiction, logical equivalence, and tautology entries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added compound proposition, contradiction, logical equivalence, and tautology entries." />
+    <MESSAGE value="Modified .css and about page. Also, slightly edited a few entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified .css and about page. Also, slightly edited a few entries." />
   </component>
 </project>
