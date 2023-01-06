@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/compound-proposition">
-    <title>Compound proposition - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/de-morgans-laws">
+    <title>De Morgan's Laws - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,36 +161,20 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Compound proposition</h1>
+                    <h1>De Morgan's Laws</h1>
                     <hr>
-                    <i>Last Updated: 5 January 2023</i>
+                    <i>Last Updated: 6 January 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>compound proposition</b> is a <a href="../proposition">proposition</a> formed by joining individual propositions with <a href="../logical-operation">logical connectives</a>. The truth value of a compound proposition depends on the truth values of the propositions that comprise it.
+                        <b>De Morgan's laws</b> are valid rules of inference that allow conjunctions and disjunctions to be represented in terms of each other through negation, which is useful in logical proofs. Effectively, the laws describe how to distribute the negation operator:
                     </p>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
+                    <div class="math-definition">
+                        $$\lnot (p \lor q) \equiv \lnot p \land \lnot q$$
+                        $$\lnot (p \land q) \equiv \lnot p \lor \lnot q$$
                     </div>
-                    <h2>Truth table</h2>
-                    <hr>
                     <p>
-                        Like regular propositions, compound propositions can only either be true or false. However, because the truth value of a compound proposition depends on the truth values of the propositions that comprise it, there are many ways a compound proposition could evaluate as true or false. To solve this issue, we draw truth tables. A truth table shows the corresponding truth value of a compound proposition for every possible combination of truth values.
-                    </p>
-                    <p>
-                        If a compound proposition is made up of \(n\) propositions, its truth table will need \(2^n\) rows of truth values.
-                    </p>
-                    <p>
-                        When a compound proposition is really complicated, it can help to break it up into smaller compound propositions and evaluate them in the truth table separately. That way, you won't be overwhelmed when you try to evaluate the full compound proposition.
-                    </p>
-                    <p>
-                        Notice that the individual propositions are on the left while the compound propositions are on the right. As a rule, propositions should be displayed in order of increasing complexity.
-                    </p>
-                    <p>
-                        To make sure you get every possible combination of truth values, you'll need to alternate between true and false differently for each individual proposition. The rightmost individual proposition should have alternating T's and F's, while the second to the right should have alternating TT's and FF's, then TTTT's and FFFF's, and so on.
+                        The negation of a disjunction is the conjunction of the negations, and the negation of a conjunction is the disjunction of the negations.
                     </p>
                 </div>
             </div>
