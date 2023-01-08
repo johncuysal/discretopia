@@ -262,24 +262,26 @@ blockquote {
 table {
     font-size: 20px;
     line-height: 1.61803;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    border-collapse: collapse;
+    overflow-x: scroll;
 }
 
 th, td {
     min-width: 64px;
     padding: 8px;
     text-align: center;
+    border: 2px solid black;
 }
 
 td {
-    background-color: white;
+    background-color: #cce8ec;
 }
 
 th {
     background-color: #1390a1;
     color: white;
+    white-space: nowrap;
 }
 
 ol {

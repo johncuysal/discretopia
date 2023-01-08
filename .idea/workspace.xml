@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Updated a few entries and added search keywords.">
-      <change afterPath="$PROJECT_DIR$/journal/de-morgans-laws/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Updated entries, added entry on De Morgan's Laws.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/compound-proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/compound-proposition/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/contradiction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/contradiction/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/de-morgans-laws/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logic-law/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/logic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logic/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/logical-equivalence/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-equivalence/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/logical-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proposition/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/tautology/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/tautology/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +100,7 @@
       <workItem from="1672423219603" duration="3309000" />
       <workItem from="1672445064073" duration="11529000" />
       <workItem from="1672517352129" duration="17003000" />
-      <workItem from="1672548663139" duration="45713000" />
+      <workItem from="1672548663139" duration="60446000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -246,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672951214940</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Updated entries, added entry on De Morgan's Laws.">
+      <created>1672986660693</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672986660693</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +284,7 @@
     <MESSAGE value="Added compound proposition, contradiction, logical equivalence, and tautology entries." />
     <MESSAGE value="Modified .css and about page. Also, slightly edited a few entries." />
     <MESSAGE value="Updated a few entries and added search keywords." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated a few entries and added search keywords." />
+    <MESSAGE value="Updated entries, added entry on De Morgan's Laws." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated entries, added entry on De Morgan's Laws." />
   </component>
 </project>

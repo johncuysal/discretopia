@@ -28,9 +28,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const tdElements = document.querySelectorAll('td');
 
     tdElements.forEach(td => {
-        if (td.innerHTML === 'T') {
+        if (td.innerHTML === '1') {
             td.style.backgroundColor = '#9fe0a5';
-        } else if (td.innerHTML === 'F') {
+        } else if (td.innerHTML === '0') {
             td.style.backgroundColor = '#e0a59f';
         }
     });
