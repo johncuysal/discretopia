@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/counterexample">
-    <title>Counterexample - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/predicate">
+    <title>Predicate - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,13 +161,58 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Counterexample</h1>
+                    <h1>Predicate</h1>
                     <hr>
-                    <i>Last Updated: 31 December 2022</i>
+                    <i>Last Updated: 8 January 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>counterexample</b> is any exception to a <a href="../universal-generalization">universal generalization</a>. Counterexamples disprove <a href="../statement#universal-statements">universal statements</a>.
+                        A <b>predicate</b> is an undetermined <a href="../statement">statement</a> containing one or more variables that becomes a <a href="../proposition">proposition</a> when all of its variables are substituted for values from their <a href="../domain">domains</a>. Because of this, predicates can be thought of as functions that output propositions, written like \(P(x)\), \(Q(x, y)\), or \(R(x, y, z)\), for example. Alternatively, predicates can also become propositions when they are quantified.
+                    </p>
+                    <p>
+                        Here is a simple predicate:
+                    </p>
+                    <div class="math-definition">
+                        \(P(x)\) : \(x\) can fly.
+                    </div>
+                    <p>
+                        As soon as we input "birds," it becomes the following proposition:
+                    </p>
+                    <div class="math-definition">
+                        \(P(\)birds\()\) : Birds can fly.
+                    </div>
+                    <p>
+                        And it is true. However, if we input "fish" instead:
+                    </p>
+                    <div class="math-definition">
+                        \(P(\)fish\()\) : Fish can fly.
+                    </div>
+                    <p>
+                        The resulting proposition \(P(\)fish\()\) is false.
+                    </p>
+                    <p>
+                        As you can see, depending on the input, a predicate can become an entirely different proposition.
+                    </p>
+                    <p>
+                        Now, here's a predicate that takes in two variables:
+                    </p>
+                    <div class="math-definition">
+                        \(Q(x, y)\) : \(x\) can fly and \(y\) can swim.
+                    </div>
+                    <p>
+                        If we fill in just one of the variables:
+                    </p>
+                    <div class="math-definition">
+                        \(Q(\)birds, \(y)\) : Birds can fly and \(y\) can swim.
+                    </div>
+                    <p>
+                        The predicate is not yet a proposition. All variables must be given values for it to become a proposition:
+                    </p>
+                    <div class="math-definition">
+                        \(Q(\)birds, fish\()\) : Birds can fly and fish can swim.
+                    </div>
+                    <p>
+                        This proposition evaluates as true.
                     </p>
                 </div>
             </div>

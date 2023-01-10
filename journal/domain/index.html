@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/counterexample">
-    <title>Counterexample - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/domain">
+    <title>Domain - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,13 +161,34 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Counterexample</h1>
+                    <h1>Domain</h1>
                     <hr>
-                    <i>Last Updated: 31 December 2022</i>
+                    <i>Last Updated: 8 January 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>counterexample</b> is any exception to a <a href="../universal-generalization">universal generalization</a>. Counterexamples disprove <a href="../statement#universal-statements">universal statements</a>.
+                        The <b>domain</b> of a variable is the <a>set</a> of all possible values it can attain. Often, domains will be implied. For example, when talking about whether a variable is even and odd, it's only natural to assume that the domain of that variable is the set of integers. However, sometimes it's not so obvious what the domain of a variable is. That's why it's best to define exactly what set of values is the domain for a particular variable, because the meaning of a statement will change under different domains. Consider the following statement:
+                    </p>
+                    <div class="math-definition">
+                        There exists an \(x\) such that \(x^2=2\).
+                    </div>
+                    <p>
+                        But what sort of number is \(x\)? Is it a real number? Or an integer? The statement's truth value depends on the domain you select:
+                    </p>
+                    <div class="math-definition">
+                        There exists a real number \(x\) such that \(x^2=2\).
+                    </div>
+                    <p>
+                        If \(x=\sqrt 2\), then the above statement is true. However, what if the domain of \(x\) was the set of integers?
+                    </p>
+                    <div class="math-definition">
+                        There exists an integer \(x\) such that \(x^2=2\).
+                    </div>
+                    <p>
+                        No integer exists that is the square root of 2. Therefore, the above statement is false.
+                    </p>
+                    <p>
+                        So, domains matter. Make sure to specify them for your variables!
                     </p>
                 </div>
             </div>
