@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added domain and predicate pages.">
-      <change afterPath="$PROJECT_DIR$/journal/quantifier/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added quantifier entry.">
+      <change afterPath="$PROJECT_DIR$/journal/argument/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/rule-of-inference/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/counterexample/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/counterexample/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logical-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/universal-generalization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/universal-generalization/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/logic-law/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logic-law/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/quantifier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/quantifier/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/quantifier",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/rule-of-inference",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,11 +52,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/rule-of-inference" />
+      <recent name="$PROJECT_DIR$/journal/argument" />
       <recent name="$PROJECT_DIR$/journal/quantifier" />
       <recent name="$PROJECT_DIR$/journal/domain" />
       <recent name="$PROJECT_DIR$/journal/predicate" />
-      <recent name="$PROJECT_DIR$/journal/de-morgans-laws" />
-      <recent name="$PROJECT_DIR$/journal/de-morgan's-laws" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -94,7 +95,7 @@
       <workItem from="1672423219603" duration="3309000" />
       <workItem from="1672445064073" duration="11529000" />
       <workItem from="1672517352129" duration="17003000" />
-      <workItem from="1672548663139" duration="78384000" />
+      <workItem from="1672548663139" duration="93685000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -264,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673324215304</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added quantifier entry.">
+      <created>1673329630727</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673329630727</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +303,7 @@
     <MESSAGE value="Updated entries, added entry on De Morgan's Laws." />
     <MESSAGE value="Added logic laws." />
     <MESSAGE value="Added domain and predicate pages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added domain and predicate pages." />
+    <MESSAGE value="Added quantifier entry." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added quantifier entry." />
   </component>
 </project>

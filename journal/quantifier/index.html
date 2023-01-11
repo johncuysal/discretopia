@@ -170,7 +170,7 @@
                         A <b>quantifier</b> specifies how many elements in the domain of a variable a logical statement is making a claim about. In other words, it defines the scope of the assertion. A statement with a universal or existential quantifier is a <i>quantified statement</i>. Quantifiers are applied before any logical operations, so be sure to make use of parentheses to indicate order.
                     </p>
                     <p>
-                        Notably, quantifiers bind variables, allowing predicates to become propositions whose truth values can be determined. The variable bound by a quantifier is always specified immediately after the quantifier symbol. If a predicate contains multiple variables, all must be bound in order for it to become a proposition.
+                        Notably, quantifiers bind variables, allowing predicates to become propositions whose truth values can be determined. The variable bound by a quantifier is always specified immediately after the quantifier symbol. If a predicate contains multiple variables, all must be bound (either by quantifiers or by substituting in specific values) in order for it to become a proposition.
                     </p>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -210,7 +210,7 @@
                         As you can see, existentially quantifying the predicate \(P(x)\) results in the proposition \(\exists x P(x)\), which is logically equivalent to the disjunction of all propositions that result from evaluating that predicate for every element in the domain of \(x\).
                     </p>
                     <p>
-                        You can prove an existential statement is true by coming up with an <i>example</i>, an element in the domain for which the predicate is true. To show an existential statement is false, you will have to prove its negation true, which, by De Morgan's law for quantified statements, is a universal statement.
+                        You can prove an existential statement is true by coming up with an <i>example</i>, an element in the domain for which the predicate is true. To show an existential statement is false, you will have to prove its negation true, which, by De Morgan's law for quantified statements, is a universal statement. Therefore, you'll need to prove the negation with universal generalization.
                     </p>
                 </div>
             </div>

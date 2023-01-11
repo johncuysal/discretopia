@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/logic-law">
-    <title>Logic law - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/rule-of-inference">
+    <title>Rule of inference - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,116 +161,78 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Logic law</h1>
+                    <h1>Rule of inference</h1>
                     <hr>
-                    <i>Last Updated: 8 January 2023</i>
+                    <i>Last Updated: 10 January 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>logic law</b>, or <b>law of propositional logic</b>, is a known <a href="../logical-equivalence">logical equivalence</a>. Since propositions can be substituted for one another if they are logically equivalent, logic laws come in handy when making logical proofs. Here's a list of logic laws for your reference:
+                        A <b>rule of inference</b> is a known valid argument. In logical proofs, rules of inference can be used as stepping stones for reaching the conclusion of some larger argument.
                     </p>
                     <table>
                         <tr>
-                            <th>De Morgan's laws</th>
-                            <td>\(\lnot (p \lor q) \equiv \lnot p \land \lnot q\)<br>\(\lnot \forall x P(x) \equiv \exists x \lnot P(x)\)</td>
-                            <td>\(\lnot (p \land q) \equiv \lnot p \lor \lnot q\)<br>\(\lnot \exists x P(x) \equiv \forall x \lnot P(x)\)</td>
+                            <th>Modus ponens</th>
+                            <td class="argument-cell">
+                                \(p\)<br>
+                                \(\underline{p \rightarrow q}\)<br>
+                                \(\therefore q\)
+                            </td>
                         </tr>
                         <tr>
-                            <th>Idempotent laws</th>
-                            <td>\(p \lor p \equiv p\)</td>
-                            <td>\(p \land p \equiv p\)</td>
+                            <th>Modus tollens</th>
+                            <td class="argument-cell">
+                                \(\lnot q\)<br>
+                                \(\underline{p \rightarrow q}\)<br>
+                                \(\therefore \lnot p\)
+                            </td>
                         </tr>
                         <tr>
-                            <th>Associative laws</th>
-                            <td>\((p \lor q) \lor r \equiv p \lor (q \lor r)\)</td>
-                            <td>\((p \land q) \land r \equiv p \land (q \land r)\)</td>
+                            <th>Addition</th>
+                            <td class="argument-cell">
+                                \(\underline{p\qquad\,\,\,\,}\)<br>
+                                \(\therefore p \lor q\)
+                            </td>
                         </tr>
                         <tr>
-                            <th>Commutative laws</th>
-                            <td>\(p \lor q \equiv q \lor p\)</td>
-                            <td>\(p \land q \equiv q \land p\)</td>
+                            <th>Simplification</th>
+                            <td class="argument-cell">
+                                \(\underline{p \land q}\)<br>
+                                \(\therefore p\)
+                            </td>
                         </tr>
                         <tr>
-                            <th>Distributive laws</th>
-                            <td>\(p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)\)</td>
-                            <td>\(p \land (q \lor r) \equiv (p \land q) \lor (p \land r)\)</td>
+                            <th>Conjunction</th>
+                            <td class="argument-cell">
+                                \(p\)<br>
+                                \(\underline{q\qquad\,\,\,\,}\)<br>
+                                \(\therefore p \land q\)
+                            </td>
                         </tr>
                         <tr>
-                            <th>Identity laws</th>
-                            <td>\(p \lor 0 \equiv p\)</td>
-                            <td>\(p \land 1 \equiv p\)</td>
+                            <th>Hypothetical syllogism</th>
+                            <td class="argument-cell">
+                                \(p \rightarrow q\)<br>
+                                \(\underline{q \rightarrow r\quad\,}\)<br>
+                                \(\therefore p \rightarrow r\)
+                            </td>
                         </tr>
                         <tr>
-                            <th>Domination laws</th>
-                            <td>\(p \land 0 \equiv 0\)</td>
-                            <td>\(p \lor 1 \equiv 1\)</td>
+                            <th>Disjunctive syllogism</th>
+                            <td class="argument-cell">
+                                \(p \lor q\)<br>
+                                \(\underline{\lnot p\quad}\)<br>
+                                \(\therefore q\)
+                            </td>
                         </tr>
                         <tr>
-                            <th>Double negation law</th>
-                            <td colspan="100%">\(\lnot \lnot p \equiv p\)</td>
-                        </tr>
-                        <tr>
-                            <th>Complement laws</th>
-                            <td>\(p \land \lnot p \equiv 0\)<br>\(\lnot 1 \equiv 0\)</td>
-                            <td>\(p \lor \lnot p \equiv 1\)<br>\(\lnot 0 \equiv 1\)</td>
-                        </tr>
-                        <tr>
-                            <th>Absorption laws</th>
-                            <td>\(p \lor (p \land q) \equiv p\)</td>
-                            <td>\(p \land (p \lor q) \equiv p\)</td>
-                        </tr>
-                        <tr>
-                            <th>Conditional identities</th>
-                            <td>\(p \rightarrow q \equiv \lnot p \lor q\)</td>
-                            <td>\(p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)\)</td>
+                            <th>Resolution</th>
+                            <td class="argument-cell">
+                                \(p \lor q\)<br>
+                                \(\underline{\lnot p \lor r\,\,}\)<br>
+                                \(\therefore q \lor r\)
+                            </td>
                         </tr>
                     </table>
-                    <div class="math-notice">
-                        ⚠ In the table, \(p\) and \(q\) represent <em>any</em> compound proposition, so don't assume that you must be working with individual propositions in order to use the logic laws! Just keep an eye out for the distinct patterns of surrounding logical operations that match a logic law.
-                    </div>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>De Morgan's laws</h2>
-                    <hr>
-                    <p>
-                        De Morgan's laws state that the negation of a disjunction is the conjunction of the negations, and the negation of a conjunction is the disjunction of the negations.
-                    </p>
-                    <div class="math-definition">
-                        $$\lnot (p \lor q) \equiv \lnot p \land \lnot q$$
-                        $$\lnot (p \land q) \equiv \lnot p \lor \lnot q$$
-                    </div>
-                    <p>
-                        For quantified statements, the negation of a universal statement is its existentially quantified negation, and the negation of an existential statement is its universally quantified negation.
-                    </p>
-                    <div class="math-definition">
-                        $$\lnot \forall x P(x) \equiv \exists x \lnot P(x)$$
-                        $$\lnot \exists x P(x) \equiv \forall x \lnot P(x)$$
-                    </div>
-                    <p>
-                        If you need more convincing, first assume the domain of \(x\) is finite. Then, quantified statements can be written as:
-                    </p>
-                    <div class="math-definition">
-                        $$\forall x P(x) \equiv P(a_1) \land ... \land P(a_n)$$
-                        $$\exists x P(x) \equiv P(a_1) \lor ... \lor P(a_n)$$
-                    </div>
-                    <p>
-                        Negating both of these logical equivalences gives:
-                    </p>
-                    <div class="math-definition">
-                        $$\lnot \forall x P(x) \equiv \lnot P(a_1) \lor ... \lor \lnot P(a_n)$$
-                        $$\lnot \exists x P(x) \equiv \lnot P(a_1) \land ... \land \lnot P(a_n)$$
-                    </div>
-                    <p>
-                        Finally, by recognizing the pattern and recalling the logical equivalences from the first step:
-                    </p>
-                    <div class="math-definition">
-                        $$\lnot \forall x P(x) \equiv \exists x \lnot P(x)$$
-                        $$\lnot \exists x P(x) \equiv \forall x \lnot P(x)$$
-                    </div>
                 </div>
             </div>
         </div>

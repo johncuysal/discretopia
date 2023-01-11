@@ -278,6 +278,10 @@ td {
     background-color: #cce8ec;
 }
 
+.argument-cell {
+    text-align: left;
+}
+
 th {
     background-color: #1390a1;
     color: white;
