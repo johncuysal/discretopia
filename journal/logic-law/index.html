@@ -163,11 +163,11 @@
                 <div id="title-box">
                     <h1>Logic law</h1>
                     <hr>
-                    <i>Last Updated: 8 January 2023</i>
+                    <i>Last Updated: 12 January 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>logic law</b>, or <b>law of propositional logic</b>, is a known <a href="../logical-equivalence">logical equivalence</a>. Since propositions can be substituted for one another if they are logically equivalent, logic laws come in handy when making logical proofs. Here's a list of logic laws for your reference:
+                        A <b>logic law</b>, or <b>law of propositional logic</b>, is a known <a href="../logical-equivalence">logical equivalence</a>. Since <a href="../proposition">propositions</a> can be substituted for one another if they are logically equivalent, logic laws come in handy when making <a>logical proofs</a>. Here's a list of logic laws for your reference:
                     </p>
                     <table>
                         <tr>
@@ -226,7 +226,7 @@
                         </tr>
                     </table>
                     <div class="math-notice">
-                        ⚠ In the table, \(p\) and \(q\) represent <em>any</em> compound proposition, so don't assume that you must be working with individual propositions in order to use the logic laws! Just keep an eye out for the distinct patterns of surrounding logical operations that match a logic law.
+                        ⚠ In the table, \(p\) and \(q\) represent <em>any</em> <a href="../compound-proposition">compound proposition</a>, so don't assume that you must be working with individual propositions in order to use the logic laws! Just keep an eye out for the distinct patterns of surrounding <a href="../logical-operation">logical operations</a> that match a logic law.
                     </div>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -237,21 +237,21 @@
                     <h2>De Morgan's laws</h2>
                     <hr>
                     <p>
-                        De Morgan's laws state that the negation of a disjunction is the conjunction of the negations, and the negation of a conjunction is the disjunction of the negations.
+                        De Morgan's laws state that the <a href="../logical-operation#negation">negation</a> of a <a href="../logical-operation#disjunction">disjunction</a> is the <a href="../logical-operation#conjunction">conjunction</a> of the negations, and the negation of a conjunction is the disjunction of the negations.
                     </p>
                     <div class="math-definition">
                         $$\lnot (p \lor q) \equiv \lnot p \land \lnot q$$
                         $$\lnot (p \land q) \equiv \lnot p \lor \lnot q$$
                     </div>
                     <p>
-                        For quantified statements, the negation of a universal statement is its existentially quantified negation, and the negation of an existential statement is its universally quantified negation.
+                        For <a href="../quantifier">quantified statements</a>, the negation of a <a href="../statement#universal-statements">universal statement</a> is its <a href="../quantifier#existential-quantifiers">existentially quantified</a> negation, and the negation of an <a href="../statement#existential-statements">existential statement</a> is its <a href="../quantifier#universal-quantifiers">universally quantified</a> negation.
                     </p>
                     <div class="math-definition">
                         $$\lnot \forall x P(x) \equiv \exists x \lnot P(x)$$
                         $$\lnot \exists x P(x) \equiv \forall x \lnot P(x)$$
                     </div>
                     <p>
-                        If you need more convincing, first assume the domain of \(x\) is finite. Then, quantified statements can be written as:
+                        If you need more convincing, first assume the <a href="../domain">domain</a> of \(x\) is finite. Then, quantified statements can be written as:
                     </p>
                     <div class="math-definition">
                         $$\forall x P(x) \equiv P(a_1) \land ... \land P(a_n)$$

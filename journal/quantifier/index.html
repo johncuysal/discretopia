@@ -163,14 +163,14 @@
                 <div id="title-box">
                     <h1>Quantifier</h1>
                     <hr>
-                    <i>Last Updated: 9 January 2023</i>
+                    <i>Last Updated: 12 January 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>quantifier</b> specifies how many elements in the domain of a variable a logical statement is making a claim about. In other words, it defines the scope of the assertion. A statement with a universal or existential quantifier is a <i>quantified statement</i>. Quantifiers are applied before any logical operations, so be sure to make use of parentheses to indicate order.
+                        A <b>quantifier</b> specifies how many elements in the <a href="../domain">domain</a> of a variable a <a href="../statement">logical statement</a> is making a claim about. In other words, it defines the scope of the assertion. A statement with a universal or existential quantifier is a <i>quantified statement</i>. Quantifiers are applied before any <a href="../logical-operation">logical operations</a>, so be sure to make use of parentheses to indicate order.
                     </p>
                     <p>
-                        Notably, quantifiers bind variables, allowing predicates to become propositions whose truth values can be determined. The variable bound by a quantifier is always specified immediately after the quantifier symbol. If a predicate contains multiple variables, all must be bound (either by quantifiers or by substituting in specific values) in order for it to become a proposition.
+                        Notably, quantifiers bind variables, allowing <a href="../predicate">predicates</a> to become <a href="../proposition">propositions</a> whose <a href="../proposition#truth-value">truth values</a> can be determined. The variable bound by a quantifier is always specified immediately after the quantifier symbol. If a predicate contains multiple variables, all must be bound (either by quantifiers or by substituting in specific values) in order for it to become a proposition.
                     </p>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -181,7 +181,7 @@
                     <h2>Universal quantifiers</h2>
                     <hr>
                     <p>
-                        Applying universal quantifiers to statements results in universal statements. If \(P(x)\) is a predicate, then \(\forall x P(x)\) is the proposition "for all \(x\), \(P(x)\) is true," or, reworded, "for every \(x\), \(P(x)\) is true." In order for this universal statement to be true, \(P(x)\) must be true for every element in the domain of \(x\).
+                        Applying universal quantifiers to statements results in <a href="../statement#universal-statements">universal statements</a>. If \(P(x)\) is a predicate, then \(\forall x P(x)\) is the proposition "for all \(x\), \(P(x)\) is true," or, reworded, "for every \(x\), \(P(x)\) is true." In order for this universal statement to be true, \(P(x)\) must be true for every element in the domain of \(x\).
                     </p>
                     <p>
                         If \(x\) has a finite domain \(D\) of size \(n\), written as \(D=\set {a_1, ... a_n}\):
@@ -190,15 +190,15 @@
                         $$\forall x P(x) \equiv P(a_1) \land ... \land P(a_n)$$
                     </div>
                     <p>
-                        As you can see, universally quantifying the predicate \(P(x)\) results in the proposition \(\forall x P(x)\), which is logically equivalent to the conjunction of all propositions that result from evaluating that predicate for every element in the domain of \(x\).
+                        As you can see, universally quantifying the predicate \(P(x)\) results in the proposition \(\forall x P(x)\), which is <a href="../logical-equivalence">logically equivalent</a> to the <a href="../logical-operation#conjunction">conjunction</a> of all propositions that result from evaluating that predicate for every element in the domain of \(x\).
                     </p>
                     <p>
-                        When the domain is small, you can prove a universal statement is true by checking that the predicate is true for every element in the domain. However, when the domain is large or infinite, this becomes totally impractical! That's why universal generalization is preferred, since we often work with infinite domains. To show a universal statement is false, come up with a counterexample.
+                        When the domain is small, you can prove a universal statement is true by checking that the predicate is true for every element in the domain. However, when the domain is large or infinite, this becomes totally impractical! That's why <a href="../universal-generalization">universal generalization</a> is preferred, since we often work with infinite domains. To show a universal statement is false, come up with a <a href="../counterexample">counterexample</a>.
                     </p>
                     <h2>Existential quantifiers</h2>
                     <hr>
                     <p>
-                        Applying existential quantifiers to statements results in existential statements. If \(P(x)\) is a predicate, then \(\exists x P(x)\) is the proposition "there exists an \(x\) such that \(P(x)\) is true." In order for this existential statement to be true, \(P(x)\) must be true for at least one element in the domain of \(x\).
+                        Applying existential quantifiers to statements results in <a href="../statement#existential-statements">existential statements</a>. If \(P(x)\) is a predicate, then \(\exists x P(x)\) is the proposition "there exists an \(x\) such that \(P(x)\) is true." In order for this existential statement to be true, \(P(x)\) must be true for at least one element in the domain of \(x\).
                     </p>
                     <p>
                         If \(x\) has a finite domain \(D\) of size \(n\), written as \(D=\set {a_1, ... a_n}\):
@@ -207,10 +207,10 @@
                         $$\exists x P(x) \equiv P(a_1) \lor ... \lor P(a_n)$$
                     </div>
                     <p>
-                        As you can see, existentially quantifying the predicate \(P(x)\) results in the proposition \(\exists x P(x)\), which is logically equivalent to the disjunction of all propositions that result from evaluating that predicate for every element in the domain of \(x\).
+                        As you can see, existentially quantifying the predicate \(P(x)\) results in the proposition \(\exists x P(x)\), which is logically equivalent to the <a href="../logical-operation#disjunction">disjunction</a> of all propositions that result from evaluating that predicate for every element in the domain of \(x\).
                     </p>
                     <p>
-                        You can prove an existential statement is true by coming up with an <i>example</i>, an element in the domain for which the predicate is true. To show an existential statement is false, you will have to prove its negation true, which, by De Morgan's law for quantified statements, is a universal statement. Therefore, you'll need to prove the negation with universal generalization.
+                        You can prove an existential statement is true by coming up with an <i>example</i>, an element in the domain for which the predicate is true. To show an existential statement is false, you will have to prove its <a href="../logical-operation#negation">negation</a> true, which, by <a href="../logic-law#de-morgans-laws">De Morgan's law for quantified statements</a>, is a universal statement. Therefore, you'll need to prove the negation with universal generalization.
                     </p>
                 </div>
             </div>

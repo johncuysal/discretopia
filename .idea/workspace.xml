@@ -4,14 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added quantifier entry.">
-      <change afterPath="$PROJECT_DIR$/journal/argument/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/rule-of-inference/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added argument and rule of inference entries.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/argument/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/argument/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/axiom/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/axiom/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/compound-proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/compound-proposition/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/contradiction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/contradiction/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/counterexample/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/counterexample/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/domain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/domain/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/existence-proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/existence-proof/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/existential-instantiation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/existential-instantiation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/inequality/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/inequality/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/integer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/integer/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/logic-law/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logic-law/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/logic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logic/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/logical-equivalence/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-equivalence/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/logical-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/predicate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/predicate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proposition/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/quantifier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/quantifier/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/rational-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rational-number/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/real-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/real-number/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/rule-of-inference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rule-of-inference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/statement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/statement/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/tautology/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/tautology/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,21 +56,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/rule-of-inference",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/john/WebstormProjects/discretopia/journal/rule-of-inference&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/journal/rule-of-inference" />
@@ -95,7 +116,8 @@
       <workItem from="1672423219603" duration="3309000" />
       <workItem from="1672445064073" duration="11529000" />
       <workItem from="1672517352129" duration="17003000" />
-      <workItem from="1672548663139" duration="93685000" />
+      <workItem from="1672548663139" duration="94876000" />
+      <workItem from="1673547405115" duration="4036000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -272,14 +294,20 @@
       <option name="project" value="LOCAL" />
       <updated>1673329630727</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added argument and rule of inference entries.">
+      <created>1673413861283</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673413861283</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created and styled a template page." />
     <MESSAGE value="Updated design." />
     <MESSAGE value="Added blockquotes." />
     <MESSAGE value="Organized some code." />
@@ -304,6 +332,7 @@
     <MESSAGE value="Added logic laws." />
     <MESSAGE value="Added domain and predicate pages." />
     <MESSAGE value="Added quantifier entry." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added quantifier entry." />
+    <MESSAGE value="Added argument and rule of inference entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added argument and rule of inference entries." />
   </component>
 </project>

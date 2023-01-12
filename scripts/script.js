@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Loop through the h2 elements
     for (const h2 of h2Elements) {
         // Set the h2 element's id attribute to the modified inner HTML
-        h2.setAttribute("id", h2.innerHTML.toLowerCase().replace(/ /g, "-").replace('&amp;', 'and'));
+        h2.setAttribute("id", h2.innerHTML.toLowerCase().replace(/ /g, "-").replace('&amp;', 'and').replace("'", ''));
 
         if (listOfContents) {
             // Create a new anchor element
