@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Checked all pages. Fixed and added a lot of links.">
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Updated year.">
+      <change afterPath="$PROJECT_DIR$/journal/direct-proof/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/logical-proof/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/argument/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/argument/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/existential-instantiation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/existential-instantiation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/logical-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/rule-of-inference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rule-of-inference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/universal-generalization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/universal-generalization/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,28 +39,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/john/WebstormProjects/discretopia/journal/rule-of-inference&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/direct-proof",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/direct-proof" />
+      <recent name="$PROJECT_DIR$/journal/logical-proof" />
       <recent name="$PROJECT_DIR$/journal/rule-of-inference" />
       <recent name="$PROJECT_DIR$/journal/argument" />
       <recent name="$PROJECT_DIR$/journal/quantifier" />
-      <recent name="$PROJECT_DIR$/journal/domain" />
-      <recent name="$PROJECT_DIR$/journal/predicate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -92,7 +101,16 @@
       <workItem from="1672517352129" duration="17003000" />
       <workItem from="1672548663139" duration="94876000" />
       <workItem from="1673547405115" duration="4503000" />
-      <workItem from="1673666647195" duration="601000" />
+      <workItem from="1673666647195" duration="1609000" />
+      <workItem from="1673887395458" duration="12000" />
+      <workItem from="1673887443144" duration="6000" />
+      <workItem from="1673888256368" duration="18000" />
+      <workItem from="1673897396707" duration="14000" />
+      <workItem from="1673897414231" duration="7000" />
+      <workItem from="1673905431175" duration="21000" />
+      <workItem from="1674075579571" duration="2114000" />
+      <workItem from="1674096423048" duration="1000" />
+      <workItem from="1674096432743" duration="11028000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -283,15 +301,27 @@
       <option name="project" value="LOCAL" />
       <updated>1673551723364</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added a minor tip on how to connect exclusive disjunctions with the laws of propositional logic.">
+      <created>1673667588597</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1673667588597</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Updated year.">
+      <created>1674075732904</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1674075732904</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added blockquotes." />
-    <MESSAGE value="Organized some code." />
     <MESSAGE value="Finished basic template for pages." />
     <MESSAGE value="Added integer and rational number pages." />
     <MESSAGE value="Added several new pages to the Logic &amp; Proofs category." />
@@ -315,6 +345,8 @@
     <MESSAGE value="Added quantifier entry." />
     <MESSAGE value="Added argument and rule of inference entries." />
     <MESSAGE value="Checked all pages. Fixed and added a lot of links." />
-    <option name="LAST_COMMIT_MESSAGE" value="Checked all pages. Fixed and added a lot of links." />
+    <MESSAGE value="Added a minor tip on how to connect exclusive disjunctions with the laws of propositional logic." />
+    <MESSAGE value="Updated year." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated year." />
   </component>
 </project>
