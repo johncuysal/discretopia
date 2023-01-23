@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="author" content="John C. Uysal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/script.js"></script>
+    <script src="../../scripts/script.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="css/discretopia.css">
-    <link rel="icon" href="images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com">
-    <title>Discretopia, the friendly discrete math reference</title>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/proof-by-contrapositive">
+    <title>Proof by contrapositive - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
         <div id="wordmark-container">
             <div id="wordmark" class="centered">
-                <a href="">DISCRETOPIA</a>
+                <a href="../../">DISCRETOPIA</a>
             </div>
         </div>
         <div id="search-container">
@@ -27,7 +27,7 @@
     <main>
         <div id="side-container">
             <div id="logo-container">
-                <a href="">
+                <a href="../../">
                     <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
                         <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
                         <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
@@ -77,15 +77,15 @@
             </div>
             <div class="sidebar-block">
                 <div class="sidebar-section">
-                    <a class="sidebar-link" href="">
+                    <a class="sidebar-link" href="../../">
                         Main page
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal">
+                    <a class="sidebar-link" href="../">
                         View the journal
                     </a>
                     <br>
-                    <a class="sidebar-link" href="about">
+                    <a class="sidebar-link" href="../../about">
                         About Discretopia
                     </a>
                     <br>
@@ -98,61 +98,61 @@
                 <div class="sidebar-section">
                     Overview
                     <hr>
-                    <a class="sidebar-link" href="journal#logic-and-proofs">
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
                         Logic & Proofs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#set-theory">
+                    <a class="sidebar-link" href="../../journal/#set-theory">
                         Set Theory
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#functions">
+                    <a class="sidebar-link" href="../../journal/#functions">
                         Functions
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#algorithms">
+                    <a class="sidebar-link" href="../../journal/#algorithms">
                         Algorithms
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#relations">
+                    <a class="sidebar-link" href="../../journal/#relations">
                         Relations
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#integer-properties">
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
                         Integer Properties
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#induction">
+                    <a class="sidebar-link" href="../../journal/#induction">
                         Induction
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#combinatorics">
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
                         Combinatorics
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#graphs">
+                    <a class="sidebar-link" href="../../journal/#graphs">
                         Graphs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#trees">
+                    <a class="sidebar-link" href="../../journal/#trees">
                         Trees
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#recursion">
+                    <a class="sidebar-link" href="../../journal/#recursion">
                         Recursion
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Guides
                     <hr>
-                    <a class="sidebar-link" href="guides/how-to-write-a-proof">
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
                         How to write a proof
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Downloads
                     <hr>
-                    <a class="sidebar-link" href="pdfs/symbol-cheat-sheet.pdf">
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
                         What's that symbol?
                     </a>
                 </div>
@@ -160,18 +160,62 @@
         </div>
         <div id="content-container">
             <div id="content">
+                <div id="title-box">
+                    <h1>Proof by contrapositive</h1>
+                    <hr>
+                    <i>Last Updated: 22 January 2023</i>
+                </div>
                 <div id="written-content">
-                    <div class="main-page-block">
-                        <div class="centered main-page-block-title">
-                            Welcome to <a href="about">Discretopia</a>,
+                    <p>
+                        A <b>proof by contrapositive</b> is an indirect proof that proves a <a href="../theorem">theorem</a> is true by showing that the <a href="../logical-operation#negation">negation</a> of its conclusion <a href="../logical-operation#the-conditional-operation">implies</a> the negation of its hypotheses. Proving the contrapositive \(\lnot q \rightarrow \lnot p\) of a conditional statement \(p \rightarrow q\) is the same as proving the conditional statement itself, because they are <a href="../logical-equivalence">logically equivalent</a>.
+                    </p>
+                    <p>
+                        This kind of proof is preferred over a <a href="../direct-proof">direct proof</a> when the negation of the conclusion is a much simpler assumption than the hypotheses. When I say "much simpler," I mean that assuming the negation of the conclusion should provide you with either a less complicated expression to work with, or an expression to work with in the first place.
+                    </p>
+                    <p>
+                        Proofs by contrapositive especially shine when dealing with <a href="../irrational-number">irrational numbers</a>. The statement "\(r\) is irrational" does not give you a clear expression to work with, but its negation allows you to use the definition of a <a href="../rational-number">rational number.</a>
+                    </p>
+                    <p>
+                        To negate the hypotheses and conclusion, you'll probably need to use <a href="../logic-law#de-morgans-laws">De Morgan's laws</a>.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
                         </div>
-                        <div class="centered main-page-block-subtitle">
-                            the friendly discrete math reference.
-                        </div>
-                        <div class="centered main-page-block-statistic">
-                            30 <a href="journal">journal</a> entries as of 22 January 2023
-                        </div>
+                        <hr>
                     </div>
+                    <h2>With multiple hypotheses</h2>
+                    <hr>
+                    <p>
+                        If you want to use a proof by contrapositive to prove a theorem that has multiple hypotheses, you need to show that the negation of one of the hypotheses results from assuming the other hypotheses (not their negations!) and the negation of the conclusion. Since this can quickly get complicated, it is best to write out exactly what you are assuming and what you are trying to prove.
+                    </p>
+                    <p>
+                        In a direct proof with multiple hypotheses, you assume the hypotheses \(h_1 ... h_n\) and show the conclusion \(c\):
+                    </p>
+                    <div class="math-definition">
+                        \((h_1 \land ... \land h_n) \rightarrow c\)
+                    </div>
+                    <p>
+                        In a proof by contrapositive, you assume the negation of the conclusion and show the negation of the hypotheses:
+                    </p>
+                    <div class="math-definition">
+                        \(\lnot c \rightarrow \lnot (h_1 \land ... \land h_n)\)
+                    </div>
+                    <p>
+                        By De Morgan's law:
+                    </p>
+                    <div class="math-definition">
+                        \(\lnot c \rightarrow (\lnot h_1 \lor ... \lor \lnot h_n)\)
+                    </div>
+                    <p>
+                        As you can see, proving the contrapositive with multiple hypotheses means showing that the negation of the conclusion implies that at least one of the negated hypotheses are true. (Remember that just one proposition in a disjunction has to be true for the whole disjunction to be true!) In other words, you are allowed to assume all but one hypothesis is true. This statement then becomes:
+                    </p>
+                    <div class="math-definition">
+                        \((\lnot c \land (h_2 \land ... \land h_n)) \rightarrow \lnot h_1\)
+                    </div>
+                    <p>
+                        In this statement, \(h_1\) is the hypothesis you have chosen to prove the negation of. It could be any of the hypotheses. Just make sure you assume the rest are true.
+                    </p>
                 </div>
             </div>
         </div>
