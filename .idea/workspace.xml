@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added logical proof and direct proof entries.">
-      <change afterPath="$PROJECT_DIR$/journal/irrational-number/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/proof-by-contrapositive/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added proof by contrapositive and irrational number entries.">
+      <change afterPath="$PROJECT_DIR$/journal/proof-by-contradiction/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logical-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/rational-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rational-number/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/real-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/real-number/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/proof-by-contrapositive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-contrapositive/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/irrational-number",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/proof-by-contradiction",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,11 +51,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/proof-by-contradiction" />
       <recent name="$PROJECT_DIR$/journal/irrational-number" />
       <recent name="$PROJECT_DIR$/journal/proof-by-contrapositive" />
       <recent name="$PROJECT_DIR$/journal/direct-proof" />
       <recent name="$PROJECT_DIR$/journal/logical-proof" />
-      <recent name="$PROJECT_DIR$/journal/rule-of-inference" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -108,7 +105,8 @@
       <workItem from="1673905431175" duration="21000" />
       <workItem from="1674075579571" duration="2114000" />
       <workItem from="1674096423048" duration="1000" />
-      <workItem from="1674096432743" duration="19678000" />
+      <workItem from="1674096432743" duration="20191000" />
+      <workItem from="1674709958691" duration="2107000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -320,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674190871779</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added proof by contrapositive and irrational number entries.">
+      <created>1674447352041</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1674447352041</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +343,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added integer and rational number pages." />
     <MESSAGE value="Added several new pages to the Logic &amp; Proofs category." />
     <MESSAGE value="Added many new entries." />
     <MESSAGE value="Slightly edited integer and rational number entries." />
@@ -363,6 +367,7 @@
     <MESSAGE value="Added a minor tip on how to connect exclusive disjunctions with the laws of propositional logic." />
     <MESSAGE value="Updated year." />
     <MESSAGE value="Added logical proof and direct proof entries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logical proof and direct proof entries." />
+    <MESSAGE value="Added proof by contrapositive and irrational number entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added proof by contrapositive and irrational number entries." />
   </component>
 </project>
