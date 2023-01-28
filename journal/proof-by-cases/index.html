@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/real-number">
-    <title>Real number - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/proof-by-cases">
+    <title>Proof by cases - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,45 +161,29 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Real number</h1>
+                    <h1>Proof by cases</h1>
                     <hr>
                     <i>Last Updated: 26 January 2023</i>
                 </div>
                 <div id="written-content">
+                    <blockquote>
+                        Break the domain into cases!
+                    </blockquote>
                     <p>
-                        A <b>real number</b> is any number with an infinite decimal expansion and no imaginary component. Between any two real numbers, there are infinitely many real numbers, which is why they are often used to measure continuous quantities like distance and time. <a href="../rational-number">Rational</a> and <a href="../irrational-number">irrational numbers</a> make up the <a>set</a> of reals, whose symbol is \(\mathbb{R}\).
+                        A <b>proof by cases</b> is a <a href="../direct-proof">direct proof</a> that proves a <a href="../theorem">theorem</a> is true by breaking its <a href="../domain">domain</a> into a finite number of classes that are each handled separately in different mini-proofs called <em>cases</em>. For this kind of proof, every element in the domain must be a member of at least one of the classes. That way, the cases cover the entire domain.
                     </p>
                     <p>
-                        Real numbers are largely excluded from discrete mathematics because the focus is on non-continuous (discrete) structures such as <a href="../integer">integers</a>, <a>graphs</a>, and <a href="../statement">logical statements</a>.
+                        Every case should be numbered and begin with "Case \(n\): " where \(n\) is the number of the case.
                     </p>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>Sign</h2>
-                    <hr>
                     <p>
-                        The property of a real number being positive or negative is its sign. All real numbers but \(0\) have a sign.
+                        If the theorem you're trying to prove involves the <a href="../real-number#absolute-value">absolute value</a> of an expression, test it under two cases: one where the inner expression is negative, and one where it's non-negative. If the inner expression is negative, taking its absolute value will reverse its sign, and if it's non-negative, taking its absolute value will result in the same expression. The reasoning behind all this is that taking the absolute value of a number has a different effect based on if that number is negative or not, so you must consider both cases.
                     </p>
-                    <div class="math-definition">
-                        For a real number \(x\):<br>
-                        <a href="../logical-operation#the-biconditional-operation">If and only if</a> \(x > 0\), \(x\) is positive.<br>
-                        If and only if \(x < 0\), \(x\) is negative.<br>
-                        If and only if \(x \ge 0\), \(x\) is non-negative.<br>
-                        If and only if \(x \le 0\), \(x\) is non-positive.<br>
-                    </div>
-                    <h2>Absolute value</h2>
-                    <hr>
                     <p>
-                        The absolute value of a real number is defined as the magnitude of its distance from \(0\).
+                        Also, for theorems about integers that are not explicitly stated as being even or odd, you can consider every combination of even and odd integers as separate cases. This will likely only be useful if the theorem is a statement about parity.
                     </p>
-                    <div class="math-definition">
-                        For a real number \(x\):<br>
-                        If and only if \(x\) is non-negative, \(|x|=x\).<br>
-                        If and only if \(x\) is negative, \(|x|=-x\).
-                    </div>
+                    <p>
+                        When two cases essentially prove the same thing, and are different only in variable names, they can be consolidated into one case "without loss of generality." (abbreviated as WLOG or w.l.o.g.) This allows you to save some time by avoiding redundant cases.
+                    </p>
                 </div>
             </div>
         </div>

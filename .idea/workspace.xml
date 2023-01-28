@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added proof by contrapositive and irrational number entries.">
-      <change afterPath="$PROJECT_DIR$/journal/proof-by-contradiction/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added proof by contradiction entry.">
+      <change afterPath="$PROJECT_DIR$/journal/proof-by-cases/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/summation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof-by-contrapositive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-contrapositive/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/real-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/real-number/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/proof-by-contradiction",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/summation",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,11 +53,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/summation" />
+      <recent name="$PROJECT_DIR$/journal/proof-by-cases" />
       <recent name="$PROJECT_DIR$/journal/proof-by-contradiction" />
       <recent name="$PROJECT_DIR$/journal/irrational-number" />
       <recent name="$PROJECT_DIR$/journal/proof-by-contrapositive" />
-      <recent name="$PROJECT_DIR$/journal/direct-proof" />
-      <recent name="$PROJECT_DIR$/journal/logical-proof" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -106,7 +108,7 @@
       <workItem from="1674075579571" duration="2114000" />
       <workItem from="1674096423048" duration="1000" />
       <workItem from="1674096432743" duration="20191000" />
-      <workItem from="1674709958691" duration="2107000" />
+      <workItem from="1674709958691" duration="22545000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -325,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674447352041</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Added proof by contradiction entry.">
+      <created>1674712346124</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1674712346124</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +352,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added several new pages to the Logic &amp; Proofs category." />
     <MESSAGE value="Added many new entries." />
     <MESSAGE value="Slightly edited integer and rational number entries." />
     <MESSAGE value="Updated hyperlinks." />
@@ -368,6 +376,7 @@
     <MESSAGE value="Updated year." />
     <MESSAGE value="Added logical proof and direct proof entries." />
     <MESSAGE value="Added proof by contrapositive and irrational number entries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added proof by contrapositive and irrational number entries." />
+    <MESSAGE value="Added proof by contradiction entry." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added proof by contradiction entry." />
   </component>
 </project>
