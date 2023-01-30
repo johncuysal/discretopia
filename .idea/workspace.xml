@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added proof by contradiction entry.">
-      <change afterPath="$PROJECT_DIR$/journal/proof-by-cases/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/summation/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Finished Logic &amp; Proofs section.">
+      <change afterPath="$PROJECT_DIR$/sitemap.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/real-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/real-number/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <workItem from="1674075579571" duration="2114000" />
       <workItem from="1674096423048" duration="1000" />
       <workItem from="1674096432743" duration="20191000" />
-      <workItem from="1674709958691" duration="22545000" />
+      <workItem from="1674709958691" duration="25049000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -334,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674712346124</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Finished Logic &amp; Proofs section.">
+      <created>1674945243711</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674945243711</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +356,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added many new entries." />
     <MESSAGE value="Slightly edited integer and rational number entries." />
     <MESSAGE value="Updated hyperlinks." />
     <MESSAGE value="Added .cpanel.yml file." />
@@ -377,6 +380,7 @@
     <MESSAGE value="Added logical proof and direct proof entries." />
     <MESSAGE value="Added proof by contrapositive and irrational number entries." />
     <MESSAGE value="Added proof by contradiction entry." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added proof by contradiction entry." />
+    <MESSAGE value="Finished Logic &amp; Proofs section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Logic &amp; Proofs section." />
   </component>
 </project>
