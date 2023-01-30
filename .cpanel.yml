@@ -11,3 +11,4 @@ deployment:
     - /bin/cp -R scripts $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp sitemap.txt $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
