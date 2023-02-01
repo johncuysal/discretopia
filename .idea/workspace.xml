@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added sitemap.txt and updated .yml file so that it gets deployed.">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Now redirecting www URLs to non-www counterparts with a .htaccess file. Updated .yml to deploy.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <workItem from="1674075579571" duration="2114000" />
       <workItem from="1674096423048" duration="1000" />
       <workItem from="1674096432743" duration="20191000" />
-      <workItem from="1674709958691" duration="25991000" />
+      <workItem from="1674709958691" duration="26827000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -343,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675094226977</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Now redirecting www URLs to non-www counterparts with a .htaccess file. Updated .yml to deploy.">
+      <created>1675094951603</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675094951603</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +367,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated hyperlinks." />
     <MESSAGE value="Added .cpanel.yml file." />
     <MESSAGE value="Added placeholder .pdf file." />
     <MESSAGE value="Added proofs and statements." />
@@ -386,6 +391,7 @@
     <MESSAGE value="Added proof by contradiction entry." />
     <MESSAGE value="Finished Logic &amp; Proofs section." />
     <MESSAGE value="Added sitemap.txt and updated .yml file so that it gets deployed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sitemap.txt and updated .yml file so that it gets deployed." />
+    <MESSAGE value="Now redirecting www URLs to non-www counterparts with a .htaccess file. Updated .yml to deploy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now redirecting www URLs to non-www counterparts with a .htaccess file. Updated .yml to deploy." />
   </component>
 </project>
