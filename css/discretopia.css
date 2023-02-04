@@ -199,7 +199,7 @@ figure {
     flex-direction: column;
     padding: 4px;
     margin: 16px;
-    max-width: 300px;
+    max-width: 256px;
 }
 
 .right-floated {
@@ -208,6 +208,10 @@ figure {
 
 .left-floated {
     float: left;
+}
+
+.news-size {
+    max-width: 150px;
 }
 
 figcaption {
