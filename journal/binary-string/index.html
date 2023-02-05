@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/power-set">
-    <title>Power set - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/binary-string">
+    <title>Binary string - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,21 +161,19 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Power set</h1>
+                    <h1>Binary string</h1>
                     <hr>
-                    <i>Last Updated: 4 February 2023</i>
+                    <i>Last Updated: 5 February 2023</i>
                 </div>
                 <div id="written-content">
+                    <blockquote>
+                        \(0100010001101001011100110110001101110010011001010111010001101111011100000110100101100001\)
+                    </blockquote>
                     <p>
-                        The <b>power set</b> of a <a href="../set">set</a> is the set of all <a href="../subset">subsets</a> of that set, including the <a href="../empty-set">empty set</a> \(\emptyset\) and the set itself. The power set of some set \(A\) is denoted \(\mathcal{P}(A)\). Intuitively, \(\mathcal{P}(A)\) is the set of all combinations of elements that are possible given only the elements of \(A\).
+                        A <b>binary string</b> is a <a href="../string">string</a> whose alphabet is \(\set{0, 1}\). Characters in a binary string are called <em>bits</em>. Binary strings of length \(n\) are often called \(n\)-bit binary strings.
                     </p>
-                    <p>
-                        The cardinality of the power set of a set \(A\) is always \(2^{|A|}\), where \(|A|\) is the cardinality of \(A\).
-                    </p>
-                    <div class="math-definition">
-                        Consider the set \(S = \set{7, 8, 9}\). Its power set is written as:
-                        $$\mathcal{P}(S) = \set{\emptyset, \set{7}, \set{8}, \set{9}, \set{7, 8}, \set{7, 9}, \set{8, 9}, \set{7, 8, 9}}$$
-                        Notice that \(|\mathcal{P}(S)| = 8\) because \(2^{|S|} = 2^3 = 8.\)
+                    <div class="math-notice">
+                        ⚠ Everything on a computer is stored as binary strings, such as \(1011\).
                     </div>
                 </div>
             </div>

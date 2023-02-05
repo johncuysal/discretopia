@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Edited .htaccess file to redirect all HTTP URLs to their HTTPS counterparts, while still removing &quot;www&quot; from all URLs.">
-      <change afterPath="$PROJECT_DIR$/journal/element/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/empty-set/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/power-set/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/set/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/subset/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/universal-set/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Began section on Set Theory.">
+      <change afterPath="$PROJECT_DIR$/journal/binary-string/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/cartesian-product/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/empty-string/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/string/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/power-set/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/power-set/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/power-set",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/empty-string",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -56,11 +53,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/empty-string" />
+      <recent name="$PROJECT_DIR$/journal/binary-string" />
+      <recent name="$PROJECT_DIR$/journal/string" />
+      <recent name="$PROJECT_DIR$/journal/cartesian-product" />
       <recent name="$PROJECT_DIR$/journal/power-set" />
-      <recent name="$PROJECT_DIR$/journal/subset" />
-      <recent name="$PROJECT_DIR$/journal/universal-set" />
-      <recent name="$PROJECT_DIR$/journal/empty-set" />
-      <recent name="$PROJECT_DIR$/journal/element" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -112,7 +109,7 @@
       <workItem from="1674096423048" duration="1000" />
       <workItem from="1674096432743" duration="20191000" />
       <workItem from="1674709958691" duration="27740000" />
-      <workItem from="1675393771302" duration="13693000" />
+      <workItem from="1675393771302" duration="22780000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -366,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675273728217</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Began section on Set Theory.">
+      <created>1675546227638</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1675546227638</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added placeholder .pdf file." />
     <MESSAGE value="Added proofs and statements." />
     <MESSAGE value="Slight changes." />
     <MESSAGE value="Added proof by exhaustion entry." />
@@ -409,6 +412,7 @@
     <MESSAGE value="Added sitemap.txt and updated .yml file so that it gets deployed." />
     <MESSAGE value="Now redirecting www URLs to non-www counterparts with a .htaccess file. Updated .yml to deploy." />
     <MESSAGE value="Edited .htaccess file to redirect all HTTP URLs to their HTTPS counterparts, while still removing &quot;www&quot; from all URLs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited .htaccess file to redirect all HTTP URLs to their HTTPS counterparts, while still removing &quot;www&quot; from all URLs." />
+    <MESSAGE value="Began section on Set Theory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Began section on Set Theory." />
   </component>
 </project>
