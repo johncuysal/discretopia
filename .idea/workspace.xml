@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added binary string, Cartesian product, empty string, and string entries.">
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Removed all broken links.">
+      <change afterPath="$PROJECT_DIR$/journal/set-operation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -82,7 +84,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/empty-string",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/set-operation",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,16 +96,26 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/set-operation" />
       <recent name="$PROJECT_DIR$/journal/empty-string" />
       <recent name="$PROJECT_DIR$/journal/binary-string" />
       <recent name="$PROJECT_DIR$/journal/string" />
       <recent name="$PROJECT_DIR$/journal/cartesian-product" />
-      <recent name="$PROJECT_DIR$/journal/power-set" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/fonts" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/discretopia/journal/set-operation/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,7 +162,7 @@
       <workItem from="1674096423048" duration="1000" />
       <workItem from="1674096432743" duration="20191000" />
       <workItem from="1674709958691" duration="27740000" />
-      <workItem from="1675393771302" duration="27312000" />
+      <workItem from="1675393771302" duration="36173000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -418,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675577294948</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Removed all broken links.">
+      <created>1676406530953</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1676406530953</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Slight changes." />
     <MESSAGE value="Added proof by exhaustion entry." />
     <MESSAGE value="Added counterexample, existence proof, and universal generalization entries." />
     <MESSAGE value="Added existential instantiation and axiom entries." />
@@ -461,6 +479,7 @@
     <MESSAGE value="Edited .htaccess file to redirect all HTTP URLs to their HTTPS counterparts, while still removing &quot;www&quot; from all URLs." />
     <MESSAGE value="Began section on Set Theory." />
     <MESSAGE value="Added binary string, Cartesian product, empty string, and string entries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added binary string, Cartesian product, empty string, and string entries." />
+    <MESSAGE value="Removed all broken links." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed all broken links." />
   </component>
 </project>

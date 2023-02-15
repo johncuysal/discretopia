@@ -4,4 +4,4 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Remove "www" from all URLs
 RewriteCond %{HTTP_HOST} ^www.(.+)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]

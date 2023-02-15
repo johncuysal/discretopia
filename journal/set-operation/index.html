@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/proof-by-contrapositive/">
-    <title>Proof by contrapositive - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/set-operation/">
+    <title>Set operation - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,63 +161,38 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Proof by contrapositive</h1>
+                    <h1>Set operation</h1>
                     <hr>
-                    <i>Last Updated: 22 January 2023</i>
+                    <i>Last Updated: 14 February 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>proof by contrapositive</b> is an indirect proof that proves a <a href="../theorem">theorem</a> is true by showing that the <a href="../logical-operation#negation">negation</a> of its conclusion <a href="../logical-operation#the-conditional-operation">implies</a> the negation of its hypotheses. Proving the contrapositive \(\lnot q \rightarrow \lnot p\) of a conditional statement \(p \rightarrow q\) is the same as proving the conditional statement itself, because they are <a href="../logical-equivalence">logically equivalent</a>.
+                        A <b>set operation</b> applies some rule to define new sets given previously-defined <a href="../set">sets</a>. Often, a set operation will be analogous to some corresponding <a href="../logical-operation">logical operation</a>.
                     </p>
-                    <p>
-                        This kind of proof is preferred over a <a href="../direct-proof">direct proof</a> when the negation of the conclusion is a much simpler assumption than the hypotheses. When I say "much simpler," I mean that assuming the negation of the conclusion should provide you with either a less complicated expression to work with, or an expression to work with in the first place.
-                    </p>
-                    <p>
-                        Proofs by contrapositive especially shine when dealing with <a href="../irrational-number">irrational numbers</a>. The statement "\(r\) is irrational" does not give you a clear expression to work with, but its negation allows you to use the definition of a <a href="../rational-number">rational number.</a>
-                    </p>
-                    <p>
-                        To negate the hypotheses and conclusion, you'll probably need to use <a href="../logic-law#de-morgans-laws">De Morgan's laws</a>.
-                    </p>
-                    <div class="math-notice">
-                        ⚠ Proofs by contrapositive can only be used on theorems that are conditional statements of the form "if ... then ..." <a href="../proof-by-contradiction">Proofs by contradiction</a> do not have this limitation. Really, a proof by contrapositive is a proof by contradiction where the contradiction is between the hypotheses and the negation of the hypotheses.
-                    </div>
                     <div id="list-of-contents">
                         <div class="centered">
                             <b>Contents</b>
                         </div>
                         <hr>
                     </div>
-                    <h2>With multiple hypotheses</h2>
+                    <h2>Complement</h2>
                     <hr>
                     <p>
-                        If you want to use a proof by contrapositive to prove a theorem that has multiple hypotheses, you need to show that the negation of one of the hypotheses results from assuming the other hypotheses (not their negations!) and the negation of the conclusion. Since this can quickly get complicated, it is best to write out exactly what you are assuming and what you are trying to prove.
-                    </p>
-                    <p>
-                        In a direct proof with multiple hypotheses, you assume the hypotheses \(h_1 ... h_n\) and show the conclusion \(c\):
+                        The complement of a set is the set of all elements not in that set. A universal set must already be defined in order to use this operation. The complement of a set \(A\) is denoted \(A'\) and can be read as "\(A\) complement" or "not \(A\)."
                     </p>
                     <div class="math-definition">
-                        \((h_1 \land ... \land h_n) \rightarrow c\)
+                        Given a universal set \(U\), the complement of \(A\) can be written in set-builder notation:
+                        $$A' = \set{a \in U:a \notin A}$$
                     </div>
+                    <h2>Intersection</h2>
+                    <hr>
                     <p>
-                        In a proof by contrapositive, you assume the negation of the conclusion and show the negation of the hypotheses:
+                        The intersection of two sets is the set of all elements they have in common. The intersection of two sets \(A\) and \(B\) is denoted \(A \cap B\) and is read as "\(A\) intersect \(B\)."
                     </p>
-                    <div class="math-definition">
-                        \(\lnot c \rightarrow \lnot (h_1 \land ... \land h_n)\)
-                    </div>
+                    <h2>Union</h2>
+                    <hr>
                     <p>
-                        By De Morgan's law:
-                    </p>
-                    <div class="math-definition">
-                        \(\lnot c \rightarrow (\lnot h_1 \lor ... \lor \lnot h_n)\)
-                    </div>
-                    <p>
-                        As you can see, proving the contrapositive with multiple hypotheses means showing that the negation of the conclusion implies that at least one of the negated hypotheses are true. (Remember that just one proposition in a disjunction has to be true for the whole disjunction to be true!) In other words, you are allowed to assume all but one hypothesis is true. This statement then becomes:
-                    </p>
-                    <div class="math-definition">
-                        \((\lnot c \land (h_2 \land ... \land h_n)) \rightarrow \lnot h_1\)
-                    </div>
-                    <p>
-                        In this statement, \(h_1\) is the hypothesis you have chosen to prove the negation of. It could be any of the hypotheses. Just make sure you assume the rest are true.
+                        The union of two sets is the set of all elements they have, common or not.
                     </p>
                 </div>
             </div>
