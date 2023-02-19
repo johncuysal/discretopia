@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Fixed a bug in .htaccess that caused www URLs to be redirected to http URLs. Added a trailing backslash to all canonical URLs to emphasize directories. Partially finished entry on set operations.">
-      <change afterPath="$PROJECT_DIR$/journal/set-identity/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/set-proof/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added set identity and set proof entries.">
+      <change afterPath="$PROJECT_DIR$/journal/disjunctive-normal-form/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/empty-set/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/empty-set/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/set-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/set-operation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/universal-set/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/universal-set/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/subset/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/subset/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/set-proof",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/disjunctive-normal-form",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,11 +51,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/disjunctive-normal-form" />
       <recent name="$PROJECT_DIR$/journal/set-proof" />
       <recent name="$PROJECT_DIR$/journal/set-identity" />
       <recent name="$PROJECT_DIR$/journal/set-operation" />
       <recent name="$PROJECT_DIR$/journal/empty-string" />
-      <recent name="$PROJECT_DIR$/journal/binary-string" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -120,7 +117,7 @@
       <workItem from="1674096423048" duration="1000" />
       <workItem from="1674096432743" duration="20191000" />
       <workItem from="1674709958691" duration="27740000" />
-      <workItem from="1675393771302" duration="59783000" />
+      <workItem from="1675393771302" duration="62058000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -402,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676437386531</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added set identity and set proof entries.">
+      <created>1676845495574</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1676845495574</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added counterexample, existence proof, and universal generalization entries." />
     <MESSAGE value="Added existential instantiation and axiom entries." />
     <MESSAGE value="Added logic, proposition, and logical operation entries." />
     <MESSAGE value="Added compound proposition, contradiction, logical equivalence, and tautology entries." />
@@ -445,6 +448,7 @@
     <MESSAGE value="Added binary string, Cartesian product, empty string, and string entries." />
     <MESSAGE value="Removed all broken links." />
     <MESSAGE value="Fixed a bug in .htaccess that caused www URLs to be redirected to http URLs. Added a trailing backslash to all canonical URLs to emphasize directories. Partially finished entry on set operations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug in .htaccess that caused www URLs to be redirected to http URLs. Added a trailing backslash to all canonical URLs to emphasize directories. Partially finished entry on set operations." />
+    <MESSAGE value="Added set identity and set proof entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added set identity and set proof entries." />
   </component>
 </project>

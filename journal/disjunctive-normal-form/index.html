@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="author" content="John C. Uysal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/script.js"></script>
+    <script src="../../scripts/script.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="css/discretopia.css">
-    <link rel="icon" href="images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/">
-    <title>Discretopia, the friendly discrete math reference</title>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/disjunctive-normal-form/">
+    <title>Disjunctive normal form - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
         <div id="wordmark-container">
             <div id="wordmark" class="centered">
-                <a href="">DISCRETOPIA</a>
+                <a href="../../">DISCRETOPIA</a>
             </div>
         </div>
         <div id="search-container">
@@ -27,7 +27,7 @@
     <main>
         <div id="side-container">
             <div id="logo-container">
-                <a href="">
+                <a href="../../">
                     <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
                         <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
                         <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
@@ -77,15 +77,15 @@
             </div>
             <div class="sidebar-block">
                 <div class="sidebar-section">
-                    <a class="sidebar-link" href="">
+                    <a class="sidebar-link" href="../../">
                         Main page
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal">
+                    <a class="sidebar-link" href="../">
                         View the journal
                     </a>
                     <br>
-                    <a class="sidebar-link" href="about">
+                    <a class="sidebar-link" href="../../about">
                         About Discretopia
                     </a>
                     <br>
@@ -98,61 +98,61 @@
                 <div class="sidebar-section">
                     Overview
                     <hr>
-                    <a class="sidebar-link" href="journal#logic-and-proofs">
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
                         Logic & Proofs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#set-theory">
+                    <a class="sidebar-link" href="../../journal/#set-theory">
                         Set Theory
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#functions">
+                    <a class="sidebar-link" href="../../journal/#functions">
                         Functions
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#algorithms">
+                    <a class="sidebar-link" href="../../journal/#algorithms">
                         Algorithms
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#relations">
+                    <a class="sidebar-link" href="../../journal/#relations">
                         Relations
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#integer-properties">
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
                         Integer Properties
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#induction">
+                    <a class="sidebar-link" href="../../journal/#induction">
                         Induction
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#combinatorics">
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
                         Combinatorics
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#graphs">
+                    <a class="sidebar-link" href="../../journal/#graphs">
                         Graphs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#trees">
+                    <a class="sidebar-link" href="../../journal/#trees">
                         Trees
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#recursion">
+                    <a class="sidebar-link" href="../../journal/#recursion">
                         Recursion
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Guides
                     <hr>
-                    <a class="sidebar-link" href="guides/how-to-write-a-proof">
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
                         <!--How to write a proof-->
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Downloads
                     <hr>
-                    <a class="sidebar-link" href="pdfs/symbol-cheat-sheet.pdf">
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
                         <!--What's that symbol?-->
                     </a>
                 </div>
@@ -160,57 +160,21 @@
         </div>
         <div id="content-container">
             <div id="content">
+                <div id="title-box">
+                    <h1>Disjunctive normal form</h1>
+                    <hr>
+                    <i>Last Updated: 19 February 2023</i>
+                </div>
                 <div id="written-content">
-                    <div class="main-page-block">
-                        <div class="centered main-page-block-title">
-                            Welcome to <a href="about">Discretopia</a>,
-                        </div>
-                        <div class="centered main-page-block-subtitle">
-                            the friendly discrete math reference.
-                        </div>
-                        <div class="centered main-page-block-statistic">
-                            47 <a href="journal">journal</a> entries as of 19 February 2023
-                        </div>
-                    </div>
-                    <div class="news-block-container">
-                        <div class="news-block-left">
-                            <div class="news-block-title">
-                                Featured entry: <a href="journal/set-proof">Set proof</a>
-                            </div>
-                            <div class="news-block-entry">
-                                <p>
-                                    A <b>set proof</b> is a method of <a href="journal/direct-proof">direct proof</a> that can be used to show that two <a href="journal/set">sets</a> are equal, or that one set is a <a href="journal/subset">subset</a> of the other...
-                                </p>
-                            </div>
-                            <div class="news-block-title">
-                                Did you know ...
-                            </div>
-                            <div class="news-block-entry">
-                                <ul>
-                                    <li>... that any two consecutive <a href="journal/integer">integers</a> have opposite <a href="journal/integer#parity">parity</a>?</li>
-                                    <li>... that \(0\) is <a href="journal/real-number#sign">not positive or negative, but instead non-positive and non-negative</a>?</li>
-                                    <li>... that to <a href="journal/statement#existential-statements">disprove an existential statement, you need to prove a universal statement</a>?</li>
-                                    <li>... that any <a href="journal/compound-proposition">compound proposition</a> can be rewritten as a <a href="journal/disjunctive-normal-form">disjunction of conjunctions</a>?</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="news-block-right">
-                            <div class="news-block-title">
-                                What's new?
-                            </div>
-                            <div class="news-block-entry">
-                                <h2><i>Discretopia</i> v0.2 now available to the public!</h2>
-                                <p>
-                                    The section on <a href="journal#set-theory">Set Theory</a> is finished! Next up is the <a href="journal#functions">Functions</a> section.
-                                </p>
-                                <p>
-                                    <i>Discretopia</i> continues to expand! More entries to be published soon!
-                                </p>
-                                <p>
-                                    Thank you for your interest!<br>— John
-                                </p>
-                            </div>
-                        </div>
+                    <p>
+                        Any <a href="../compound-proposition">compound proposition</a> can be rewritten in its <b>disjunctive normal form (DNF)</b> as a <a href="../logical-operation#disjunction">disjunction</a> of <a href="../logical-operation#conjunction">conjunctions</a>. The only <a href="../logical-operation">logical operators</a> allowed in DNF are \(\lnot\), \(\land\), and \(\lor\). Additionally, \(\lnot\) and \(\land\) can only operate on <a href="../proposition">individual propositions</a>.
+                    </p>
+                    <p>
+                        To rewrite a compound proposition in DNF, consider all the different ways it can be true.
+                    </p>
+                    <div class="math-definition">
+                        Let's convert \(p \rightarrow q\) into DNF. We know \(p \rightarrow q\) is true when \(p\) is true and \(q\) is true, or when \(p\) is false and \(q\) is true, or when \(p\) is false and \(q\) is false. Therefore, its disjunctive normal form must be:
+                        $$p \rightarrow q \equiv (p \land q) \lor (\lnot p \land q) \lor (\lnot p \land \lnot q)$$
                     </div>
                 </div>
             </div>
