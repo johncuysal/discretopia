@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/universal-set/">
-    <title>Universal set - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/set-identity/">
+    <title>Set identity - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,19 +161,67 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Universal set</h1>
+                    <h1>Set identity</h1>
                     <hr>
-                    <i>Last Updated: 4 February 2023</i>
+                    <i>Last Updated: 16 February 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        The set of all things that can exist in a particular context; the set of everything.
-                    </blockquote>
                     <p>
-                        The <b>universal set</b>, \(U\), also known as the <b>universe</b>, is the <a href="../set">set</a> of all <a href="../element">elements</a> mentioned in a particular context. Any set can be a universal set, so long as the discussion is confined to it. This is similar to the idea of <a href="../domain">domains</a> for variables. A universe includes all domains currently in discussion.
+                        A <b>set identity</b> is an equation involving sets that is always true for all sets. Since all set operations have logical counterparts, set identities are derived from logic laws.
                     </p>
+                    <table>
+                        <tr>
+                            <th>De Morgan's laws</th>
+                            <td>\(\overline{A \cup B} = \overline A \cap \overline B\)</td>
+                            <td>\(\overline{A \cap B} = \overline A \cup \overline B\)</td>
+                        </tr>
+                        <tr>
+                            <th>Idempotent laws</th>
+                            <td>\(A \cup A = A\)</td>
+                            <td>\(A \cap A = A\)</td>
+                        </tr>
+                        <tr>
+                            <th>Associative laws</th>
+                            <td>\((A \cup B) \cup C = A \cup (B \cup C)\)</td>
+                            <td>\((A \cap B) \cap C = A \cap (B \cap C)\)</td>
+                        </tr>
+                        <tr>
+                            <th>Commutative laws</th>
+                            <td>\(A \cup B = B \cup A\)</td>
+                            <td>\(A \cap B = B \cap A\)</td>
+                        </tr>
+                        <tr>
+                            <th>Distributive laws</th>
+                            <td>\(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\)</td>
+                            <td>\(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)</td>
+                        </tr>
+                        <tr>
+                            <th>Identity laws</th>
+                            <td>\(A \cup \emptyset = A\)</td>
+                            <td>\(A \cap U = A\)</td>
+                        </tr>
+                        <tr>
+                            <th>Domination laws</th>
+                            <td>\(A \cap \emptyset = \emptyset\)</td>
+                            <td>\(A \cup U = U\)</td>
+                        </tr>
+                        <tr>
+                            <th>Double negation law</th>
+                            <td colspan="100%">\(\overline{\overline{A}} = A\)</td>
+                        </tr>
+                        <tr>
+                            <th>Complement laws</th>
+                            <td>\(A \cap \overline A = \emptyset\)<br>\(\overline U = \emptyset\)</td>
+                            <td>\(A \cup \overline A = U\)<br>\(\overline \emptyset = U\)</td>
+                        </tr>
+                        <tr>
+                            <th>Absorption laws</th>
+                            <td>\(A \cup (A \cap B) = A\)</td>
+                            <td>\(A \cap (A \cup B) = A\)</td>
+                        </tr>
+                    </table>
                     <p>
-                        The universal set's logical analogue is \(1\).
+                        Looking for a set identity involving set difference? There isn't one, but you can use \(A - B = A \cap \overline B\) if you can justify it.
                     </p>
                 </div>
             </div>

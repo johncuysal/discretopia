@@ -4,57 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Removed all broken links.">
-      <change afterPath="$PROJECT_DIR$/journal/set-operation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Fixed a bug in .htaccess that caused www URLs to be redirected to http URLs. Added a trailing backslash to all canonical URLs to emphasize directories. Partially finished entry on set operations.">
+      <change afterPath="$PROJECT_DIR$/journal/set-identity/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/set-proof/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/argument/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/argument/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/axiom/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/axiom/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/binary-string/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/binary-string/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/cartesian-product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/cartesian-product/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/compound-proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/compound-proposition/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/contradiction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/contradiction/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/counterexample/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/counterexample/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/direct-proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/direct-proof/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/domain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/domain/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/element/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/element/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/empty-set/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/empty-set/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/empty-string/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/empty-string/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/existence-proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/existence-proof/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/existential-instantiation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/existential-instantiation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/inequality/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/inequality/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/integer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/integer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/irrational-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/irrational-number/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logic-law/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logic-law/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logic/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logic/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logical-equivalence/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-equivalence/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logical-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-operation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/logical-proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/logical-proof/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/power-set/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/power-set/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/predicate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/predicate/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof-by-cases/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-cases/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof-by-contradiction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-contradiction/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof-by-contrapositive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-contrapositive/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof-by-exhaustion/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proof/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proof/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/proposition/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/proposition/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/quantifier/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/quantifier/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/rational-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rational-number/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/real-number/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/real-number/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/rule-of-inference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/rule-of-inference/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/set/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/set/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/statement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/statement/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/string/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/string/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/subset/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/subset/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/summation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/summation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/tautology/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/tautology/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/theorem/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/theorem/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/universal-generalization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/universal-generalization/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/set-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/set-operation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/universal-set/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/universal-set/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/set-operation",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/set-proof",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -96,11 +54,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/set-proof" />
+      <recent name="$PROJECT_DIR$/journal/set-identity" />
       <recent name="$PROJECT_DIR$/journal/set-operation" />
       <recent name="$PROJECT_DIR$/journal/empty-string" />
       <recent name="$PROJECT_DIR$/journal/binary-string" />
-      <recent name="$PROJECT_DIR$/journal/string" />
-      <recent name="$PROJECT_DIR$/journal/cartesian-product" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -162,7 +120,7 @@
       <workItem from="1674096423048" duration="1000" />
       <workItem from="1674096432743" duration="20191000" />
       <workItem from="1674709958691" duration="27740000" />
-      <workItem from="1675393771302" duration="36173000" />
+      <workItem from="1675393771302" duration="59783000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -437,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676406530953</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Fixed a bug in .htaccess that caused www URLs to be redirected to http URLs. Added a trailing backslash to all canonical URLs to emphasize directories. Partially finished entry on set operations.">
+      <created>1676437386531</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1676437386531</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +420,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added proof by exhaustion entry." />
     <MESSAGE value="Added counterexample, existence proof, and universal generalization entries." />
     <MESSAGE value="Added existential instantiation and axiom entries." />
     <MESSAGE value="Added logic, proposition, and logical operation entries." />
@@ -480,6 +444,7 @@
     <MESSAGE value="Began section on Set Theory." />
     <MESSAGE value="Added binary string, Cartesian product, empty string, and string entries." />
     <MESSAGE value="Removed all broken links." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed all broken links." />
+    <MESSAGE value="Fixed a bug in .htaccess that caused www URLs to be redirected to http URLs. Added a trailing backslash to all canonical URLs to emphasize directories. Partially finished entry on set operations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug in .htaccess that caused www URLs to be redirected to http URLs. Added a trailing backslash to all canonical URLs to emphasize directories. Partially finished entry on set operations." />
   </component>
 </project>

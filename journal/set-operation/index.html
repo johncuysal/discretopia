@@ -163,11 +163,11 @@
                 <div id="title-box">
                     <h1>Set operation</h1>
                     <hr>
-                    <i>Last Updated: 14 February 2023</i>
+                    <i>Last Updated: 16 February 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>set operation</b> applies some rule to define new sets given previously-defined <a href="../set">sets</a>. Often, a set operation will be analogous to some corresponding <a href="../logical-operation">logical operation</a>.
+                        A <b>set operation</b> applies some rule to define new sets given previously-defined <a href="../set">sets</a>. Every set operation has a corresponding <a href="../logical-operation">logical analogue</a>.
                     </p>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -178,21 +178,91 @@
                     <h2>Complement</h2>
                     <hr>
                     <p>
-                        The complement of a set is the set of all elements not in that set. A universal set must already be defined in order to use this operation. The complement of a set \(A\) is denoted \(A'\) and can be read as "\(A\) complement" or "not \(A\)."
+                        The complement of a set is the set of all elements not in that set. A universal set must be defined in order to use this operation. The complement of a set \(A\) is denoted \(\overline{A}\) and can be read as "\(A\) complement" or "not \(A\)."
                     </p>
                     <div class="math-definition">
-                        Given a universal set \(U\), the complement of \(A\) can be written in set-builder notation:
-                        $$A' = \set{a \in U:a \notin A}$$
+                        Given a universal set \(U\), the complement of a set \(A\) can be written in set-builder notation:
+                        $$\overline{A} = \set{x \in U:x \notin A}$$
+                        It can also be written as a difference:
+                        $$\overline{A} = U - A$$
                     </div>
+                    <p>
+                        The set complement's logical analogue is negation.
+                    </p>
                     <h2>Intersection</h2>
                     <hr>
                     <p>
                         The intersection of two sets is the set of all elements they have in common. The intersection of two sets \(A\) and \(B\) is denoted \(A \cap B\) and is read as "\(A\) intersect \(B\)."
                     </p>
+                    <div class="math-definition">
+                        The intersection of two sets \(A\) and \(B\) can be written in set-builder notation:
+                        $$A \cap B = \set{x:x \in A \land x \in B}$$
+                    </div>
+                    <p>
+                        If \(A \cap B = \emptyset\), then \(A\) and \(B\) are <em>disjoint</em>, or in other words, they have no elements in common.
+                    </p>
+                    <p>
+                        The set intersection's logical analogue is conjunction.
+                    </p>
+                    <p>
+                        Similar to \(\sum\) notation, there is a way to compactly represent the intersection of a sequence of sets.
+                    </p>
+                    <div class="math-definition">
+                        For a finite intersection of sets \(S_1, S_2, S_3, ..., S_n\), instead of writing \(S_1 \cap S_2 \cap S_3 \cap ... \cap S_n\), one can write:
+                        $$\bigcap\limits_{i=1}^{n} S_i$$
+                    </div>
                     <h2>Union</h2>
                     <hr>
                     <p>
-                        The union of two sets is the set of all elements they have, common or not.
+                        The union of two sets is the set of all elements they have, common or not. The union of two sets \(A\) and \(B\) is denoted \(A \cup B\) and is read as "\(A\) union \(B\)."
+                    </p>
+                    <div class="math-definition">
+                        The union of two sets \(A\) and \(B\) can be written in set-builder notation:
+                        $$A \cup B = \set{x:x \in A \lor x \in B}$$
+                    </div>
+                    <p>
+                        The set union's logical analogue is disjunction.
+                    </p>
+                    <p>
+                        Similar to \(\sum\) notation, there is a way to compactly represent the union of a sequence of sets.
+                    </p>
+                    <div class="math-definition">
+                        For a finite union of sets \(S_1, S_2, S_3, ..., S_n\), instead of writing \(S_1 \cup S_2 \cup S_3 \cup ... \cup S_n\), one can write:
+                        $$\bigcup\limits_{i=1}^{n} S_i$$
+                    </div>
+                    <h2>Difference</h2>
+                    <hr>
+                    <p>
+                        The difference of two sets is the set of all elements in the first set that the second set doesn't have. The difference of two sets \(A\) and \(B\) is denoted \(A - B\) and is read as "\(A\) minus \(B\)."
+                    </p>
+                    <div class="math-definition">
+                        The difference of two sets \(A\) and \(B\) can be written in set-builder notation:
+                        $$A - B = \set{x:x \in A \land x \notin B}$$
+                        It can also be written in set-builder notation using the conditional:
+                        $$A - B = \set{x:\lnot(x \in A \rightarrow x \in B)}$$
+                    </div>
+                    <p>
+                        This is a directed set operation, so the choice of which set is first and which is second matters. In other words, \(A - B \ne B - A\) unless \(A = B\).
+                    </p>
+                    <p>
+                        Interestingly, the set difference's logical analogue is the negation of the conditional.
+                    </p>
+                    <div class="math-notice">
+                        Set differences aren't involved in any of the set identities, so trying to rewrite them may be difficult at first. I recommend drawing a Venn diagram to convince yourself that the following equation is true: \(A - B = A \cap \overline B\). Notice this equation is incredibly similar to the first conditional identity from the logic laws.
+                    </div>
+                    <h2>Symmetric difference</h2>
+                    <hr>
+                    <p>
+                        The symmetric difference of two sets is the set of all elements they don't have in common. The symmetric difference of two sets \(A\) and \(B\) is denoted \(A \oplus B\) and is read "\(A\) symmetric difference \(B\)." However, feel free to instead say "\(A\) xor \(B\)."
+                    </p>
+                    <div class="math-definition">
+                        The symmetric difference of two sets \(A\) and \(B\) can be written in set-builder notation:
+                        $$A \oplus B = \set{x:x \in A \oplus x \in B}$$
+                        It can also be written as the union of set differences:
+                        $$A \oplus B = (A - B) \cup (B - A)$$
+                    </div>
+                    <p>
+                        The set symmetric difference's logical analogue is exclusive disjunction.
                     </p>
                 </div>
             </div>

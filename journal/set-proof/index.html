@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/universal-set/">
-    <title>Universal set - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/set-proof/">
+    <title>Set proof - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,19 +161,84 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Universal set</h1>
+                    <h1>Set proof</h1>
                     <hr>
-                    <i>Last Updated: 4 February 2023</i>
+                    <i>Last Updated: 19 February 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        The set of all things that can exist in a particular context; the set of everything.
-                    </blockquote>
                     <p>
-                        The <b>universal set</b>, \(U\), also known as the <b>universe</b>, is the <a href="../set">set</a> of all <a href="../element">elements</a> mentioned in a particular context. Any set can be a universal set, so long as the discussion is confined to it. This is similar to the idea of <a href="../domain">domains</a> for variables. A universe includes all domains currently in discussion.
+                        A <b>set proof</b> is a method of <a href="../direct-proof">direct proof</a> that can be used to show that two <a href="../set">sets</a> are equal, or that one set is a <a href="../subset">subset</a> of the other.
                     </p>
                     <p>
-                        The universal set's logical analogue is \(1\).
+                        In general, set proofs involve the instantiation of arbitrary elements about which workable logical statements can be derived from the definitions of the set operations. From there, you can deduce until enough facts are obtained to prove set membership. Essentially, a set proof takes a statement about being an element of one set, translates it into pure logic, and then reaches a conclusion that can be converted back into a statement about membership, but of another set.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Inclusion</h2>
+                    <hr>
+                    <p>
+                        In this type of set proof, you are tasked with showing that one set is a subset of the other. In other words, you have to prove that being an arbitrary element of the first set implies being an arbitrary element of the second set.
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: For any two sets \(A\) and \(B\), \(A \subseteq A \cup B\).<br>
+                        <b>Inclusion proof</b>: Let \(x\) be an arbitrary element of \(A\).<br>
+                        Then we can write:
+                        $$x \in A$$
+                        By the addition rule of inference:
+                        $$x \in A \lor x \in B$$
+                        By the definition of union:
+                        $$x \in A \cup B$$
+                        Therefore, being an arbitrary element of \(A\) implies being an element of \(A \cup B\). We can conclude that \(A \subseteq A \cup B\). \(■\)
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Notice that you can't prove the reverse, \(A \cup B \subseteq A\).
+                    </div>
+                    <h2>Double-inclusion</h2>
+                    <hr>
+                    <p>
+                        To prove set equality, you need to show that both sets are subsets of each other. That's why a double-inclusion proof resembles two inclusion proofs, done in both directions.
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: For any two sets \(A\) and \(B\), \(\overline{A \cup B} = \overline A \cap \overline B\).<br>
+                        <b>Double-inclusion proof</b>: To prove \(\overline{A \cup B} = \overline A \cap \overline B\), we will need to prove \(\overline{A \cup B} \subseteq \overline A \cap \overline B\) and \(\overline A \cap \overline B \subseteq \overline{A \cup B}\).<br>
+                        1. First, I'll prove \(\overline{A \cup B} \subseteq \overline A \cap \overline B\):<br>
+                        Let \(x\) be an arbitrary element of \(\overline{A \cup B}\).<br>
+                        Then we can write:
+                        $$x \in \overline{A \cup B}$$
+                        By the definition of complement:
+                        $$x \notin A \cup B$$
+                        By the definition of union:
+                        $$\lnot(x \in A \lor x \in B)$$
+                        By De Morgan's Law (from the logic laws):
+                        $$x \notin A \land x \notin B$$
+                        By the definition of complement:
+                        $$x \in \overline A \land x \in \overline B$$
+                        Finally, by the definition of intersection:
+                        $$x \in \overline A \cap \overline B$$
+                        Therefore, being an arbitrary element of \(\overline{A \cup B}\) implies being an element of \(\overline A \cap \overline B\). We can conclude that \(\overline{A \cup B} \subseteq \overline A \cap \overline B\).<br>
+                        2. Next, I'll prove \(\overline A \cap \overline B \subseteq \overline{A \cup B}\):<br>
+                        Let \(y\) be an arbitrary element of \(\overline A \cap \overline B\).<br>
+                        Then we can write:
+                        $$y \in \overline A \cap \overline B$$
+                        By the definition of intersection:
+                        $$y \in \overline A \land y \in \overline B$$
+                        By the definition of complement:
+                        $$y \notin A \land y \notin B$$
+                        By De Morgan's Law (from the logic laws):
+                        $$\lnot(y \in A \lor y \in B)$$
+                        By the definition of union:
+                        $$y \notin A \cup B$$
+                        Finally, by the definition of complement:
+                        $$y \in \overline{A \cup B}$$
+                        Therefore, being an arbitrary element of \(\overline A \cap \overline B\) implies being an element of \(\overline{A \cup B}\). We can conclude that \(\overline A \cap \overline B \subseteq \overline{A \cup B}\).<br>
+                        Since \(\overline{A \cup B} \subseteq \overline A \cap \overline B\) and \(\overline A \cap \overline B \subseteq \overline{A \cup B}\), it is true that \(\overline{A \cup B} = \overline A \cap \overline B\) due to double-inclusion. \(■\)
+                    </div>
+                    <p>
+                        Because this particular double-inclusion proof used only definitions and logic laws as steps, the two inclusion proofs were simply reverses of each other. To delve into exactly why, it's because each step is connected by a biconditional (either a definition or logic law), which means they're all logically equivalent. However, if you happened to use a rule of inference, or take some other kind of step that maintains truth but not logical meaning, your proof would no longer be reversible. Unless you fully understand the mechanics of this, just to be safe, always write two separate inclusion proofs to prove double-inclusion.
                     </p>
                 </div>
             </div>
