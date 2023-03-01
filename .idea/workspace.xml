@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Updated set identity">
-      <change afterPath="$PROJECT_DIR$/journal/ceiling-function/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/floor-function/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/function/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added function, floor function, and ceiling function entries. Reached 50 total entries!">
+      <change afterPath="$PROJECT_DIR$/journal/inverse-function/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/function/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/function/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/ceiling-function",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/inverse-function",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -52,11 +51,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/journal/inverse-function" />
       <recent name="$PROJECT_DIR$/journal/ceiling-function" />
       <recent name="$PROJECT_DIR$/journal/floor-function" />
       <recent name="$PROJECT_DIR$/journal/function" />
       <recent name="$PROJECT_DIR$/journal/disjunctive-normal-form" />
-      <recent name="$PROJECT_DIR$/journal/set-proof" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -120,7 +119,7 @@
       <workItem from="1674709958691" duration="27740000" />
       <workItem from="1675393771302" duration="62723000" />
       <workItem from="1677031584486" duration="731000" />
-      <workItem from="1677393970668" duration="9041000" />
+      <workItem from="1677393970668" duration="15879000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -423,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677290614327</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Added function, floor function, and ceiling function entries. Reached 50 total entries!">
+      <created>1677625583234</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1677625583234</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added compound proposition, contradiction, logical equivalence, and tautology entries." />
     <MESSAGE value="Modified .css and about page. Also, slightly edited a few entries." />
     <MESSAGE value="Updated a few entries and added search keywords." />
     <MESSAGE value="Updated entries, added entry on De Morgan's Laws." />
@@ -466,6 +471,7 @@
     <MESSAGE value="Added set identity and set proof entries." />
     <MESSAGE value="Finished Discretopia v0.2!" />
     <MESSAGE value="Updated set identity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated set identity" />
+    <MESSAGE value="Added function, floor function, and ceiling function entries. Reached 50 total entries!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function, floor function, and ceiling function entries. Reached 50 total entries!" />
   </component>
 </project>

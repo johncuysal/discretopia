@@ -177,7 +177,7 @@
                         If an element of the domain isn't being mapped to an element of the target, or is being mapped to more than one element of the target, you're not looking at a <em>well-defined</em> function.
                     </p>
                     <p>
-                        The domain and target of a function must be specified in its definition, so if a function \(f\) associates elements of a set \(X\) to elements of a set \(Y\), it is defined as \(f: X \rightarrow Y\). These associations can be viewed as ordered pairs \((x, y)\), which, when combined, form a <a href="../subset">subset</a> of the <a href="../cartesian-product">Cartesian product</a> \(X \times Y\). This subset is the <em>graph of the function</em>. The fact that \(f\) maps from \(X\) to \(Y\) is written \(f(x) = y\), where \(x \in X\) and \(y \in Y\).
+                        The domain and target of a function must be specified in its definition, so if a function \(f\) associates elements of a set \(X\) to elements of a set \(Y\), it is defined as \(f: X \rightarrow Y\). These associations can be viewed as ordered pairs \((x, y)\), which, when combined, form a <a href="../subset">subset</a> of the <a href="../cartesian-product">Cartesian product</a> \(X \times Y\). This subset is the <em>graph of the function</em>.
                     </p>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -185,6 +185,13 @@
                         </div>
                         <hr>
                     </div>
+                    <h2>Function notation</h2>
+                    <hr>
+                    <p>
+                        The fact that a function \(f\) maps from \(X\) to \(Y\) is written \(f(x) = y\), where \(x \in X\) and \(y \in Y\).
+                    </p>
+                    <h2>Arrow diagram</h2>
+                    <hr>
                     <h2>Range</h2>
                     <hr>
                     <p>
@@ -194,6 +201,42 @@
                     <hr>
                     <p>
                         Two functions \(f\) and \(g\) are equal if and only if they have the same domain and target, and \(f(x) = g(x)\) for every element \(x\) in the domain. If \(f\) and \(g\) are equal, this is written as \(f = g\).
+                    </p>
+                    <h2>Injection</h2>
+                    <hr>
+                    <p>
+                        An injective function, one-to-one function, or simply injection, is a function that associates each distinct element of its domain to a distinct element of the target. In other words, no two elements of the domain are mapped to the same element of the target. This is expressed logically as \(x_1 \neq x_2\)  implies \(f(x_1) \neq f(x_2)\). Or, if you prefer the contrapositive: \(f(x_1) = f(x_2)\) implies \(x_1 = x_2\).
+                    </p>
+                    <p>
+                        In an injection, no two inputs have the same output.
+                    </p>
+                    <p>
+                        If the function \(f: X \rightarrow Y\) is injective, \(|X| \leq |Y|\). This is because while every \(x \in X\) corresponds to a unique \(y \in Y\), there may still be some \(y \in Y\) that isn't being mapped to. So, it's safe to assume that there are at least as many elements in the target as in the domain.
+                    </p>
+                    <h2>Surjection</h2>
+                    <hr>
+                    <p>
+                        A surjective function, onto function, or simply surjection, is a function whose range is equivalent to its target. This means that every element of the target is mapped to by at least one element of the domain, resulting in full coverage over the target. To be exact, if the function \(f: X \rightarrow Y\) is a surjection, then for all \(y \in Y\), there exists an \(x \in X\) such that \(f(x) = y\).
+                    </p>
+                    <p>
+                        In a surjection, every element of the target is utilized.
+                    </p>
+                    <p>
+                        If the function \(f: X \rightarrow Y\) is surjective, \(|X| \geq |Y|\). This is because while every \(y \in Y\) corresponds to at least one \(x \in X\), it's still possible that multiple \(x \in X\) map to the same \(y \in Y\). To account for the possibility of overcounting, we assume that there is at least as many elements in the domain as in the target.
+                    </p>
+                    <h2>Bijection</h2>
+                    <hr>
+                    <p>
+                        A bijective function, one-to-one correspondence, or simply bijection, is a function that is both injective and surjective.
+                    </p>
+                    <p>
+                        If the function \(f: X \rightarrow Y\) is bijective, \(|X| = |Y|\). This is because, as a bijection, \(f\) is injective and surjective, meaning \(|X| \leq |Y|\) and \(|X| \geq |Y|\) respectively. The only way these two statements can be true is if the cardinality of the domain equals the cardinality of the target.
+                    </p>
+                    <p>
+                        It is possible to determine the cardinality of a set by connecting it to another set of known cardinality through a bijection.
+                    </p>
+                    <p>
+                        Only bijective functions can have inverses. When you think about it, this should really make sense, because when you prove a function is surjective and injective, you are effectively showing that each element of the target is mapped to exactly one element of the domain - which is identical to the criteria for a well-defined function <em>except the roles of the domain and target are swapped!</em>
                     </p>
                     <h2>References</h2>
                     <hr>
