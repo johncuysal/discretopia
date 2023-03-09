@@ -237,6 +237,28 @@ blockquote {
     background-color: #e8e8e8;
 }
 
+pre {
+    padding: 16px;
+    font-size: 20px;
+    line-height: 1.61803;
+    color: white;
+    display: block;
+    background-color: #1c3c3d;
+    font-family: monospace;
+    margin: 0;
+}
+
+span {
+    padding: 2px;
+    border: 1px solid #97a2a2;
+    font-size: 20px;
+    line-height: 1.61803;
+    color: black;
+    background-color: #dbe4e5;
+    font-family: monospace;
+    margin: 0;
+}
+
 #list-of-contents {
     background-color: #e8e8e8;
     display: inline-block;

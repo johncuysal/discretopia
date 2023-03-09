@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/asymptotic-notation/">
+    <title>Asymptotic notation - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../../">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../../">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../../">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
+                        Integer Properties
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#recursion">
+                        Recursion
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Guides
+                    <hr>
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
+                        <!--How to write a proof-->
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Downloads
+                    <hr>
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
+                        <!--What's that symbol?-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Asymptotic notation</h1>
+                    <hr>
+                    <i>Last Updated: 9 March 2023</i>
+                </div>
+                <div id="written-content">
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Big-O-notation.png" alt="\(f(x) \in O(g(x))\)">
+                        <figcaption>Example: \(f(x) \in O(g(x))\)</figcaption>
+                    </figure>
+                    <p>
+                        <b>Asymptotic notation</b> characterizes the limiting behavior of a <a href="../function">function</a> based on its growth rate. This allows <a href="../algorithm">algorithms</a> to be classified according to how their runtime grows as a function of input size. Essentially, this serves as a measure of how efficient an algorithm is with time.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Big \(O\)</h2>
+                    <hr>
+                    <p>
+                        Big \(O\) notation describes the asymptotic upper bound of a function. If a function is "Oh of" some other function, then for sufficiently large inputs, it will always be below that other function.
+                    </p>
+                    <div class="math-definition">
+                        Let \(f\) and \(g\) be functions \(\mathbb{Z}^{+} \rightarrow \mathbb{R}^{\geq 0}\). Then, \(f \in O(g)\) if and only if there exist \(c \in \mathbb{R}^{+}\) and \(n_0 \in \mathbb{R}^{+}\) such that for all \(n \geq n_0\):
+                        $$f(n) \leq c * g(n)$$
+                    </div>
+                    <p>
+                        Basically, \(f \in O(g)\) if \(f\) is always bounded from above by \(g\) multiplied by some positive constant \(c\) after \(n\) exceeds \(n_0\).
+                    </p>
+                    <p>
+                        To prove Big \(O\), all you need to do is find a single witness \((c, n_0)\) that fulfills the above definition.
+                    </p>
+                    <p>
+                        If \(p\) is a degree-\(k\) polynomial function, to quickly prove \(p(n) \in O(n^k)\), try \(n_0 = 1\), and set \(c\) equal to the sum of all positive coefficients and constants in \(p(n)\). That combination is guaranteed to work as a witness.
+                    </p>
+                    <p>
+                        To disprove Big \(O\), you need to show that for all \(c \in \mathbb{R}^{+}\) and \(n_0 \in \mathbb{R}^{+}\), there exists \(n \geq n_0\) such that \(f(n) \gt c * g(n)\). In other words, no matter what witness \((c, n_0)\) you select, there's always going to be some eventual \(n \geq n_0\) that allows \(f(n)\) to exceed \(c * g(n)\), which disqualifies \(g(n)\) from being an upper bound of \(f(n)\). A <a href="../proof-by-contradiction">proof by contradiction</a> will get the job done. Assume there is a witness that fits the definition of Big \(O\). Then, show how this forces \(n\) to have an upper bound, which is absurd.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ You may see the popular notation \(f = O(g)\), read as "\(f\) is Oh of \(g\)." Here, the equals sign is not being used to express equality, but instead a colloquial "is." To avoid misleading others, we write \(f \in O(g)\), where \(O(g)\) is interpreted as the set of all functions that are "Oh of" \(g\).
+                    </div>
+                    <h2>Big \(\Omega\)</h2>
+                    <hr>
+                    <p>
+                        Big \(\Omega\) notation describes the asymptotic lower bound of a function. If a function is "Omega of" some other function, then for sufficiently large inputs, it will always be above that other function.
+                    </p>
+                    <div class="math-definition">
+                        Let \(f\) and \(g\) be functions \(\mathbb{Z}^{+} \rightarrow \mathbb{R}^{\geq 0}\). Then, \(f \in \Omega(g)\) if and only if there exist \(c \in \mathbb{R}^{+}\) and \(n_0 \in \mathbb{R}^{+}\) such that for all \(n \geq n_0\):
+                        $$f(n) \geq c * g(n)$$
+                    </div>
+                    <p>
+                        As you can imagine, proving and disproving Big \(\Omega\) is structurally identical to proving and disproving Big \(O\).
+                    </p>
+                    <p>
+                        What's more interesting is the connection between Big \(O\) and Big \(\Omega\), and how proving one effectively proves the other, but with the roles of the functions swapped.
+                    </p>
+                    <div class="math-definition">
+                        Let \(f\) and \(g\) be functions \(\mathbb{Z}^{+} \rightarrow \mathbb{R}^{\geq 0}\).
+                        $$f \in \Omega(g) \iff g \in O(f)$$
+                    </div>
+                    <p>
+                        Recall that when two statements are connected by a biconditional, they are logically equivalent to each other.
+                    </p>
+                    <h2>Big \(\Theta\)</h2>
+                    <hr>
+                    <p>
+                        Big \(\Theta\) notation describes the asymptotic average bound of a function. If a function is "Theta of" some other function, it said to be "on the order of" that function, and for sufficiently large inputs, their growth rates will roughly match.
+                    </p>
+                    <div class="math-definition">
+                        Let \(f\) and \(g\) be functions \(\mathbb{Z}^{+} \rightarrow \mathbb{R}^{\geq 0}\). Then, \(f \in \Theta(g)\) if and only if:
+                        $$f \in O(g)$$
+                        $$f \in \Omega(g)$$
+                    </div>
+                    <p>
+                        Proving Big \(\Theta\) requires proving both Big \(O\) and Big \(\Omega\).
+                    </p>
+                    <p>
+                        Here's some shortcuts, but remember they don't serve as proofs:
+                    </p>
+                    <ul>
+                        <li>If \(p\) is a degree-\(k\) polynomial function, \(p(n) \in \Theta(n^k)\).</li>
+                        <li>If \(g\) is a base-\(b\) logarithmic function where \(b \gt 1\), \(g(n) \in \Theta(\log n)\).</li>
+                    </ul>
+                    <p>
+                        However, you can't discard the bases of exponential functions! They're important.
+                    </p>
+                    <h2>Time complexity</h2>
+                    <hr>
+                    <p>
+                        The time complexity of an algorithm can be determined by analyzing the asymptotic behavior of its runtime as a function of input size. To quickly simplify these functions and focus only on the worst-case scenario, discard lower-order terms and constant factors.
+                    </p>
+                    <p>
+                        Here's a list of common time complexities:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>Constant</td>
+                            <td>\(\Theta(1)\)</td>
+                        </tr>
+                    </table>
+                    <p>
+                        ...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>
