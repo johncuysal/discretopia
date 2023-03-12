@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added entries on algorithms.">
-      <change afterPath="$PROJECT_DIR$/journal/atomic-operation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/time-complexity/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/discretopia.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/discretopia.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/algorithm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/asymptotic-notation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/asymptotic-notation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/command/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/command/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/pseudocode/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/pseudocode/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Finished algorithms section." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +114,7 @@
       <workItem from="1675393771302" duration="62723000" />
       <workItem from="1677031584486" duration="731000" />
       <workItem from="1677393970668" duration="19178000" />
-      <workItem from="1678062683169" duration="55181000" />
+      <workItem from="1678062683169" duration="55921000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -449,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678396359669</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Finished algorithms section.">
+      <created>1678594233789</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1678594233789</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated entries, added entry on De Morgan's Laws." />
     <MESSAGE value="Added logic laws." />
     <MESSAGE value="Added domain and predicate pages." />
     <MESSAGE value="Added quantifier entry." />
@@ -492,6 +487,7 @@
     <MESSAGE value="Added function, floor function, and ceiling function entries. Reached 50 total entries!" />
     <MESSAGE value="Added information on injections, surjections, bijections, and inverse functions." />
     <MESSAGE value="Added entries on algorithms." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added entries on algorithms." />
+    <MESSAGE value="Finished algorithms section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished algorithms section." />
   </component>
 </project>
