@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/algorithm/">
-    <title>Algorithm - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/time-complexity/">
+    <title>Time complexity - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,30 +161,80 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Algorithm</h1>
+                    <h1>Time complexity</h1>
                     <hr>
                     <i>Last Updated: 11 March 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        An <b>algorithm</b> is a sequence of rigorous steps which can be followed to solve a particular type of problem. To fully describe an algorithm, you must specify:
-                    </p>
-                    <ol>
-                        <li>The algorithm's name</li>
-                        <li>A brief description of what it does</li>
-                        <li>The input to the problem</li>
-                        <li>The output to the problem</li>
-                        <li>The steps taken to reach the output from the input</li>
-                    </ol>
-                    <p>
-                        Algorithms are often written in programming languages, which have strict rules on syntax to ensure that a computer can compile it. To avoid syntax and focus only on the actual meaning of the code, an in-between language is used: <a href="../pseudocode">pseudocode</a>. Here's an example of an algorithm written in pseudocode:
-                    </p>
-                    <pre class="code-block"><b>algorithm</b> euclid <b>is</b><br>    <b>input:</b> two integers, a and b<br>    <b>output:</b> their greatest common divisor (gcd)<br><br>    <b>while</b> b ≠ 0<br>        t ← b<br>        b ← a <b>mod</b> b<br>        a ← t<br>    <b>return</b> a</pre>
-                    <p>
-                        More advanced algorithms perform work beyond the scope of a simple calculation, using <a href="../command">programming constructs</a> such as conditionals to divert code, loops for iteration, and recursion to divide problems into easier sub-problems.
+                        The <b>time complexity</b> of an <a href="../algorithm">algorithm</a> is a <a href="../function">function</a> \(T(n) : \mathbb Z^+ \rightarrow \mathbb Z^+\) that maps input size to runtime, in units of <a href="../atomic-operation">atomic operations</a>. Its order of growth can be analyzed with <a href="../asymptotic-notation">asymptotic notation</a>.
                     </p>
                     <p>
-                        The output of an algorithm is specified by a return command.
+                        Here's a list of common time complexities sorted by increasing order of growth:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Order</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>Constant</td>
+                            <td>\(O(1)\)</td>
+                            <td>Determining if an integer is even or odd, printing "Discretopia" 1,000,000 times</td>
+                        </tr>
+                        <tr>
+                            <td>Logarithmic</td>
+                            <td>\(O(\log n)\)</td>
+                            <td>Binary search: halving until finding the target value in a sorted array</td>
+                        </tr>
+                        <tr>
+                            <td>Linear</td>
+                            <td>\(O(n)\)</td>
+                            <td>Linear search: checking each value in an array until the target value is found</td>
+                        </tr>
+                        <tr>
+                            <td>Linearithmic</td>
+                            <td>\(O(n \log n)\)</td>
+                            <td>Merge sort, and many other comparison-based sorting algorithms</td>
+                        </tr>
+                        <tr>
+                            <td>Quadratic</td>
+                            <td>\(O(n^2)\)</td>
+                            <td>Insertion sort: building a sorted array part-by-part</td>
+                        </tr>
+                        <tr>
+                            <td>Polynomial</td>
+                            <td>\(O(n^k)\)<br>\(k > 2\)</td>
+                            <td>Most problems that can be solved "efficiently"</td>
+                        </tr>
+                        <tr>
+                            <td>Exponential</td>
+                            <td>\(O(c^n)\)<br>\(c > 1\)</td>
+                            <td>Using a truth table to determine the logical equivalence of two compound propositions</td>
+                        </tr>
+                        <tr>
+                            <td>Factorial</td>
+                            <td>\(O(n!)\)</td>
+                            <td>Solving the travelling salesman problem by brute-force</td>
+                        </tr>
+                    </table>
+                    <p>
+                        To quickly determine which worst-case time complexity your algorithm has, discard any lower-order terms and constant factors.
+                    </p>
+                    <p>
+                        Here's a few more simplification rules you may find helpful:
+                    </p>
+                    <ul>
+                        <li>If \(f \in O(h)\) and \(g \in O(h)\), then \(f + g \in O(h)\).</li>
+                        <li>If \(f \in \Omega(h)\) or \(g \in \Omega(h)\), then \(f + g \in \Omega(h)\).</li>
+                        <li>If \(f \in O(g)\) and \(c \in \mathbb R^+\), then \(c * f \in O(g)\).</li>
+                        <li>If \(f \in \Omega(g)\) and \(c \in \mathbb R^+\), then \(c * f \in \Omega(g)\).</li>
+                        <li>If \(f \in O(g)\) and \(g \in O(h)\), then \(f \in O(h)\).</li>
+                        <li>If \(f \in \Omega(g)\) and \(g \in \Omega(h)\), then \(f \in \Omega(h)\).</li>
+                    </ul>
+                    <p>
+                        If the worst-case scenario for an algorithm is unusual, this may produce overly pessimistic time complexities. That's why it's sometimes more reasonable to look at the average-case scenario.
                     </p>
                 </div>
             </div>

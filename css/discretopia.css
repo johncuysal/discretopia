@@ -237,7 +237,7 @@ blockquote {
     background-color: #e8e8e8;
 }
 
-pre {
+.code-block {
     padding: 16px;
     font-size: 20px;
     line-height: 1.61803;
@@ -248,7 +248,11 @@ pre {
     margin: 0;
 }
 
-span {
+.code-comment {
+    color: yellow;
+}
+
+.code-inline {
     padding: 2px;
     border: 1px solid #97a2a2;
     font-size: 20px;

@@ -163,7 +163,7 @@
                 <div id="title-box">
                     <h1>Command</h1>
                     <hr>
-                    <i>Last Updated: 7 March 2023</i>
+                    <i>Last Updated: 11 March 2023</i>
                 </div>
                 <div id="written-content">
                     <blockquote>
@@ -189,37 +189,37 @@
                     <p>
                         Assignment is a simple command that sets or re-sets the value stored at a memory location given by a variable name.
                     </p>
-                    <pre>x ← 2</pre>
+                    <pre class="code-block">x ← 2</pre>
                     <p>
-                        You may also see assignment denoted as <span>:=</span>, which isn't as widely-used, or as <span>=</span>, which can be confused with equality comparison.
+                        You may also see assignment denoted as <span class="code-inline">:=</span>, which isn't as widely-used, or as <span class="code-inline">=</span>, which can be confused with equality comparison.
                     </p>
                     <h2>Call</h2>
                     <hr>
                     <p>
                         Calling a predefined method is as simple as writing out the method's name and supplying parameters. Since this is significantly easier than writing methods on your own, before calling a method, make sure that you are allowed to call it.
                     </p>
-                    <pre>y ← gcd(8, 12)</pre>
+                    <pre class="code-block">y ← gcd(8, 12)</pre>
                     <h2>Return</h2>
                     <hr>
                     <p>
-                        <span>return</span> is a simple command that forces execution to leave the current method and pass back a return value to the code that called the method, then resume from there.
+                        <span class="code-inline">return</span> is a simple command that forces execution to leave the current method and pass back a return value to the code that called the method, then resume from there.
                     </p>
-                    <pre>return x</pre>
+                    <pre class="code-block"><b>return</b> x</pre>
                     <h2>Conditional</h2>
                     <hr>
                     <p>
                         Conditionals are a family of compound commands that handle decisions by diverting code. Different actions are performed based on whether a condition is true or false.
                     </p>
                     <p>
-                        An <span>if</span> command executes the commands indented within it if its condition is true.
+                        An <span class="code-inline">if</span> command executes the commands indented within it if its condition is true.
                     </p>
-                    <pre>if x < 7<br>    return x</pre>
+                    <pre class="code-block"><b>if</b> x < 7<br>    <b>return</b> x</pre>
                     <p>
-                        An <span>if-else</span> command executes the commands indented in its <span>if</span> branch if its condition is true, otherwise, it executes the commands indented in its <span>else</span> branch.
+                        An <span class="code-inline">if-else</span> command executes the commands indented in its <span class="code-inline">if</span> branch if its condition is true, otherwise, it executes the commands indented in its <span class="code-inline">else</span> branch.
                     </p>
-                    <pre>if x < 7<br>    x ← x + 1<br>    return x<br>else<br>    return y</pre>
+                    <pre class="code-block"><b>if</b> x < 7<br>    x ← x + 1<br>    <b>return</b> x<br><b>else</b><br>    <b>return</b> y</pre>
                     <p>
-                        You might be familiar with <span>else if</span> branches too, which are the same as nesting an <span>if</span> branch inside of an <span>else</span> branch.
+                        You might be familiar with <span class="code-inline">else if</span> branches too, which are the same as nesting an <span class="code-inline">if</span> branch inside of an <span class="code-inline">else</span> branch.
                     </p>
                     <h2>Loop</h2>
                     <hr>
@@ -227,20 +227,20 @@
                         Loops are a family of compound commands that serve to repeatedly execute code.
                     </p>
                     <p>
-                        A <span>for</span> loop executes the commands indented within it a fixed number of times. This is done by initializing an index with a start value and incrementing it by \(1\) with each iteration. During the last iteration, the index will have its end value. The following <span>for</span> loop will have exactly \(5\) iterations, the number of integers from \(1\) to \(5\), inclusive.
+                        A <span class="code-inline">for</span> loop executes the commands indented within it a fixed number of times. This is done by initializing an index with a start value and incrementing it by \(1\) with each iteration. During the last iteration, the index will have its end value. The following <span class="code-inline">for</span> loop will have exactly \(5\) iterations, the number of integers from \(1\) to \(5\), inclusive.
                     </p>
-                    <pre>sum ← 0<br>for i = 1 to 5<br>    sum ← sum + i<br>return sum</pre>
+                    <pre class="code-block">sum ← 0<br><b>for</b> i = 1 <b>to</b> 5<br>    sum ← sum + i<br><b>return</b> sum</pre>
                     <p>
                         This algorithm calculates the sum of the first \(5\) positive integers. In <a href="../summation">summation notation</a>, this is equivalent to \(\sum\limits_{i=1}^{5}i\).
                     </p>
                     <p>
-                        A <span>for each</span> loop executes the commands indented within it a fixed number of times by traversing through each item in a collection. This type of loop is easier to read.
+                        A <span class="code-inline">for each</span> loop executes the commands indented within it a fixed number of times by traversing through each item in a collection. This type of loop is easier to read.
                     </p>
-                    <pre>S ← { 1, 2, 3, 4, 5 }<br>sum ← 0<br>for each element s in S<br>    sum ← sum + s<br>return sum</pre>
+                    <pre class="code-block">S ← { 1, 2, 3, 4, 5 }<br>sum ← 0<br><b>for each</b> element s <b>in</b> S<br>    sum ← sum + s<br><b>return</b> sum</pre>
                     <p>
-                        A <span>while</span> loop continually executes the commands indented within it until its guard condition becomes false. This can lead to an <em>infinite loop</em> if the guard condition never changes from true to false. The following loop stops when <span>i = 6</span>, which is when the guard condition <span>i < 6</span> becomes false.
+                        A <span class="code-inline">while</span> loop continually executes the commands indented within it until its guard condition becomes false. This can lead to an <em>infinite loop</em> if the guard condition never changes from true to false. The following loop stops when <span class="code-inline">i = 6</span>, which is when the guard condition <span class="code-inline">i < 6</span> becomes false.
                     </p>
-                    <pre>i ← 1<br>sum ← 0<br>while i < 6<br>    sum ← sum + i<br>    i ← i + 1<br>return sum</pre>
+                    <pre class="code-block">i ← 1<br>sum ← 0<br><b>while</b> i < 6<br>    sum ← sum + i<br>    i ← i + 1<br><b>return</b> sum</pre>
                 </div>
             </div>
         </div>

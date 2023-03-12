@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/algorithm/">
-    <title>Algorithm - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/atomic-operation/">
+    <title>Atomic operation - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,30 +161,31 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Algorithm</h1>
+                    <h1>Atomic operation</h1>
                     <hr>
                     <i>Last Updated: 11 March 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        An <b>algorithm</b> is a sequence of rigorous steps which can be followed to solve a particular type of problem. To fully describe an algorithm, you must specify:
-                    </p>
-                    <ol>
-                        <li>The algorithm's name</li>
-                        <li>A brief description of what it does</li>
-                        <li>The input to the problem</li>
-                        <li>The output to the problem</li>
-                        <li>The steps taken to reach the output from the input</li>
-                    </ol>
-                    <p>
-                        Algorithms are often written in programming languages, which have strict rules on syntax to ensure that a computer can compile it. To avoid syntax and focus only on the actual meaning of the code, an in-between language is used: <a href="../pseudocode">pseudocode</a>. Here's an example of an algorithm written in pseudocode:
-                    </p>
-                    <pre class="code-block"><b>algorithm</b> euclid <b>is</b><br>    <b>input:</b> two integers, a and b<br>    <b>output:</b> their greatest common divisor (gcd)<br><br>    <b>while</b> b ≠ 0<br>        t ← b<br>        b ← a <b>mod</b> b<br>        a ← t<br>    <b>return</b> a</pre>
-                    <p>
-                        More advanced algorithms perform work beyond the scope of a simple calculation, using <a href="../command">programming constructs</a> such as conditionals to divert code, loops for iteration, and recursion to divide problems into easier sub-problems.
+                        An <b>atomic operation</b> (<b>ao</b>) is a simple <a href="../command">command</a> that takes a fixed, constant amount of time to execute. The runtime of an <a href="../algorithm">algorithm</a> is determined by the total number of atomic operations it executes.
                     </p>
                     <p>
-                        The output of an algorithm is specified by a return command.
+                        For algorithms with compound commands, like loops, the number of atomic operations executed is often a function of the input size, resulting in <a href="../time-complexity">time complexity</a>. Here's an example of how time complexity can be obtained by counting up atomic operations:
+                    </p>
+                    <pre class="code-block">result ← 0 <span class="code-comment">(1 ao)</span><br><b>for</b> i = 1 <b>to</b> n <span class="code-comment">(runs n times)</span><br>    result ← result + i <span class="code-comment">(1 ao)</span><br>    result ← result * i <span class="code-comment">(1 ao)</span></pre>
+                    <p>
+                        By recognizing that the loop's block of \(2\) atomic operations runs \(n\) times, we get a time complexity of \(T(n) = 2n + 1 \in O(n)\). That \(+ 1\) at the end is from the assignment outside the loop. Now, try this example:
+                    </p>
+                    <pre class="code-block"><b>for</b> i = 1 <b>to</b> n <span class="code-comment">(runs n times)</span><br>    <b>for</b> j = 1 <b>to</b> n <span class="code-comment">(runs n times)</span><br>        x ← j <span class="code-comment">(1 ao)</span></pre>
+                    <p>
+                        This can be tricky. Let's look at just the innermost loop. By itself, it runs \(1\) atomic operation \(n\) times. However, since the loop is nested in a loop that also runs \(n\) times, the total number of atomic operations executed is \(n * n\), or \(n^2\). Therefore, the time complexity \(T(n) = n^2 \in O(n^2)\). Try this last example:
+                    </p>
+                    <pre class="code-block"><b>for</b> i = 1 <b>to</b> n <span class="code-comment">(runs n times)</span><br>    x ← i <span class="code-comment">(1 ao)</span><br><b>for</b> j = 1 <b>to</b> n <span class="code-comment">(runs n times)</span><br>    x ← j <span class="code-comment">(1 ao)</span></pre>
+                    <p>
+                        The time complexity here is <em>not</em> \(n^2\). Each loop runs \(1\) atomic operation \(n\) times. That means \(n\) atomic operations are executed by each, which in total is \(n + n\), or \(2n\). So then, the time complexity \(T(n) = 2n \in O(n)\).
+                    </p>
+                    <p>
+                        To optimize an algorithm, you'll want to reduce its total number of atomic operations. This can be done in two ways. First, by removing a few unnecessary lines of code, which makes the algorithm a little faster. Second, you could rethink the problem and come up with an entirely new approach that lowers the order of the algorithm's time complexity. If you manage to accomplish this, a dramatic amount of time can be saved for large inputs. However, if you're exclusively dealing with small inputs, this optimization may not be worth it.
                     </p>
                 </div>
             </div>
