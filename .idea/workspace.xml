@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Testing commits" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Added a new .gitignore file." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,14 +120,7 @@
       <workItem from="1677393970668" duration="19178000" />
       <workItem from="1678062683169" duration="81226000" />
       <workItem from="1678728816716" duration="662000" />
-      <workItem from="1678730365554" duration="338000" />
-    </task>
-    <task id="LOCAL-00003" summary="Added blockquotes.">
-      <created>1671937305971</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1671937305971</updated>
+      <workItem from="1678730365554" duration="655000" />
     </task>
     <task id="LOCAL-00004" summary="Organized some code.">
       <created>1672027553898</created>
@@ -465,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678730608349</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Added a new .gitignore file.">
+      <created>1678730826639</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1678730826639</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +500,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Checked all pages. Fixed and added a lot of links." />
     <MESSAGE value="Added a minor tip on how to connect exclusive disjunctions with the laws of propositional logic." />
     <MESSAGE value="Updated year." />
     <MESSAGE value="Added logical proof and direct proof entries." />
@@ -525,6 +524,7 @@
     <MESSAGE value="Finished most of Relations section." />
     <MESSAGE value="Completed Relations section." />
     <MESSAGE value="Testing commits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing commits" />
+    <MESSAGE value="Added a new .gitignore file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new .gitignore file." />
   </component>
 </project>
