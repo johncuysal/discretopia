@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Finished algorithms section." />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Slight corrections in algorithm section.">
+      <change afterPath="$PROJECT_DIR$/journal/reflexive-relation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/relation-composition/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/relation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/symmetric-relation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/journal/transitive-relation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/atomic-operation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/atomic-operation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/atomic-operation",
+    "last_opened_file_path": "/Users/john/WebstormProjects/discretopia/journal/relation-composition",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -45,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/journal/atomic-operation" />
-      <recent name="$PROJECT_DIR$/journal/time-complexity" />
-      <recent name="$PROJECT_DIR$/journal/asymptotic-notation" />
-      <recent name="$PROJECT_DIR$/journal/asymptotic-growth" />
-      <recent name="$PROJECT_DIR$/journal/command" />
+      <recent name="$PROJECT_DIR$/journal/relation-composition" />
+      <recent name="$PROJECT_DIR$/journal/transitive-relation" />
+      <recent name="$PROJECT_DIR$/journal/symmetric-relation" />
+      <recent name="$PROJECT_DIR$/journal/reflexive-relation" />
+      <recent name="$PROJECT_DIR$/journal/relation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
@@ -114,7 +124,7 @@
       <workItem from="1675393771302" duration="62723000" />
       <workItem from="1677031584486" duration="731000" />
       <workItem from="1677393970668" duration="19178000" />
-      <workItem from="1678062683169" duration="55921000" />
+      <workItem from="1678062683169" duration="75740000" />
     </task>
     <task id="LOCAL-00001" summary="Created and styled a template page.">
       <created>1671747337486</created>
@@ -445,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678594233789</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Slight corrections in algorithm section.">
+      <created>1678600182835</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1678600182835</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added logic laws." />
     <MESSAGE value="Added domain and predicate pages." />
     <MESSAGE value="Added quantifier entry." />
     <MESSAGE value="Added argument and rule of inference entries." />
@@ -488,6 +504,7 @@
     <MESSAGE value="Added information on injections, surjections, bijections, and inverse functions." />
     <MESSAGE value="Added entries on algorithms." />
     <MESSAGE value="Finished algorithms section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished algorithms section." />
+    <MESSAGE value="Slight corrections in algorithm section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Slight corrections in algorithm section." />
   </component>
 </project>

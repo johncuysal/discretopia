@@ -170,7 +170,7 @@
                         An <b>atomic operation</b> (<b>ao</b>) is a simple <a href="../command">command</a> that takes a fixed, constant amount of time to execute. The runtime of an <a href="../algorithm">algorithm</a> is determined by the total number of atomic operations it executes.
                     </p>
                     <p>
-                        For algorithms with compound commands, like loops, the number of atomic operations executed is often a function of the input size, resulting in <a href="../time-complexity">time complexity</a>. Here's an example of how time complexity can be obtained by counting up atomic operations:
+                        For algorithms with compound commands, like loops, the number of atomic operations executed is often a <a href="../function">function</a> of the input size, resulting in <a href="../time-complexity">time complexity</a>. Here's an example of how time complexity can be obtained by counting up atomic operations:
                     </p>
                     <pre class="code-block">result ← 0 <span class="code-comment">(1 ao)</span><br><b>for</b> i = 1 <b>to</b> n <span class="code-comment">(runs n times)</span><br>    result ← result + i <span class="code-comment">(1 ao)</span><br>    result ← result * i <span class="code-comment">(1 ao)</span></pre>
                     <p>

@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="author" content="John C. Uysal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/script.js"></script>
+    <script src="../../scripts/script.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="css/discretopia.css">
-    <link rel="icon" href="images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/">
-    <title>Discretopia, the friendly discrete math reference</title>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/transitive-relation/">
+    <title>Transitive relation - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
         <div id="wordmark-container">
             <div id="wordmark" class="centered">
-                <a href="">DISCRETOPIA</a>
+                <a href="../../">DISCRETOPIA</a>
             </div>
         </div>
         <div id="search-container">
@@ -27,7 +27,7 @@
     <main>
         <div id="side-container">
             <div id="logo-container">
-                <a href="">
+                <a href="../../">
                     <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
                         <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
                         <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
@@ -77,15 +77,15 @@
             </div>
             <div class="sidebar-block">
                 <div class="sidebar-section">
-                    <a class="sidebar-link" href="">
+                    <a class="sidebar-link" href="../../">
                         Main page
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal">
+                    <a class="sidebar-link" href="../">
                         View the journal
                     </a>
                     <br>
-                    <a class="sidebar-link" href="about">
+                    <a class="sidebar-link" href="../../about">
                         About Discretopia
                     </a>
                     <br>
@@ -98,61 +98,61 @@
                 <div class="sidebar-section">
                     Overview
                     <hr>
-                    <a class="sidebar-link" href="journal#logic-and-proofs">
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
                         Logic & Proofs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#set-theory">
+                    <a class="sidebar-link" href="../../journal/#set-theory">
                         Set Theory
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#functions">
+                    <a class="sidebar-link" href="../../journal/#functions">
                         Functions
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#algorithms">
+                    <a class="sidebar-link" href="../../journal/#algorithms">
                         Algorithms
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#relations">
+                    <a class="sidebar-link" href="../../journal/#relations">
                         Relations
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#integer-properties">
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
                         Integer Properties
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#induction">
+                    <a class="sidebar-link" href="../../journal/#induction">
                         Induction
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#combinatorics">
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
                         Combinatorics
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#graphs">
+                    <a class="sidebar-link" href="../../journal/#graphs">
                         Graphs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#trees">
+                    <a class="sidebar-link" href="../../journal/#trees">
                         Trees
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#recursion">
+                    <a class="sidebar-link" href="../../journal/#recursion">
                         Recursion
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Guides
                     <hr>
-                    <a class="sidebar-link" href="guides/how-to-write-a-proof">
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
                         <!--How to write a proof-->
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Downloads
                     <hr>
-                    <a class="sidebar-link" href="pdfs/symbol-cheat-sheet.pdf">
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
                         <!--What's that symbol?-->
                     </a>
                 </div>
@@ -160,60 +160,55 @@
         </div>
         <div id="content-container">
             <div id="content">
+                <div id="title-box">
+                    <h1>Transitive relation</h1>
+                    <hr>
+                    <i>Last Updated: 12 March 2023</i>
+                </div>
                 <div id="written-content">
-                    <div class="main-page-block">
-                        <div class="centered main-page-block-title">
-                            Welcome to <a href="about">Discretopia</a>,
-                        </div>
-                        <div class="centered main-page-block-subtitle">
-                            the friendly discrete math reference.
-                        </div>
-                        <div class="centered main-page-block-statistic">
-                            62 <a href="journal">journal</a> entries as of 13 March 2023
-                        </div>
+                    <p>
+                        A <b>transitive relation</b> is a <a href="../relation">relation</a> on a <a href="../set">set</a> where in every chain of more than two related elements, any two elements in the chain are also related. Along with <a href="../reflexive-relation">reflexivity</a> and <a href="../symmetric-relation">symmetry</a>, transitivity is one of the defining properties of an <a href="../equivalence-relation">equivalence relation</a>.
+                    </p>
+                    <div class="math-definition">
+                        A relation \(R\) on a set \(A\) is transitive if and only if for \(a, b, c \in A\):
+                        $$(aRb \land bRc) \rightarrow aRc$$
                     </div>
-                    <div class="news-block-container">
-                        <div class="news-block-left">
-                            <div class="news-block-title">
-                                Featured entry: <a href="journal/asymptotic-notation">Asymptotic notation</a>
-                            </div>
-                            <div class="news-block-entry">
-                                <figure class="news-size right-floated">
-                                    <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Big-O-notation.png" alt="Image of function f(x) bounded from above by function g(x)">
-                                    <figcaption>Example: \(f(x) \in O(g(x))\)</figcaption>
-                                </figure>
-                                <p>
-                                    <b>Asymptotic notation</b> characterizes the limiting behavior of a <a href="journal/function">function</a> based on its growth rate. It allows for <a href="journal/algorithm">algorithms</a> to be classified according to how their runtime grows as a function of input size, essentially serving as a measure of <a href="journal/time-complexity">time complexity</a>; how efficient an algorithm is with time<a href="journal/asymptotic-notation">...</a>
-                                </p>
-                            </div>
-                            <div class="news-block-title">
-                                Did you know ...
-                            </div>
-                            <div class="news-block-entry">
-                                <ul>
-                                    <li>... that any two consecutive <a href="journal/integer">integers</a> have opposite <a href="journal/integer#parity">parity</a>?</li>
-                                    <li>... that \(0\) is <a href="journal/real-number#sign">not positive or negative, but instead non-positive and non-negative</a>?</li>
-                                    <li>... that to <a href="journal/statement#existential-statements">disprove an existential statement, you need to prove a universal statement</a>?</li>
-                                    <li>... that any <a href="journal/compound-proposition">compound proposition</a> can be rewritten as a <a href="journal/disjunctive-normal-form">disjunction of conjunctions</a>?</li>
-                                    <li>... that the act of using a <a href="journal/compound-proposition#truth-table">truth table</a> to determine the <a href="journal/logical-equivalence">logical equivalence</a> of two <a href="journal/compound-proposition">compound propositions</a> has an exponential <a href="journal/time-complexity">time complexity</a>?</li>
-                                </ul>
-                            </div>
+                    <p>
+                        Notice that this definition is a universal statement. To prove transitivity, you must show that \(aRb\) and \(bRc\) being true implies that \(aRc\) is also true.
+                    </p>
+                    <p>
+                        Believe it or not, logical implication \((\rightarrow)\) is actually a transitive relation on a set of propositions.
+                    </p>
+                    <p>
+                        To disprove transitivity, you only need to come up with one example of \(aRc\) not being implied by \(aRb\) and \(bRc\) being true.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
                         </div>
-                        <div class="news-block-right">
-                            <div class="news-block-title">
-                                What's new?
-                            </div>
-                            <div class="news-block-entry">
-                                <h2><i>Discretopia</i> v0.4 Update!</h2>
-                                <p>
-                                    The section on <a class="sidebar-link" href="journal#algorithms">Algorithms</a> is now finished. Its content differs significantly from previous entries, being the first section to place computer science directly in the spotlight! By reading through it, you'll begin to get a feel for how discrete mathematics and computer science are so closely related!
-                                </p>
-                                <p>
-                                    Thank you for your patience... expect more entries soon!<br>— John
-                                </p>
-                            </div>
-                        </div>
+                        <hr>
                     </div>
+                    <h2>Anti-transitivity</h2>
+                    <hr>
+                    <p>
+                        An anti-transitive relation is a relation on a set where in every chain of more than two related elements, you can always find two elements that are not related.
+                    </p>
+                    <div class="math-definition">
+                        A relation \(R\) on a set \(A\) is anti-transitive if and only if for \(a, b, c \in A\):
+                        $$aRb \land bRc \land a \not R c$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ This cannot be stressed enough: anti-transitivity is <em>not the logical opposite of transitivity!</em> Transitivity and anti-transitivity are both sort of "extreme" properties for a relation to have. It is possible for a relation to be neither transitive nor anti-transitive, because some chains of related elements may hold, and some may not.
+                    </div>
+                    <p>
+                        This is also a universal statement. To prove anti-transitivity, you must show that \(aRb\) and \(bRc\) being true implies that \(aRc\) is false.
+                    </p>
+                    <p>
+                        Let \(M\) be the set of moves in Rock paper scissors, and \(B\) be the relation "beats." Then, \(B\) is anti-transitive because Rock beats Scissors, Scissors beats Paper, but Rock does not beat Paper. The same is true for all 3 moves.
+                    </p>
+                    <p>
+                        To disprove anti-reflexivity, you only need to come up with one chain of more than two related elements where every pair of elements in the chain is related.
+                    </p>
                 </div>
             </div>
         </div>
