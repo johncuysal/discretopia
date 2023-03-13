@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Finished most of Relations section.">
-      <change afterPath="$PROJECT_DIR$/journal/equivalence-class/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/journal/equivalence-relation/index.html" afterDir="false" />
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Completed Relations section.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/symmetric-relation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/symmetric-relation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/transitive-relation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/journal/transitive-relation/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
@@ -122,14 +117,8 @@
       <workItem from="1675393771302" duration="62723000" />
       <workItem from="1677031584486" duration="731000" />
       <workItem from="1677393970668" duration="19178000" />
-      <workItem from="1678062683169" duration="80333000" />
-    </task>
-    <task id="LOCAL-00001" summary="Created and styled a template page.">
-      <created>1671747337486</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1671747337486</updated>
+      <workItem from="1678062683169" duration="81226000" />
+      <workItem from="1678728816716" duration="662000" />
     </task>
     <task id="LOCAL-00002" summary="Updated design.">
       <created>1671857367095</created>
@@ -467,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678685510940</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Completed Relations section.">
+      <created>1678727806688</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1678727806689</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added quantifier entry." />
     <MESSAGE value="Added argument and rule of inference entries." />
     <MESSAGE value="Checked all pages. Fixed and added a lot of links." />
     <MESSAGE value="Added a minor tip on how to connect exclusive disjunctions with the laws of propositional logic." />
@@ -510,6 +505,7 @@
     <MESSAGE value="Finished algorithms section." />
     <MESSAGE value="Slight corrections in algorithm section." />
     <MESSAGE value="Finished most of Relations section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished most of Relations section." />
+    <MESSAGE value="Completed Relations section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Relations section." />
   </component>
 </project>
