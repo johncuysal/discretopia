@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Testing commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="464c1607-4b28-4ff2-8e9b-f2dabf5841d1" name="Changes" comment="Testing commits" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,13 +120,7 @@
       <workItem from="1677393970668" duration="19178000" />
       <workItem from="1678062683169" duration="81226000" />
       <workItem from="1678728816716" duration="662000" />
-    </task>
-    <task id="LOCAL-00002" summary="Updated design.">
-      <created>1671857367095</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1671857367095</updated>
+      <workItem from="1678730365554" duration="338000" />
     </task>
     <task id="LOCAL-00003" summary="Added blockquotes.">
       <created>1671937305971</created>
@@ -466,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678727806689</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Testing commits">
+      <created>1678730608348</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1678730608349</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,11 +479,27 @@
             <State />
           </value>
         </entry>
+        <entry key="c07587ff-ff15-4ee8-bbf7-cea7d03ef24b">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added argument and rule of inference entries." />
     <MESSAGE value="Checked all pages. Fixed and added a lot of links." />
     <MESSAGE value="Added a minor tip on how to connect exclusive disjunctions with the laws of propositional logic." />
     <MESSAGE value="Updated year." />
@@ -509,6 +524,7 @@
     <MESSAGE value="Slight corrections in algorithm section." />
     <MESSAGE value="Finished most of Relations section." />
     <MESSAGE value="Completed Relations section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Relations section." />
+    <MESSAGE value="Testing commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing commits" />
   </component>
 </project>
