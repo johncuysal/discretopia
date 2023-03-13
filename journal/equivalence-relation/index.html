@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/transitive-relation/">
-    <title>Transitive relation - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/equivalence-relation/">
+    <title>Equivalence relation - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,26 +161,27 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Transitive relation</h1>
+                    <h1>Equivalence relation</h1>
                     <hr>
-                    <i>Last Updated: 12 March 2023</i>
+                    <i>Last Updated: 13 March 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>transitive relation</b> is a <a href="../relation">relation</a> on a <a href="../set">set</a> where in every chain of more than two related elements, any two elements in the chain are also related. Along with <a href="../reflexive-relation">reflexivity</a> and <a href="../symmetric-relation">symmetry</a>, transitivity is one of the defining properties of an <a href="../equivalence-relation">equivalence relation</a>.
+                        An <b>equivalence relation</b> \((\sim)\) is a <a href="../relation">relation</a> on a <a href="../set">set</a> that is <a href="../reflexive-relation">reflexive</a>, <a href="../symmetric-relation">symmetric</a>, and <a href="../transitive-relation">transitive</a>. This type of relation partitions its underlying set into disjoint <a href="../equivalence-class">equivalence classes</a>.
                     </p>
                     <div class="math-definition">
-                        A relation \(R\) on a set \(A\) is transitive if and only if for \(a, b, c \in A\):
-                        $$(aRb \land bRc) \rightarrow aRc$$
+                        A relation \(\sim\) is an equivalence relation if and only if the following holds for all \(a, b, c \in X\):
+                        <ul>
+                            <li>Reflexive: \(a \sim a\)</li>
+                            <li>Symmetric: \(a \sim b\) if and only if \(b \sim a\)</li>
+                            <li>Transitive: If \(a \sim b\) and \(b \sim c\), then \(a \sim c\)</li>
+                        </ul>
                     </div>
                     <p>
-                        Notice that this definition is a universal statement. To prove transitivity, you must show that \(aRb\) and \(bRc\) being true implies that \(aRc\) is also true.
+                        Equality \((=)\) is perhaps the most well-known equivalence relation. Congruence modulo \(n\) \((\equiv_{n})\) is also an equivalence relation.
                     </p>
                     <p>
-                        Believe it or not, <a href="../logical-operation#the-conditional-operation">logical implication</a> \((\rightarrow)\) is actually a transitive relation on a set of <a href="../proposition">propositions</a>. Its transitivity allows for a hypothetical syllogism to be a valid <a href="../rule-of-inference">rule of inference</a>.
-                    </p>
-                    <p>
-                        To disprove transitivity, you only need to come up with one example of \(aRc\) not being implied by \(aRb\) and \(bRc\) being true.
+                        To disprove that a relation is an equivalence relation, you only need to come up with a single counterexample to one of its three defining properties.
                     </p>
                 </div>
             </div>

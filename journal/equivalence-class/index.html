@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/transitive-relation/">
-    <title>Transitive relation - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/equivalence-class/">
+    <title>Equivalence class - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,26 +161,23 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Transitive relation</h1>
+                    <h1>Equivalence class</h1>
                     <hr>
-                    <i>Last Updated: 12 March 2023</i>
+                    <i>Last Updated: 13 March 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>transitive relation</b> is a <a href="../relation">relation</a> on a <a href="../set">set</a> where in every chain of more than two related elements, any two elements in the chain are also related. Along with <a href="../reflexive-relation">reflexivity</a> and <a href="../symmetric-relation">symmetry</a>, transitivity is one of the defining properties of an <a href="../equivalence-relation">equivalence relation</a>.
+                        An <b>equivalence class</b> is a <a href="../subset">subset</a> of a <a href="../set">set</a> made up of <a href="../element">elements</a> that are "equivalent" to each other according to a particular <a href="../equivalence-relation">equivalence relation</a>. Equivalence classes are "pairwise disjoint," meaning they have no elements in common with each other. The union of all equivalence classes of a set will result in that original set.
+                    </p>
+                    <p>
+                        An equivalence class is denoted by \([a]\), where \(a\) is any element of that equivalence class chosen to represent the entire class. Whichever representative you choose is simply a matter of preference and convenience, just stay consistent.
                     </p>
                     <div class="math-definition">
-                        A relation \(R\) on a set \(A\) is transitive if and only if for \(a, b, c \in A\):
-                        $$(aRb \land bRc) \rightarrow aRc$$
+                        For an equivalence relation \(\sim\) on a set \(S\), the equivalence class of an element \(a\) in \(S\) is:
+                        $$[a] = \set{x \in S : x \sim a}$$
                     </div>
                     <p>
-                        Notice that this definition is a universal statement. To prove transitivity, you must show that \(aRb\) and \(bRc\) being true implies that \(aRc\) is also true.
-                    </p>
-                    <p>
-                        Believe it or not, <a href="../logical-operation#the-conditional-operation">logical implication</a> \((\rightarrow)\) is actually a transitive relation on a set of <a href="../proposition">propositions</a>. Its transitivity allows for a hypothetical syllogism to be a valid <a href="../rule-of-inference">rule of inference</a>.
-                    </p>
-                    <p>
-                        To disprove transitivity, you only need to come up with one example of \(aRc\) not being implied by \(aRb\) and \(bRc\) being true.
+                        So then, if \(a \sim b\), they must belong to the same equivalence class, meaning \([a] = [b]\). If \(a \not \sim b\), \([a]\) and \([b]\) must be completely disjoint equivalence classes.
                     </p>
                 </div>
             </div>
