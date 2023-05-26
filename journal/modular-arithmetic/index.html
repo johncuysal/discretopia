@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/integer/">
-    <title>Integer - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/modular-arithmetic/">
+    <title>Modular arithmetic - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,91 +161,71 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Integer</h1>
+                    <h1>Modular arithmetic</h1>
                     <hr>
-                    <i>Last Updated: 22 May 2023</i>
+                    <i>Last Updated: 23 May 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        Integers. The building blocks of discrete mathematics.
-                    </blockquote>
                     <p>
-                        Simply put, an <b>integer</b> is a number with no fractional component. Integers can be <a href="../real-number#sign">positive, negative, or \(0\)</a>. The <a>set</a> of all integers is symbolized by \(\mathbb{Z}\). Within the context of discrete math, integers are often referred to as "numbers."
+                        In <b>modular arithmetic</b>, <a href="../integer">integers</a> wrap around a <i>modulus</i>, which is some integer \(m > 1\).
                     </p>
+                    <p>
+                        Applying the <a href="../function">function</a> \(\text{mod } m\) to an integer \(x\) returns \(x \bmod m\). In other words, it returns the remainder from dividing \(x\) by \(m\), which will always be an integer in \(\set{0, ... m-1}\). This <a href="../set">set</a>, denoted \(\mathbb{Z}_m\), is a <i>ring</i> of \(m\) <a href="../element">elements</a>.
+                    </p>
+                    <p>
+                        If we apply \(\text{mod } m\) directly after performing an arithmetic operation, we can define new kinds of operations whose results are guaranteed to be in \(\mathbb{Z}_m\).
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Modular arithmetic is used in hash functions and pseudorandom number generators since it causes numbers to stay within a ring.
+                    </div>
                     <div id="list-of-contents">
                         <div class="centered">
                             <b>Contents</b>
                         </div>
                         <hr>
                     </div>
-                    <h2>Parity</h2>
+                    <h2>Congruence \(\text{mod } m\)</h2>
                     <hr>
                     <p>
-                        All integers are either even or odd. This dichotomy, known as parity, can only be exhibited by integers.
+                        This is an <a href="../equivalence-relation">equivalence relation</a> defined on a particular ring \(\mathbb{Z}_m\).
                     </p>
                     <div class="math-definition">
-                        An integer \(n\) is even <a href="../logical-operation#the-biconditional-operation">if and only if</a> an integer \(k\) exists such that:$$n=2k$$
+                        For an integer \(m > 1\), integers \(x\) and \(y\) are "congruent \(\text{mod } m\)" if and only if \(x \bmod m = y \bmod m\), or \(m \mid (x - y)\). This relation is written as:
+                        $$x \equiv y \pmod{m}$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ You can also use the following shorthand notation, \(x \equiv_{m} y\), within the context of modular arithmetic. (Personally, I find this format more readable.)
                     </div>
                     <p>
-                        For example, \(8\) is even because it can be expressed in the form \(8=2(4)\).
+                        Integers that are congruent \(\text{mod } m\) will always have a difference that is some multiple of \(m\).
                     </p>
-                    <div class="math-definition">
-                        An integer \(n\) is odd if and only if an integer \(k\) exists such that:$$n=2k+1$$
-                    </div>
-                    <p>
-                        Likewise, \(9\) is odd because it can be written as \(9=2(4)+1\).
-                    </p>
-                    <p>
-                        Two integers have the same parity if they are both even or both odd, and opposite parity if one is even while the other is odd.
-                    </p>
-                    <p>
-                        Any two consecutive integers have opposite parity.
-                    </p>
-                    <h2>Divisibility</h2>
+                    <h2>Addition \(\text{mod } m\)</h2>
                     <hr>
                     <p>
-                        When an integer divides another integer, their division results in an integer with no remainder.
+                        This operation is defined as addition with \(\text{mod } m\) applied to the result.
+                    </p>
+                    <p>
+                        For \(\mathbb{Z}_3\), \(3 + 5\) is congruent to \(2\) because \(8 \bmod 3 = 2\).
                     </p>
                     <div class="math-definition">
-                        An integer \(m\) divides an integer \(n\) if and only if an integer \(k\) exists such that:$$n=km$$
+                        The sum of two integers \(x\) and \(y\) is congruent \(\text{mod } m\) to the sum with \(\text{mod } m\) applied individually:
+                        $$x + y \equiv_{m} x \bmod m + y \bmod m$$
+                        This can be rewritten as:
+                        $$(x + y) \bmod m = (x \bmod m + y \bmod m) \bmod m$$
                     </div>
-                    <p>
-                        \(3\) divides \(15\) because \(15=(5)(3)\).
-                    </p>
-                    <p>
-                        If \(m\) divides \(n\), this <a>relation</a> can be written as \(m \mid n\). Alternatively, if \(m\) does not divide \(n\), it's written as \(m \nmid n\).
-                    </p>
-                    <div class="math-notice">
-                        ⚠ The notation \(m \mid n\) can be confusing at first if you're used to seeing division as \(m / n\), where \(m\) is being divided by \(n\). It is important to clarify that the <a href="../statement">statement</a> \(m \mid n\) means that \(n / m\) has no remainder. Make sure you clear up this confusion early on!
-                    </div>
-                    <p>
-                        If \(m \mid n\), then \(m\) is a factor (or divisor) of \(n\), and \(n\) is an integer multiple of \(m\).
-                    </p>
-                    <h2>Primality</h2>
+                    <h2>Multiplication \(\text{mod } m\)</h2>
                     <hr>
                     <p>
-                        Prime numbers (primes) are special numbers that have been studied for thousands of years. The only positive integers that can divide a prime are itself and \(1\).
+                        This operation is defined as multiplication with \(\text{mod } m\) applied to the result.
+                    </p>
+                    <p>
+                        For \(\mathbb{Z}_4\), \(2 \times 6\) is congruent to \(0\) because \(12 \bmod 4 = 0\).
                     </p>
                     <div class="math-definition">
-                        An integer \(n\) is prime if and only if \(n > 1\) and for every integer \(m\) such that \(1 < m < n\):$$m \nmid n$$
-                    </div>
-                    <p>
-                        \(7\) is prime because \(7>1\) and \(2\), \(3\), \(4\), \(5\), and \(6\) fail to divide it.
-                    </p>
-                    <p>
-                        On the flipside, a composite number has a factor other than itself and \(1\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is composite if and only if \(n > 1\) and an integer \(m\) exists, \(1 < m < n\), such that:$$m \mid n$$
-                    </div>
-                    <p>
-                        \(6\) is composite because \(6>1\) and \(2\) divides it. You could also mention \(3\) divides it, but <a href="../existence-proof#constructive-proof-of-existence">just one example is needed</a>.
-                    </p>
-                    <div class="math-notice">
-                        ⚠ Note that \(1\) is neither prime nor composite.
-                    </div>
-                    <div class="math-notice">
-                        ⚠ As you might guess, primes are sort of rare. There are <a>algorithms</a> designed to find primes, however, most are either inefficient or prone to some level of error... and as such, many questions about primes are still left unanswered.
+                        The product of two integers \(x\) and \(y\) is congruent \(\text{mod } m\) to the product with \(\text{mod } m\) applied individually:
+                        $$x \times y \equiv_{m} x \bmod m \times y \bmod m$$
+                        This can be rewritten as:
+                        $$(x \times y) \bmod m = (x \bmod m \times y \bmod m) \bmod m$$
                     </div>
                 </div>
             </div>

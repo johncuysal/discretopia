@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/integer/">
-    <title>Integer - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/division-algorithm/">
+    <title>Division algorithm - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,91 +161,30 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Integer</h1>
+                    <h1>Division algorithm</h1>
                     <hr>
                     <i>Last Updated: 22 May 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        Integers. The building blocks of discrete mathematics.
-                    </blockquote>
                     <p>
-                        Simply put, an <b>integer</b> is a number with no fractional component. Integers can be <a href="../real-number#sign">positive, negative, or \(0\)</a>. The <a>set</a> of all integers is symbolized by \(\mathbb{Z}\). Within the context of discrete math, integers are often referred to as "numbers."
-                    </p>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>Parity</h2>
-                    <hr>
-                    <p>
-                        All integers are either even or odd. This dichotomy, known as parity, can only be exhibited by integers.
+                        A <b>division algorithm</b> is an <a href="../algorithm">algorithm</a> that computes the quotient and remainder of two <a href="../integer">integers</a>. Its success is guaranteed by the following <a href="../theorem">theorem</a>:
                     </p>
                     <div class="math-definition">
-                        An integer \(n\) is even <a href="../logical-operation#the-biconditional-operation">if and only if</a> an integer \(k\) exists such that:$$n=2k$$
+                        For any two integers \(n\) and \(d\), where \(d \neq 0\), there exist unique integers \(q\) and \(r\), with \(0 \leq r \leq d - 1\), such that:
+                        $$n = qd + r$$
                     </div>
                     <p>
-                        For example, \(8\) is even because it can be expressed in the form \(8=2(4)\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is odd if and only if an integer \(k\) exists such that:$$n=2k+1$$
-                    </div>
-                    <p>
-                        Likewise, \(9\) is odd because it can be written as \(9=2(4)+1\).
+                        In other words, any integer \(n\) can be uniquely expressed as a <a href="../linear-combination">linear combination</a> of some quotient \(q\) and remainder \(r\), for every given non-zero divisor \(d\). This idea serves as the basis for the <a>Euclidean algorithm</a>.
                     </p>
                     <p>
-                        Two integers have the same parity if they are both even or both odd, and opposite parity if one is even while the other is odd.
+                        Anyway, let's look at a specific division algorithm that will describe exactly how \(q = n \text{ div } d\) and \(r = n \bmod d\) are computed. It takes the form of repeated subtraction and depends on the sign of the dividend:
                     </p>
+                    <pre class="code-block"><b>algorithm</b> division <b>is</b><br>    <b>input:</b> two integers, n and d, where d > 0<br>    <b>output:</b> two integers, q = n div d and r = n mod d<br><br>    q ← 0<br>    r ← n<br>    <b>if</b> n ≥ 0 <span class="code-comment">(the non-negative case)</span><br>        <b>while</b> r ≥ d<br>            q ← q + 1<br>            r ← r - d<br>    <b>else</b> <span class="code-comment">(the negative case)</span><br>        <b>while</b> r < 0<br>            q ← q - 1<br>            r ← r + d<br></pre>
                     <p>
-                        Any two consecutive integers have opposite parity.
-                    </p>
-                    <h2>Divisibility</h2>
-                    <hr>
-                    <p>
-                        When an integer divides another integer, their division results in an integer with no remainder.
-                    </p>
-                    <div class="math-definition">
-                        An integer \(m\) divides an integer \(n\) if and only if an integer \(k\) exists such that:$$n=km$$
-                    </div>
-                    <p>
-                        \(3\) divides \(15\) because \(15=(5)(3)\).
-                    </p>
-                    <p>
-                        If \(m\) divides \(n\), this <a>relation</a> can be written as \(m \mid n\). Alternatively, if \(m\) does not divide \(n\), it's written as \(m \nmid n\).
+                        So, if you ever find yourself confused on how to compute \(\bmod\), no worries. You can trust that this algorithm will always be correct.
                     </p>
                     <div class="math-notice">
-                        ⚠ The notation \(m \mid n\) can be confusing at first if you're used to seeing division as \(m / n\), where \(m\) is being divided by \(n\). It is important to clarify that the <a href="../statement">statement</a> \(m \mid n\) means that \(n / m\) has no remainder. Make sure you clear up this confusion early on!
-                    </div>
-                    <p>
-                        If \(m \mid n\), then \(m\) is a factor (or divisor) of \(n\), and \(n\) is an integer multiple of \(m\).
-                    </p>
-                    <h2>Primality</h2>
-                    <hr>
-                    <p>
-                        Prime numbers (primes) are special numbers that have been studied for thousands of years. The only positive integers that can divide a prime are itself and \(1\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is prime if and only if \(n > 1\) and for every integer \(m\) such that \(1 < m < n\):$$m \nmid n$$
-                    </div>
-                    <p>
-                        \(7\) is prime because \(7>1\) and \(2\), \(3\), \(4\), \(5\), and \(6\) fail to divide it.
-                    </p>
-                    <p>
-                        On the flipside, a composite number has a factor other than itself and \(1\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is composite if and only if \(n > 1\) and an integer \(m\) exists, \(1 < m < n\), such that:$$m \mid n$$
-                    </div>
-                    <p>
-                        \(6\) is composite because \(6>1\) and \(2\) divides it. You could also mention \(3\) divides it, but <a href="../existence-proof#constructive-proof-of-existence">just one example is needed</a>.
-                    </p>
-                    <div class="math-notice">
-                        ⚠ Note that \(1\) is neither prime nor composite.
-                    </div>
-                    <div class="math-notice">
-                        ⚠ As you might guess, primes are sort of rare. There are <a>algorithms</a> designed to find primes, however, most are either inefficient or prone to some level of error... and as such, many questions about primes are still left unanswered.
+                        ⚠ Notice that this algorithm is consistent with the theorem above, ensuring that \(r\), the result of \(n \bmod d\), will always be a non-negative integer less than \(d\). Perfect!
                     </div>
                 </div>
             </div>

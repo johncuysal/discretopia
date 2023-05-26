@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/integer/">
-    <title>Integer - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/prime-factorization/">
+    <title>Prime factorization - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,92 +161,52 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Integer</h1>
+                    <h1>Prime factorization</h1>
                     <hr>
-                    <i>Last Updated: 22 May 2023</i>
+                    <i>Last Updated: 24 May 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        Integers. The building blocks of discrete mathematics.
-                    </blockquote>
                     <p>
-                        Simply put, an <b>integer</b> is a number with no fractional component. Integers can be <a href="../real-number#sign">positive, negative, or \(0\)</a>. The <a>set</a> of all integers is symbolized by \(\mathbb{Z}\). Within the context of discrete math, integers are often referred to as "numbers."
+                        The <b>prime factorization</b> of an <a href="../integer">integer</a> is its unique decomposition into a product of primes.
                     </p>
+                    <p>
+                        For example, the prime factorization of \(12\) is \(3 \times 2 \times 2\) (or \(2 \times 3 \times 2\), or \(2 \times 2 \times 3\)). The order is not what makes the prime factorization unique.
+                    </p>
+                    <p>
+                        Rather, the uniqueness of a prime factorization is based on the specific set of primes involved and how many times each prime is repeated (<i>multiplicity</i>) in the factorization.
+                    </p>
+                    <p>
+                        To represent a prime factorization more compactly, consider exponential notation, where \(12\) is written as \(3 \times 2^2\). Here, each prime factor is raised to a power equal to its multiplicity.
+                    </p>
+                    <p>
+                        Prime factorizations can be used to find the greatest common divisor and least common multiple of two integers.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ A prime is its own prime factorization! Composite numbers will always have more than \(1\) prime in their prime factorizations, or a single prime with a multiplicity greater than \(1\).
+                    </div>
                     <div id="list-of-contents">
                         <div class="centered">
                             <b>Contents</b>
                         </div>
                         <hr>
                     </div>
-                    <h2>Parity</h2>
+                    <h2>Fundamental Theorem of Arithmetic</h2>
                     <hr>
                     <p>
-                        All integers are either even or odd. This dichotomy, known as parity, can only be exhibited by integers.
+                        This essential theorem states:
                     </p>
                     <div class="math-definition">
-                        An integer \(n\) is even <a href="../logical-operation#the-biconditional-operation">if and only if</a> an integer \(k\) exists such that:$$n=2k$$
+                        Every integer greater than \(1\) has a unique prime factorization that <i>identifies</i> it. Therefore, no two integers greater than \(1\) share the same combination and multiplicities of prime factors.
                     </div>
                     <p>
-                        For example, \(8\) is even because it can be expressed in the form \(8=2(4)\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is odd if and only if an integer \(k\) exists such that:$$n=2k+1$$
-                    </div>
-                    <p>
-                        Likewise, \(9\) is odd because it can be written as \(9=2(4)+1\).
-                    </p>
-                    <p>
-                        Two integers have the same parity if they are both even or both odd, and opposite parity if one is even while the other is odd.
-                    </p>
-                    <p>
-                        Any two consecutive integers have opposite parity.
-                    </p>
-                    <h2>Divisibility</h2>
-                    <hr>
-                    <p>
-                        When an integer divides another integer, their division results in an integer with no remainder.
-                    </p>
-                    <div class="math-definition">
-                        An integer \(m\) divides an integer \(n\) if and only if an integer \(k\) exists such that:$$n=km$$
-                    </div>
-                    <p>
-                        \(3\) divides \(15\) because \(15=(5)(3)\).
-                    </p>
-                    <p>
-                        If \(m\) divides \(n\), this <a>relation</a> can be written as \(m \mid n\). Alternatively, if \(m\) does not divide \(n\), it's written as \(m \nmid n\).
+                        Furthermore, no two integers greater than \(1\) share the same <i>non-decreasing</i> sequence of prime factors.
                     </p>
                     <div class="math-notice">
-                        ⚠ The notation \(m \mid n\) can be confusing at first if you're used to seeing division as \(m / n\), where \(m\) is being divided by \(n\). It is important to clarify that the <a href="../statement">statement</a> \(m \mid n\) means that \(n / m\) has no remainder. Make sure you clear up this confusion early on!
+                        ⚠ A "non-decreasing" sequence is one in which each subsequent element is greater than or equal to the element that came before it.
                     </div>
                     <p>
-                        If \(m \mid n\), then \(m\) is a factor (or divisor) of \(n\), and \(n\) is an integer multiple of \(m\).
+                        The prime factorization of \(12\) can be written in \(3\) different ways, but only one way is actually non-decreasing: \(3 \times 2 \times 2\). According to the theorem, \(12\) is the only integer greater than \(1\) with a prime factorization that consists entirely of repeating \(3\) once and \(2\) twice.
                     </p>
-                    <h2>Primality</h2>
-                    <hr>
-                    <p>
-                        Prime numbers (primes) are special numbers that have been studied for thousands of years. The only positive integers that can divide a prime are itself and \(1\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is prime if and only if \(n > 1\) and for every integer \(m\) such that \(1 < m < n\):$$m \nmid n$$
-                    </div>
-                    <p>
-                        \(7\) is prime because \(7>1\) and \(2\), \(3\), \(4\), \(5\), and \(6\) fail to divide it.
-                    </p>
-                    <p>
-                        On the flipside, a composite number has a factor other than itself and \(1\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is composite if and only if \(n > 1\) and an integer \(m\) exists, \(1 < m < n\), such that:$$m \mid n$$
-                    </div>
-                    <p>
-                        \(6\) is composite because \(6>1\) and \(2\) divides it. You could also mention \(3\) divides it, but <a href="../existence-proof#constructive-proof-of-existence">just one example is needed</a>.
-                    </p>
-                    <div class="math-notice">
-                        ⚠ Note that \(1\) is neither prime nor composite.
-                    </div>
-                    <div class="math-notice">
-                        ⚠ As you might guess, primes are sort of rare. There are <a>algorithms</a> designed to find primes, however, most are either inefficient or prone to some level of error... and as such, many questions about primes are still left unanswered.
-                    </div>
                 </div>
             </div>
         </div>
