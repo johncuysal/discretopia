@@ -176,10 +176,7 @@
                         Rather, the uniqueness of a prime factorization is based on the specific set of primes involved and how many times each prime is repeated (<i>multiplicity</i>) in the factorization.
                     </p>
                     <p>
-                        To represent a prime factorization more compactly, consider exponential notation, where \(12\) is written as \(3 \times 2^2\). Here, each prime factor is raised to a power equal to its multiplicity.
-                    </p>
-                    <p>
-                        Prime factorizations can be used to find the greatest common divisor and least common multiple of two integers.
+                        To represent a prime factorization more compactly, consider exponential notation, where \(12\) is written as \(3^1 \times 2^2\). Here, each prime factor is raised to a power equal to its multiplicity.
                     </p>
                     <div class="math-notice">
                         ⚠ A prime is its own prime factorization! Composite numbers will always have more than \(1\) prime in their prime factorizations, or a single prime with a multiplicity greater than \(1\).
@@ -207,6 +204,80 @@
                     <p>
                         The prime factorization of \(12\) can be written in \(3\) different ways, but only one way is actually non-decreasing: \(3 \times 2 \times 2\). According to the theorem, \(12\) is the only integer greater than \(1\) with a prime factorization that consists entirely of repeating \(3\) once and \(2\) twice.
                     </p>
+                    <h2>Computing the greatest common divisor</h2>
+                    <hr>
+                    <p>
+                        If the prime factorizations of two integers are already known, finding their greatest common divisor is pretty easy.
+                    </p>
+                    <div class="math-definition">
+                        Let's find the greatest common divisor of \(12\) and \(90\). First, let's write out their prime factorizations:
+                        $$12 = 3 \times 2 \times 2$$
+                        $$90 = 5 \times 3 \times 3 \times 2$$
+                        Next, convert to exponential notation:
+                        $$12 = 3^1 \times 2^2$$
+                        $$90 = 5^1 \times 3^2 \times 2^1$$
+                        Rewrite so that the prime factorizations appear to share the same set of primes:
+                        $$12 = 5^0 \times 3^1 \times 2^2$$
+                        $$90 = 5^1 \times 3^2 \times 2^1$$
+                        Take the product of all these prime factors, with each prime factor raised to the <i>minimum</i> power it has between the prime factorizations.
+                        $$\gcd(12, 90) = 5^0 \times 3^1 \times 2^1 = 1 \times 3 \times 2 = 6$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ If you like shortcuts, keep reading! Notice that any prime factors that aren't shared between the prime factorizations cannot affect the calculation of the greatest common divisor. This is because unshared prime factors must have a minimum power of \(0\) due to one of the prime factorizations not having them. So, they only contribute a factor of \(1\), which does nothing. Therefore, to calculate the greatest common divisor, you really only need to find the product of all the <i>shared</i> prime factors, with each raised to the minimum power it has between the prime factorizations. In the above example, you'd just need to calculate \(3^1 \times 2^1 = 6\). Make sure you understand this shortcut before using it.
+                    </div>
+                    <h2>Computing the least common multiple</h2>
+                    <hr>
+                    <p>
+                        If the prime factorizations of two integers are already known, finding their least common multiple is also pretty easy.
+                    </p>
+                    <div class="math-definition">
+                        Let's find the least common multiple of \(12\) and \(90\). First, let's write out their prime factorizations:
+                        $$12 = 3 \times 2 \times 2$$
+                        $$90 = 5 \times 3 \times 3 \times 2$$
+                        Next, convert to exponential notation:
+                        $$12 = 3^1 \times 2^2$$
+                        $$90 = 5^1 \times 3^2 \times 2^1$$
+                        Rewrite so that the prime factorizations appear to share the same set of primes:
+                        $$12 = 5^0 \times 3^1 \times 2^2$$
+                        $$90 = 5^1 \times 3^2 \times 2^1$$
+                        Take the product of all these prime factors, with each prime factor raised to the <i>maximum</i> power it has between the prime factorizations.
+                        $$\text{lcm}(12, 90) = 5^1 \times 3^2 \times 2^2 = 5 \times 9 \times 4 = 180$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ You cannot use the same shortcut here that's used for greatest common divisors. Unshared prime factors <i>do</i> affect the calculation of the least common multiple. If you feel like you might make this mistake, then just don't use the shortcut.
+                    </div>
+                    <h2>Determining divisibility</h2>
+                    <hr>
+                    <p>
+                        If the prime factorizations of two integers are already known, you can find out whether one divides the other.
+                    </p>
+                    <div class="math-definition">
+                        Let's figure out if \(12\) divides \(90\). (Since \(12 < 90\), we know \(90\) cannot divide \(12\).) First, let's write out their prime factorizations:
+                        $$12 = 3 \times 2 \times 2$$
+                        $$90 = 5 \times 3 \times 3 \times 2$$
+                        Next, convert to exponential notation:
+                        $$12 = 3^1 \times 2^2$$
+                        $$90 = 5^1 \times 3^2 \times 2^1$$
+                        Rewrite so that the prime factorizations appear to share the same set of primes:
+                        $$12 = 5^0 \times 3^1 \times 2^2$$
+                        $$90 = 5^1 \times 3^2 \times 2^1$$
+                        Now, check if the minimum power of each prime factor always appears in one of the prime factorizations. In this case, we can see that \(12\) includes the minimum powers of \(5\) and \(3\), but not \(2\). Therefore, \(12\) does not divide \(90\).
+                    </div>
+                    <p>
+                        Here's another example.
+                    </p>
+                    <div class="math-definition">
+                        Let's figure out if \(12\) divides \(72\). (Since \(12 < 72\), we know \(72\) cannot divide \(12\).) First, let's write out their prime factorizations:
+                        $$12 = 3 \times 2 \times 2$$
+                        $$72 = 3 \times 3 \times 2 \times 2 \times 2$$
+                        Next, convert to exponential notation:
+                        $$12 = 3^1 \times 2^2$$
+                        $$72 = 3^2 \times 2^3$$
+                        Rewrite so that the prime factorizations appear to share the same set of primes (in this case, they already did):
+                        $$12 = 3^1 \times 2^2$$
+                        $$72 = 3^2 \times 2^3$$
+                        Now, check if the minimum power of each prime factor always appears in one of the prime factorizations. In this case, we can see that \(12\) includes the minimum powers of \(3\) and \(2\), which are all of the prime factors. Therefore, \(12\) divides \(72\).
+                    </div>
                 </div>
             </div>
         </div>

@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/command/">
-    <title>Command - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/greatest-common-divisor/">
+    <title>Greatest common divisor - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,86 +161,35 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Command</h1>
+                    <h1>Greatest common divisor</h1>
                     <hr>
                     <i>Last Updated: 25 May 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        Every program is just a sequence of commands given to a computer.
-                    </blockquote>
                     <p>
-                        A <b>command</b> is a specific instruction or directive that can be carried out by a computer. It is the fundamental syntactic unit of a program. No matter how complex an <a href="../algorithm">algorithm</a> may seem, it can always be broken down into individual commands.
+                        The <b>greatest common divisor (GCD)</b> of two <a href="../integer">integers</a> that are not both zero is the largest positive integer that divides both of them. It's their largest shared factor. Like the <a href="../least-common-multiple">least common multiple</a>, it can be efficiently found with <a href="../prime-factorization">prime factorizations</a>.
                     </p>
                     <p>
-                        There are two categories of commands: simple and compound. A simple command is complete by itself and cannot contain other commands. A compound command may contain "nested" commands, which themselves can be simple or compound.
+                        For two integers \(a\) and \(b\), their greatest common divisor is denoted \(\gcd(a, b)\), or equivalently, \(\gcd(b, a)\).
                     </p>
-                    <div class="math-notice">
-                        ⚠ You may also know commands by another name; statements. However, to avoid confusion with <a href="../statement">logical statements</a>, we use the term command, which sounds more computer-related anyway.
-                    </div>
+                    <p>
+                        For any integer \(x \neq 0\), \(\gcd(x, 0) = |x|\), which should make sense. Any positive integer divides \(0\). The largest positive integer that divides \(x\) is its absolute value. Therefore, \(|x|\) is the largest positive integer capable of dividing both \(x\) and \(0\).
+                    </p>
                     <div id="list-of-contents">
                         <div class="centered">
                             <b>Contents</b>
                         </div>
                         <hr>
                     </div>
-                    <h2>Assignment</h2>
+                    <h2>Coprimality</h2>
                     <hr>
                     <p>
-                        Assignment is a simple command that sets or re-sets the value stored at a memory location given by a variable name.
+                        Two positive integers are considered <i>coprime</i> (or "relatively prime") to each other if their greatest common divisor is \(1\). Here are some notable properties that two integers will have if and only if they are coprime.
                     </p>
-                    <pre class="code-block">x ← 2</pre>
-                    <p>
-                        You may also see assignment denoted as <span class="code-inline">:=</span>, which isn't as widely-used, or as <span class="code-inline">=</span>, which, within a mathematical context, can be confused with equality.
-                    </p>
-                    <h2>Call</h2>
-                    <hr>
-                    <p>
-                        Calling a predefined method is as simple as writing out the method's name and supplying parameters. Since this is significantly easier than writing methods on your own, before calling a method, make sure that you are allowed to call it.
-                    </p>
-                    <pre class="code-block">y ← gcd(8, 12)</pre>
-                    <h2>Return</h2>
-                    <hr>
-                    <p>
-                        <span class="code-inline">return</span> is a simple command that forces execution to leave the current method and pass back a return value to the code that called the method, then resume from there.
-                    </p>
-                    <pre class="code-block"><b>return</b> x</pre>
-                    <h2>Conditional</h2>
-                    <hr>
-                    <p>
-                        Conditionals are a family of compound commands that handle decisions by diverting code. Different actions are performed based on whether a condition is true or false.
-                    </p>
-                    <p>
-                        An <span class="code-inline">if</span> command executes the commands indented within it if its condition is true.
-                    </p>
-                    <pre class="code-block"><b>if</b> x < 7<br>    <b>return</b> x</pre>
-                    <p>
-                        An <span class="code-inline">if-else</span> command executes the commands indented in its <span class="code-inline">if</span> branch if its condition is true, otherwise, it executes the commands indented in its <span class="code-inline">else</span> branch.
-                    </p>
-                    <pre class="code-block"><b>if</b> x < 7<br>    x ← x + 1<br>    <b>return</b> x<br><b>else</b><br>    <b>return</b> y</pre>
-                    <p>
-                        You might be familiar with <span class="code-inline">else if</span> branches too, which are the same as nesting an <span class="code-inline">if</span> branch inside of an <span class="code-inline">else</span> branch.
-                    </p>
-                    <h2>Loop</h2>
-                    <hr>
-                    <p>
-                        Loops are a family of compound commands that serve to repeatedly execute code.
-                    </p>
-                    <p>
-                        A <span class="code-inline">for</span> loop executes the commands indented within it a fixed number of times. This is done by initializing an index with a start value and incrementing it by \(1\) with each iteration. During the last iteration, the index will have its end value. The following <span class="code-inline">for</span> loop will have exactly \(5\) iterations, the number of integers from \(1\) to \(5\), inclusive.
-                    </p>
-                    <pre class="code-block">sum ← 0<br><b>for</b> i = 1 <b>to</b> 5<br>    sum ← sum + i<br><b>return</b> sum</pre>
-                    <p>
-                        This algorithm calculates the sum of the first \(5\) positive integers. In <a href="../summation">summation notation</a>, this is equivalent to \(\sum\limits_{i=1}^{5}i\).
-                    </p>
-                    <p>
-                        A <span class="code-inline">for each</span> loop executes the commands indented within it a fixed number of times by traversing through each item in a collection. This type of loop is easier to read.
-                    </p>
-                    <pre class="code-block">S ← { 1, 2, 3, 4, 5 }<br>sum ← 0<br><b>for each</b> element s <b>in</b> S<br>    sum ← sum + s<br><b>return</b> sum</pre>
-                    <p>
-                        A <span class="code-inline">while</span> loop continually executes the commands indented within it until its guard condition becomes false. This can lead to an <em>infinite loop</em> if the guard condition never changes from true to false. The following loop stops when <span class="code-inline">i = 6</span>, which is when the guard condition <span class="code-inline">i < 6</span> becomes false.
-                    </p>
-                    <pre class="code-block">i ← 1<br>sum ← 0<br><b>while</b> i < 6<br>    sum ← sum + i<br>    i ← i + 1<br><b>return</b> sum</pre>
+                    <ul>
+                        <li>No prime can divide both coprime integers.</li>
+                        <li>The least common multiple of two coprime integers is their product: \(\text{lcm}(a, b) = a \times b\).</li>
+                    </ul>
                 </div>
             </div>
         </div>
