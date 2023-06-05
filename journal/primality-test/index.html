@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/integer/">
-    <title>Integer - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/primality-test/">
+    <title>Primality test - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,16 +161,16 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Integer</h1>
+                    <h1>Primality test</h1>
                     <hr>
-                    <i>Last Updated: 22 May 2023</i>
+                    <i>Last Updated: 5 June 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        Integers. The building blocks of discrete mathematics.
-                    </blockquote>
                     <p>
-                        Simply put, an <b>integer</b> is a number with no fractional component. Integers can be <a href="../real-number#sign">positive, negative, or \(0\)</a>. The <a>set</a> of all integers is symbolized by \(\mathbb{Z}\). Within the context of discrete math, integers are often referred to as "numbers."
+                        A <b>primality test</b> is an <a href="../algorithm">algorithm</a> that determines whether an <a href="../integer">integer</a> is prime.
+                    </p>
+                    <p>
+                        Unlike <a href="../factoring-algorithm">factoring algorithms</a>, efficient primality tests actually do exist, but there is a slight catch.
                     </p>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -178,75 +178,37 @@
                         </div>
                         <hr>
                     </div>
-                    <h2>Parity</h2>
+                    <h2>Trial division</h2>
                     <hr>
                     <p>
-                        All integers are either even or odd. This dichotomy, known as parity, can only be exhibited by integers.
+                        Trial division is the most basic <a href="../brute-force-algorithm">brute-force</a> implementation of a primality test:
                     </p>
-                    <div class="math-definition">
-                        An integer \(n\) is even <a href="../logical-operation#the-biconditional-operation">if and only if</a> an integer \(k\) exists such that:$$n=2k$$
-                    </div>
+                    <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>for</b> f = 2 <b>to</b> (n - 1)<br>        <b>if</b> n <b>mod</b> f = 0<br>            <b>return</b> false<br>    <b>return</b> true<br></pre>
                     <p>
-                        For example, \(8\) is even because it can be expressed in the form \(8=2(4)\).
+                        This algorithm can be made more efficient if we understand that, for any two integers whose product is the integer \(n\), one of the integers must be greater than or equal to \(\sqrt{n}\), while the other must be less than or equal to \(\sqrt{n}\). If this is not the case, their imbalanced product will end up being either larger or smaller than \(n\). Here's the improved algorithm:
                     </p>
-                    <div class="math-definition">
-                        An integer \(n\) is odd if and only if an integer \(k\) exists such that:$$n=2k+1$$
-                    </div>
+                    <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>for</b> f = 2 <b>to</b> floor(√n) <span class="code-comment">(floor function ensures √n is an integer)</span><br>        <b>if</b> n <b>mod</b> f = 0<br>            <b>return</b> false<br>    <b>return</b> true<br></pre>
                     <p>
-                        Likewise, \(9\) is odd because it can be written as \(9=2(4)+1\).
+                        With the \(6k \pm 1\) optimization, the algorithm can be further improved to skip any factors that are multiples of \(2\) or \(3\), making it faster to check larger integers for primality:
                     </p>
+                    <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>if</b> n ≤ 3<br>        <b>return</b> true<br>    <b>if</b> n <b>mod</b> 2 = 0 <b>or</b> n <b>mod</b> 3 = 0<br>        <b>return</b> false<br>    f ← 5<br>    <b>while</b> f ≤ floor(√n) <span class="code-comment">(floor function ensures √n is an integer)</span><br>        <b>if</b> n <b>mod</b> f = 0 <b>or</b> n <b>mod</b> (f + 2) = 0<br>            <b>return</b> false<br>        f ← f + 6<br>    <b>return</b> true<br></pre>
                     <p>
-                        Two integers have the same parity if they are both even or both odd, and opposite parity if one is even while the other is odd.
+                        Even though we've improved trial division a lot, it could still be much better. Notice that, if we wanted to, we could report the factor that divided \(n\) instead of returning false. Trial division always provides information about which factor divided \(n\). However, in primality testing, all we want to know is whether an integer is prime or composite, not what the specific factors are.
                     </p>
                     <p>
-                        Any two consecutive integers have opposite parity.
+                        You might think this is really weird, but it's actually possible to quickly determine that an integer is composite without having <i>any idea what its factors are</i>, as is the case in probabilistic tests.
                     </p>
-                    <h2>Divisibility</h2>
+                    <h2>Probabilistic tests</h2>
                     <hr>
                     <p>
-                        When an integer divides another integer, their division results in an integer with no remainder.
-                    </p>
-                    <div class="math-definition">
-                        An integer \(m\) divides an integer \(n\) if and only if an integer \(k\) exists such that:$$n=km$$
-                    </div>
-                    <p>
-                        \(3\) divides \(15\) because \(15=(5)(3)\).
+                        In exchange for absolute certainty, probabilistic primality tests significantly reduce computational complexity. This means that, rather than guaranteeing an integer is prime, these kinds of tests can guess with a high degree of correctness that an integer is "probably prime." The probability of error can be minimized with more iterations, making this method ideal for large integers.
                     </p>
                     <p>
-                        If \(m\) divides \(n\), this <a>relation</a> can be written as \(m \mid n\). Alternatively, if \(m\) does not divide \(n\), it's written as \(m \nmid n\).
-                    </p>
-                    <div class="math-notice">
-                        ⚠ The notation \(m \mid n\) can be confusing at first if you're used to seeing division as \(m / n\), where \(m\) is being divided by \(n\). It is important to clarify that the <a href="../statement">statement</a> \(m \mid n\) means that \(n / m\) has no remainder. Make sure you clear up this confusion early on!
-                    </div>
-                    <p>
-                        If \(m \mid n\), then \(m\) is a factor (or divisor) of \(n\), and \(n\) is an integer multiple of \(m\).
-                    </p>
-                    <h2>Primality</h2>
-                    <hr>
-                    <p>
-                        Prime numbers (primes) are special numbers that have been studied for thousands of years. The only positive integers that can divide a prime are itself and \(1\).
-                    </p>
-                    <div class="math-definition">
-                        An integer \(n\) is prime if and only if \(n > 1\) and for every integer \(m\) such that \(1 < m < n\):$$m \nmid n$$
-                    </div>
-                    <p>
-                        \(7\) is prime because \(7>1\) and \(2\), \(3\), \(4\), \(5\), and \(6\) fail to divide it.
+                        Due to having polynomial <a href="../time-complexity">time complexity</a>, probabilistic tests are considered efficient.
                     </p>
                     <p>
-                        On the flipside, a composite number has a factor other than itself and \(1\).
+                        I'd show you an example of a probabilistic test, but for now, I'm just going to say they involve testing integers for properties that only primes can have, and making guesses based on that. If you're curious, check out the Miller-Rabin primality test. An example of a probabilistic test may appear here someday...
                     </p>
-                    <div class="math-definition">
-                        An integer \(n\) is composite if and only if \(n > 1\) and an integer \(m\) exists, \(1 < m < n\), such that:$$m \mid n$$
-                    </div>
-                    <p>
-                        \(6\) is composite because \(6>1\) and \(2\) divides it. You could also mention \(3\) divides it, but <a href="../existence-proof#constructive-proof-of-existence">just one example is needed</a>.
-                    </p>
-                    <div class="math-notice">
-                        ⚠ Note that \(1\) is neither prime nor composite.
-                    </div>
-                    <div class="math-notice">
-                        ⚠ As you might guess, primes are sort of rare. There are <a href="../primality-test">algorithms designed to test for primality</a>, however, most are either inefficient or prone to some level of error... and as such, many questions about primes are still left unanswered.
-                    </div>
                 </div>
             </div>
         </div>
