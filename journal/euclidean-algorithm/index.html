@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/euclidean-algorithm/">
+    <title>Euclidean algorithm - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../../">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../../">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../../">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
+                        Number Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#recursion">
+                        Recursion
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Guides
+                    <hr>
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
+                        <!--How to write a proof-->
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Downloads
+                    <hr>
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
+                        <!--What's that symbol?-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Euclidean algorithm</h1>
+                    <hr>
+                    <i>Last Updated: 6 June 2023</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        The <b>Euclidean algorithm</b> is an efficient <a href="../algorithm">algorithm</a> that finds the <a href="../greatest-common-divisor">greatest common divisor</a> of two <a href="../integer">integers</a>, without knowledge of their <a href="../prime-factorization">prime factorizations</a>. It is one of the oldest algorithms still in use today, based on the following <a href="../theorem">theorem</a>:
+                    </p>
+                    <div class="math-definition">
+                        For any two positive integers \(a\) and \(b\):
+                        $$\gcd(a, b) = \gcd(a \bmod b, b)$$
+                    </div>
+                    <p>
+                        This theorem turns out to be a consequence of the <a href="../division-algorithm">remainder</a> \(a \bmod b\) being a <a href="../linear-combination">linear combination</a> of \(a\) and \(b\), as any factor that divides \(a\) and \(b\) must also divide their linear combination \(a \bmod b\). So, \(a\) and \(b\) end up sharing the same set of common factors as \(a \bmod b\) and \(b\), including the same greatest common divisor.
+                    </p>
+                    <p>
+                        Remember, the order of the inputs does not matter for the \(\gcd\) function: \(\gcd(a, b) = \gcd(b, a)\). So do not focus on the order here. Basically, what this theorem is saying is that the greatest common divisor of two positive integers stays the same even if one of the integers has the other integer  subtracted from it a certain number of times (which is essentially the effect of the \(\bmod\) operation).
+                    </p>
+                    <p>
+                        The result of \(a \bmod b\) will always be \(a\) if \(a < b\), which is not very useful if our goal is to make the greatest common divisor easier to compute. The part of this theorem that is actually useful to the Euclidean algorithm is when \(a \geq b\), which means \(a \bmod b\) will decrease in size, becoming smaller than \(b\), since, as you know, \(a \bmod b\) can only return an integer in the set \(\set{0, ... b-1}\). This process brings \(a\) progressively closer to the greatest common divisor, as you'll see below:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> euclid <b>is</b><br>    <b>input:</b> two integers, a and b, where a ≥ b<br>    <b>output:</b> their greatest common divisor (gcd)<br><br>    <b>while</b> b ≠ 0<br>        t ← b<br>        b ← a <b>mod</b> b<br>        a ← t<br>    <b>return</b> a</pre>
+                    <p>
+                        The larger integer <span class="code-inline">a</span> gets continually replaced until the smaller integer <span class="code-inline">b</span> is able to divide it and <span class="code-inline">a <b>mod</b> b = 0</span>, at which point <span class="code-inline">a</span> holds the greatest common divisor. Let's watch this algorithm step-by-step:
+                    </p>
+                    <table>
+                        <tr>
+                            <th><span class="code-inline">a</span></th>
+                            <th><span class="code-inline">b</span></th>
+                            <th><span class="code-inline">a <b>mod</b> b</span></th>
+                        </tr>
+                        <tr>
+                            <td><span class="code-inline">1071</span></td>
+                            <td><span class="code-inline">462</span></td>
+                            <td><span class="code-inline">147</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="code-inline">462</span></td>
+                            <td><span class="code-inline">147</span></td>
+                            <td><span class="code-inline">21</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="code-inline">147</span></td>
+                            <td><span class="code-inline">21</span></td>
+                            <td><span class="code-inline">0</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="code-inline">21</span></td>
+                            <td><span class="code-inline">0</span></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p>
+                        Here is exactly how the algorithm uses the theorem mentioned earlier:
+                    </p>
+                    <div class="math-definition">
+                        $$\gcd(1071, 462) = \gcd(1071 \bmod 462, 462) = \gcd(147, 462)$$
+                        $$=\gcd(462, 147) = \gcd(462 \bmod 147, 147) = \gcd(21, 147)$$
+                        $$=\gcd(147, 21) = \gcd(147 \bmod 21, 21) = \gcd(0, 21) = 21$$
+                    </div>
+                    <p>
+                        Quite effective! And especially useful for large integers, whose <a href="../factoring-algorithm">prime factorizations would take way too long to compute</a>.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Extended version</h2>
+                    <hr>
+                    <p>
+                        The extended Euclidean algorithm not only returns the greatest common divisor of two integers \(a\) and \(b\), but also the integer coefficients \(x\) and \(y\) such that \(ax + by = \gcd(a, b)\).
+                    </p>
+                    <p>
+                        To briefly explain how it does this, it recognizes that the equation that defines integer division, \(a = (a \text{ div } b) \times b + (a \bmod b)\), can always be rearranged as \((a \bmod b) = a - (a \text{ div } b) \times b\) to express \(a \bmod b\) as a linear combination of \(a\) and \(b\). This equation is then updated as <span class="code-inline">a</span> and <span class="code-inline">b</span> update each iteration until <span class="code-inline">a <b>mod</b> b = 0</span>, at which point the loop finishes. During the second-to-last iteration of the loop, <span class="code-inline">a <b>mod</b> b</span> stores the value of the greatest common divisor for the originally input <span class="code-inline">a</span> and <span class="code-inline">b</span>, which is why we maintain "previous" variables, so that in the end, we can access those second-to-last values. Here's the extended algorithm:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> extended_euclid <b>is</b><br>    <b>input:</b> two integers, a and b, where a ≥ b<br>    <b>output:</b> their greatest common divisor (gcd) and x and y such that ax + by = gcd(a, b)<br><br>    previous_x ← 1<br>    x ← 0<br>    previous_y ← 0<br>    y ← 1<br><br>    <b>while</b> b ≠ 0<br>        temp_x ← x<br>        x ← previous_x - a <b>div</b> b * x<br>        previous_x ← temp_x<br><br>        temp_y ← y<br>        y ← previous_y - a <b>div</b> b * y<br>        previous_y ← temp_y<br><br>        t ← b<br>        b ← a <b>mod</b> b<br>        a ← t<br>    <b>return</b> a, previous_x, previous_y</pre>
+                    <p>
+                        Let's walk through this algorithm for the inputs <span class="code-inline">a = 1071</span> and <span class="code-inline">b = 462</span>:
+                    </p>
+                    <div class="math-definition">
+                        We'll be keeping an eye on how this equation changes with each iteration:
+                        $$(a \bmod b) = a - (a \text{ div } b) \times b$$
+                        During the first iteration of the loop, we generate the following equation with the values of <span class="code-inline">a</span> and <span class="code-inline">b</span>:
+                        $$(1071 \bmod 462) = 1071 - (1071 \text{ div } 462) \times 462$$
+                        $$147 = 1071 - 2 \times 462$$
+                        <span class="code-inline">a</span> and <span class="code-inline">b</span> are updated at the end of the first iteration. Then, in the second iteration we have:
+                        $$(462 \bmod 147) = 462 - (462 \text{ div } 147) \times 147$$
+                        $$21 = 462 - 3 \times 147$$
+                        <span class="code-inline">a</span> and <span class="code-inline">b</span> are updated again at the end of the second iteration. Then, in the third iteration we have:
+                        $$(147 \bmod 21) = 147 - (147 \text{ div } 21) \times 21$$
+                        $$0 = 147 - 7 \times 21$$
+                        <span class="code-inline">a</span> and <span class="code-inline">b</span> are updated again at the end of the third iteration, but since <span class="code-inline">b</span> is now 0, there are no further iterations. The greatest common divisor was found by the algorithm to be \(21\). Now, how can we represent \(21\) in the form \(ax + by\), specifically \(1071 \times x + 462 \times y\)? The answer lies in the equations we generated as we were walking through the algorithm:
+                        $$0 = 147 - 7 \times 21$$
+                        $$21 = 462 - 3 \times 147$$
+                        $$147 = 1071 - 2 \times 462$$
+                        Only the equations from the second-to-last iteration and earlier are useful:
+                        $$21 = 462 - 3 \times 147$$
+                        $$147 = 1071 - 2 \times 462$$
+                        The greatest common divisor is \(21\), already represented as a linear combination in one of the equations. Let's substitute the equation from the iteration preceding it so that we can get to the original terms \(1071\) and \(462\) (if there were more iterations preceding it, we'd have to substitute each of their equations, but in this case, there is just one previous iteration):
+                        $$21 = 462 - 3 \times (1071 - 2 \times 462)$$
+                        By substituting \(147\), we now have \(21\) written as a linear combination of \(1071\) and \(462\):
+                        $$21 = 462 - 3 \times (1071 - 2 \times 462)$$
+                        $$21 = 462 - 3 \times 1071 + 6 \times 462$$
+                        $$21 = - 3 \times 1071 + 7 \times 462$$
+                        Thus, the integer coefficients \(x\) and \(y\) we are looking for are \(-3\) and \(7\).
+                    </div>
+                    <p>
+                        All we had to do was keep records of these \(a \bmod b\) equations from each iteration. That is the entirety of the Euclidean algorithm's extension. The integer coefficients \(x\) and \(y\) such that \(ax + by = \gcd(a, b)\) are a <i>byproduct</i> of computing \(\gcd(a, b)\) with the Euclidean algorithm. In other words, \(x\) and \(y\) were always present, we just had to write a bit more code to pay attention to how they update with \(a\) and \(b\). Overall, this extension allows us to get more out of the algorithm than we normally would for very little additional computing cost, which is really nice!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -227,6 +227,50 @@
                         This can be rewritten as:
                         $$(x \times y) \bmod m = (x \bmod m \times y \bmod m) \bmod m$$
                     </div>
+                    <h2>Multiplicative inverse \(\text{mod } m\)</h2>
+                    <hr>
+                    <p>
+                        When an integer is multiplied by its multiplicative inverse \(\text{mod } m\), the result is congruent \(\text{mod } m\) to \(1\).
+                    </p>
+                    <div class="math-definition">
+                        The multiplicative inverse \(\text{mod } m\) of an integer \(n\) is defined as the integer \(s\) in \(\mathbb{Z}_m\) such that:
+                        $$sn \equiv_{m} 1$$
+                        This can be rewritten as:
+                        $$sn \bmod m = 1 \bmod m$$
+                        Knowing any modulus \(m\) must be greater than \(1\), we can simplify:
+                        $$sn \bmod m = 1$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ The only way an integer \(n\) can have a multiplicative inverse \(\text{mod } m\) is if \(n\) and \(m\) are coprime (in other words, if their <a href="../greatest-common-divisor">greatest common divisor</a> is \(1\)).
+                    </div>
+                    <div class="math-notice">
+                        ⚠ The multiplicative inverse \(\text{mod } m\) may also be called "inverse \(\text{mod } m\)" or "modular multiplicative inverse."
+                    </div>
+                    <div class="math-notice">
+                        ⚠ It is possible for an integer to be its own inverse \(\text{mod } m\).
+                    </div>
+                    <p>
+                        The extended <a href="../euclidean-algorithm">Euclidean algorithm</a> can quickly find a modular multiplicative inverse if it exists.
+                    </p>
+                    <div class="math-definition">
+                        If \(\gcd(a, b) = 1\), the integers \(x\) and \(y\) returned by the extended Euclidean algorithm will satisfy:
+                        $$ax + by = 1$$
+                        Let's play around with this equation for a bit. Rearranging:
+                        $$xa - 1 = -by$$
+                        Remember that two integers are congruent \(\text{mod } b\) if and only if \(b\) divides their difference. Here, \(xa - 1\) is written as an integer multiple of \(-by\), meaning \(b \mid (xa - 1)\), so therefore:
+                        $$xa \equiv_{b} 1$$
+                        $$xa \bmod b = 1 \bmod b$$
+                        $$xa \bmod b = 1$$
+                        It appears that \(x\) satisfies the equation in the definition of the inverse \(\text{mod } b\) of \(a\), but remember, that definition also requires it to be in the ring \(\mathbb{Z}_b\). So, to ensure \(x\) is in \(\mathbb{Z}_b\), just use the \(\bmod\) operation:
+                        $$x \bmod b$$
+                        Therefore, \(x \bmod b\) is the inverse \(\text{mod } b\) of \(a\).
+                    </div>
+                    <p>
+                        So, if you want to know the inverse \(\text{mod } b\) of an integer \(a\), make sure the Euclidean algorithm returns \(\gcd(a, b) = 1\). Then, use the \(\bmod\) operation to bring its corresponding integer coefficient \(x\) into the ring \(\mathbb{Z}_b\). You can also just as easily find the inverse \(\text{mod } a\) of \(b\) by computing \(y \bmod a\).
+                    </p>
+                    <div class="math-notice">
+                        ⚠ The RSA encryption algorithm involves finding modular multiplicative inverses.
+                    </div>
                 </div>
             </div>
         </div>

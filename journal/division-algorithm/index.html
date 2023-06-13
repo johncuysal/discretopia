@@ -172,9 +172,11 @@
                     <div class="math-definition">
                         For any two integers \(n\) and \(d\), where \(d \neq 0\), there exist unique integers \(q\) and \(r\), with \(0 \leq r \leq d - 1\), such that:
                         $$n = qd + r$$
+                        This formalizes <a href="../integer-division">integer division</a>. You can write \(q\) and \(r\) in terms of \(n\) and \(d\) with the \(\text{div}\) and \(\bmod\) operations:
+                        $$n = (n \text{ div } d) \times d + (n \bmod d)$$
                     </div>
                     <p>
-                        In other words, any integer \(n\) can be uniquely expressed as a <a href="../linear-combination">linear combination</a> of some quotient \(q\) and remainder \(r\), for every given non-zero divisor \(d\). This idea serves as the basis for the <a>Euclidean algorithm</a>.
+                        In other words, any integer \(n\) can be uniquely expressed as a <a href="../linear-combination">linear combination</a> of some quotient \(q\) and remainder \(r\), for every given non-zero divisor \(d\). Likewise, if you isolate the remainder \(r\), it becomes a linear combination of \(n\) and \(d\). The <a href="../euclidean-algorithm">Euclidean algorithm</a> is based on this fact.
                     </p>
                     <p>
                         Anyway, let's look at a specific division algorithm that will describe exactly how \(q = n \text{ div } d\) and \(r = n \bmod d\) are computed. It takes the form of repeated subtraction and depends on the sign of the dividend:

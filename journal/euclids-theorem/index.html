@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/algorithm/">
-    <title>Algorithm - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/euclids-theorem/">
+    <title>Euclid's theorem - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,29 +161,42 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Algorithm</h1>
+                    <h1>Euclid's theorem</h1>
                     <hr>
-                    <i>Last Updated: 11 March 2023</i>
+                    <i>Last Updated: 5 June 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        An <b>algorithm</b> is a sequence of rigorous steps which can be followed to solve a particular type of problem. To fully describe an algorithm, you must specify:
+                        <b>Euclid's theorem</b> states that there are infinitely many primes.
                     </p>
-                    <ol>
-                        <li>The algorithm's name</li>
-                        <li>The input to the problem</li>
-                        <li>The output to the problem</li>
-                        <li>The steps taken to reach the output from the input</li>
-                    </ol>
+                    <div class="math-definition">
+                        <b>Theorem</b>: There are infinitely many primes.<br>
+                        <b>Proof by cases</b>: Consider any finite set of primes. It will be shown that at least one more prime exists outside of this set:
+                        $$\set{p_1, p_2, p_3, ... p_n}$$
+                        Now, let \(P\) be the product of all these primes:
+                        $$P = p_1 \times p_2 \times p_3 \times ... \times p_n$$
+                        Add \(1\) to \(P\), and call this integer \(q\):
+                        $$q = P + 1 = p_1 \times p_2 \times p_3 \times ... \times p_n + 1$$
+                        Like all integers, \(q\) is either prime or not. This brings us to two possible cases.<br>
+                        1. \(q\) is prime<br>
+                        If \(q\) is prime, then there is a prime that exists outside the finite set, \(q\). It cannot already exist in the finite set because \(q\) is the product of all the primes in the set plus \(1\).<br>
+                        2. \(q\) is not prime (composite)<br>
+                        If \(q\) is composite, then some <a href="../prime-factorization">prime factor</a> \(p\) divides \(q\). \(p\) could exist inside or outside the finite set. If \(p\) is outside the finite set, then we're done, and we've shown that a prime, \(p\), exists outside the finite set. However, suppose \(p\) is inside the finite set. In that case, \(p\) divides \(P\), since \(P\) was defined as the product of all the primes in that finite set:
+                        $$p \mid P$$
+                        And as previously mentioned, \(p\) also divides \(q\):
+                        $$p \mid q$$
+                        If \(p\) divides \(P\) and \(q\), it must also divide their difference (since that is a <a href="../linear-combination">linear combination</a> of \(P\) and \(q\)):
+                        $$p \mid (q - P)$$
+                        Remember that \(q = P + 1\):
+                        $$p \mid ((P + 1) - P)$$
+                        $$p \mid 1$$
+                        It is impossible for a prime to divide \(1\). The only positive integer that can divide \(1\) is itself. So, there's no way for the prime factor \(p\) to be in the finite set of primes. Therefore, a prime exists outside the finite set and it is \(p\). \(■\)
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Often, this proof is needlessly formulated as a <a href="../proof-by-contradiction">proof by contradiction</a>. Make no mistake. Thousands of years ago, Euclid proved this theorem directly, as shown above. The assumption that the finite set consists of all primes is totally unnecessary, and honestly, making the proof indirect weakens it.
+                    </div>
                     <p>
-                        Algorithms are often written in programming languages, which have strict rules on syntax to ensure that a computer can compile it. To avoid syntax and focus only on the actual meaning of the code, an in-between language is used: <a href="../pseudocode">pseudocode</a>. Here's an example of an algorithm (the <a href="../euclidean-algorithm">Euclidean algorithm</a>) written in pseudocode:
-                    </p>
-                    <pre class="code-block"><b>algorithm</b> euclid <b>is</b><br>    <b>input:</b> two integers, a and b, where a ≤ b<br>    <b>output:</b> their greatest common divisor (gcd)<br><br>    r ← b <b>mod</b> a<br>    <b>while</b> r ≠ 0<br>        b ← a<br>        a ← r<br>        r ← b <b>mod</b> a<br>    <b>return</b> a</pre>
-                    <p>
-                        More advanced algorithms perform work beyond the scope of a simple calculation, using <a href="../command">programming constructs</a> such as conditionals to divert code, loops for iteration, and recursion to divide problems into easier sub-problems.
-                    </p>
-                    <p>
-                        The output of an algorithm is specified by a <span class="code-inline">return</span> command.
+                        Well, it looks like we'll never run out of primes! So, if in an application, you need a larger prime, keep looking, and you will find one given enough time. Although, as the <a href="../prime-number-theorem">prime number theorem</a> states, this could be a really long time.
                     </p>
                 </div>
             </div>

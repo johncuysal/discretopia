@@ -167,8 +167,46 @@
                 </div>
                 <div id="written-content">
                     <p>
-                        The <b>prime number theorem</b>
+                        The <b>prime number theorem (PNT)</b> describes the approximate distribution of primes among the positive <a href="../integer">integers</a>. As integers get larger, primes get rarer at a rate quantified by this <a href="../theorem">theorem</a>.
                     </p>
+                    <div class="math-definition">
+                        The prime-counting function \(\pi(x)\), which returns the number of primes less than or equal to \(x\), has the following asymptotic behavior:
+                        $$\lim_{{x \to \infty}} \pi(x) = \frac{x}{\ln(x)}$$
+                        Therefore, for large \(x\), the function \(\frac{x}{\ln(x)}\) closely approximates \(\pi(x)\).
+                    </div>
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/PrimePi.svg" alt="A graph of the prime-counting function.">
+                        <figcaption>A graph of the prime-counting function.<sup>[1]</sup></figcaption>
+                    </figure>
+                    <p>
+                        This leads to a few useful applications. First of all, if you wanted to get an idea of roughly how many primes exist among the first \(512\) positive integers, you'd just need to calculate \(\frac{512}{\ln(512)} \approx 82\).
+                    </p>
+                    <p>
+                        Furthermore, if you wanted to estimate the probability of selecting a prime out of the first \(512\) positive integers, you'd just need to calculate \(\frac{82}{512} \approx 0.16\).
+                    </p>
+                    <p>
+                        Generally, the probability of selecting a prime out of the first \(x\) positive integers can be estimated using the formula \(\frac{1}{\ln(x)}\).
+                    </p>
+                    <p>
+                        The prime number theorem is also useful for generating large primes because it gives you an estimate of how many times you'd need to randomly generate an integer in a specific range before you're likely to get one that passes a <a href="../primality-test">primality test</a>. Without going into specifics, the number of random trials necessary depends on the number of digits of the prime you are trying to generate, rather than its magnitude, which is why this method of generating primes is efficient.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Why would you want to generate a large prime? Well, to give an example, prime-sized hash tables can benefit from minimized collisions and enhanced probing. So, if you need space for \(n\) entries in your hash table, it's better to generate a prime number greater than or equal to \(n\) and use that as the hash table's size, allowing you to enjoy the benefits of the unique mathematical properties of primes. (According to <a href="../euclids-theorem">Euclid's theorem</a>, you'll always be able to find a large enough prime!)
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Also, it should be noted that the generation of large prime numbers is essential in cryptography.
+                    </div>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>References</h2>
+                    <hr>
+                    <ol>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:PrimePi.svg">PrimePi.svg: Bender2k14</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons.</li>
+                    </ol>
                 </div>
             </div>
         </div>
