@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/proof-by-induction/">
+    <title>Proof by induction - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../../">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../../">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../../">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
+                        Number Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#recursion">
+                        Recursion
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Guides
+                    <hr>
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
+                        <!--How to write a proof-->
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Downloads
+                    <hr>
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
+                        <!--What's that symbol?-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Proof by induction</h1>
+                    <hr>
+                    <i>Last Updated: 14 June 2023</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        A <b>proof by induction</b> is a <a href="../direct-proof">direct proof</a> that proves a <a href="../predicate">predicate</a> \(P(n)\) evaluates to a true <a href="../proposition">proposition</a> for every  <a href="../integer">integer</a> \(n \geq b\). It does this by establishing a <i>base case</i> \(P(b)\) and showing an <i>inductive step</i> can always be taken from \(P(k)\) to \(P(k + 1)\) for any integer \(k \geq b\). Then, all cases can be considered proven, according to the <i>principle of mathematical induction (PMI)</i>:
+                    </p>
+                    <div class="math-definition">
+                        The predicate \(P(n)\) holds true for every integer \(n \geq b\) if:
+                        <ol>
+                            <li>A base case, \(P(b)\), is true. Often, \(b\) is \(1\), but it can really be any fixed integer you want to start at.</li>
+                            <li>For any integer \(k \geq b\), \(P(k) \rightarrow P(k+1)\), meaning any case implies the case after it. This is the inductive step.</li>
+                        </ol>
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Inductive steps can't be taken backward, so the integer \(b\) you select for your base case will be the smallest case proven. In proofs by induction, \(P(n)\) can only be shown to hold true for \(n \geq b\). So, choose a small value for \(b\), if you can.
+                    </div>
+                    <p>
+                        In an inductive step \(P(k) \rightarrow P(k+1)\), the assumption \(P(k)\) is known as the <i>inductive hypothesis</i>. Thinking about how it can imply \(P(k+1)\) will help you come up with a working inductive step.
+                    </p>
+                    <p>
+                        Intuitively, you can imagine a proof by induction as trying to connect the base case to any arbitrary case through infinitely many implications: \(P(1) \rightarrow P(2) \rightarrow P(3) \rightarrow ...\)
+                    </p>
+                    <p>
+                        Proofs by induction are considered direct proofs. Once you prove the base case and inductive step, you essentially have the hypothesis: \(P(1) \land (P(1) \rightarrow P(2)) \land (P(2) \rightarrow P(3)) \land (P(3) \rightarrow ...)\), from which you can deduce the conclusion: \(P(1) \land P(2) \land P(3) \land ...\)
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Despite the name, mathematical induction actually relies on deductive reasoning, logically speaking. This is because any case can be rigorously deduced through a finite number of inductive steps. So, this is not inductive reasoning, which involves generalizing based on evidence to form probable conclusions. Mathematical induction is much stronger than that.
+                    </div>
+                    <p>
+                        Overall, proofs by induction are preferred when trying to show a property is true for all elements in a sequence.
+                    </p>
+                    <p>
+                        If you're new to writing proofs by induction, you may feel more comfortable following a "recipe" like this:
+                    </p>
+                    <ol>
+                        <li>State the variable you intend to perform induction on.</li>
+                        <li>Establish a base case by checking the case where the variable is input as some integer \(b\).</li>
+                        <li>To make an inductive step, assume the \(k\) case is true, for \(k \geq b\). Use this to show the \(k+1\) case must also be true.</li>
+                        <li>Write out the implication you've just proven. Then, state the principle of mathematical induction, and you're done! \(■\)</li>
+                    </ol>
+                    <p>
+                        Here's an example of a proof by induction, with plenty of extra comments to make it clear what's going on:
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: For every positive integer \(n\), \(\sum\limits_{i=1}^{n}i = \frac{n(n+1)}{2}\).<br>
+                        <b>Proof by induction</b>: Let \(P(n)\) be defined as the following predicate:
+                        $$P(n) : \sum\limits_{i=1}^{n}i = \frac{n(n+1)}{2}$$
+                        We will show \(P(n)\) holds true for all positive integers by performing induction on \(n\).<br><br>
+                        <i>Base case:</i><br>
+                        Let's start from the base case \(n = 1\):
+                        $$P(1) : \sum\limits_{i=1}^{1}i = \frac{1(1+1)}{2}$$
+                        $$(1) = \frac{1(2)}{2}$$
+                        $$1 = 1\checkmark$$
+                        The base case holds true.<br><br>
+                        <i>Inductive step:</i><br>
+                        Now, the difficult part. We need to prove \(P(k)\) implies \(P(k + 1)\), for \(k \geq 1\). In other words, we must deduce:
+                        $$P(k + 1) : \sum\limits_{i=1}^{k + 1}i = \frac{(k+1)((k+1)+1)}{2} = \frac{(k+1)(k+2)}{2}$$
+                        From the inductive hypothesis:
+                        $$P(k) : \sum\limits_{i=1}^{k}i = \frac{k(k+1)}{2}$$
+                        Well, we know intuitively that \(\sum\limits_{i=1}^{k + 1}i\), the sum of the first \(k+1\) positive integers, must be equal to the sum of the first \(k\) positive integers plus that last positive integer, \(k+1\):
+                        $$\sum\limits_{i=1}^{k + 1}i = \sum\limits_{i=1}^{k}i + (k + 1)$$
+                        According to our inductive hypothesis, \(\sum\limits_{i=1}^{k}i = \frac{k(k+1)}{2}\). Substituting:
+                        $$\sum\limits_{i=1}^{k + 1}i = (\frac{k(k+1)}{2}) + (k + 1)$$
+                        $$\sum\limits_{i=1}^{k + 1}i = \frac{k(k+1)}{2} + \frac{2(k + 1)}{2}$$
+                        $$\sum\limits_{i=1}^{k + 1}i = \frac{k(k+1) + 2(k + 1)}{2}$$
+                        $$\sum\limits_{i=1}^{k + 1}i = \frac{k^2 + 3k + 2}{2}$$
+                        After factoring:
+                        $$\sum\limits_{i=1}^{k + 1}i = \frac{(k+1)(k+2)}{2}$$
+                        Thus, it can be concluded that if \(\sum\limits_{i=1}^{k}i = \frac{k(k+1)}{2}\) for \(k \geq 1\), then \(\sum\limits_{i=1}^{k + 1}i = \frac{(k+1)(k+2)}{2}\). By the principle of mathematical induction, \(\sum\limits_{i=1}^{n}i = \frac{n(n+1)}{2}\) for \(n \geq 1\). \(■\)
+                    </div>
+                    <p>
+                        Here's another, much more compact proof by induction:
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: For integers \(n \geq 5\), \(2^n > 4n\).<br>
+                        <b>Proof by induction</b>: Let's perform induction on \(n\).<br>
+                        <i>Base case \((n = 5)\):</i><br>
+                        $$n = 5 : 2^{(5)} > 4(5)$$
+                        $$32 > 20\checkmark$$
+                        <i>Inductive step:</i> Assume \(2^k > 4k\) for \(k \geq 5\). We want to show \(2^{(k+1)} > 4(k+1)\), which simplifies to \(2^{k+1} > 4k + 4\). According to the inductive hypothesis:
+                        $$2^k > 4k$$
+                        Therefore:
+                        $$2 \times 2^k > 2 \times 4k$$
+                        $$2^{k+1} > 8k$$
+                        We've now established that \(2^{k+1} > 8k\), but is \(8k > 4k + 4\)? Since \(k \geq 5\), it is a positive integer greater than or equal to \(1\), so we can safely assume:
+                        $$8k > 4k + 4$$
+                        Combining this with the previous inequality:
+                        $$2^{k+1} > 4k + 4$$
+                        Thus, it can be concluded that if \(2^k > 4k\) for \(k \geq 5\), then \(2^{k+1} > 4k + 4\). By the principle of mathematical induction, \(2^n > 4n\) for integers \(n \geq 5\). \(■\)
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Notice that to prove the above theorem, we couldn't use the base case \(n = 4\) because \(2^{(4)} = 4(4)\). The two sides are not allowed to be equal, so we chose the next smallest integer for our base case, \(5\).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>
