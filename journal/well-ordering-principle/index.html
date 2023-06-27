@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/well-ordering-principle/">
+    <title>Well-ordering principle - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../../">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../../">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../../">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
+                        Number Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../journal/#recursion">
+                        Recursion
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Guides
+                    <hr>
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
+                        <!--How to write a proof-->
+                    </a>
+                </div>
+                <div class="sidebar-section">
+                    Downloads
+                    <hr>
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
+                        <!--What's that symbol?-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Well-ordering principle</h1>
+                    <hr>
+                    <i>Last Updated: 26 June 2023</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        The <b>well-ordering principle</b> states that every non-<a href="../empty-set">empty</a> <a href="../subset">subset</a> of the <a href="../set">set</a> of <a href="../integer">integers</a> has a smallest element, in other words, a minimum. It's often used in <a href="../proof-by-contradiction">proofs by contradiction</a>. Here's the principle written formally:
+                    </p>
+                    <div class="math-definition">
+                        For every set \(S\), where \(S \subseteq \mathbb{Z}\) and \(|S| \neq 0\), there exists an integer \(m \in S\) such that for all integers \(x \in S\):
+                        $$m \leq x$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Sometimes, for the sake of simplicity, \(S \subseteq \mathbb{Z}\) is written as \(S \subseteq \mathbb{Z}^{+}\) instead. In reality, <i>any</i> set of elements that can be ordered from least to greatest ("totally ordered") has a minimum. Sounds kind of obvious, but it's important to be clear. By generalizing the well-ordering principle to include not just positive integers but all integers, it's much less restrictive.
+                    </div>
+                    <div class="math-notice">
+                        ⚠ The reason \(\leq\) is used in \(m \leq x\) is because the minimum is less than every other integer, but equal to itself. Therefore, for every integer \(x\) in \(S\), the statement \(m \leq x\) is always true.
+                    </div>
+                    <p>
+                        This principle is <a href="../logical-equivalence">logically equivalent</a> to the principle of mathematical induction and the principle of strong mathematical induction. Weird, huh? And yet, it sort of makes sense... maybe. Here's a proof that might help with seeing the connection:
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: If the well-ordering principle is true, then the principle of mathematical induction is also true.<br>
+                        <b>Proof by contradiction</b>: In proofs by contradiction, we always assume the negation of the theorem and show that it must lead to a contradiction. Logically speaking, the negated theorem would be "The well-ordering principle is true and the principle of mathematical induction is false." Remember the principle of mathematical induction is itself the statement "If a base case \(P(b)\) is true and \(P(k) \rightarrow P(k+1)\) for all \(k \geq b\), then \(P(n)\) is true for all \(n \geq b\)." Assuming that it's false would mean assuming its negation: "A base case \(P(b)\) is true and \(P(k) \rightarrow P(k+1)\) for all \(k \geq b\), but there exists some \(n \geq b\) such that \(P(n)\) evaluates as false." That gives us the following assumptions to work with from that lengthy introduction:
+                        <ol>
+                            <li>The well-ordering principle is true.</li>
+                            <li>A base case \(P(b)\) is true.</li>
+                            <li>\(P(k) \rightarrow P(k+1)\) for all \(k \geq b\).</li>
+                            <li>There exists some \(n \geq b\) such that \(P(n)\) evaluates as false.</li>
+                        </ol>
+                        Alright, now we need to use these assumptions to reach a contradiction. Let's define a set \(F\):
+                        $$F = \set{x \in \mathbb{Z} : \lnot P(x) \land x \geq b}$$
+                        \(F\) is the set of all integers greater than or equal to \(b\), for which \(P(n)\) evaluates as false. By assumption #4, there exists some \(n \geq b\) such that \(P(n)\) evaluates as false, meaning it would qualify as a member of this set. Therefore, \(F\) is non-empty. Additionally, since \(F\) draws its elements from the set of integers, it is a subset of the set of integers. By assumption #1, the well-ordering principle is true, which means the non-empty subset of the set of integers, \(F\), has a minimum element, \(m\). Since a minimum \(m\) exists, anything smaller than \(m\), like \(m - 1\) for example, cannot also be in the set \(F\). Because that would contradict the fact that \(m\) is the minimum, you know? Generally, any integer \(y\) that is not in \(F\) is less than \(b\) or makes \(P(y)\) hold true. Since \(m\) is in \(F\), we know \(m \geq b\). Let's explore these two cases:<br>
+                        1. \(m = b\)<br>
+                        If \(m = b\), then \(P(b)\) cannot be true, as that's a requirement for being an element of \(F\). By assumption #2, we know that a base case \(P(b)\) is true. <i>Contradiction!</i><br>
+                        2. \(m > b\)<br>
+                        If \(m > b\), then \(m - 1 > b - 1\), which can be alternatively written as \(m - 1 \geq b\), since \(m\) and \(b\) are integers. As we discussed before, anything smaller than \(m\) cannot be in \(F\). Therefore, \(m - 1\) is not in \(F\). Since \(m - 1 \geq b\), the reason it was not included in \(F\) must have been because \(P(m - 1)\) held true. So, we can be certain that \(P(m - 1)\) holds true. By assumption #3, \(P(k) \rightarrow P(k+1)\) for all \(k \geq b\), and because \(m - 1 \geq b\), \(P(m - 1) \rightarrow P(m)\). Since \(P(m - 1)\) holds true, \(P(m)\) holds true too. But wait, isn't \(P(m)\) supposed to be false as a requirement of \(m\) being in the set \(F\)? That's right. <i>Contradiction!</i><br>
+                        Thus, no matter which of the two cases you choose, you will always arrive at a contradiction. This indirectly proves that the well-ordering principle implies the principle of mathematical induction. \(■\)
+                    </div>
+                    <p>
+                        Woo. That was the most complicated proof I've had to write so far. This took so long to research! I hope you've found this proof to be both informative and approachable. I really do make an effort to have these mind-boggling proofs be as friendly as possible!
+                    </p>
+                    <p>
+                        The well-ordering principle can also be used to prove that <a href="../division-algorithm">division algorithms</a> will always work:
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: For any two integers \(n\) and \(d\), where \(d > 0\), some integers \(q\) and \(r\) exist, with \(0 \leq r \leq d - 1\), to satisfy the equation \(n = qd + r\).<br>
+                        <b>Proof by contradiction</b>: Let's assume the logical negation of the theorem, which is: "There exist two integers \(n\) and \(d\), where \(d > 0\), such that no integers \(q\) and \(r\) exist that satisfy both \(0 \leq r \leq d - 1\) and \(n = qd + r\)." Got it. That means \(n\) and \(d\) exist such that for any integers \(q\) and \(r\), at least one of these conditions is true:
+                        <ol>
+                            <li>\(r < 0\)</li>
+                            <li>\(r > d - 1\)</li>
+                            <li>\(n \neq qd + r\)</li>
+                        </ol>
+                        Our job is to show \(q\) and \(r\) exist that make all three of these conditions false. Now, let's consider a set \(S\) defined as follows:
+                        $$S = \set{x \in \mathbb{Z}^{\geq 0} : x = n - td \land t \in \mathbb{Z}}$$
+                        This is the set of all non-negative integers that can be written in the form \(n - td\), where \(t\) is any integer, and \(n\) and \(d\) are the two integers from our assumption. Intuitively, the set \(S\) cannot be empty because \(t\) can be any integer, capable of bringing \(x = n - td\) into the non-negative range. Therefore, by the well-ordering principle, \(S\) has a minimum, which we'll just happen to call \(r\). Likewise, the specific value of \(t\) for which \(r = n - td\) will be denoted \(q\). So, \(r\) can be written as:
+                        $$r = n - qd$$
+                        If you rearrange, you'll realize that, at this point, we have shown there <i>are</i> integers \(q\) and \(r\) such that \(n = qd + r\). We've therefore found \(q\) and \(r\) that can make that third condition false. What about the other two conditions? Well, since \(r\) is defined as the minimum element of \(S\), it must, like any other element of \(S\), be non-negative, as that is a requirement for membership. Therefore, the specific \(r\) we are working with makes the first condition, \(r < 0\), false. Now, realize we have knocked down two of the three conditions. When we assumed the negation of the theorem, we claimed at least one of these conditions will always be true, but we just found \(q\) and \(r\) such that \(r \geq 0\) and \(n = qd + r\). If \(r > d - 1\) is also found to be false, a contradiction is inevitable. So, let's assume \(r > d - 1\). If \(r > d - 1\), then \(r \geq d\), which further implies \(r - d \geq 0\). In other words, \(d\), a positive integer, could be subtracted from \(r\) to obtain a non-negative integer smaller than \(r\). Let's do just that:
+                        $$r - d = n - qd - d = n - (q + 1)d$$
+                        Well, since \(q\) is an integer, \(q + 1\) is also an integer. This means \(r - d\) can be written in the form \(n - td\) for some integer \(t\), which in this case is \(q + 1\). Combine that with the fact that it's non-negative, and \(r - d\) qualifies as a member of \(S\), smaller than \(r\). Hey, wasn't \(r\) supposed to be the minimum? Yeah... <i>Contradiction!</i><br>
+                        Thus, it is indirectly proven that for any \(n\) and \(d\), where \(d > 0\), there will always be integers \(q\) and \(r\) such that \(0 \leq r \leq d - 1\) and \(n = qd + r\). \(■\)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

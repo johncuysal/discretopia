@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="author" content="John C. Uysal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/script.js"></script>
+    <script src="../../scripts/script.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="css/discretopia.css">
-    <link rel="icon" href="images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/">
-    <title>Discretopia, the friendly discrete math reference</title>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/fibonacci-sequence/">
+    <title>Fibonacci sequence - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
         <div id="wordmark-container">
             <div id="wordmark" class="centered">
-                <a href="">DISCRETOPIA</a>
+                <a href="../../">DISCRETOPIA</a>
             </div>
         </div>
         <div id="search-container">
@@ -27,7 +27,7 @@
     <main>
         <div id="side-container">
             <div id="logo-container">
-                <a href="">
+                <a href="../../">
                     <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
                         <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
                         <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
@@ -77,15 +77,15 @@
             </div>
             <div class="sidebar-block">
                 <div class="sidebar-section">
-                    <a class="sidebar-link" href="">
+                    <a class="sidebar-link" href="../../">
                         Main page
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal">
+                    <a class="sidebar-link" href="../">
                         View the journal
                     </a>
                     <br>
-                    <a class="sidebar-link" href="about">
+                    <a class="sidebar-link" href="../../about">
                         About Discretopia
                     </a>
                     <br>
@@ -98,61 +98,61 @@
                 <div class="sidebar-section">
                     Overview
                     <hr>
-                    <a class="sidebar-link" href="journal#logic-and-proofs">
+                    <a class="sidebar-link" href="../../journal/#logic-and-proofs">
                         Logic & Proofs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#set-theory">
+                    <a class="sidebar-link" href="../../journal/#set-theory">
                         Set Theory
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#functions">
+                    <a class="sidebar-link" href="../../journal/#functions">
                         Functions
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#algorithms">
+                    <a class="sidebar-link" href="../../journal/#algorithms">
                         Algorithms
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#relations">
+                    <a class="sidebar-link" href="../../journal/#relations">
                         Relations
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#integer-properties">
+                    <a class="sidebar-link" href="../../journal/#integer-properties">
                         Number Theory
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#induction">
+                    <a class="sidebar-link" href="../../journal/#induction">
                         Induction
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#combinatorics">
+                    <a class="sidebar-link" href="../../journal/#combinatorics">
                         Combinatorics
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#graphs">
+                    <a class="sidebar-link" href="../../journal/#graphs">
                         Graphs
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#trees">
+                    <a class="sidebar-link" href="../../journal/#trees">
                         Trees
                     </a>
                     <br>
-                    <a class="sidebar-link" href="journal#recursion">
+                    <a class="sidebar-link" href="../../journal/#recursion">
                         Recursion
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Guides
                     <hr>
-                    <a class="sidebar-link" href="guides/how-to-write-a-proof">
+                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
                         <!--How to write a proof-->
                     </a>
                 </div>
                 <div class="sidebar-section">
                     Downloads
                     <hr>
-                    <a class="sidebar-link" href="pdfs/symbol-cheat-sheet.pdf">
+                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
                         <!--What's that symbol?-->
                     </a>
                 </div>
@@ -160,66 +160,30 @@
         </div>
         <div id="content-container">
             <div id="content">
+                <div id="title-box">
+                    <h1>Fibonacci sequence</h1>
+                    <hr>
+                    <i>Last Updated: 20 June 2023</i>
+                </div>
                 <div id="written-content">
-                    <div class="main-page-block">
-                        <div class="centered main-page-block-title">
-                            Welcome to <a href="about">Discretopia</a>,
-                        </div>
-                        <div class="centered main-page-block-subtitle">
-                            the friendly discrete math reference.
-                        </div>
-                        <div class="centered main-page-block-statistic">
-                            81 <a href="journal">journal</a> entries as of 26 June 2023
-                        </div>
+                    <blockquote>
+                        You already know what it is!
+                    </blockquote>
+                    <p>
+                        The famous <b>Fibonacci sequence</b> is a sequence of integers in which each integer is the sum of the two integers before it, starting with \(0\) and \(1\).
+                    </p>
+                    <div class="math-definition">
+                        The Fibonacci sequence is defined by the following recurrence relation for \(n \geq 2\):
+                        $$f_0 = 0$$
+                        $$f_1 = 1$$
+                        $$f_n = f_{n-1} + f_{n-2}$$
                     </div>
-                    <div class="news-block-container">
-                        <div class="news-block-left">
-                            <div class="news-block-title">
-                                Featured entry: <a href="journal/euclidean-algorithm">Euclidean algorithm</a>
-                            </div>
-                            <div class="news-block-entry">
-                                <p>
-                                    The <b>Euclidean algorithm</b> is an efficient <a href="journal/algorithm">algorithm</a> that finds the <a href="journal/greatest-common-divisor">greatest common divisor</a> of two <a href="journal/integer">integers</a>, without knowledge of their <a href="journal/prime-factorization">prime factorizations</a>. It is one of the oldest algorithms still in use today, based on the following <a href="journal/theorem">theorem</a>:
-                                </p>
-                                <div class="math-definition">
-                                    For any two positive integers \(a\) and \(b\):
-                                    $$\gcd(a, b) = \gcd(a \bmod b, b)$$
-                                </div>
-                                <p>
-                                    (<a href="journal/euclidean-algorithm">Read more...</a>)
-                                </p>
-                            </div>
-                            <div class="news-block-title">
-                                Did you know ...
-                            </div>
-                            <div class="news-block-entry">
-                                <ul>
-                                    <li>... that any two consecutive <a href="journal/integer">integers</a> have opposite <a href="journal/integer#parity">parity</a>?</li>
-                                    <li>... that \(0\) is <a href="journal/real-number#sign">not positive or negative, but instead non-positive and non-negative</a>?</li>
-                                    <li>... that to <a href="journal/statement#existential-statements">disprove an existential statement, you need to prove a universal statement</a>?</li>
-                                    <li>... that any <a href="journal/compound-proposition">compound proposition</a> can be rewritten as a <a href="journal/disjunctive-normal-form">disjunction of conjunctions</a>?</li>
-                                    <li>... that the act of using a <a href="journal/compound-proposition#truth-table">truth table</a> to determine the <a href="journal/logical-equivalence">logical equivalence</a> of two <a href="journal/compound-proposition">compound propositions</a> has an exponential <a href="journal/time-complexity">time complexity</a>?</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="news-block-right">
-                            <div class="news-block-title">
-                                What's new?
-                            </div>
-                            <div class="news-block-entry">
-                                <h2><i>Discretopia</i> v0.6 Update!</h2>
-                                <p>
-                                    Finally done with the <a class="sidebar-link" href="journal#number-theory">Number Theory</a> section, which was the toughest yet!
-                                </p>
-                                <p>
-                                    Well, next is induction!
-                                </p>
-                                <p>
-                                    I'll keep doing my very best to shape <i>Discretopia</i> into the clever, powerful reference it was always meant to be!<br>— John
-                                </p>
-                            </div>
-                        </div>
+                    <div class="math-notice">
+                        ⚠ Some define the first Fibonacci numbers to be \(1\) and \(1\). Fibonacci actually used \(1\) and \(2\). On <i>Discretopia</i>, rest assured, we will only ever use \(0\) and \(1\) as the first two Fibonacci numbers.
                     </div>
+                    <p>
+                        As the sequence progresses, the ratio between any two consecutive Fibonacci numbers becomes an ever-better approximation of the golden ratio, \(\varphi\).
+                    </p>
                 </div>
             </div>
         </div>

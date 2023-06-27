@@ -163,7 +163,7 @@
                 <div id="title-box">
                     <h1>Proof by induction</h1>
                     <hr>
-                    <i>Last Updated: 14 June 2023</i>
+                    <i>Last Updated: 20 June 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
@@ -183,7 +183,7 @@
                         In an inductive step \(P(k) \rightarrow P(k+1)\), the assumption \(P(k)\) is known as the <i>inductive hypothesis</i>. Thinking about how it can imply \(P(k+1)\) will help you come up with a working inductive step.
                     </p>
                     <p>
-                        Intuitively, you can imagine a proof by induction as trying to connect the base case to any arbitrary case through infinitely many implications: \(P(1) \rightarrow P(2) \rightarrow P(3) \rightarrow ...\)
+                        You can imagine a proof by induction as trying to connect the base case to any arbitrary case through infinitely many implications.
                     </p>
                     <p>
                         Proofs by induction are considered direct proofs. Once you prove the base case and inductive step, you essentially have the hypothesis: \(P(1) \land (P(1) \rightarrow P(2)) \land (P(2) \rightarrow P(3)) \land (P(3) \rightarrow ...)\), from which you can deduce the conclusion: \(P(1) \land P(2) \land P(3) \land ...\)
@@ -192,7 +192,7 @@
                         ⚠ Despite the name, mathematical induction actually relies on deductive reasoning, logically speaking. This is because any case can be rigorously deduced through a finite number of inductive steps. So, this is not inductive reasoning, which involves generalizing based on evidence to form probable conclusions. Mathematical induction is much stronger than that.
                     </div>
                     <p>
-                        Overall, proofs by induction are preferred when trying to show a property is true for all elements in a sequence.
+                        Proofs by induction are preferred when trying to show a statement holds true for all elements in a sequence, set, or other recursively defined structures.
                     </p>
                     <p>
                         If you're new to writing proofs by induction, you may feel more comfortable following a "recipe" like this:
@@ -239,7 +239,7 @@
                     <div class="math-definition">
                         <b>Theorem</b>: For integers \(n \geq 5\), \(2^n > 4n\).<br>
                         <b>Proof by induction</b>: Let's perform induction on \(n\).<br>
-                        <i>Base case \((n = 5)\):</i><br>
+                        <i>Base case:</i><br>
                         $$n = 5 : 2^{(5)} > 4(5)$$
                         $$32 > 20\checkmark$$
                         <i>Inductive step:</i> Assume \(2^k > 4k\) for \(k \geq 5\). We want to show \(2^{(k+1)} > 4(k+1)\), which simplifies to \(2^{k+1} > 4k + 4\). According to the inductive hypothesis:
