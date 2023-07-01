@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/summation/">
-    <title>Summation - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/recursion/">
+    <title>Recursion - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,51 +161,82 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Summation</h1>
+                    <h1>Recursion</h1>
                     <hr>
-                    <i>Last Updated: 28 January 2023</i>
+                    <i>Last Updated: 1 July 2023</i>
                 </div>
                 <div id="written-content">
                     <blockquote>
-                        Sum thing you should know about.
+                        See the entry on <a href="../recursion">recursion</a> for more details.
                     </blockquote>
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Ouroboros.png" alt="The ouroboros symbolizes self-reference.">
+                        <figcaption>The ouroboros symbolizes self-reference.</figcaption>
+                    </figure>
                     <p>
-                        <b>Summation</b> is the iterative addition of a <a href="../sequence">sequence</a> of numbers, denoted by \(\sum\).
+                        <b>Recursion</b> occurs when something refers to itself in its own definition. A <i>recursive definition</i> consists of a <i>base case</i> that does not use recursion, and a <i>recursive step</i> that reduces any successive case toward the base case. <a href="../sequence">Sequences</a>, <a href="../set">sets</a>, and <a href="../function">functions</a> can be defined in this way.
                     </p>
-                    <div class="math-definition">
-                        The summation of an expression \(a_i\) from \(i=m\) to \(n\) is written as:
-                        $$\sum\limits_{i=m}^{n}a_i$$
-                        Initially, \(i=m\). Each iteration, \(i\) gets incremented by \(1\) until \(i=n\). To evaluate a summation, evaluate \(a_i\) for each value \(i\) can attain, and then sum it all up:
-                        $$\sum\limits_{i=m}^{n}a_i = a_m + a_{m+1} + ... + a_{n-1} + a_n$$
-                        Alternatively, the summation of an expression \(a_i\) for each element in a set \(S = \set{x_1, x_2, ... x_k}\) would look like this:
-                        $$\sum\limits_{i \in S}a_i$$
-                        To evaluate this summation, evaluate \(a_i\) for each value \(i\) can attain, which in this case is each element of \(S\), and then sum it all up as before:
-                        $$\sum\limits_{i \in S}a_i = a_{x_1} + a_{x_2} + ... + a_{x_k}$$
-                    </div>
+                    <p>
+                        For example, <a href="../factorial">factorials</a> and the <a href="../fibonacci-sequence">Fibonacci sequence</a> are both capable of being recursively defined.
+                    </p>
+                    <p>
+                        In computing, a recursive <a href="../algorithm">algorithm</a> involves a method that calls itself on progressively simpler inputs until a base case can be reached.
+                    </p>
+                    <p>
+                        The strength of recursion is that it allows many complex structures to be represented concisely. However, when used improperly, recursion can cause infinite loops or other undefined behavior, so watch out for that!
+                    </p>
                     <div id="list-of-contents">
                         <div class="centered">
                             <b>Contents</b>
                         </div>
                         <hr>
                     </div>
-                    <h2>Nested summations</h2>
+                    <h2>Recursive definition</h2>
                     <hr>
                     <p>
-                        When you see a summation within another summation, don't panic. It is important that you take things one step at a time, so that you don't mess up. The recommended strategy is to evaluate the innermost summation first, and work your way outward. For example:
+                        Some sets are most intuitively defined through recursion, in which any arbitrary <a href="../element">element</a> can be assembled from simpler elements. These definitions will always include:
+                    </p>
+                    <ol>
+                        <li>A <i>base case</i>, which explicitly lists off one or more specific elements that are in the set.</li>
+                        <li>A <i>recursive rule</i>, which shows how to build additional elements from elements already in the set.</li>
+                        <li>An <i>exclusion statement</i>, which claims that for any element to be a part of the set, it must either already be in the base case, or be capable of being built through repeated application of the recursive rule on elements in the base case. Since this statement is the same for every recursively defined set, it is often omitted, because it is implied.</li>
+                    </ol>
+                    <p>
+                        For example, the set of all <a href="../binary-string">binary strings</a>, \(B^*\), can be recursively defined:
                     </p>
                     <div class="math-definition">
-                        Evaluate:
-                        $$\sum\limits_{i=5}^{7}(\sum\limits_{j=2}^{3}4i - j)$$
-                        My first step will be to expand the inner summation:
-                        $$\sum\limits_{i=5}^{7}((4i - (2)) + (4i - (3)))$$
-                        Notice that the variable \(i\) is not being evaluated yet because it is not the subject of the innermost summation, \(j\) is. Next, simplify:
-                        $$\sum\limits_{i=5}^{7}(8i - 5)$$
-                        Now, let's deal with \(i\) and expand the outer summation:
-                        $$(8(5) - 5) + (8(6) - 5) + (8(7) - 5)$$
-                        Upon simplification:
-                        $$129$$
-                        And that is our answer. All done!
+                        The set of all binary strings, \(B^*\), is recursively defined as follows:
+                        <ul>
+                            <li><i>Base case:</i> The <a href="../empty-string">empty string</a> \(\lambda \in B^*\).</li>
+                            <li><i>Recursive rule:</i> If \(x \in B^*\), then:
+                                <ul>
+                                    <li>\(x0 \in B^*\)</li>
+                                    <li>\(x1 \in B^*\)</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                    <p>
+                        Naturally, any binary string you can imagine can be built by starting with the empty string, \(\lambda\), and repeatedly concatenating \(0\) or \(1\) to the end of it. To build \(1011\) for example, the process would be: \(\lambda \rightarrow \lambda 1 = 1 \rightarrow 10 \rightarrow 101 \rightarrow 1011\).
+                    </p>
+                    <p>
+                        Actually, it's also possible to recursively define the length function of a binary string in a very similar manner:
+                    </p>
+                    <div class="math-definition">
+                        The length function of a binary string, \(\text{length}(x) = |x|\), is recursively defined as follows:
+                        <ul>
+                            <li><i>Base case:</i> The length of the empty string \(\lambda = 0\).</li>
+                            <li><i>Recursive rule:</i> If \(x \in B^*\), then:
+                                <ul>
+                                    <li>\(|x0| = |x| + 1\)</li>
+                                    <li>\(|x1| = |x| + 1\)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Of course, this definition requires that \(B^*\) is already defined. If it is, then, the length of every binary string can be determined by counting the number of concatenations that were made to the empty string \(\lambda\) in order to build it.
+                    </p>
                 </div>
             </div>
         </div>

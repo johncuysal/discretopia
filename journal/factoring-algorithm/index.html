@@ -184,7 +184,7 @@
                     <h2>Trial division</h2>
                     <hr>
                     <p>
-                        By extending the trial division implementation of a <a href="../primality-test">primality test</a>, you can generate the prime factorization of an integer as a sequence of prime factors:
+                        By extending the trial division implementation of a <a href="../primality-test">primality test</a>, you can generate the prime factorization of an integer as a <a href="../sequence">sequence</a> of prime factors:
                     </p>
                     <pre class="code-block"><b>algorithm</b> factorize <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> its prime factorization, as a sequence of integers<br><br>    prime_factors ← []<br>    <b>for</b> f = 2 <b>to</b> (n - 1)<br>        <b>while</b> n <b>mod</b> f = 0<br>            append f to prime_factors<br>            n ← n <b>div</b> f<br>    <b>if</b> n > 1<br>        append n to prime_factors<br>    <b>return</b> prime_factors<br></pre>
                     <p>

@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/summation/">
-    <title>Summation - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/sequence/">
+    <title>Sequence - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,51 +161,23 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Summation</h1>
+                    <h1>Sequence</h1>
                     <hr>
-                    <i>Last Updated: 28 January 2023</i>
+                    <i>Last Updated: 26 June 2023</i>
                 </div>
                 <div id="written-content">
-                    <blockquote>
-                        Sum thing you should know about.
-                    </blockquote>
                     <p>
-                        <b>Summation</b> is the iterative addition of a <a href="../sequence">sequence</a> of numbers, denoted by \(\sum\).
+                        A <b>sequence</b> is an ordered collection of <a href="../element">elements</a> where repetitions are allowed, in contrast to a <a href="../set">set</a>. Intuitively, you can think of every sequence as being supported by a <a href="../function">function</a> that maps a set of consecutive non-negative <a href="../integer">integers</a> (indexes) to a set of elements.
                     </p>
-                    <div class="math-definition">
-                        The summation of an expression \(a_i\) from \(i=m\) to \(n\) is written as:
-                        $$\sum\limits_{i=m}^{n}a_i$$
-                        Initially, \(i=m\). Each iteration, \(i\) gets incremented by \(1\) until \(i=n\). To evaluate a summation, evaluate \(a_i\) for each value \(i\) can attain, and then sum it all up:
-                        $$\sum\limits_{i=m}^{n}a_i = a_m + a_{m+1} + ... + a_{n-1} + a_n$$
-                        Alternatively, the summation of an expression \(a_i\) for each element in a set \(S = \set{x_1, x_2, ... x_k}\) would look like this:
-                        $$\sum\limits_{i \in S}a_i$$
-                        To evaluate this summation, evaluate \(a_i\) for each value \(i\) can attain, which in this case is each element of \(S\), and then sum it all up as before:
-                        $$\sum\limits_{i \in S}a_i = a_{x_1} + a_{x_2} + ... + a_{x_k}$$
-                    </div>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>Nested summations</h2>
-                    <hr>
                     <p>
-                        When you see a summation within another summation, don't panic. It is important that you take things one step at a time, so that you don't mess up. The recommended strategy is to evaluate the innermost summation first, and work your way outward. For example:
+                        For example, \((C, A, T)\) is a sequence. Another sequence is \((A, C, T)\). Because order matters, they're not the same sequence.
                     </p>
-                    <div class="math-definition">
-                        Evaluate:
-                        $$\sum\limits_{i=5}^{7}(\sum\limits_{j=2}^{3}4i - j)$$
-                        My first step will be to expand the inner summation:
-                        $$\sum\limits_{i=5}^{7}((4i - (2)) + (4i - (3)))$$
-                        Notice that the variable \(i\) is not being evaluated yet because it is not the subject of the innermost summation, \(j\) is. Next, simplify:
-                        $$\sum\limits_{i=5}^{7}(8i - 5)$$
-                        Now, let's deal with \(i\) and expand the outer summation:
-                        $$(8(5) - 5) + (8(6) - 5) + (8(7) - 5)$$
-                        Upon simplification:
-                        $$129$$
-                        And that is our answer. All done!
-                    </div>
+                    <p>
+                        In computing, finite sequences are known as <i>arrays</i> or <i>lists</i>, while infinite sequences are called <i>streams</i>.
+                    </p>
+                    <p>
+                        Sometimes, parentheses \(()\) are used to emphasize that a collection, such as \(a, b, c, d\), is in fact a sequence, \((a, b, c, d)\).
+                    </p>
                 </div>
             </div>
         </div>
