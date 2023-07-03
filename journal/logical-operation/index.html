@@ -163,7 +163,7 @@
                 <div id="title-box">
                     <h1>Logical operation</h1>
                     <hr>
-                    <i>Last Updated: 22 January 2023</i>
+                    <i>Last Updated: 2 July 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
@@ -404,6 +404,44 @@
                     </p>
                     <div class="math-notice">
                         ⚠ It is not recommended to use "vice versa" to express a biconditional statement, even if you think it sounds cooler.
+                    </div>
+                    <h2>Alternative denial</h2>
+                    <hr>
+                    <p>
+                        Alternative denial, a.k.a. non-conjunction, is a binary logical operation that results in a compound proposition which is false if and only if the starting propositions are both true. The alternative denial of propositions \(p\) and \(q\) is the proposition \(p \uparrow q\) and is read "not both \(p\) and \(q\)". It is false only if both \(p\) and \(q\) are true, and true if \(p\) is false, \(q\) is false, or both \(p\) and \(q\) are false.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>\(p\)</th>
+                            <th>\(q\)</th>
+                            <th>\(p \uparrow q\)</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                    <p>
+                        This operation is logically equivalent to the negation of conjunction. In particular, \(p \uparrow q \equiv \lnot (p \land q)\). Its symbol, \(\uparrow\) or \(|\), may be referred to as the Sheffer stroke.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Due to its ability to form a functionally complete formal system of logic, you can use alternative denial all by itself to form any compound proposition.
                     </div>
                 </div>
             </div>
