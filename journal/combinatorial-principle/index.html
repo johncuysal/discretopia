@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/cartesian-product/">
-    <title>Cartesian product - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/combinatorial-principle/">
+    <title>Combinatorial principle - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -161,61 +161,17 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Cartesian product</h1>
+                    <h1>Combinatorial principle</h1>
                     <hr>
                     <i>Last Updated: 9 July 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        The <b>Cartesian product</b> of two <a href="../set">sets</a> is the set of all possible ordered pairs made up of one <a href="../element">element</a> from each set. In set-builder notation, the Cartesian product \(A \times B\) of two sets \(A\) and \(B\) is defined as:
-                    </p>
-                    <div class="math-definition">
-                        $$A \times B = \set{ (a, b) : a \in A \land b \in B }$$
-                    </div>
-                    <p>
-                        Intuitively, the Cartesian product here can be viewed as the set of all combinations of \(a\) and \(b\) where \(a\) is an element of \(A\) and \(b\) is an element of \(B\).
+                        A <b>combinatorial principle</b> is an essential tool for solving problems related to counting, arranging, or selecting.
                     </p>
                     <p>
-                        For finite sets, the cardinality of their Cartesian product is the product of their individual cardinalities. This is expressed through the following equation: \(|A \times B| = |A| * |B|\), which is really just the <a href="../rule-of-product">rule of product</a>.
+                        Examples of combinatorial principles include: the rule of product, the rule of sum, and the pigeonhole principle.
                     </p>
-                    <div class="math-notice">
-                        ⚠ Recognize that \(A \times B \neq B \times A\). This is because the roles of the first and second elements have been swapped, and for ordered pairs, that matters. Therefore, while \(A \times B\) and \(B \times A\) have the same combinations, they do not have the same ordered pairs, making them different sets.
-                    </div>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>Cartesian products of several sets</h2>
-                    <hr>
-                    <p>
-                        When dealing with more than \(2\) sets at once, the definition of the Cartesian product can be generalized for \(n\) sets.
-                    </p>
-                    <div class="math-definition">
-                        For sets \(A_1, ..., A_n\), their Cartesian product is as follows:
-                        $$A_1 \times ... \times A_n = \set{ (a_1, ..., a_n) : \bigwedge_{i=1}^{n} a_i \in A_i}$$
-                    </div>
-                    <p>
-                        This can be read as "the set of all \(n\)-tuples whose \(i\)th element is an element of the \(i\)th set." Therefore, the Cartesian product of \(n\) sets is the set of all ordered \(n\)-tuples made up of one element from each set.
-                    </p>
-                    <h3>Cartesian product of a set with itself</h3>
-                    <hr>
-                    <p>
-                        The Cartesian product of a set \(A\) with itself is typically abbreviated as \(A^n\), defined as:
-                    </p>
-                    <div class="math-definition">
-                        $$A^n = \underbrace{A \times A \times ... \times A}_{n \, \text{times}}$$
-                    </div>
-                    <p>
-                        If \(A\) consists of only characters, you can instead write the elements of \(A^n\) as strings rather than as ordered \(n\)-tuples, which means you can forgo the use of parentheses and commas. Take \(\set{0, 1}^3\) for example, the set of all \(3\)-bit binary strings:
-                    </p>
-                    <div class="math-definition">
-                        $$\set{0, 1}^3 = \set{ 000, 001, 010, 011, 100, 101, 110, 111 }$$
-                    </div>
-                    <div class="math-notice">
-                        ⚠ Notably, the two-dimensional plane as we know it is the collection of all ordered pairs \((x, y)\) such that \((x, y) \in \mathbb{R}^2.\)
-                    </div>
                 </div>
             </div>
         </div>
