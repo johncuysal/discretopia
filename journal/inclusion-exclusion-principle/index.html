@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/combinatorial-principle/">
-    <title>Combinatorial principle - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/inclusion-exclusion-principle/">
+    <title>Inclusion-exclusion principle - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -142,35 +142,71 @@
                         Recursion
                     </a>
                 </div>
-                <div class="sidebar-section">
-                    Guides
-                    <hr>
-                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
-                        <!--How to write a proof-->
-                    </a>
-                </div>
-                <div class="sidebar-section">
-                    Downloads
-                    <hr>
-                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
-                        <!--What's that symbol?-->
-                    </a>
-                </div>
             </div>
         </div>
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Combinatorial principle</h1>
+                    <h1>Inclusion-exclusion principle</h1>
                     <hr>
-                    <i>Last Updated: 9 July 2023</i>
+                    <i>Last Updated: 28 December 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>combinatorial principle</b> is an essential tool for solving problems related to counting, arranging, or selecting.
+                        The <b>inclusion-exclusion principle</b> extends the <a href="../rule-of-sum">rule of sum</a> by providing a way to count the number of <a href="../element">elements</a> in a <a href="../set-operation#union">union</a> of <a href="../set">sets</a> which may share some elements in common.
+                    </p>
+                    <div class="math-definition">
+                        The cardinality of the union of \(2\) finite sets \(A\) and \(B\), such that the sets may share some elements in common, is the sum of their individual cardinalities minus the cardinality of their intersection:
+                        $$|A \cup B| = |A| + |B| - |A \cap B|$$
+                    </div>
+                    <p>
+                        To avoid overcounting, the number of elements that appear in both sets is subtracted. Let's see this principle in action!
                     </p>
                     <p>
-                        Examples of combinatorial principles include: the rule of product, the rule of sum, and the pigeonhole principle.
+                        How many ways are there for at least one of two differently-colored dice to come up as \(1\) after a roll? You could enumerate every single outcome to answer this question, but it's faster to use the inclusion-exclusion principle. Notice that there are \(6\) outcomes where one die shows up as \(1\), for each of the \(6\) numbers the other die can show. There are also \(6\) outcomes for the other die to show \(1\). Be cautious though, because there is also \(1\) outcome where both dice show \(1\). Subtract off this intersection to avoid counting snake-eyes twice: \(6 + 6 - 1 = 11\).
+                    </p>
+                    <p>
+                        In a room, there are \(5\) people who wear glasses, \(10\) people good at math, and \(3\) people good at math who wear glasses. How many people wear glasses or are good at math? (I am using the inclusive or here.) Let \(G\) be the set of people who wear glasses, and let \(M\) be the set of people good at math. \(|G| = 5\) and \(|M| = 10\). Since there are \(3\) people good at math who also wear glasses, \(|G \cap M| = 3\). By the inclusion-exclusion principle, the number of people who wear glasses or are good at math, \(|G \cup M|\), is equal to \(|G| + |M| - |G \cap M| = 5 + 10 - 3 = 12\).
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Recall that the <a href="../logical-operation">logical analogue</a> of the union operation is <a href="../logical-operation#disjunction">disjunction</a>.
+                    </div>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>For three sets</h2>
+                    <hr>
+                    <p>
+                        With \(3\) sets, the formula becomes a bit more complicated, as the three-way intersection has to be added back in the end.
+                    </p>
+                    <div class="math-definition">
+                        The cardinality of the union of \(3\) finite sets \(A\), \(B\), and \(C\), such that the sets may share some elements in common, is the sum of their individual cardinalities minus the cardinalities of all their \(2\)-way intersections plus the cardinality of their \(3\)-way intersection:
+                        $$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |B \cap C| - |A \cap C| + |A \cap B \cap C|$$
+                    </div>
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Inclusion-exclusion-3sets.png" alt="Image of the count being tweaked until every element is counted only once">
+                        <figcaption>The count is tweaked until every element is counted only once.</figcaption>
+                    </figure>
+                    <p>
+                        At a company, there are \(3\) web developers, each of whom have experience working on \(10\) projects. Every possible pair of them have each worked on \(3\) projects together. There is \(1\) project that all \(3\) of them worked on together. How many projects have been worked on in total? Let \(A\) be the set of projects worked on by the first web developer, let \(B\) be the set of projects worked on by the second web developer, and let \(C\) be the set of projects worked on by the third web developer. By the inclusion-exclusion principle for \(3\) sets, the total number of projects that have been worked on, \(|A \cup B \cup C|\), is \(|A| + |B| + |C| - |A \cap B| - |B \cap C| - |A \cap C| + |A \cap B \cap C| = 10 + 10 + 10 - 3 - 3 - 3 + 1 = 22\).
+                    </p>
+                    <h2>For four or more sets</h2>
+                    <hr>
+                    <p>
+                        With even more sets, you can use the generalized form of the inclusion-exclusion principle, which has rules for adding and subtracting intersections based on the parity of the number of sets each intersection involves.
+                    </p>
+                    <div class="math-definition">
+                        The cardinality of the union of finite sets \(A_1, ... A_n\), such that the sets may share some elements in common, is the sum of their individual cardinalities minus the cardinalities of all their even-way intersections plus the cardinalities of all their odd-way intersections:
+                        $$|A_1 \cup ... \cup A_n| = \sum\limits_{i=1}^{n}|A_i| - \underbrace{\sum\limits_{1 \leq i < j \leq n}^{}|A_i \cap A_j|}_{\text{all two-way intersections}} + \underbrace{\sum\limits_{1 \leq i < j < k \leq n}^{}|A_i \cap A_j \cap A_k|}_{\text{all three-way intersections}} + ... + (-1)^{n+1} \times \underbrace{|A_1 \cap ... \cap A_n|}_{n\text{-way intersection}}$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Based on whether \(n\) is even or odd, you may need to subtract or add the cardinality of the \(n\)-way intersection at the end. That's what the \((-1)^{n+1}\) term is for.
+                    </div>
+                    <p>
+                        Given four sets, \(A\), \(B\), \(C\), and \(D\), such that each set has \(10\) elements, all \(2\)-way intersections have \(4\) elements, all \(3\)-way intersections have \(3\) elements, and the \(4\)-way intersection has \(1\) element, how many elements are in \(A \cup B \cup C \cup D\)? By the inclusion-exclusion principle, there are \(4 \times 10 - \binom{4}{2} \times 4 + \binom{4}{3} \times 3 + (-1)^{4+1} \times 1 \times 1 = 27\).
                     </p>
                 </div>
             </div>

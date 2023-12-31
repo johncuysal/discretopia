@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/multiset/">
+    <title>Multiset - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Multiset</h1>
+                    <hr>
+                    <i>Last Updated: 24 December 2023</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        A <b>multiset</b>, or <b>bag</b>, is an unordered collection of <a href="../element">elements</a> where each element can have multiple instances. The number of instances an element has in a multiset is its <i>multiplicity</i>. Multisets are defined both by what elements they contain and their multiplicities. To visually distinguish them from <a href="../set">sets</a>, multisets are notated with square brackets.
+                    </p>
+                    <p>
+                        To be concise, a multiset is like a set where repetitions matter. For example, \(\set{0, 1, 2}\) and \(\set{0, 1, 1, 2}\) are the same set, but not the same multiset: \([0, 1, 2] \neq [0, 1, 1, 2]\). Also, since multisets are unordered, \([0, 1, 1, 2] = [1, 2, 0, 1]\). Equal multisets not only have the same elements, but also the same number of each of them.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Cardinality</h2>
+                    <hr>
+                    <p>
+                        The cardinality of a finite multiset is the sum of the multiplicities of all its elements.
+                    </p>
+                    <h2>Counting multisets</h2>
+                    <hr>
+                    <p>
+                        Multisets appear in situations where elements are varied, and it is possible to have multiple instances of each. For example, imagine a customer wants to buy a dozen \((12)\) donuts from a well-stocked bakery. The donuts come in \(3\) varieties: glazed \((G)\), pink-frosted \((P)\), and Boston cream \((B)\). For our purposes, each donut is indistinguishable from all other donuts of the same variety. One possible purchase is the multiset \([G, G, G, P, P, P, P, P, B, B, B, B]\) if the customer selects \(3\) glazed, \(5\) pink-frosted, and \(4\) Boston cream donuts.
+                    </p>
+                    <p>
+                        To count the number of ways to select \(12\) donuts from \(3\) varieties, we'll need to define a <a href="../function#bijection">bijection</a> to a set of easy-to-count <i>codewords</i>, which in this case will be <a href="../binary-string">binary strings</a> that uniquely identify each purchase. You can unambiguously equate each purchase of donuts to a decision of where to place \(2\) separators between \(12\) objects to create \(3\) groups. So, in each binary string, let \(1\)'s be our separators and let \(0\)'s be our objects. In the context of this problem, have the first group represent the glazed variety, the second group represent the pink-frosted variety, and the third group represent the Boston cream variety. The groups must always be ordered that way in every binary string. Then, \(00010000010000\) would correspond a purchase of \(3\) glazed, \(5\) pink-frosted, and \(4\) Boston cream donuts. See where we're going with this?
+                    </p>
+                    <p>
+                        The number of bits in each binary string is exactly the number of donuts the customer wants to buy, plus the number of varieties minus \(1\) (which is the number of separators). This totals to \(12 + 3 - 1 = 14\) bits. To determine how many ways there are of placing these \(2\) separators, we must ask: how many \(14\)-bit binary strings have exactly \(2\) \(1\)'s? With a healthy understanding of <a href="../combination">combinations</a>, one can quickly give an answer of \(\binom{14}{2}\). By the <a href="../bijection-rule">bijection rule</a>, that's the same as the number of ways to select \(12\) donuts from \(3\) varieties. A general formula for answering questions like this is given below:
+                    </p>
+                    <div class="math-definition">
+                        The number of multisets of cardinality \(n\) that can be made from \(m\) varieties of elements is:
+                        $$\binom{n + m - 1}{m - 1}$$
+                        This is the number of ways there are of selecting \(n\) elements from \(m\) varieties, where elements of the same variety are indistinguishable and there is a limitless number of elements of each variety.
+                    </div>
+                    <p>
+                        How many ways are there of selecting \(12\) donuts from \(3\) varieties? How many non-negative solutions are there to the equation \(x + y + z = 12\)? Believe it or not, the answer is the same for both questions. It helps to view \(x\), \(y\), and \(z\) as the number of donuts you buy of the first, second, and third variety respectively.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Please do not brush aside the detail that only non-negative solutions are being counted. This is critical because the multiplicity of an element in a multiset can never be less than \(0\).
+                    </div>
+                    <p>
+                        How many ways are there of placing \(12\) indistinguishable balls into \(3\) distinguishable bins? The answer is still the same as before, but now this is getting pretty abstract. Hear me out. You can think of each distinct bin as a variety of donut and each identical ball as an "intention to buy \(1\)". Then, let the act of placing a ball into a bin represent the intention of buying \(1\) donut of the bin's corresponding variety of donut. Hopefully, this is enough to make the bijection a bit more understandable, with each valid placement identifying a unique purchase, and vice versa.
+                    </p>
+                    <p>
+                        How many ways can \(12\) identical candy bars be distributed among \(3\) different kids? Same answer as before, of course. But what if you wanted to be nice and guarantee each kid gets at least \(1\) candy bar? There's a quick fix for that! First, give \(1\) candy bar to each kid. Then, the question becomes: how many ways can \(9\) identical candy bars be distributed among \(3\) different kids? From what we know about multisets, the answer is \(\binom{11}{2}\). As a rule, whenever there is a specific constraint such as this, try to take care of it first, and then start counting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

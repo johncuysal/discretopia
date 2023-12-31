@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/complement-rule/">
+    <title>Complement rule - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Complement rule</h1>
+                    <hr>
+                    <i>Last Updated: 29 December 2023</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        The <b>complement rule</b> states that the number of things you want is the number of things you don't want subtracted from the total number of things. This provides a method for indirectly counting the cardinality of a set:
+                    </p>
+                    <div class="math-definition">
+                        The cardinality of a finite set \(A\) is the cardinality of its complement subtracted from the cardinality of the universal set in which they exist:
+                        $$|A| = U - |\overline{A}|$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ When a counting problem includes the phrase "at least" or "not," that's a pretty good indicator that the complement rule can be applied to make counting simpler.
+                    </div>
+                    <p>
+                        How many \(4\)-bit binary strings have at least one \(0\)? Well, there are \(2^4 = 16\) \(4\)-bit binary strings in total. Counting by complement, the number of \(4\)-bit binary strings that do not have at least one \(0\) (in other words, no \(0\)'s) is exactly \(1\), being \(1111\). Therefore, by the complement rule, \(16 - 1 = 15\) \(4\)-bit binary strings have at least one \(0\).
+                    </p>
+                    <p>
+                        How many months in a year do not start with the letter J? It's already known there's \(12\) months in a year. Manually counting, we can see there are \(3\) months that start with the letter J: January, June, and July. By the complement rule, \(12 - 3 = 9\) months do not start with the letter J.
+                    </p>
+                    <p>
+                        In a standard \(52\)-card deck of playing cards, how many \(6\)-card hands have at least one card of the hearts suit? Since a \(6\)-card hand is simply a \(6\)-combination of the set of playing cards (the deck), there are \(\binom{52}{6}\) \(6\)-card hands in total. To count by complement, we need to first figure out the number of \(6\)-card hands that have no cards of the hearts suit. With \(4\) suits (hearts ♥, clubs ♣, diamonds ♦, spades ♠) and \(13\) cards per suit, we can conclude there are \(52 - 13 = 39\) cards that are not of the hearts suit. Therefore, the number of \(6\)-card hands without hearts is \(\binom{39}{6}\). By the complement rule, \((\binom{52}{6} - \binom{39}{6})\) \(6\)-card hands have at least one card of the hearts suit.
+                    </p>
+                    <p>
+                        How many \(8\)-character passwords that can only use numbers and lowercase letters have at least one number and at least one letter? By the rule of product, there are \(36^8\) total \(8\)-character passwords that can only use numbers and lowercase letters. Counting by complement is a little trickier here as we need to count the number of passwords that have no numbers or no letters. In other words, we need to count the number of all-letter and all-number passwords. Using the rule of product again, we see \(26^8\) all-letter passwords exist and \(10^8\) all-number passwords exist. Therefore, \(26^8 + 10^8\) passwords have no numbers or no letters. By the complement rule, \((36^8 - (26^8 + 10^8))\) \(8\)-character passwords have at least one number and at least one letter.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ It seems like when you have to count the number of objects that have property \(1\) <i>or</i> property \(2\), that tends to translate to adding together the number of objects that have property \(1\) with the number of objects that have property \(2\). Just something to think about, that "or" implies addition when counting.
+                    </div>
+                    <p>
+                        The following question pertains to <a href="../multiset">multisets</a>, but is still an application of the complement rule. Say you want to make a workout schedule. How many ways are there of distributing \(200\) push-ups among the \(7\) days of the week, with at most \(10\) push-ups on Monday? The restriction "at most" is what makes this tricky. Let's negate the statement to count by complement. Now, we want to know how many ways there are of distributing \(200\) push-ups among the \(7\) days of the week, with at least \(11\) push-ups on Monday. Not bad. Let's take care of Monday first by scheduling \(11\) push-ups on that day. There are \(189\) push-ups remaining to distribute among the \(7\) days of the week. Counting the multisets, that totals to \(\binom{189 + 7 - 1}{7 - 1} = \binom{195}{6}\) ways of distributing the push-ups such that at least \(11\) are on Monday. Of course, the total number of ways of distributing the push-ups without any restrictions is \(\binom{200 + 7 - 1}{7 - 1} = \binom{206}{6}\). Since we counted the negation and the total, now all we have to do is compute \(\binom{206}{6} - \binom{195}{6}\) to get the number of ways of distributing \(200\) push-ups among the \(7\) days of the week such that at most \(10\) are on Monday.
+                    </p>
+                    <p>
+                        Here's a question related to the <a href="../inclusion-exclusion-principle">inclusion-exclusion principle</a>. Imagine you're trying to unlock your phone, but you forgot your \(4\)-digit passcode. You remember that the passcode has \(7\) in it. How many passcodes fit that description? Let \(P_1\) be the set of all passcodes with a \(7\) as the first digit. By the rule of product, there are \(10^3\) such passcodes. Furthermore, let \(P_2\) denote the set of all passcodes with a \(7\) as the second digit, let \(P_3\) denote the set of all passcodes with a \(7\) as the third digit, and let \(P_4\) denote the set of all passcodes with a \(7\) as the fourth digit. The cardinalities of all these sets are \(10^3\). The set we are trying to count, the set of all passcodes with at least one occurrence of \(7\), can be represented as \(P_1 \cup P_2 \cup P_3 \cup P_4\). If we used the inclusion-exclusion principle, that would involve counting the number of elements in a ton of intersections, which would take a pretty long time. Let's try the complement rule instead, which tells us that \(|P_1 \cup P_2 \cup P_3 \cup P_4| = |U| - |\overline{P_1 \cup P_2 \cup P_3 \cup P_4}|\), where \(U\) is the universal set in this context, the set of all \(4\)-digit passcodes, with a cardinality of \(10^4\). Since \(P_1 \cup P_2 \cup P_3 \cup P_4\) was the set of all passcodes with at least one occurrence of \(7\), its complement, \(\overline{P_1 \cup P_2 \cup P_3 \cup P_4}\), must be the set of all passcodes with no occurrences of \(7\), which has a cardinality of \(9^4\). Thus, the number of passcodes with at least one occurrence of \(7\) is \(10^4 - 9^4\).
+                    </p>
+                    <p>
+                        Lastly, I'd like to share one more problem that requires a well-rounded understanding of combinatorics. How many ways are there to buy a dozen \((12)\) donuts from a bakery if there are \(3\) varieties: glazed, pink-frosted, and Boston cream, but only \(5\) pink-frosted and \(4\) Boston cream donuts are left? The glazed variety is well-stocked. Let's try to write out what we're counting a bit more logically. It's the number of ways of buying \(12\) donuts from \(3\) varieties with the restriction that \(\leq 5\) of them are pink-frosted and \(\leq 4\) of them are Boston cream donuts. Counting by complement, this is equal to the total number of ways of buying \(12\) donuts from \(3\) varieties with no restrictions (which we know from multisets is exactly \(\binom{12 + 3 - 1}{3 - 1} = \binom{14}{2}\)) minus the number of ways of buying \(12\) donuts from \(3\) varieties with the restriction that \(>5\) of them are pink-frosted or \(>4\) of them are Boston cream donuts. Note the use of <a href="../logic-law">De Morgan's Laws</a> here to negate the statement. Since we're dealing with integers, we're really counting the number of ways of buying \(12\) donuts from \(3\) varieties with the restriction that \(\geq 6\) of them are pink-frosted or \(\geq 5\) of them are Boston cream donuts. The logical connective "or" suggests that the inclusion-exclusion principle may be used here. Therefore, the number of ways of buying \(12\) donuts from \(3\) varieties with the restriction that \(\geq 6\) of them are pink-frosted or \(\geq 5\) of them are Boston cream donuts is equal to the number of ways that \(\geq 6\) of them are pink-frosted donuts plus the number of ways that \(\geq 5\) of them are Boston cream donuts minus the number of ways that \(\geq 6\) of them are pink-frosted and \(\geq 5\) of them are Boston cream donuts. That results in \(\binom{(12 - 6) + 3 - 1}{3 - 1} + \binom{(12 - 5) + 3 - 1}{3 - 1} - \binom{(12 - 6 - 5) + 3 - 1}{3 - 1} = \binom{8}{2} + \binom{9}{2} - \binom{3}{2}\), which we subtract from the total number of ways to get a final answer of: \(\binom{14}{2} - (\binom{8}{2} + \binom{9}{2} - \binom{3}{2})\).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

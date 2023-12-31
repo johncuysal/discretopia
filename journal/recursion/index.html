@@ -142,20 +142,6 @@
                         Recursion
                     </a>
                 </div>
-                <div class="sidebar-section">
-                    Guides
-                    <hr>
-                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
-                        <!--How to write a proof-->
-                    </a>
-                </div>
-                <div class="sidebar-section">
-                    Downloads
-                    <hr>
-                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
-                        <!--What's that symbol?-->
-                    </a>
-                </div>
             </div>
         </div>
         <div id="content-container">
@@ -217,19 +203,19 @@
                         </ul>
                     </div>
                     <p>
-                        Naturally, any binary string you can imagine can be built by starting with the empty string, \(\lambda\), and repeatedly concatenating \(0\) or \(1\) to the end of it. To build \(1011\) for example, the process would be: \(\lambda \rightarrow \lambda 1 = 1 \rightarrow 10 \rightarrow 101 \rightarrow 1011\).
+                        Naturally, any binary string you can imagine can be built by starting with the empty string, \(\lambda\), and repeatedly concatenating \(0\) or \(1\) to the end of it. To build \(1001\) for example, the process would be: \(\lambda \rightarrow \lambda 1 = 1 \rightarrow 10 \rightarrow 100 \rightarrow 1001\).
                     </p>
                     <p>
                         Actually, it's also possible to recursively define the length function of a binary string in a very similar manner:
                     </p>
                     <div class="math-definition">
-                        The length function of a binary string, \(\text{length}(x) = |x|\), is recursively defined as follows:
+                        The length function of a binary string, \(\text{length}(x)\), is recursively defined as follows:
                         <ul>
                             <li><i>Base case:</i> The length of the empty string \(\lambda = 0\).</li>
                             <li><i>Recursive rule:</i> If \(x \in B^*\), then:
                                 <ul>
-                                    <li>\(|x0| = |x| + 1\)</li>
-                                    <li>\(|x1| = |x| + 1\)</li>
+                                    <li>\(\text{length}(x0) = \text{length}(x) + 1\)</li>
+                                    <li>\(\text{length}(x1) = \text{length}(x) + 1\)</li>
                                 </ul>
                             </li>
                         </ul>

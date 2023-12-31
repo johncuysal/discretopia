@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/combination/">
+    <title>Combination - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Combination</h1>
+                    <hr>
+                    <i>Last Updated: 25 December 2023</i>
+                </div>
+                <div id="written-content">
+                    <blockquote>
+                        Countable subsets!
+                    </blockquote>
+                    <p>
+                        A <b>combination</b> of a <a href="../set">set</a> is a <a href="../subset">subset</a> made from its <a href="../element">elements</a>. In combinatorics, it's often necessary to count the number of combinations that can be made from a set.
+                    </p>
+                    <p>
+                        Since combinations are sets, the order of their elements does not matter, unlike <a href="../permutation">permutations</a>.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>\(r\)-combination</h2>
+                    <hr>
+                    <p>
+                        An <i>\(r\)-combination</i> of a set is an \(r\)-sized subset of it. For example, \(\set{9, 5, 6}\) and \(\set{6, 1, 7}\) are both \(3\)-combinations of the set \(\set{9, 1, 6, 5, 7, 8}\). However, \((6, 1, 7)\) would not be a \(3\)-combination of that set, because even though it has \(3\) elements, the parentheses \(()\) indicates that it is a sequence, in which order matters. The total number of \(3\)-permutations that can be made from that set of \(6\) elements is known to be \(P(6, 3) = \frac{6!}{(6 - 3)!} = \frac{6!}{3!} = 120\). Let's define a function \(f\) that converts the \(3\)-permutations into \(3\)-combinations by just removing order. For example, \(f((6, 1, 7)) = \set{6, 1, 7}\). Because there are \(3! = 6\) ways to arrange \(3\) elements, there will be \(6\) \(3\)-permutations for every \(3\)-combination, making \(f\) a \(6\)-to-\(1\) correspondence. Indeed, we can see that \((1, 6, 7)\), \((1, 7, 6)\), \((6, 1, 7)\), \((6, 7, 1)\), \((7, 1, 6)\), and \((7, 6, 1)\) will all map to the set \(\set{6, 1, 7}\). By the \(k\)-to-\(1\) rule, with \(k = 3!\), the total number of \(3\)-combinations that can be made from that set is \(\frac{P(6, 3)}{3!} = \frac{120}{6} = 20\). This method of counting can be generalized:
+                    </p>
+                    <div class="math-definition">
+                        The number of \(r\)-combinations (subsets of size \(r\)) that can be made from a set of \(n\) elements, denoted \(\binom{n}{r}\), is:
+                        $$\binom{n}{r} = \frac{n!}{r!(n-r)!}$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ The formula above is a consequence of the \(r!\)-to-\(1\) correspondence that exists between the \(r\)-permutations and \(r\)-combinations of a set of size \(n\). If you're still confused, think about the number of \(r\)-permutations that can be made from a single \(r\)-combination, which is \(P(r, r) = r!\). With \(P(n, r)\) total \(r\)-permutations, there must be \(\frac{P(n, r)}{r!}\) total \(r\)-combinations.
+                    </div>
+                    <div class="math-notice">
+                        ⚠ \(\binom{n}{r}\) has its own special notation, but it could also be written as \(C(n, r)\) or \(nCr\). All are read "\(n\) choose \(r\)."
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Again, it is assumed that \(n\) and \(r\) are always non-negative in these equations, and satisfy \(n \geq r\).
+                    </div>
+                    <p>
+                        Just like with \(r\)-permutations, there are also lots of problems that can be solved by counting \(r\)-combinations. How many ways are there to elect \(3\) representatives from \(6\) people? Unlike the question asked before with permutations, every person elected is a representative, meaning there is no order imposed on the roles of those elected. How many \(6\)-bit binary strings have exactly \(3\) \(1\)'s? The answer is the same as the answer to the previous question I asked about electing representatives. The overarching theme here seems to be that whenever what is "chosen" shares the same role as everything else that is being chosen, whether that role is being a representative in a group or a \(1\) in a binary string, you should know to count combinations, and not permutations.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Some problems can make you unsure about whether to count permutations or combinations. Lucky for you, there is a simple solution: <i>look at what is being selected!</i> Do the selected elements get assigned to distinct (different) roles? If so, then, during the selection process, you would need to know which role you're giving to each element as they are selected, which is a roundabout way of saying that the order of selection matters and that you therefore need to count permutations. I hope this explanation of when to use permutations is clearer than just vaguely saying "when order matters!" In the other case, where the selected elements are each assigned to identical roles such that it wouldn't matter if any two selected items traded roles, count combinations instead.
+                    </div>
+                    <p>
+                        Curiously, an <a>identity</a> involving \(\binom{n}{r}\) can also be obtained by putting \(n - r\) in for \(r\). You might like to think of \(\binom{n}{n-r}\) as counting the complements of the subsets that \(\binom{n}{r}\) is counting, given a universal set of size \(n\). Actually, if you want, you could rigorously prove that a bijection exists between the \(r\)-sized subsets and the \((n - r)\)-sized subsets of any set of size \(n\), where each \(r\)-sized subset maps to the corresponding \((n - r)\)-sized subset that has the \((n - r)\) elements which the \(r\)-sized subset excludes. Here's the identity:
+                    </p>
+                    <div class="math-definition">
+                        The number of subsets of size \((n - r)\) that can be made from a set of \(n\) elements is equal to the number of subsets of size \(r\) that can be made from a set of \(n\) elements:
+                        $$\binom{n}{n - r} = \binom{n}{r}$$
+                    </div>
+                    <div class="math-notice">
+                        ⚠ If all that talk about bijections is confusing you, let's bring in a familiar question. How many ways are there to elect \(5\) representatives from \(20\) people? Normally, to solve this problem, you would calculate \(\binom{20}{5}\). However, it is just as valid to consider how many ways there are to have \(15\) people not be representatives in a group of \(20\) people, and calculate \(\binom{20}{15}\) instead. The result would be equivalent, as shown by the above identity.
+                    </div>
+                    <p>
+                        Imagine you are at \((0, 0)\) on the coordinate plane. You want to reach the point \((7, 3)\), but can only move right or up exactly \(1\) unit at a time, which is considered a step. How many distinct paths (sequences of steps) can you take from \((0, 0)\) to \((7, 3)\)? Well, let's first convince ourselves that any successful path would consist of exactly \(10\) steps, \(7\) of which are right and \(3\) of which are up. Therefore, what makes a path distinct is the order in which those \(10\) steps are arranged. Since a step can only be either right or up, you can think of a path as being a \(10\)-bit binary string where the \(1\)'s represent right, and the \(0\)'s represent up. This is a bijection. So, the question is now: how many \(10\)-bit binary strings have exactly \(7\) \(1\)'s? Answering that would be the same as answering: how many \(10\)-step paths from \((0, 0)\) to \((7, 3)\) have exactly \(7\) steps to the right? The answer is \(\binom{10}{7}\). Or, alternatively: \(\binom{10}{3}\), if we were choosing which \(3\) steps should be up. In general, the number of distinct paths you can take from \((0, 0)\) to \((x, y)\), given the same restrictions on movement, is \(\binom{x+y}{x}\), which is equal to \(\binom{x+y}{y}\).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

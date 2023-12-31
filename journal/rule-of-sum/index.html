@@ -142,20 +142,6 @@
                         Recursion
                     </a>
                 </div>
-                <div class="sidebar-section">
-                    Guides
-                    <hr>
-                    <a class="sidebar-link" href="../../guides/how-to-write-a-proof">
-                        <!--How to write a proof-->
-                    </a>
-                </div>
-                <div class="sidebar-section">
-                    Downloads
-                    <hr>
-                    <a class="sidebar-link" href="../../pdfs/symbol-cheat-sheet.pdf">
-                        <!--What's that symbol?-->
-                    </a>
-                </div>
             </div>
         </div>
         <div id="content-container">
@@ -163,24 +149,24 @@
                 <div id="title-box">
                     <h1>Rule of sum</h1>
                     <hr>
-                    <i>Last Updated: 9 July 2023</i>
+                    <i>Last Updated: 25 December 2023</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        Intuitively, the <b>rule of sum</b> states that the number of ways of doing something plus the number of ways of doing another, completely separate thing is the total number of ways you can do a thing. In mathematical terms:
+                        Intuitively, the <b>rule of sum</b> states that the number of ways to do something plus the number of ways to do another thing is the total number of ways to do either. In mathematical terms:
                     </p>
                     <div class="math-definition">
-                        The cardinality of the union of finite sets \(A_1, ... A_n\), such that none of the sets share elements in common (they are pairwise disjoint) is the sum of their individual cardinalities:
+                        The cardinality of the <a href="../set-operation#union">union</a> of finite sets \(A_1, ... A_n\), such that none of the sets share elements in common (they are pairwise disjoint) is the sum of their individual cardinalities:
                         $$|A_1 \cup ... \cup A_n| = |A_1| + ... + |A_n|$$
                     </div>
                     <div class="math-notice">
-                        ⚠ In keeping with the whole "number of ways of doing a thing" metaphor, imagine each set above as the set of all the different ways of doing its associated "thing."
+                        ⚠ In keeping with the whole "number of ways to do a thing" metaphor, imagine each set above as the set of all the different ways to do its associated "thing."
                     </div>
                     <p>
                         It should be clear that \(A_1 \cup ... \cup A_n\) is the set that contains all the elements of \(A_1, ... A_n\). Since these sets are pairwise disjoint, we don't need to worry about accidentally counting an element twice, so \(|A_1 \cup ... \cup A_n|\) is exactly equal to the sum of the number of elements in each set.
                     </p>
                     <p>
-                        As an example, suppose that your choices for dessert tonight can be divided up into two categories, being: pies \(\set{\text{pumpkin pie}, \text{cherry pie}, \text{shoo-fly pie}}\) and cakes \(\set{\text{chocolate cake}, \text{cheesecake}}\). Among these desserts, you can only choose \(1\). How many choices do you have? The rule of sum says you have exactly \(3 + 2 = 5\) choices of dessert. One such choice would be \(\text{cheesecake}\). Notice that you are not choosing one from each category, but instead one out of all the categories combined. This is what distinguishes when you want to use the rule of sum versus the <a href="../rule-of-product">rule of product</a>.
+                        As an example, suppose that your choices for dessert tonight can be split up into two categories, being: pies \(\set{\text{pumpkin pie}, \text{cherry pie}, \text{shoo-fly pie}}\) and cakes \(\set{\text{chocolate cake}, \text{cheesecake}}\). Among these desserts, you can only choose \(1\). How many choices do you have? The rule of sum says you have exactly \(3 + 2 = 5\) choices of dessert. One such choice would be \(\text{cheesecake}\). Notice that you are not choosing one from each category, but instead one out of all the categories combined. This is what distinguishes when you want to use the rule of sum versus the <a href="../rule-of-product">rule of product</a>.
                     </p>
                     <p>
                         Imagine that a case-insensitive password is defined as a string of \(10\) to \(12\) alphanumeric characters, meaning that there are \(26 + 10 = 36\) choices for each character by the rule of sum. How many unique passwords exist? Well, applying the rule of product tells us that the number of unique passwords of length \(10\) would be \(36^{10}\). With similar logic, we can find that there are \(36^{11}\) unique \(11\)-character passwords and \(36^{12}\) unique \(12\)-character passwords. Finally, by the rule of sum, there are \(36^{10} + 36^{11} + 36^{12}\) unique passwords to choose from. One such password would be \(\text{cheesecake}\). Haha, \(\text{cheesecake}\) worked for both examples.

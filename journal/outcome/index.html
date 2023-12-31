@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/outcome/">
+    <title>Outcome - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <br>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    Overview
+                    <hr>
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graphs
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#trees">
+                        Trees
+                    </a>
+                    <br>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Outcome</h1>
+                    <hr>
+                    <i>Last Updated: 2 August 2023</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        An <b>outcome</b> is a distinct, <a href="../probability">possible</a> result of an <a href="../experiment">experiment</a>. <a href="../set">Sets</a> of outcomes are known as <a href="../event">events</a>, and the set of all outcomes in a given experiment is its <a href="../sample-space">sample space</a>.
+                    </p>
+                    <div class="math-definition">
+                        If the <a href="../probability-distribution">probability distribution</a> \(p\) is known, then the <a href="../probability">probability</a> of an outcome \(s\) in the sample space \(S\) occurring is:
+                        $$p(s)$$
+                    </div>
+                    <p>
+                        Outcomes are typically denoted with numbers, letters, words, or symbols. For example, \(4\) could represent the outcome of rolling \(4\) with a die. Likewise, \(H\) could represent the outcome of a coin flip resulting in heads.
+                    </p>
+                    <p>
+                        Sometimes, outcomes can be collections. Consider drawing \(6\) cards from a shuffled deck. Then, an outcome is a \(6\)-card hand, such as
+                        \(\{\)
+                        <span class="playing-card-black">K♠</span>\(,\)
+                        <span class="playing-card-black">5♣</span>\(,\)
+                        <span class="playing-card-black">J♣</span>\(,\)
+                        <span class="playing-card-red">8♥</span>\(,\)
+                        <span class="playing-card-red">10♥</span>\(,\)
+                        <span class="playing-card-red">2♦</span>
+                        \(\}\). There are \(\binom{52}{6}\) possible outcomes.
+                    </p>
+                    <div class="math-notice">
+                        ⚠ Here, the outcome was a set. If the order in which the cards were drawn mattered, the outcomes would instead be <a href="../sequence">sequences</a>, and there would be \(P(52, 6)\) in total.
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Wondering where the \(52\) came from? For each of the \(4\) suits
+                        \(\{\)
+                        <span class="playing-card-black">♠</span>\(,\)
+                        <span class="playing-card-black">♣</span>\(,\)
+                        <span class="playing-card-red">♥</span>\(,\)
+                        <span class="playing-card-red">♦</span>
+                        \(\}\), there are \(13\) ranks
+                        \(\{\)
+                        A\(,\)
+                        2\(,\)
+                        3\(,\)
+                        4\(,\)
+                        5\(,\)
+                        6\(,\)
+                        7\(,\)
+                        8\(,\)
+                        9\(,\)
+                        10\(,\)
+                        J\(,\)
+                        Q\(,\)
+                        K
+                        \(\}\) in a standard deck of cards, totalling \(4 \times 13 = 52\) cards.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

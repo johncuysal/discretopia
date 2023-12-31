@@ -489,6 +489,14 @@ a:hover {
     text-align: center;
 }
 
+.playing-card-red {
+    color: red;
+}
+
+.playing-card-black {
+    color: black;
+}
+
 /* Adjust styles for smaller screens */
 
 @media only screen and (max-width: 1384px) {
