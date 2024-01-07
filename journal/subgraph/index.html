@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/logical-proof/">
-    <title>Logical proof - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/subgraph/">
+    <title>Subgraph - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -132,41 +132,27 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Logical proof</h1>
+                    <h1>Subgraph</h1>
                     <hr>
-                    <i>Last Updated: 19 January 2023</i>
+                    <i>Last Updated: 6 January 2024</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>logical proof</b> is a <a href="../proof">proof</a> that shows an <a href="../argument">argument</a> is <a href="../argument#validity">valid</a> by using <a href="../logic-law">logic laws</a> and <a href="../rule-of-inference">rules of inference</a> to go from hypotheses to conclusion while preserving truth. The format of a logical proof differs from that of all other proofs, as you'll see below.
+                        A <b>subgraph</b> is a <a href="../graph">graph</a> whose vertices and edges are all contained within another graph.
                     </p>
                     <p>
-                        Logical proofs take the form of a table with numbered rows, a <a href="../proposition">proposition</a> column, and a justification column. First, understand what the hypotheses and conclusion of the argument are. Then, introduce the hypotheses into the first few rows, each with the justification "Hypothesis". From there, you can freely use logic laws and rules of inference to obtain new propositions that bring you closer to the conclusion. Make sure to justify each step, mentioning the name of which law or rule brought you to that proposition, as well as the row(s) it was applied to.
+                        Specifically, the <a href="../set">set</a> of vertices in a subgraph is a <a href="../subset">subset</a> of the set of vertices in another graph. The set of edges in a subgraph is also a subset of the set of edges in that same graph.
                     </p>
-                    <table>
-                        <tr>
-                            <td>1. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>2. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>3. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>4. Proposition</td>
-                            <td>Modus ponens (1, 2)</td>
-                        </tr>
-                        <tr>
-                            <td>5. Proposition</td>
-                            <td>Hypothetical syllogism (3, 4)</td>
-                        </tr>
-                    </table>
+                    <p>
+                        All graphs are subgraphs of themselves.
+                    </p>
+                    <div class="math-definition">
+                        The graph \(G' = (V', E')\) is a subgraph of the graph \(G = (V, E)\) if and only if:
+                        $$V' \subseteq V$$
+                        $$E' \subseteq E$$
+                    </div>
                     <div class="math-notice">
-                        ⚠ Once a step has been justified, the justified proposition is known to be true. This allows you to use it as a hypothesis for a rule of inference! To speak more broadly, <em>every justified proposition in a logical proof is true</em>. So, never hesitate to use a proposition from a previous row because it's supposedly too far away... it's always in your toolkit.
+                        ⚠ Intuitively, a subgraph of a graph is that original graph with \(0\) or more of its vertices and edges deleted. Note that if a vertex is deleted, all the edges it participated in are also deleted, as the definition of an edge requires both endpoints to be vertices in \(V\).
                     </div>
                 </div>
             </div>

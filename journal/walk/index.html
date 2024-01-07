@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/logical-proof/">
-    <title>Logical proof - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/walk/">
+    <title>Walk - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -132,42 +132,58 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Logical proof</h1>
+                    <h1>Walk</h1>
                     <hr>
-                    <i>Last Updated: 19 January 2023</i>
+                    <i>Last Updated: 6 January 2024</i>
                 </div>
                 <div id="written-content">
                     <p>
-                        A <b>logical proof</b> is a <a href="../proof">proof</a> that shows an <a href="../argument">argument</a> is <a href="../argument#validity">valid</a> by using <a href="../logic-law">logic laws</a> and <a href="../rule-of-inference">rules of inference</a> to go from hypotheses to conclusion while preserving truth. The format of a logical proof differs from that of all other proofs, as you'll see below.
+                        A <b>walk</b> in a <a href="../graph">graph</a> is a <a href="../sequence">sequence</a> of vertices where consecutive vertices are adjacent. The existence of a walk between two vertices means that it is possible to travel between them.
+                    </p>
+                    <div class="math-definition">
+                        Let \(G = (V, E)\) be a directed graph. The sequence \((v_1, v_2, v_3, ..., v_n)\) is a walk if and only if \((v_i, v_{i+1}) \in E\) for \(1 \leq i \leq n - 1\).
+                    </div>
+                    <div class="math-notice">
+                        ⚠ If the first and last vertices are the same \((v_1 = v_n)\), the walk is said to be <i>closed</i>. Otherwise, it's <i>open</i>.
+                    </div>
+                    <p>
+                        Also, a walk may be defined as an alternating sequence of vertices and edges, where each edge connects the two vertices that appear before and after it in the sequence:
+                    </p>
+                    <div class="math-definition">
+                        Let \(G = (V, E)\) be a directed graph. The sequence \((v_1, (v_1, v_2), v_2, (v_2, v_3), v_3, ..., v_{n-1}, (v_{n-1}, v_n), v_n)\) is a walk if and only if \((v_i, v_{i+1}) \in E\) for \(1 \leq i \leq n - 1\).
+                    </div>
+                    <p>
+                        The <i>length</i> of a walk is the number of edges in it. We are primarily concerned with walks of length \(1\) or greater.
                     </p>
                     <p>
-                        Logical proofs take the form of a table with numbered rows, a <a href="../proposition">proposition</a> column, and a justification column. First, understand what the hypotheses and conclusion of the argument are. Then, introduce the hypotheses into the first few rows, each with the justification "Hypothesis". From there, you can freely use logic laws and rules of inference to obtain new propositions that bring you closer to the conclusion. Make sure to justify each step, mentioning the name of which law or rule brought you to that proposition, as well as the row(s) it was applied to.
+                        If a walk does not exist between at least two vertices in a graph, that graph is <i>disconnected</i>. A bunch of isolated components is still one graph, a disconnected graph.
                     </p>
-                    <table>
-                        <tr>
-                            <td>1. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>2. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>3. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>4. Proposition</td>
-                            <td>Modus ponens (1, 2)</td>
-                        </tr>
-                        <tr>
-                            <td>5. Proposition</td>
-                            <td>Hypothetical syllogism (3, 4)</td>
-                        </tr>
-                    </table>
-                    <div class="math-notice">
-                        ⚠ Once a step has been justified, the justified proposition is known to be true. This allows you to use it as a hypothesis for a rule of inference! To speak more broadly, <em>every justified proposition in a logical proof is true</em>. So, never hesitate to use a proposition from a previous row because it's supposedly too far away... it's always in your toolkit.
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
                     </div>
+                    <h2>Path</h2>
+                    <hr>
+                    <p>
+                        A <i>path</i> is a walk where vertices are not repeated. In other words, every vertex in the walk is distinct.
+                    </p>
+                    <h2>Trail</h2>
+                    <hr>
+                    <p>
+                        A <i>trail</i> is a walk where edges are not repeated. In other words, every edge in the walk is distinct.
+                    </p>
+                    <h2>Circuit</h2>
+                    <hr>
+                    <p>
+                        A <i>circuit</i> is a closed walk where edges are not repeated. It is a closed trail.
+                    </p>
+                    <h2>Cycle</h2>
+                    <hr>
+                    <p>
+                        A <i>cycle</i> is a closed walk where edges and vertices are not repeated, except for the one vertex that gets cycled back to. In other words, the only vertices that get repeated are the first and last. Cycles are special circuits.
+                    </p>
                 </div>
             </div>
         </div>

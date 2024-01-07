@@ -9,8 +9,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="../../css/discretopia.css">
     <link rel="icon" href="../../images/k8.svg">
-    <link rel="canonical" href="https://discretopia.com/journal/logical-proof/">
-    <title>Logical proof - Discretopia, the friendly discrete math reference</title>
+    <link rel="canonical" href="https://discretopia.com/journal/graph/">
+    <title>Graph - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
     <header>
@@ -132,42 +132,50 @@
         <div id="content-container">
             <div id="content">
                 <div id="title-box">
-                    <h1>Logical proof</h1>
+                    <h1>Graph</h1>
                     <hr>
-                    <i>Last Updated: 19 January 2023</i>
+                    <i>Last Updated: 6 January 2024</i>
                 </div>
                 <div id="written-content">
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/6n-graf.svg" alt="A graph with 6 vertices and 7 edges.">
+                        <figcaption>A graph with \(6\) vertices and \(7\) edges.</figcaption>
+                    </figure>
                     <p>
-                        A <b>logical proof</b> is a <a href="../proof">proof</a> that shows an <a href="../argument">argument</a> is <a href="../argument#validity">valid</a> by using <a href="../logic-law">logic laws</a> and <a href="../rule-of-inference">rules of inference</a> to go from hypotheses to conclusion while preserving truth. The format of a logical proof differs from that of all other proofs, as you'll see below.
+                        A <b>graph</b> is a discrete structure made up of vertices connected by edges. Graphs represent how groups of things are <a href="../relation">related</a>. Based on whether that relation is <a href="../symmetric-relation">symmetric</a>, a graph may be <i>directed</i> or <i>undirected</i>.
                     </p>
                     <p>
-                        Logical proofs take the form of a table with numbered rows, a <a href="../proposition">proposition</a> column, and a justification column. First, understand what the hypotheses and conclusion of the argument are. Then, introduce the hypotheses into the first few rows, each with the justification "Hypothesis". From there, you can freely use logic laws and rules of inference to obtain new propositions that bring you closer to the conclusion. Make sure to justify each step, mentioning the name of which law or rule brought you to that proposition, as well as the row(s) it was applied to.
+                        Precisely, a graph \(G = (V, E)\) pairs up a <a href="../set">set</a> of vertices \(V\) with a set of edges \(E\). It is possible for \(E\) to be empty.
                     </p>
-                    <table>
-                        <tr>
-                            <td>1. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>2. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>3. Proposition</td>
-                            <td>Hypothesis</td>
-                        </tr>
-                        <tr>
-                            <td>4. Proposition</td>
-                            <td>Modus ponens (1, 2)</td>
-                        </tr>
-                        <tr>
-                            <td>5. Proposition</td>
-                            <td>Hypothetical syllogism (3, 4)</td>
-                        </tr>
-                    </table>
-                    <div class="math-notice">
-                        ⚠ Once a step has been justified, the justified proposition is known to be true. This allows you to use it as a hypothesis for a rule of inference! To speak more broadly, <em>every justified proposition in a logical proof is true</em>. So, never hesitate to use a proposition from a previous row because it's supposedly too far away... it's always in your toolkit.
+                    <p>
+                        The two vertices that participate in an edge are each other's <i>neighbors</i>. A vertex is <i>adjacent</i> to all its neighbors.
+                    </p>
+                    <p>
+                        In a directed graph, \(E\) is a subset of \(V \times V\), so each edge is an ordered pair of vertices \((a, b)\) depicted as an arrow pointing from \(a\) to \(b\).  The <i>in-degree</i> of a vertex is the number of edges pointing into it, and the <i>out-degree</i> of a vertex is the number of edges pointing out of it.
+                    </p>
+                    <div class="math-definition">
+                        Let \(G = (V, E)\) be a directed graph. For any vertex \(a \in V\):
+                        $$\text{indegree}(a) = |\set{b \in V : (b, a) \in E}|$$
+                        $$\text{outdegree}(a) = |\set{b \in V : (a, b) \in E}|$$
                     </div>
+                    <p>
+                        In an undirected graph, \(E\) is a set of size-\(2\) subsets of \(V\), so each edge is an unordered pair of vertices \(\set{a, b}\) depicted as a line connecting \(a\) and \(b\). The <i>degree</i> of a vertex is the number of edges that are connected, or rather, <i>incident</i> to it.
+                    </p>
+                    <div class="math-definition">
+                        Let \(G = (V, E)\) be an undirected graph. For any vertex \(a \in V\):
+                        $$\text{deg}(a) = |\set{b \in V : \set{a, b} \in E}|$$
+                        The <i>total degree</i> of \(G\) is defined as:
+                        $$\sum\limits_{a \in V}\text{deg}(a)$$
+                    </div>
+                    <p>
+                        Unlike graphs, <i>multigraphs</i> are defined as having a <a href="../multiset">multiset</a> of edges, which means multiple edges can exist between the same two vertices. Edges that exist between the same two vertices are called <i>parallel edges</i>.
+                    </p>
+                    <p>
+                        A <i>self-loop</i> is any edge that connects a vertex back to itself. A directed self-loop takes the form \((v, v)\) for some \(v \in V\), and contributes exactly \(1\) to both the in-degree and out-degree of a vertex. An undirected self-loop looks like \(\set{v, v}\) instead, and contributes exactly \(2\) to the degree of a vertex.
+                    </p>
+                    <p>
+                        Parallel edges and self-loops tend to complicate the definition of a graph and the degree of a vertex. Graphs that allow both of them are called <i>pseudographs</i>, which are basically multigraphs that can have self-loops. Graphs that do not have them are called <i>simple</i> graphs, or simply, "graphs."
+                    </p>
                 </div>
             </div>
         </div>
