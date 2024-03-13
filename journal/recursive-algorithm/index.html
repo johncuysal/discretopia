@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/recursive-algorithm/">
+    <title>Recursive algorithm - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graph Theory
+                    </a>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Recursive algorithm</h1>
+                    <hr>
+                    <i>Last Updated: 12 March 2024</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        A <b>recursive algorithm</b> is an <a href="../algorithm">algorithm</a> that calls itself. It has <i>base case(s)</i> for problems it can trivially solve, and <i>recursive case(s)</i> for problems that must be reduced in some way before being called on by the algorithm again. It's generally a good rule of thumb to use <a href="../recursion">recursion</a> when the answer to a problem can be constructed from the answers to similar subproblems.
+                    </p>
+                    <p>
+                        Here's a recursive algorithm for computing <a href="../factorial">factorials</a>:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> factorial <b>is</b><br>    <b>input:</b> an integer n ≥ 0<br>    <b>output:</b> n!<br><br>    <b>if</b> n = 0 <span class="code-comment">(base case)</span><br>        <b>return</b> 1<br>    <b>else</b> <span class="code-comment">(recursive case)</span><br>        <b>return</b> n * factorial(n - 1)</pre>
+                    <div class="math-notice">
+                        ⚠ The recursive depth of this algorithm quickly becomes overwhelming. It's not recommended to use this to compute the factorial of even a moderately large integer.
+                    </div>
+                    <p>
+                        The recursive algorithm for computing <a href="../fibonacci-sequence">Fibonacci numbers</a> calls itself more than once in its recursive case. Take a look:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> fibonacci <b>is</b><br>    <b>input:</b> an integer n ≥ 0<br>    <b>output:</b> the nth fibonacci number<br><br>    <b>if</b> n = 0 <span class="code-comment">(base case)</span><br>        <b>return</b> 0<br>    <b>else if</b> n = 1 <span class="code-comment">(another base case)</span><br>        <b>return</b> 1<br>    <b>else</b> <span class="code-comment">(recursive case)</span><br>        <b>return</b> fibonacci(n - 1) + fibonacci(n - 2)</pre>
+                    <p>
+                        Unfortunately, directly adapting the recursive definition of the Fibonacci sequence into an algorithm doesn't really work. The above algorithm is terribly inefficient and causes plenty of redundant calls to be made. If you make note of each time the algorithm makes a recursive call, you'll see that many calls are for computing Fibonacci numbers that have already been previously computed. A more efficient, non-recursive implementation that "remembers" previously computed Fibonacci numbers is given below:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> efficient_fibonacci <b>is</b><br>    <b>input:</b> an integer n ≥ 0<br>    <b>output:</b> the nth fibonacci number<br><br>    f ← [0, 1]<br>    <b>for</b> i = 2 <b>to</b> n<br>        append f[i - 1] + f[i - 2] to f<br>    <b>return</b> f[n]</pre>
+                    <p>
+                        This bottom-up approach to computing Fibonacci numbers is an example of dynamic programming. It closely resembles how people actually compute Fibonacci numbers with a pen and paper. So, when designing algorithms, it might be helpful to think about how someone would practically solve the problem without a computer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

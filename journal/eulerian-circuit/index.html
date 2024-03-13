@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/eulerian-circuit/">
+    <title>Eulerian circuit - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graph Theory
+                    </a>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Eulerian circuit</h1>
+                    <hr>
+                    <i>Last Updated: 9 March 2024</i>
+                </div>
+                <div id="written-content">
+                    <blockquote>
+                        A thorough tour of all a graph's edges that ends where it started.
+                    </blockquote>
+                    <p>
+                        An <b>Eulerian circuit</b> is a <a href="../walk">walk</a> that uses each edge in a connected <a href="../graph">graph</a> exactly once and loops back to the starting vertex. Graphs that have Eulerian circuits are <i>Eulerian</i>.
+                    </p>
+                    <p>
+                        It's okay for Eulerian circuits to repeat vertices, they're not necessarily <a href="../walk#path">paths</a>.
+                    </p>
+                    <p>
+                        A graph has an Eulerian circuit if and only if it is a single connected component and all of its vertices have even degree.
+                    </p>
+                    <p>
+                        Therefore, if any vertex in a graph has odd degree, then that graph cannot have an Eulerian circuit. This is because trying to use all the edges incident to that vertex exactly once leads to a situation where the vertex cannot be left.
+                    </p>
+                    <p>
+                        Here's an algorithm that finds an Eulerian circuit in a graph:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> find_eulerian_circuit <b>is</b><br>    <b>input:</b> a connected graph G = (V, E) whose vertices all have even degree<br>    <b>output:</b> an Eulerian circuit (a sequence of edges)<br><br>    C ← find_circuit(G)<br>    <b>while</b> there exists an edge in G not in C<br>        let G' be a copy of G<br>        remove all edges from G' that are already in C<br>        remove all isolated vertices from G'<br>        let w be any vertex that G' and C share<br>        C' ← find_circuit(G') <span class="code-comment">(circuit must start with w)</span><br>        insert the contents of C' into C immediately after the edge in C that leads to w<br>    <b>return</b> C</pre>
+                    <div class="math-notice">
+                        ⚠ Note that this algorithm calls the same <span class="code-inline">find_circuit</span> algorithm defined <a href="../walk#circuit">here</a>.
+                    </div>
+                    <p>
+                        By maintaining the properties of a circuit through each iteration and continually adding edges, this algorithm ensures that an Eulerian circuit will eventually be achieved. Every time the loop runs, the circuit gets closer to touring every edge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

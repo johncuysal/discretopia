@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/star/">
+    <title>Star - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graph Theory
+                    </a>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Star</h1>
+                    <hr>
+                    <i>Last Updated: 10 March 2024</i>
+                </div>
+                <div id="written-content">
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Star_network_7.svg" alt="The 7-pointed star, S_7.">
+                        <figcaption>The \(7\)-pointed star, \(S_7\).</figcaption>
+                    </figure>
+                    <p>
+                        A <b>star</b> is a free <a href="../tree">tree</a> with \(1\) internal vertex. It gets its name from its appearance. The symbol \(S_n\) denotes the <a href="../graph">graph</a> of an \(n\)-pointed star.
+                    </p>
+                    <p>
+                        Equivalently, a star \(S_n\) is the <a href="../bipartite-graph#complete-bipartite-graph">complete bipartite graph</a> \(K_{1, n}\).
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>References</h2>
+                    <hr>
+                    <ol>
+                        <li><a href="https://commons.wikimedia.org/wiki/File:Star_network_7.svg">Star_network_7.svg: Merdis</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

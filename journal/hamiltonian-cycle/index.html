@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/hamiltonian-cycle/">
+    <title>Hamiltonian cycle - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graph Theory
+                    </a>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Hamiltonian cycle</h1>
+                    <hr>
+                    <i>Last Updated: 9 March 2024</i>
+                </div>
+                <div id="written-content">
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Dodecahedron_Hamiltonian_Cycle.svg" alt="A Hamiltonian cycle on the edge graph of a dodecahedron.">
+                        <figcaption>A Hamiltonian cycle on the edge graph of a dodecahedron.</figcaption>
+                    </figure>
+                    <p>
+                        A <b>Hamiltonian cycle</b> is a <a href="../walk">walk</a> that uses each vertex in a connected <a href="../graph">graph</a> exactly once and loops back to the starting vertex. Graphs that have Hamiltonian cycles are <i>Hamiltonian</i>.
+                    </p>
+                    <p>
+                        The only vertex that can be repeated in a Hamiltonian cycle is the one at the beginning and end. Of course, no edges can be repeated at all in a <a href="../walk#cycle">cycle</a>.
+                    </p>
+                    <p>
+                        Some graphs are known to be Hamiltonian, like every <a href="../complete-graph">complete graph</a> with more than \(2\) vertices, as well as every <a href="../cycle-graph">cycle graph</a>. Apart from that, there is no efficient <a href="../algorithm">algorithm</a> for determining if a graph has a Hamiltonian cycle. Right now, the only way to figure that out is to <a href="../brute-force-algorithm">brute-force</a> it. Certain problems are just really hard to solve, which is why there's no good <a href="../factoring-algorithm">factoring algorithm</a> out there either.
+                    </p>
+                    <p>
+                        Unlike Eulerian graphs, there don't seem to be any clear requirements that a graph must meet in order to be Hamiltonian. However, if a graph has a vertex with a degree of \(1\), it's definitely not Hamiltonian as the edge incident to that vertex would get repeated in any attempt to build a Hamiltonian cycle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

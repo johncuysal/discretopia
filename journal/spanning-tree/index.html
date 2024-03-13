@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/spanning-tree/">
+    <title>Spanning tree - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graph Theory
+                    </a>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Spanning tree</h1>
+                    <hr>
+                    <i>Last Updated: 11 March 2024</i>
+                </div>
+                <div id="written-content">
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/4x4_grid_spanning_tree.svg" alt="A spanning tree of a graph, drawn in blue.">
+                        <figcaption>A spanning tree of a graph, drawn in blue.</figcaption>
+                    </figure>
+                    <p>
+                        A <b>spanning tree</b> of a <a href="../graph">graph</a> is a subgraph that is a <a
+                            href="../tree">tree</a> which contains all the vertices in the original graph. Intuitively, spanning trees are trees that "span" every vertex. Due to being trees, they use the fewest number of edges necessary to connect all the vertices.
+                    </p>
+                    <p>
+                        A disconnected graph has no spanning trees. A tree is its own unique spanning tree.
+                    </p>
+                    <p>
+                        To construct a spanning tree, perform a <i>depth-first search (DFS)</i> or <i>breadth-first search (BFS)</i> on the graph. Both of these
+                        <a href="../algorithm">algorithms</a> will traverse the entire graph, but differ in how they prioritize which vertices get explored first.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Depth-first search</h2>
+                    <hr>
+                    <p>
+                        In a depth-first search, each branch of the graph is explored as deeply as possible before backtracking. The spanning tree this routine generates is as tall as possible.
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> dfs <b>is</b><br>    <b>input:</b> a connected graph G = (V, E) and starting vertex r<br>    <b>output:</b> a spanning tree of G rooted at r<br><br>    let T be an empty graph<br>    explore(G, r, T)<br>    return T<br></pre>
+                    <p>
+                        This implementation of depth-first search has a <a href="../recursion">recursive</a> subroutine, <span class="code-inline">explore</span>:
+                    </p>
+                    <pre class="code-block"><b>subroutine</b> explore <b>is</b><br>    <b>input:</b> a connected graph G = (V, E), vertex to explore v, and graph T<br>    <b>output:</b> changes T<br><br>    add v to T<br>    <b>for</b> every edge (v, w) in G<br>        <b>if</b> w not in T<br>            add (v, w) to T<br>            explore(G, w, T)<br></pre>
+                    <div class="math-notice">
+                        ⚠ The above subroutine does not return anything. It changes, or "mutates" <span class="code-inline">T</span>. By the end of all the recursive calls, <span class="code-inline">T</span> will be a spanning tree.
+                    </div>
+                    <p>
+                        A non-recursive implementation of depth-first search also exists. It resembles the breadth-first search implementation below, but has one small difference that makes all the difference.
+                    </p>
+                    <h2>Breadth-first search</h2>
+                    <hr>
+                    <p>
+                        In a breadth-first search, vertices are explored in the order of their proximity to the starting vertex. The spanning tree this routine generates is as wide as possible.
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> bfs <b>is</b><br>    <b>input:</b> a connected graph G = (V, E) and starting vertex r<br>    <b>output:</b> a spanning tree of G rooted at r<br><br>    let T be an empty graph<br>    add r to T<br>    unvisited ← []<br>    append r to unvisited<br>    <b>while</b> unvisited is not empty<br>        remove v from the front of unvisited<br>        <b>for</b> each edge (v, w) in G<br>            <b>if</b> w not in T<br>                add (v, w) to T<br>                add w to T<br>                append w to unvisited<br>    return T<br></pre>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

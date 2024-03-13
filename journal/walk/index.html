@@ -118,10 +118,7 @@
                         Combinatorics
                     </a>
                     <a class="sidebar-link" href="..#graphs">
-                        Graphs
-                    </a>
-                    <a class="sidebar-link" href="..#trees">
-                        Trees
+                        Graph Theory
                     </a>
                     <a class="sidebar-link" href="..#recursion">
                         Recursion
@@ -134,7 +131,7 @@
                 <div id="title-box">
                     <h1>Walk</h1>
                     <hr>
-                    <i>Last Updated: 6 January 2024</i>
+                    <i>Last Updated: 9 March 2024</i>
                 </div>
                 <div id="written-content">
                     <p>
@@ -153,10 +150,13 @@
                         Let \(G = (V, E)\) be a directed graph. The sequence \((v_1, (v_1, v_2), v_2, (v_2, v_3), v_3, ..., v_{n-1}, (v_{n-1}, v_n), v_n)\) is a walk if and only if \((v_i, v_{i+1}) \in E\) for \(1 \leq i \leq n - 1\).
                     </div>
                     <p>
-                        The <i>length</i> of a walk is the number of edges in it. We are primarily concerned with walks of length \(1\) or greater.
+                        The <i>length</i> of a walk is the number of edges in it. This will always be exactly \(1\) less than the number of vertices in the walk.
                     </p>
                     <p>
-                        If a walk does not exist between at least two vertices in a graph, that graph is <i>disconnected</i>. A bunch of isolated components is still one graph, a disconnected graph.
+                        If a walk does not exist between at least two vertices in a graph, that graph is <i>disconnected</i>. A bunch of isolated <a href="../component">components</a> is still one graph, called a disconnected graph. On the other hand, if walks exist between every pair of vertices in a graph, that graph is <i>connected</i>.
+                    </p>
+                    <p>
+                        In undirected graphs, if a walk exists, it can be traversed forward or backward. Simply put, a walk in an undirected graph is still a walk even if the sequence of vertices is reversed.
                     </p>
                     <div id="list-of-contents">
                         <div class="centered">
@@ -167,22 +167,41 @@
                     <h2>Path</h2>
                     <hr>
                     <p>
-                        A <i>path</i> is a walk where vertices are not repeated. In other words, every vertex in the walk is distinct.
+                        A <i>path</i> is a walk where vertices are not repeated. In other words, every vertex in the walk is distinct. \((1, 2, 3)\) is a path.
+                    </p>
+                    <p>
+                        If even one vertex is repeated in a walk, it cannot be a path.
+                    </p>
+                    <p>
+                        Every path is a trail, but not every trail is a path. Why? A path is unable to repeat vertices, which directly implies it is unable to repeat edges. Trails are not necessarily paths though, because it's possible to not repeat edges but still repeat vertices.
                     </p>
                     <h2>Trail</h2>
                     <hr>
                     <p>
-                        A <i>trail</i> is a walk where edges are not repeated. In other words, every edge in the walk is distinct.
+                        A <i>trail</i> is a walk where edges are not repeated. In other words, every edge in the walk is distinct. \((1, 2, 3, 4, 2)\) is a trail.
+                    </p>
+                    <p>
+                        If even one edge is repeated in a walk, it cannot be a trail.
                     </p>
                     <h2>Circuit</h2>
                     <hr>
                     <p>
-                        A <i>circuit</i> is a closed walk where edges are not repeated. It is a closed trail.
+                        A <i>circuit</i> is a closed walk where edges are not repeated. It is a closed trail. \((1, 2, 3, 4, 1, 3, 1)\) is a circuit. Here's a nice <a href="../algorithm">algorithm</a> for finding circuits in a graph whose vertices all have even degree:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> find_circuit <b>is</b><br>    <b>input:</b> a graph G = (V, E) whose vertices all have even degree<br>    <b>output:</b> a circuit (a sequence of edges)<br><br>    let v be any vertex that is not isolated<br>    let trail be an empty sequence<br>    <b>while</b> there exists an edge (v, w) not in trail<br>        append (v, w) to trail<br>        v ← w<br>    <b>return</b> trail</pre>
+                    <p>
+                        This algorithm gradually builds up an open trail and ends as soon as it becomes a closed trail.
                     </p>
                     <h2>Cycle</h2>
                     <hr>
                     <p>
-                        A <i>cycle</i> is a closed walk where edges and vertices are not repeated, except for the one vertex that gets cycled back to. In other words, the only vertices that get repeated are the first and last. Cycles are special circuits.
+                        A <i>cycle</i> is a closed walk where edges and vertices are not repeated, except for the one vertex that gets cycled back to. In other words, the only vertices that get repeated are the first and last. Cycles are special circuits. \((1, 2, 3, 4, 1)\) is a cycle.
+                    </p>
+                    <p>
+                        Without introducing parallel edges or self-loops, cycles always consist of at least \(3\) vertices.
+                    </p>
+                    <p>
+                        Graphs without any cycles (such as <a href="../tree">trees</a>) are <i>acyclic</i>.
                     </p>
                 </div>
             </div>
@@ -190,7 +209,7 @@
     </main>
     <footer>
         <div id="footer-content-container">
-            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
         </div>
     </footer>
 </body>

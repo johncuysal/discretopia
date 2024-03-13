@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/tree/">
+    <title>Tree - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graph Theory
+                    </a>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Tree</h1>
+                    <hr>
+                    <i>Last Updated: 13 March 2024</i>
+                </div>
+                <div id="written-content">
+                    <blockquote>
+                        A tall plant that lives a long time.
+                    </blockquote>
+                    <figure class="right-floated">
+                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Tree_graph.svg" alt="A free tree.">
+                        <figcaption>A free tree.</figcaption>
+                    </figure>
+                    <p>
+                        A <b>tree</b> is a connected <a href="../graph">graph</a> with no <a href="../walk#cycle">cycles</a>. One of its vertices is designated to be the <i>root</i>. If not, then it's a <i>free tree</i> instead of a <i>rooted tree</i>. A group of trees is a <a href="../forest">forest</a>.
+                    </p>
+                    <p>
+                        If you add an edge to a tree, a cycle is created. If you remove an edge from a tree, it's disconnected.
+                    </p>
+                    <p>
+                        Trees pop up in many <a href="../algorithm">algorithms</a> because they're great at representing decisions that branch off into several outcomes. The solution to a certain problem may be cleverly equated to traversing a tree in a particular way.
+                    </p>
+                    <p>
+                        Trees are also good for visualizing the steps of a <a href="../recursive-algorithm">recursive algorithm</a>.
+                    </p>
+                    <p>
+                        When you play a game against a computer player, it may be the case that its artificial intelligence is based on a decision tree program that analyzes the state of the game to optimize strategy, even considering probabilities when there's luck involved. However, playing too many steps ahead can still be computationally difficult so the decision tree may have a cap on its height.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Uniqueness of paths</h2>
+                    <hr>
+                    <p>
+                        Here's a super-important property about trees... don't forget it! For any \(2\) vertices in a tree, there is exactly \(1\) <a href="../walk#path">path</a> between them. Therefore, for any \(2\) vertices in a tree, there is only \(1\) way to travel between them. That path connecting them is unique.
+                    </p>
+                    <div class="math-definition">
+                        Let \(T = (V, E)\) be a tree, with \(v, w \in V\). Then, there is only \(1\) path connecting \(v\) and \(w\).
+                    </div>
+                    <h2>Number of edges</h2>
+                    <hr>
+                    <p>
+                        It is true for every tree that the number of edges is exactly \(1\) fewer than the number of vertices.
+                    </p>
+                    <div class="math-definition">
+                        Let \(T = (V, E)\) be a tree. Then:
+                        $$|E| = |V| - 1$$
+                    </div>
+                    <h2>Rooted tree</h2>
+                    <hr>
+                    <p>
+                        Rooted trees are typically drawn with the root at the top and all other vertices are organized into lower <i>levels</i>, each defined by their distance from the root. The <i>distance</i> between two vertices is defined as the number of edges in the shortest path between them. The <i>height</i> of a rooted tree is simply the greatest distance any vertex has from the root.
+                    </p>
+                    <p>
+                        Let's talk a bit about the vertices in a rooted tree. Every non-root vertex in a rooted tree has exactly \(1\) <i>parent</i> (of which it is a <i>child</i>), which is the unique vertex that is visited immediately after it in a path to the root. All the vertices that come after a non-root vertex in a path to the root are its <i>ancestors</i> (of which it is a <i>descendant</i>). Rooted trees are drawn such that ancestors appear above their descendants. A vertex without children is a <i>leaf</i>. A vertex without a parent is the root. Vertices with the same parent are <i>siblings</i>.
+                    </p>
+                    <p>
+                        A <i>subtree</i> is a rooted tree contained entirely within another rooted tree. To build a subtree, pick any vertex in a rooted tree. That vertex and all its descendants together make up a new rooted tree, rooted at the vertex that was picked.
+                    </p>
+                    <h2>Free tree</h2>
+                    <hr>
+                    <p>
+                        A vertex in a free tree is a leaf if its degree is \(1\). Also, when a free tree consists of a single vertex, that vertex is a leaf. A vertex in a free tree is <i>internal</i> if its degree is \(\geq 2\).
+                    </p>
+                    <p>
+                        Here's a statement you might find useful. Any free tree with at least \(2\) vertices has at least \(2\) leaves:
+                    </p>
+                    <div class="math-definition">
+                        Let \(T = (V, E)\) be a free tree such that \(|V| \geq 2\). Then, the number of leaves in \(T\) is at least \(2\).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>

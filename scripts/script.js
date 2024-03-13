@@ -1,4 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
+    // Counting journal entries
+    const journalLinkContainers = document.querySelectorAll(".journal-link-container");
+    let numEntries = 0;
+    journalLinkContainers.forEach(journalLinkContainer => {
+        const links = journalLinkContainer.querySelectorAll('.journal-link');
+        const filteredLinks = Array.from(links).filter(link => !link.classList.contains('search-keyword'));
+        const linkCount = filteredLinks.length;
+        const associatedH2 = journalLinkContainer.previousElementSibling.previousElementSibling;
+        //associatedH2.textContent = associatedH2.textContent + ` (${linkCount} entries)`;
+        numEntries = numEntries + linkCount;
+    });
+    if (numEntries !== 0) {
+        document.querySelector("h1").textContent = document.querySelector("h1").textContent + ` (${numEntries} entries)`;
+    }
+
+    // Done counting journal entries
+
     // Get the table of contents div
     const listOfContents = document.querySelector("#list-of-contents");
 
@@ -66,12 +83,16 @@ window.addEventListener('DOMContentLoaded', () => {
                 searchResults.innerHTML = '';
 
                 // Display the matching elements in the search results container
+                let numResultsAdded = 0;
                 matchingElements.forEach(element => {
-                    let searchResult = document.createElement('a')
-                    searchResult.innerHTML = element.innerHTML;
-                    searchResult.classList.add('search-result')
-                    searchResult.setAttribute('href', element.getAttribute('href'));
-                    searchResults.appendChild(searchResult);
+                    if (numResultsAdded < 10) {
+                        let searchResult = document.createElement('a')
+                        searchResult.innerHTML = element.innerHTML;
+                        searchResult.classList.add('search-result')
+                        searchResult.setAttribute('href', element.getAttribute('href'));
+                        searchResults.appendChild(searchResult);
+                        numResultsAdded++;
+                    }
                 });
 
                 searchResults.style.display = 'flex';

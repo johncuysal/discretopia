@@ -118,10 +118,7 @@
                         Combinatorics
                     </a>
                     <a class="sidebar-link" href="..#graphs">
-                        Graphs
-                    </a>
-                    <a class="sidebar-link" href="..#trees">
-                        Trees
+                        Graph Theory
                     </a>
                     <a class="sidebar-link" href="..#recursion">
                         Recursion
@@ -134,7 +131,7 @@
                 <div id="title-box">
                     <h1>Graph</h1>
                     <hr>
-                    <i>Last Updated: 6 January 2024</i>
+                    <i>Last Updated: 16 January 2024</i>
                 </div>
                 <div id="written-content">
                     <figure class="right-floated">
@@ -151,7 +148,7 @@
                         The two vertices that participate in an edge are each other's <i>neighbors</i>. A vertex is <i>adjacent</i> to all its neighbors.
                     </p>
                     <p>
-                        In a directed graph, \(E\) is a subset of \(V \times V\), so each edge is an ordered pair of vertices \((a, b)\) depicted as an arrow pointing from \(a\) to \(b\).  The <i>in-degree</i> of a vertex is the number of edges pointing into it, and the <i>out-degree</i> of a vertex is the number of edges pointing out of it.
+                        In a directed graph, or <i>digraph</i>, \(E\) is a subset of \(V \times V\), so each edge is an ordered pair of vertices \((a, b)\) depicted as an arrow pointing from \(a\) to \(b\).  The <i>in-degree</i> of a vertex is the number of edges pointing into it, and the <i>out-degree</i> of a vertex is the number of edges pointing out of it.
                     </p>
                     <div class="math-definition">
                         Let \(G = (V, E)\) be a directed graph. For any vertex \(a \in V\):
@@ -165,7 +162,7 @@
                         Let \(G = (V, E)\) be an undirected graph. For any vertex \(a \in V\):
                         $$\text{deg}(a) = |\set{b \in V : \set{a, b} \in E}|$$
                         The <i>total degree</i> of \(G\) is defined as:
-                        $$\sum\limits_{a \in V}\text{deg}(a)$$
+                        $$\text{totaldegree}(G) = \sum\limits_{a \in V}\text{deg}(a)$$
                     </div>
                     <p>
                         Unlike graphs, <i>multigraphs</i> are defined as having a <a href="../multiset">multiset</a> of edges, which means multiple edges can exist between the same two vertices. Edges that exist between the same two vertices are called <i>parallel edges</i>.
@@ -176,13 +173,99 @@
                     <p>
                         Parallel edges and self-loops tend to complicate the definition of a graph and the degree of a vertex. Graphs that allow both of them are called <i>pseudographs</i>, which are basically multigraphs that can have self-loops. Graphs that do not have them are called <i>simple</i> graphs, or simply, "graphs."
                     </p>
+                    <p>
+                        Due to their versatility, graphs are essential to the design of algorithms that solve a diverse range of problems. These problems include: making a conflict-free schedule, stopping the spread of a contagious disease, modelling the internet, finding the quickest way to travel to a destination, and many more.
+                    </p>
+                    <div id="list-of-contents">
+                        <div class="centered">
+                            <b>Contents</b>
+                        </div>
+                        <hr>
+                    </div>
+                    <h2>Degree-sum formula</h2>
+                    <hr>
+                    <p>
+                        In <i>any</i> undirected graph, the total degree is equal to twice the number of edges. This is because each edge contributes \(2\) to the total degree of the graph:
+                    </p>
+                    <div class="math-definition">
+                        Let \(G = (V, E)\) be an undirected graph. Then:
+                        $$\sum\limits_{a \in V}\text{deg}(a) = 2|E|$$
+                        Alternatively, you could also write:
+                        $$\text{totaldegree}(G) = 2|E|$$
+                    </div>
+                    <h2>Graph induction</h2>
+                    <hr>
+                    <p>
+                        Proofs by induction involving graphs are quite different from the induction you might be used to, as it is based on the number of vertices or edges. Here's a carefully-written example of a proof by induction involving graphs:
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: \(\text{totaldegree}(G) = 2|E|\) for any undirected graph \(G = (V, E)\) such that \(|V| \geq 0\) and \(|E| \geq 0\).<br>
+                        <b>Proof by induction</b>: Let's perform induction on the number of edges, \(|E|\).<br>
+                        <i>Base case:</i> First, we'll start with a graph \(G\) that has \(|V| \geq 0\) and \(|E| = 0\). This is a graph that has an arbitrary number of vertices, but no edges at all. Since there are no edges, there can be no edges incident to any vertex, so all vertices have degree \(0\). The sum all of those degrees, the total degree, is also \(0\):
+                        $$\text{totaldegree}(G) = 2|E|$$
+                        $$(0) = 2(0)$$
+                        $$0 = 0 \checkmark$$
+                        <i>Inductive step:</i> Assume \(\text{totaldegree}(G) = 2|E|\) for any undirected graph \(G = (V, E)\) such that \(|V| \geq 0\) and \(|E| = k\), for some integer \(k \geq 0\). Consider a graph \(G\) that has \(|V| \geq 0\) and exactly \(|E| = k+1\) edges, placed in any arrangement. Removing one of the edges (doesn't matter which edge) creates a new subgraph, \(G' = (V', E')\), where \(|E'| = k\). Since \(G'\) has \(k\) edges, the inductive hypothesis applies to \(G'\):
+                        $$\text{totaldegree}(G') = 2|E'|$$
+                        By the definition of an edge, the edge that was removed to create \(G'\) was once incident to \(2\) vertices, which means it contributed \(1\) to each of their degrees, adding up to a contribution of \(2\) to \(\text{totaldegree}(G)\). Its removal therefore decreased the total degree by \(2\):
+                        $$\text{totaldegree}(G') = \text{totaldegree}(G) - 2$$
+                        Also, since \(G'\) has exactly \(1\) fewer edge than \(G\):
+                        $$|E'| = |E| - 1$$
+                        Substituting:
+                        $$\text{totaldegree}(G') = 2|E'|$$
+                        $$(\text{totaldegree}(G) - 2) = 2(|E| - 1)$$
+                        $$\text{totaldegree}(G) - 2 = 2|E| - 2$$
+                        $$\text{totaldegree}(G) = 2|E|$$
+                        Thus, it can be concluded that if \(\text{totaldegree}(G) = 2|E|\) for any undirected graph \(G = (V, E)\) such that \(|V| \geq 0\) and \(|E| = k\), for some integer \(k \geq 0\), then \(\text{totaldegree}(G) = 2|E|\) for any undirected graph \(G = (V, E)\) such that \(|V| \geq 0\) and \(|E| = k+1\). By the principle of mathematical induction, \(\text{totaldegree}(G) = 2|E|\) for any undirected graph \(G = (V, E)\) such that \(|V| \geq 0\) and \(|E| \geq 0\). \(■\)
+                    </div>
+                    <h2>Connectivity</h2>
+                    <hr>
+                    <p>
+                        The <i>connectivity</i> of a graph is a measure of its resistance to becoming a disconnected graph. There are \(2\) ways to describe the connectivity of a graph.
+                    </p>
+                    <h3>Vertex-connectivity</h3>
+                    <hr>
+                    <div class="math-definition">
+                        An undirected graph \(G = (V, E)\) is \(k\)-vertex-connected if it stays connected after the removal of any \(k - 1\) vertices.
+                        <br>
+                        The <i>vertex connectivity</i> \(\kappa(G)\) is the largest \(k\) such that the graph is \(k\)-vertex-connected.
+                    </div>
+                    <div class="math-notice">
+                        ⚠ \(\kappa(G)\) is the minimum number of vertices that must be removed to make the graph disconnected. This is always less than or equal to the minimum degree of any vertex in the graph, because removing all the neighbors of the vertex with minimum degree will disconnect it.
+                    </div>
+                    <div class="math-notice">
+                        ⚠ Be careful about the definition of vertex connectivity. A graph that is \(2\)-vertex-connected is also \(1\)-vertex-connected. If it is not \(3\)-vertex-connected, then its vertex connectivity is \(2\). Always remember the vertex connectivity of a graph is the largest \(k\) for which it is \(k\)-vertex-connected!
+                    </div>
+                    <p>
+                        <a href="../complete-graph">Complete graphs</a> have a vertex connectivity equal to \(1\) less than its number of vertices. It is a rule that \(\kappa(K_n) = n - 1\). This is the highest possible vertex connectivity. So, complete graphs are the most resistant to disconnection, as its vertices have to be whittled down until there is a single, isolated vertex, which counts as a <a href="../component">component</a>.
+                    </p>
+                    <p>
+                        To check that a graph is \(k\)-vertex-connected, you need to exhaustively check that the removal of any \((k-1)\)-size <a href="../subset">subset</a> of its vertices keeps it connected. From combinatorics, we know that there are exactly \(\binom{n}{k-1}\) subsets to check to prove that a graph with \(n\) vertices is \(k\)-vertex-connected.
+                    </p>
+                    <h3>Edge-connectivity</h3>
+                    <hr>
+                    <div class="math-definition">
+                        An undirected graph \(G = (V, E)\) is \(k\)-edge-connected if it stays connected after the removal of any \(k - 1\) edges.
+                        <br>
+                        The <i>edge connectivity</i> \(\lambda(G)\) is the largest \(k\) such that the graph is \(k\)-edge-connected.
+                    </div>
+                    <div class="math-notice">
+                        ⚠ \(\lambda(G)\) is the minimum number of edges that must be removed to make the graph disconnected. This is always less than or equal to the minimum degree of any vertex in the graph, because removing all the edges incident to the vertex with minimum degree will disconnect it.
+                    </div>
+                    <p>
+                        Checking that a graph is \(k\)-edge-connected is also very exhausting. With \(m\) edges, you'll have to check that the removal of any of the \(\binom{m}{k-1}\) subsets of \(k-1\) edges will not cause the graph to become disconnected. Advanced
+                        <a href="../algorithm">algorithms</a>, like the Ford-Fulkerson algorithm, can be adapted to efficiently determine the edge connectivity of a graph. For now, though, stick to checking the edge connectivity of graphs with not too many edges.
+                    </p>
+                    <p>
+                        There's another rule for complete graphs. It's always true that \(\lambda(K_n) = n-1\).
+                    </p>
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <div id="footer-content-container">
-            © 2023 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
         </div>
     </footer>
 </body>

@@ -14,7 +14,7 @@ With a highly-linked structure inspired by Wikipedia, related concepts are no mo
 
 ## Key features
 
-- Well-written, thoughtful entries on 80+ discrete math topics, including: logic, proofs, set theory, functions, algorithms, relations, number theory, and induction.
+- Well-written, thoughtful entries on 100+ discrete math topics, including: logic, proofs, set theory, functions, algorithms, relations, number theory, and induction.
 - A smart search bar that recognizes alternative names for topics in discrete math and efficiently redirects readers to the correct entry.
 - Excellent internal linking, making it easy to jump from entry to entry.
 - A beautiful design, which has a profound effect on learning.
@@ -22,6 +22,6 @@ With a highly-linked structure inspired by Wikipedia, related concepts are no mo
 
 ## License
 
-© 2023 John C. Uysal. All Rights Reserved.
+© 2024 John C. Uysal. All Rights Reserved.
 
 This project is fully protected by copyright law. No part of this project, including but not limited to code, content, and design, may be reproduced, modified, or distributed without explicit permission from the project creator.

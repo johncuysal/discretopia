@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John C. Uysal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/script.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../css/discretopia.css">
+    <link rel="icon" href="../../images/k8.svg">
+    <link rel="canonical" href="https://discretopia.com/journal/correctness-proof/">
+    <title>Correctness proof - Discretopia, the friendly discrete math reference</title>
+</head>
+<body>
+    <header>
+        <div id="wordmark-container">
+            <div id="wordmark" class="centered">
+                <a href="../..">DISCRETOPIA</a>
+            </div>
+        </div>
+        <div id="search-container">
+            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+            <div id="search-results"></div>
+        </div>
+    </header>
+    <main>
+        <div id="side-container">
+            <div id="logo-container">
+                <a href="../..">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
+
+                        <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                        <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                        <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                        <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="../..">
+                        Main page
+                    </a>
+                    <a class="sidebar-link" href="..">
+                        View the journal
+                    </a>
+                    <a class="sidebar-link" href="../../about">
+                        About Discretopia
+                    </a>
+                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                        Donate ♥
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-section">
+                    <a class="sidebar-link" href="..#logic-and-proofs">
+                        Logic & Proofs
+                    </a>
+                    <a class="sidebar-link" href="..#set-theory">
+                        Set Theory
+                    </a>
+                    <a class="sidebar-link" href="..#functions">
+                        Functions
+                    </a>
+                    <a class="sidebar-link" href="..#algorithms">
+                        Algorithms
+                    </a>
+                    <a class="sidebar-link" href="..#relations">
+                        Relations
+                    </a>
+                    <a class="sidebar-link" href="..#integer-properties">
+                        Number Theory
+                    </a>
+                    <a class="sidebar-link" href="..#induction">
+                        Induction
+                    </a>
+                    <a class="sidebar-link" href="..#combinatorics">
+                        Combinatorics
+                    </a>
+                    <a class="sidebar-link" href="..#graphs">
+                        Graph Theory
+                    </a>
+                    <a class="sidebar-link" href="..#recursion">
+                        Recursion
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div id="title-box">
+                    <h1>Correctness proof</h1>
+                    <hr>
+                    <i>Last Updated: 13 March 2024</i>
+                </div>
+                <div id="written-content">
+                    <p>
+                        A <b>correctness proof</b> is a <a href="../proof">proof</a> that shows an <a href="../algorithm">algorithm</a> gives the correct output for every possible input.
+                    </p>
+                    <p>
+                        <a href="../proof-by-induction">Mathematical induction</a> suits correctness proofs of <a href="../recursive-algorithm">recursive algorithms</a> quite naturally. First, establish that the algorithm handles the base case(s) correctly. Then, the inductive step will involve showing that the algorithm being correct for all previous inputs (in other words, that all recursive calls work) implies that it will be correct for the next input. By the principle of mathematical induction, the algorithm is therefore proven correct for all inputs.
+                    </p>
+                    <p>
+                        Consider this recursive algorithm that reverses the characters in a <a href="../string">string</a>:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> reverse_string <b>is</b><br>    <b>input:</b> a string s<br>    <b>output:</b> the string s reversed<br><br>    <b>if</b> s = "" <span class="code-comment">(base case)</span><br>        <b>return</b> ""<br>    <b>else</b> <span class="code-comment">(recursive case)</span><br>        let s' be a copy of s<br>        remove the last character t from s'<br>        <b>return</b> t + reverse_string(s')</pre>
+                    <div class="math-notice">
+                        ⚠ Make sure you know what an <a href="../empty-string">empty string</a> is. Here, it's written as <span class="code-inline">""</span>. Also, there's <a href="../string#concatenation">string concatenation</a> going on in the recursive case, not addition.
+                    </div>
+                    <p>
+                        Let's now prove that <span class="code-inline">reverse_string</span> is correct no matter how long a <a href="../string">string</a> you give it:
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: <span class="code-inline">reverse_string</span> correctly returns the reverse of \(s\), for every string \(s\).<br>
+                        <b>Proof by induction</b>: Let's perform induction on \(n\), the length of the string \(s\).<br>
+                        <i>Base case:</i><br>
+                        \(n = 0 :\) <span class="code-inline">reverse_string("")</span> returns <span class="code-inline">""</span> \(\checkmark\)<br>
+                        <i>Inductive step:</i><br>
+                        Assume <span class="code-inline">reverse_string</span> correctly returns the reverse of a string for strings of length \(k \geq 0\). We want to show <span class="code-inline">reverse_string</span> correctly returns the reverse of a string for strings of length \(k + 1\). Since \(k + 1 \geq 1\), <span class="code-inline">reverse_string</span> will enter its recursive case when given a string of length \(k + 1\), that is, a string of the form:
+                        $$c_1 c_2 ... c_k c_{k+1}$$
+                        Then, it takes the last character off the string and prepends it to what the call on a string of length \(k\) returns. This looks like: \(c_{k+1}\) + <span class="code-inline">reverse_string(c_1 c_2 ... c_k)</span> According to the inductive hypothesis, this call will correctly return the reverse of a string of length \(k\). Therefore, concatenating the last character of the string to the front of its reverse without that last character will result in the reverse of that entire string:
+                        $$c_{k+1} + (c_k ... c_2 c_1)$$
+                        $$c_{k+1} c_k ... c_2 c_1$$
+                        Thus, it can be concluded that if <span class="code-inline">reverse_string</span> correctly returns the reverse of a string for strings of length \(k \geq 0\), then <span class="code-inline">reverse_string</span> correctly returns the reverse of a string for strings of length \(k + 1\). By the principle of mathematical induction, <span class="code-inline">reverse_string</span> correctly returns the reverse of a string for strings of length \(n \geq 0\). This range encompasses every string \(s\) that could be given to <span class="code-inline">reverse_string</span>. \(■\)
+                    </div>
+                    <p>
+                        Take a look at this recursive algorithm that computes the <a href="../power-set">power set</a> of a <a href="../set">set</a>:
+                    </p>
+                    <pre class="code-block"><b>algorithm</b> power_set <b>is</b><br>    <b>input:</b> a set S<br>    <b>output:</b> the power set of S<br><br>    <b>if</b> S = {} <span class="code-comment">(base case)</span><br>        <b>return</b> {{}}<br>    <b>else</b> <span class="code-comment">(recursive case)</span><br>        let S' be a copy of S<br>        remove an element e from S'<br>        P ← power_set(S')<br>        let P' be a copy of P<br>        <b>for</b> each set A in P'<br>            add A ∪ {e} to P<br>        <b>return</b> P</pre>
+                    <div class="math-notice">
+                        ⚠ Note the use of the <a href="../set-operation#union">union operator</a>, \(\cup\).
+                    </div>
+                    <p>
+                        The power set of the <a href="../empty-set">empty set</a> is trivial. However, with each new <a href="../element">element</a> added to a set, the number of sets in its power set doubles. This is because each of the <a href="../subset">subsets</a> can now include the new element or not. That is the idea this algorithm leverages to provide a recursive solution.
+                    </p>
+                    <p>
+                        Is this algorithm correct though? Well, let's prove it rigorously:
+                    </p>
+                    <div class="math-definition">
+                        <b>Theorem</b>: <span class="code-inline">power_set</span> correctly returns the power set of \(S\) for every finite set \(S\).<br>
+                        <b>Proof by induction</b>: Let's perform induction on \(n\), the size of the set \(S\).<br>
+                        <i>Base case:</i><br>
+                        \(n = 0 :\) <span class="code-inline">power_set({})</span> returns <span class="code-inline">{{}}</span> \(\checkmark\)<br>
+                        <i>Inductive step:</i><br>
+                        Assume <span class="code-inline">power_set</span> correctly returns the power set of a set for sets of size \(k \geq 0\). We want to show <span class="code-inline">power_set</span> correctly returns the power set of a set for sets of size \(k + 1\). Since \(k + 1 \geq 1\), <span class="code-inline">power_set</span> will enter its recursive case when given a set of size \(k + 1\). Then, it makes a call to itself to find the power set of \(S'\), which is just the given set \(S\) with \(1\) element, \(e\), removed. \(S'\) is therefore of size \(k\) since it has \(1\) fewer element. According to the inductive hypothesis, this call will correctly return the power set of a set of size \(k\):
+                        $$\mathcal{P}(S') = \set{\set{}, \set{s_1}, ... \set{s_1, ... s_k}}$$
+                        Note that the element \(e\) is missing in all the sets in \(\mathcal{P}(S')\). What the algorithm ends up returning is a set that is effectively a union of \(\mathcal{P}(S')\) and a duplicate of \(\mathcal{P}(S')\) whose sets all include \(e\):
+                        $$\set{\set{}, \set{s_1}, ... \set{s_1, ... s_k}} \cup \set{\set{} \cup \set{e}, \set{s_1} \cup \set{e}, ... \set{s_1, ... s_k} \cup \set{e}}$$
+                        To show this is equal to \(\mathcal{P}(S)\), we need to prove that any arbitrary subset of \(S\) is in \(\mathcal{P}(S)\) and that any arbitrary set in \(\mathcal{P}(S)\) is a subset of \(S\).
+                        <ol>
+                            <li>
+                                Let's begin with proving the former. It is a fact that any arbitrary subset \(X\) of \(S\) either includes \(e\) or it does not.
+                                <ul>
+                                    <li>
+                                        If \(e \notin X\), then the subset can be found in \(\mathcal{P}(S')\). Since \(\mathcal{P}(S)\) is created by adding elements to \(\mathcal{P}(S')\), it includes every element in \(\mathcal{P}(S')\), so our arbitrary subset will show up in \(\mathcal{P}(S)\).
+                                    </li>
+                                    <li>
+                                        If \(e \in X\), then there is a corresponding version of that arbitrary subset that does not include \(e\), \(X - \set{e}\), which can be found in \(\mathcal{P}(S')\). Since the algorithm operates by duplicating \(\mathcal{P}(S')\) and adding \(e\) to every set in it, our arbitrary set will show up in the final \(\mathcal{P}(S)\) as \(X - \set{e} \cup \set{e} = X\).
+                                    </li>
+                                </ul>
+                                Therefore, if \(X \subseteq S\), then \(X \in \mathcal{P}(S)\), as was computed by the algorithm.
+                            </li>
+                            <li>
+                                Let's prove the latter. This'll be quick. Any arbitrary set \(Y\) in \(\mathcal{P}(S)\) is a subset of \(S'\), which itself is a subset of \(S\), or, it is one of the duplicated subsets that have the element \(e\), which is an element from \(S\). There is no way for \(\mathcal{P}(S)\) to include anything not already in \(S\), as it is completely derived from \(S\). Therefore, if \(X \in \mathcal{P}(S)\), then \(X \subseteq S\).
+                            </li>
+                            <li>
+                                Having proven both ways, we can now state: \(X \subseteq S\) if and only if \(X \in \mathcal{P}(S)\), indicating that the computed power set for \(S\) is correct.
+                            </li>
+                        </ol>
+                        Thus, it can be concluded that if <span class="code-inline">power_set</span> correctly returns the power set of a set for sets of size \(k \geq 0\), then <span class="code-inline">power_set</span> correctly returns the power set of a set for sets of size \(k + 1\). By the principle of mathematical induction, <span class="code-inline">power_set</span> correctly returns the power set of a set for sets of size \(n \geq 0\). This range encompasses every set \(S\) that could be given to <span class="code-inline">power_set</span>. \(■\)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content-container">
+            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
+        </div>
+    </footer>
+</body>
+</html>
