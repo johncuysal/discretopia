@@ -1,45 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="home-button" width="256" height="256" viewBox="-8 -8 272 272">
-    <line x1="128" y1="0" x2="218.51" y2="37.49" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="0" x2="256" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="0" x2="218.51" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="0" x2="128" y2="256" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="0" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="0" x2="0" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="0" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4" />
+    <line x1="128" y1="0" x2="218.51" y2="37.49" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="0" x2="256" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="0" x2="218.51" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="0" x2="128" y2="256" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="0" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="0" x2="0" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="0" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4"/>
 
-    <line x1="218.51" y1="37.49" x2="256" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="37.49" x2="128" y2="256" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="37.49" x2="0" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4" />
+    <line x1="218.51" y1="37.49" x2="256" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="37.49" x2="128" y2="256" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="37.49" x2="0" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4"/>
 
-    <line x1="256" y1="128" x2="218.51" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="256" y1="128" x2="128" y2="256" stroke="goldenrod" stroke-width="4" />
-    <line x1="256" y1="128" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="256" y1="128" x2="0" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="256" y1="128" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4" />
+    <line x1="256" y1="128" x2="218.51" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="256" y1="128" x2="128" y2="256" stroke="goldenrod" stroke-width="4"/>
+    <line x1="256" y1="128" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="256" y1="128" x2="0" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="256" y1="128" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4"/>
 
-    <line x1="218.51" y1="218.51" x2="128" y2="256" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="218.51" x2="0" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4" />
+    <line x1="218.51" y1="218.51" x2="128" y2="256" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="218.51" x2="0" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4"/>
 
-    <line x1="128" y1="256" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="256" x2="0" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="128" y1="256" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4" />
+    <line x1="128" y1="256" x2="37.49" y2="218.51" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="256" x2="0" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="128" y1="256" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4"/>
 
-    <line x1="37.49" y1="218.51" x2="0" y2="128" stroke="goldenrod" stroke-width="4" />
-    <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4" />
+    <line x1="37.49" y1="218.51" x2="0" y2="128" stroke="goldenrod" stroke-width="4"/>
+    <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4"/>
 
-    <line x1="0" y1="128" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4" />
+    <line x1="0" y1="128" x2="37.49" y2="37.49" stroke="goldenrod" stroke-width="4"/>
 
-    <circle cx="128" cy="0" r="2" fill="goldenrod" />
-    <circle cx="218.51" cy="37.49" r="2" fill="goldenrod" />
-    <circle cx="256" cy="128" r="2" fill="goldenrod" />
-    <circle cx="218.51" cy="218.51" r="2" fill="goldenrod" />
-    <circle cx="128" cy="256" r="2" fill="goldenrod" />
-    <circle cx="37.49" cy="218.51" r="2" fill="goldenrod" />
-    <circle cx="0" cy="128" r="2" fill="goldenrod" />
-    <circle cx="37.49" cy="37.49" r="2" fill="goldenrod" />
+    <circle cx="128" cy="0" r="2" fill="goldenrod"/>
+    <circle cx="218.51" cy="37.49" r="2" fill="goldenrod"/>
+    <circle cx="256" cy="128" r="2" fill="goldenrod"/>
+    <circle cx="218.51" cy="218.51" r="2" fill="goldenrod"/>
+    <circle cx="128" cy="256" r="2" fill="goldenrod"/>
+    <circle cx="37.49" cy="218.51" r="2" fill="goldenrod"/>
+    <circle cx="0" cy="128" r="2" fill="goldenrod"/>
+    <circle cx="37.49" cy="37.49" r="2" fill="goldenrod"/>
 </svg>

@@ -13,57 +13,196 @@
     <title>Proof by strong induction - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
-    <header>
-        <div id="wordmark-container">
-            <div id="wordmark" class="centered">
-                <a href="../..">DISCRETOPIA</a>
+<main>
+    <aside>
+        <a id="logo-container" href="../..">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="-8 -8 272 272">
+                <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+            </svg>
+            <div id="wordmark">
+                <span class="wordmark-big">D</span>ISCRETOPI<span class="wordmark-big">A</span>
+            </div>
+        </a>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                <a class="sidebar-link" href="../..">
+                    Main page
+                </a>
+                <a class="sidebar-link" href="..">
+                    View the journal
+                </a>
+                <a class="sidebar-link" href="../../about">
+                    About Discretopia
+                </a>
+                <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                    Donate ♥
+                </a>
             </div>
         </div>
-        <div id="search-container">
-            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
-            <div id="search-results"></div>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                Overview
+                <hr>
+                <a class="sidebar-link" href="..#logic-and-proofs">
+                    Logic & Proofs
+                </a>
+                <a class="sidebar-link" href="..#set-theory">
+                    Set Theory
+                </a>
+                <a class="sidebar-link" href="..#functions">
+                    Functions
+                </a>
+                <a class="sidebar-link" href="..#algorithms">
+                    Algorithms
+                </a>
+                <a class="sidebar-link" href="..#relations">
+                    Relations
+                </a>
+                <a class="sidebar-link" href="..#number-theory">
+                    Number Theory
+                </a>
+                <a class="sidebar-link" href="..#induction">
+                    Induction
+                </a>
+                <a class="sidebar-link" href="..#combinatorics">
+                    Combinatorics
+                </a>
+                <a class="sidebar-link" href="..#graphs">
+                    Graph Theory
+                </a>
+                <a class="sidebar-link" href="..#recursion">
+                    Recursion
+                </a>
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="side-container">
-            <div id="logo-container">
-                <a href="../..">
-                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
-                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
-                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
+    </aside>
+    <div id="content-container">
+        <nav id="top-navigation">
+            <div id="link-menu">
+                <button id="mobile-menu">
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                </button>
+                <div id="mobile-menu-dropdown">
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            <a class="sidebar-link" href="../..">
+                                Main page
+                            </a>
+                            <a class="sidebar-link" href="..">
+                                View the journal
+                            </a>
+                            <a class="sidebar-link" href="../../about">
+                                About Discretopia
+                            </a>
+                            <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                                Donate ♥
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            Overview
+                            <hr>
+                            <a class="sidebar-link" href="..#logic-and-proofs">
+                                Logic & Proofs
+                            </a>
+                            <a class="sidebar-link" href="..#set-theory">
+                                Set Theory
+                            </a>
+                            <a class="sidebar-link" href="..#functions">
+                                Functions
+                            </a>
+                            <a class="sidebar-link" href="..#algorithms">
+                                Algorithms
+                            </a>
+                            <a class="sidebar-link" href="..#relations">
+                                Relations
+                            </a>
+                            <a class="sidebar-link" href="..#number-theory">
+                                Number Theory
+                            </a>
+                            <a class="sidebar-link" href="..#induction">
+                                Induction
+                            </a>
+                            <a class="sidebar-link" href="..#combinatorics">
+                                Combinatorics
+                            </a>
+                            <a class="sidebar-link" href="..#graphs">
+                                Graph Theory
+                            </a>
+                            <a class="sidebar-link" href="..#recursion">
+                                Recursion
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a id="top-navigation-logo-container" href="../..">
+                    <svg id="top-navigation-logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
                         <circle cx="128" cy="0" r="2" stroke-width="0"/>
                         <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
                         <circle cx="256" cy="128" r="2" stroke-width="0"/>
@@ -73,192 +212,416 @@
                         <circle cx="0" cy="128" r="2" stroke-width="0"/>
                         <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
                     </svg>
+                    <div id="top-navigation-wordmark">
+                        <span class="top-navigation-wordmark-big">D</span>ISCRETOPI<span class="top-navigation-wordmark-big">A</span>
+                    </div>
                 </a>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="../..">
-                        Main page
-                    </a>
-                    <a class="sidebar-link" href="..">
-                        View the journal
-                    </a>
-                    <a class="sidebar-link" href="../../about">
-                        About Discretopia
-                    </a>
-                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
-                        Donate ♥
-                    </a>
+            <div id="search">
+                <label for="search-field"></label>
+                <input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+                <button id="go-button">Go</button>
+                <div id="search-results"></div>
+            </div>
+        </nav>
+        <article>
+            <h1>Proof by strong induction</h1>
+            <hr>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
+            </div>
+            <p>
+                A <b>proof by strong induction</b> is a variation of a <a href="../proof-by-induction">proof by
+                induction</a> in which all preceding cases can be assumed true to prove the next case, strengthening the
+                inductive hypothesis. By contrast, a proof by induction is restricted to only being able to use the
+                immediately preceding case to prove the next case.
+            </p>
+            <p>
+                Still, the two types of proof share the same goal: to prove that a predicate \(P(n)\) holds true for all
+                \(n \geq b.\) What's new is that in a proof by strong induction, there are multiple <i>base cases</i>,
+                ranging from \(P(a)\) to \(P(b)\), where \(a \leq b\), and taking an <i>inductive step</i> involves
+                assuming \(P(k)\) as well as all the cases that came before it hold true (with \(P(a)\) being the first
+                case), in order to show \(P(k + 1)\) holds true, where \(k \geq b.\) All cases will then be proven by
+                the <i>principle of strong mathematical induction</i>:
+            </p>
+            <div class="math-definition">
+                The predicate \(P(n)\) holds true for every integer \(n \geq a\) if:
+                <ol>
+                    <li>The base cases, \(P(a)\) through \(P(b)\), are all true.</li>
+                    <li>For any integer \(k \geq b\), \((P(a) \land ... \land P(k)) \rightarrow P(k+1)\), meaning that
+                        the assumption that all preceding cases are true is enough to imply the next case. This is the
+                        inductive step.
+                    </li>
+                </ol>
+            </div>
+            <div class="math-notice">
+                ⚠ Notice how the inductive hypothesis is a much broader, "stronger" assumption. Rather than only
+                assuming \(P(k)\) holds true for \(k \geq b\), you assume \(P(j)\) holds true for every \(j\) in the
+                range \(a \leq j \leq k\), where \(k \geq b.\) Don't get intimidated, that's just a rigorous way of
+                saying you're assuming \(P(k)\) and every case before it holds true.
+            </div>
+            <p>
+                Proofs by strong induction are favored when a preceding case does not imply the next case, but rather
+                some case further ahead. With an appropriate number of base cases, you can ensure that all elements are
+                covered.
+            </p>
+            <p>
+                The number of base cases you'll need may depend on the distance between cases. For example, if the trend
+                seems to be that \(P(x)\) implies \(P(x + 3)\), you'll likely end up needing \(3\) base cases: \(P(a),
+                P(a+1), P(a+2)\), where \(b\) would be \(a+2.\) As a general rule, your base cases should include every
+                case before the one that is implied by your first base case, \(P(a).\) Any more base cases would be
+                unnecessary as this should be enough to cover all elements.
+            </p>
+            <div class="math-notice">
+                ⚠ Believe it or not, proofs by strong induction are actually logically equivalent to proofs by
+                induction. Any proof by induction can be converted to its strong variation and vice versa. It's just a
+                matter of which one seems more intuitive given a particular theorem to prove efficiently. Proofs by
+                strong induction require a bit more writing, so, for simpler theorems, it may be better to use regular
+                proofs by induction and save yourself time.
+            </div>
+            <p>
+                Here's a recipe you can follow for proofs by strong induction, if you like that sort of thing:
+            </p>
+            <ol>
+                <li>State the variable you intend to perform strong induction on.</li>
+                <li>Establish base cases by checking each case, starting with using \(a\) as input for the variable, and
+                    ending with \(b.\) Preferably, the \(b + 1\) case should appear to be implied by the \(a\) case.
+                </li>
+                <li>To make an inductive step, assume the \(j\) case is true, for every \(j\) in the range \(a \leq j
+                    \leq k\), where \(k \geq b.\) Use algebra on \(k \geq b\) to determine which cases fall into the
+                    range of assumption so that you can use them to show the \(k+1\) case must also be true.
+                </li>
+                <li>Write out the implication you've just proven. Then, state the principle of strong mathematical
+                    induction, and you're done! \(■\)
+                </li>
+            </ol>
+            <p>
+                With all that said, let's dive into some proofs by strong induction!
+            </p>
+            <p>
+                As before, let's start with a heavily-commented version so that the thought process behind the proof is
+                easier to see:
+            </p>
+            <div class="math-definition">
+                <b>Theorem</b>: For every integer \(n \geq 0\), \(f_n \leq 2^n\), where \(f_n\) is the \(n\)th number in
+                the <a href="../fibonacci-sequence">Fibonacci sequence</a>.<br>
+                <b>Proof by strong induction</b>: Let \(P(n)\) be defined as the following predicate:
+                $$P(n) : f_n \leq 2^n$$
+                We will show \(P(n)\) holds true for all non-negative integers by performing strong induction on
+                \(n.\)<br><br>
+                <i>Base cases:</i><br>
+                Let's start from the base case \(n = 0\):
+                $$P(0) : f_0 \leq 2^0$$
+                $$0 \leq 1\checkmark$$
+                It holds. Next, \(n = 1\):
+                $$P(1) : f_1 \leq 2^1$$
+                $$1 \leq 2\checkmark$$
+                It also holds. We could keep going, but these are the only base cases we really need. Interestingly, the
+                order of the recurrence relation (how far back one needs to go to determine the next element) is \(2\),
+                the same as the number of base cases we need.<br><br>
+                <i>Inductive step:</i><br>
+                We need to prove that if \(P(j)\) holds true for every \(j\) in the range \(0 \leq j \leq k\), where \(k
+                \geq 1\), then \(P(k + 1)\) also holds true. In other words, we must deduce:
+                $$P(k + 1) : f_{k+1} \leq 2^{k+1}$$
+                From the inductive hypothesis (where we assume every case before and including \(P(k)\) holds true):
+                $$P(a) \land ... \land P(k)$$
+                $$f_0 \leq 2^0 \land ... \land f_k \leq 2^k$$
+                By definition of the Fibonacci sequence, we can begin by writing:
+                $$f_{k+1} = f_{k} + f_{k-1}$$
+                Since \(k \geq 1\), \(k\) and \(k - 1\) both fall into the range of our strong inductive hypothesis, \(0
+                \leq j \leq k.\) That means we can use the assumptions \(f_k \leq 2^k\) and \(f_{k-1} \leq 2^{k-1}.\)
+                Adding these two inequalities results in \(f_k + f_{k-1} \leq 2^k + 2^{k-1}.\) Substituting:
+                $$f_{k+1} = f_{k} + f_{k-1} \leq 2^k + 2^{k-1}$$
+                Again, since \(k \geq 1\), we know \(2^{k-1}\) is some positive integer. Adding a positive integer to a
+                number will make it bigger. Therefore:
+                $$f_{k+1} \leq 2^k + 2^{k-1} \leq 2^k + 2^{k-1} + 2^{k-1}$$
+                $$= 2^k + 2 \times 2^{k-1}$$
+                $$= 2^k + 2^k$$
+                $$= 2 \times 2^k$$
+                $$= 2^{k+1}$$
+                Thus, it can be concluded that if \(f_j \leq 2^j\) for all \(j\) in \(0 \leq j \leq k\), and \(k \geq
+                1\), then \(f_{k+1} \leq 2^{k+1}.\) By the principle of strong mathematical induction, \(f_n \leq 2^n\)
+                for \(n \geq 0.\) \(■\)
+            </div>
+            <p>
+                The Fibonacci sequence favors proofs by strong induction because of the nature of its recurrence
+                relation. Although, it is best to try standard induction first if you're not sure, so that you can
+                better understand why stronger induction might be needed for your particular theorem.
+            </p>
+            <p>
+                Now, another example, this time written compactly:
+            </p>
+            <div class="math-definition">
+                <b>Theorem</b>: Every integer \(n \geq 12\) can be expressed as a <a href="../linear-combination">linear
+                combination</a> of \(3\) and \(7.\)<br>
+                <b>Proof by strong induction</b>: Let's perform strong induction on \(n.\)<br>
+                <i>Base cases:</i><br>
+                $$n = 12 : 12 = 3(4) + 7(0)\checkmark$$
+                $$n = 13 : 13 = 3(2) + 7(1)\checkmark$$
+                $$n = 14 : 14 = 3(0) + 7(2)\checkmark$$
+                <i>Inductive step:</i><br>
+                Assume every \(j\) in the range \(12 \leq j \leq k\), where \(k \geq 14\), can be expressed as a linear
+                combination of \(3\) and \(7.\) Since \(k \geq 14\), \(k - 2 \geq 12\), which places \(k - 2\) within
+                the range of assumption, \(12 \leq j \leq k.\) According to our strong inductive hypothesis, for some
+                integers \(x\) and \(y\):
+                $$k - 2 = 3x + 7y$$
+                Let's add \(3\) to both sides of this equation:
+                $$k - 2 + 3 = 3x + 7y + 3$$
+                $$k + 1 = 3(x + 1) + 7y$$
+                Thus, it can be concluded that if every \(j\) in the range \(12 \leq j \leq k\), where \(k \geq 14\),
+                can be expressed as a linear combination of \(3\) and \(7\), then \(k + 1\) can be expressed as a linear
+                combination of \(3\) and \(7.\) All you need to do is add \(3.\) By the principle of strong mathematical
+                induction, \(n\) can be expressed as a linear combination of \(3\) and \(7\) for \(n \geq 12.\) \(■\)
+            </div>
+            <div class="math-notice">
+                ⚠ The number of base cases that were necessary for this proof seemed to correspond with the smaller
+                integer coefficient, \(3\), of the linear combination. This is the distance of implication between
+                cases, which is certainly not a coincidence.
+            </div>
+            <p>
+                You might remember the fundamental theorem of arithmetic. It can be proven with strong induction:
+            </p>
+            <div class="math-definition">
+                <b>Theorem</b>: Every integer \(n \geq 2\) has a <a href="../prime-factorization">prime
+                factorization</a>, which means it can be written as a product of primes.<br>
+                <b>Proof by strong induction</b>: Let's perform strong induction on \(n.\)<br>
+                <i>Base case:</i><br>
+                \(2\) is prime, so it already qualifies as a product of primes (specifically, of one prime, itself):
+                $$n = 2 : 2 = 2\checkmark$$
+                <i>Inductive step:</i><br>
+                Assume every \(j\) in the range \(2 \leq j \leq k\), where \(k \geq 2\), can be expressed as a product
+                of primes. If \(k + 1\) is prime, then, like \(2\), it already qualifies as a product of primes, and our
+                work here is done. So, let's assume \(k + 1\) is composite. By the definition of a composite number, it
+                must have some factor \(a\), where \(1 < a < k + 1\), alternatively written as \(2 \leq a \leq k\),
+                since \(a\) is an integer. Being a factor of \(k + 1\) means \(a\) divides \(k + 1\), so an integer
+                \(b\) must exist such that:
+                $$k + 1 = ab$$
+                That means \(b\) is also a factor of the composite number \(k + 1\), so it is likewise restricted to the
+                range \(2 \leq b \leq k.\) At this point, we have determined that \(2 \leq a \leq k\) and \(2 \leq b
+                \leq k\), so the integers \(a\) and \(b\) fall into the range of assumption, \(2 \leq j \leq k.\)
+                According to our strong inductive hypothesis, \(a\) and \(b\) can therefore both be expressed as
+                products of primes:
+                $$a = p_1 \times p_2 \times ... \times p_x$$
+                $$b = q_1 \times q_2 \times ... \times q_y$$
+                Substituting:
+                $$k + 1 = (p_1 \times p_2 \times ... \times p_x)(q_1 \times q_2 \times ... \times q_y)$$
+                Thus, it can be concluded that if every \(j\) in the range \(2 \leq j \leq k\), where \(k \geq 2\), can
+                be expressed as a product of primes, then \(k + 1\) can be expressed as a product of primes. By the
+                principle of strong mathematical induction, every integer \(n\) has a prime factorization for \(n \geq
+                2.\) \(■\)
+            </div>
+            <p>
+                Maybe you've realized a trend in these proofs by strong induction. Generally, the inductive steps
+                involve discovering which cases fall into the range of assumption so that you can make use of the strong
+                inductive hypothesis.
+            </p>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
+            </div>
+            <div id="entry-navbox-container">
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Logic & Proofs</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer">Integer</a> •
+                        <a class="entry-navbox-link" href="/journal/rational-number">Rational number</a> •
+                        <a class="entry-navbox-link" href="/journal/inequality">Inequality</a> •
+                        <a class="entry-navbox-link" href="/journal/real-number">Real number</a> •
+                        <a class="entry-navbox-link" href="/journal/theorem">Theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/proof">Proof</a> •
+                        <a class="entry-navbox-link" href="/journal/statement">Statement</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-exhaustion">Proof by exhaustion</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-generalization">Universal generalization</a> •
+                        <a class="entry-navbox-link" href="/journal/counterexample">Counterexample</a> •
+                        <a class="entry-navbox-link" href="/journal/existence-proof">Existence proof</a> •
+                        <a class="entry-navbox-link" href="/journal/existential-instantiation">Existential instantiation</a> •
+                        <a class="entry-navbox-link" href="/journal/axiom">Axiom</a> •
+                        <a class="entry-navbox-link" href="/journal/logic">Logic</a> •
+                        <a class="entry-navbox-link" href="/journal/truth">Truth</a> •
+                        <a class="entry-navbox-link" href="/journal/proposition">Proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/compound-proposition">Compound proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-operation">Logical operation</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-equivalence">Logical equivalence</a> •
+                        <a class="entry-navbox-link" href="/journal/tautology">Tautology</a> •
+                        <a class="entry-navbox-link" href="/journal/contradiction">Contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/logic-law">Logic law</a> •
+                        <a class="entry-navbox-link" href="/journal/predicate">Predicate</a> •
+                        <a class="entry-navbox-link" href="/journal/domain">Domain</a> •
+                        <a class="entry-navbox-link" href="/journal/quantifier">Quantifier</a> •
+                        <a class="entry-navbox-link" href="/journal/argument">Argument</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-inference">Rule of inference</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-proof">Logical proof</a> •
+                        <a class="entry-navbox-link" href="/journal/direct-proof">Direct proof</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contrapositive">Proof by contrapositive</a> •
+                        <a class="entry-navbox-link" href="/journal/irrational-number">Irrational number</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contradiction">Proof by contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-cases">Proof by cases</a> •
+                        <a class="entry-navbox-link" href="/journal/summation">Summation</a> •
+                        <a class="entry-navbox-link" href="/journal/disjunctive-normal-form">Disjunctive normal form</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Set Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/set">Set</a> •
+                        <a class="entry-navbox-link" href="/journal/element">Element</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-set">Empty set</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-set">Universal set</a> •
+                        <a class="entry-navbox-link" href="/journal/subset">Subset</a> •
+                        <a class="entry-navbox-link" href="/journal/power-set">Power set</a> •
+                        <a class="entry-navbox-link" href="/journal/cartesian-product">Cartesian product</a> •
+                        <a class="entry-navbox-link" href="/journal/string">String</a> •
+                        <a class="entry-navbox-link" href="/journal/binary-string">Binary string</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-string">Empty string</a> •
+                        <a class="entry-navbox-link" href="/journal/set-operation">Set operation</a> •
+                        <a class="entry-navbox-link" href="/journal/set-identity">Set identity</a> •
+                        <a class="entry-navbox-link" href="/journal/set-proof">Set proof</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Functions</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/function">Function</a> •
+                        <a class="entry-navbox-link" href="/journal/floor-function">Floor function</a> •
+                        <a class="entry-navbox-link" href="/journal/ceiling-function">Ceiling function</a> •
+                        <a class="entry-navbox-link" href="/journal/inverse-function">Inverse function</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Algorithms</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/algorithm">Algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/pseudocode">Pseudocode</a> •
+                        <a class="entry-navbox-link" href="/journal/command">Command</a> •
+                        <a class="entry-navbox-link" href="/journal/asymptotic-notation">Asymptotic notation</a> •
+                        <a class="entry-navbox-link" href="/journal/time-complexity">Time complexity</a> •
+                        <a class="entry-navbox-link" href="/journal/atomic-operation">Atomic operation</a> •
+                        <a class="entry-navbox-link" href="/journal/brute-force-algorithm">Brute-force algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Relations</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/relation">Relation</a> •
+                        <a class="entry-navbox-link" href="/journal/reflexive-relation">Reflexive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/symmetric-relation">Symmetric relation</a> •
+                        <a class="entry-navbox-link" href="/journal/transitive-relation">Transitive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/relation-composition">Relation composition</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-relation">Equivalence relation</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-class">Equivalence class</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Number Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer-division">Integer division</a> •
+                        <a class="entry-navbox-link" href="/journal/linear-combination">Linear combination</a> •
+                        <a class="entry-navbox-link" href="/journal/division-algorithm">Division algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/modular-arithmetic">Modular arithmetic</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-factorization">Prime factorization</a> •
+                        <a class="entry-navbox-link" href="/journal/greatest-common-divisor">Greatest common divisor</a> •
+                        <a class="entry-navbox-link" href="/journal/least-common-multiple">Least common multiple</a> •
+                        <a class="entry-navbox-link" href="/journal/primality-test">Primality test</a> •
+                        <a class="entry-navbox-link" href="/journal/factoring-algorithm">Factoring algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/euclids-theorem">Euclid's theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-number-theorem">Prime number theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/euclidean-algorithm">Euclidean algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Induction</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/proof-by-induction">Proof by induction</a> •
+                        <a class="entry-navbox-link" href="/journal/fibonacci-sequence">Fibonacci sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-strong-induction">Proof by strong induction</a> •
+                        <a class="entry-navbox-link" href="/journal/well-ordering-principle">Well-ordering principle</a> •
+                        <a class="entry-navbox-link" href="/journal/sequence">Sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/factorial">Factorial</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-definition">Recursive definition</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Combinatorics</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/rule-of-product">Rule of product</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-sum">Rule of sum</a> •
+                        <a class="entry-navbox-link" href="/journal/bijection-rule">Bijection rule</a> •
+                        <a class="entry-navbox-link" href="/journal/permutation">Permutation</a> •
+                        <a class="entry-navbox-link" href="/journal/combination">Combination</a> •
+                        <a class="entry-navbox-link" href="/journal/complement-rule">Complement rule</a> •
+                        <a class="entry-navbox-link" href="/journal/experiment">Experiment</a> •
+                        <a class="entry-navbox-link" href="/journal/outcome">Outcome</a> •
+                        <a class="entry-navbox-link" href="/journal/sample-space">Sample space</a> •
+                        <a class="entry-navbox-link" href="/journal/event">Event</a> •
+                        <a class="entry-navbox-link" href="/journal/probability">Probability</a> •
+                        <a class="entry-navbox-link" href="/journal/probability-distribution">Probability distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/uniform-distribution">Uniform distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/multiset">Multiset</a> •
+                        <a class="entry-navbox-link" href="/journal/sixfold-way">Sixfold way</a> •
+                        <a class="entry-navbox-link" href="/journal/inclusion-exclusion-principle">Inclusion-exclusion principle</a> •
+                        <a class="entry-navbox-link" href="/journal/pigeonhole-principle">Pigeonhole principle</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Graph Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/graph">Graph</a> •
+                        <a class="entry-navbox-link" href="/journal/walk">Walk</a> •
+                        <a class="entry-navbox-link" href="/journal/subgraph">Subgraph</a> •
+                        <a class="entry-navbox-link" href="/journal/regular-graph">Regular graph</a> •
+                        <a class="entry-navbox-link" href="/journal/complete-graph">Complete graph</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-graph">Empty graph</a> •
+                        <a class="entry-navbox-link" href="/journal/cycle-graph">Cycle graph</a> •
+                        <a class="entry-navbox-link" href="/journal/hypercube-graph">Hypercube graph</a> •
+                        <a class="entry-navbox-link" href="/journal/bipartite-graph">Bipartite graph</a> •
+                        <a class="entry-navbox-link" href="/journal/component">Component</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-circuit">Eulerian circuit</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-trail">Eulerian trail</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-cycle">Hamiltonian cycle</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-path">Hamiltonian path</a> •
+                        <a class="entry-navbox-link" href="/journal/tree">Tree</a> •
+                        <a class="entry-navbox-link" href="/journal/huffman-tree">Huffman tree</a> •
+                        <a class="entry-navbox-link" href="/journal/substring">Substring</a> •
+                        <a class="entry-navbox-link" href="/journal/forest">Forest</a> •
+                        <a class="entry-navbox-link" href="/journal/path-graph">Path graph</a> •
+                        <a class="entry-navbox-link" href="/journal/star">Star</a> •
+                        <a class="entry-navbox-link" href="/journal/spanning-tree">Spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/weighted-graph">Weighted graph</a> •
+                        <a class="entry-navbox-link" href="/journal/minimum-spanning-tree">Minimum spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/greedy-algorithm">Greedy algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/prims-algorithm">Prim's algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Recursion</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/recursion">Recursion</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-algorithm">Recursive algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/correctness-proof">Correctness proof</a> •
+                        <a class="entry-navbox-link" href="/journal/divide-and-conquer-algorithm">Divide-and-conquer algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/sorting-algorithm">Sorting algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/merge-sort">Merge sort</a>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="..#logic-and-proofs">
-                        Logic & Proofs
-                    </a>
-                    <a class="sidebar-link" href="..#set-theory">
-                        Set Theory
-                    </a>
-                    <a class="sidebar-link" href="..#functions">
-                        Functions
-                    </a>
-                    <a class="sidebar-link" href="..#algorithms">
-                        Algorithms
-                    </a>
-                    <a class="sidebar-link" href="..#relations">
-                        Relations
-                    </a>
-                    <a class="sidebar-link" href="..#integer-properties">
-                        Number Theory
-                    </a>
-                    <a class="sidebar-link" href="..#induction">
-                        Induction
-                    </a>
-                    <a class="sidebar-link" href="..#combinatorics">
-                        Combinatorics
-                    </a>
-                    <a class="sidebar-link" href="..#graphs">
-                        Graph Theory
-                    </a>
-                    <a class="sidebar-link" href="..#recursion">
-                        Recursion
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="content-container">
-            <div id="content">
-                <div id="title-box">
-                    <h1>Proof by strong induction</h1>
-                    <hr>
-                    <i>Last Updated: 20 June 2023</i>
-                </div>
-                <div id="written-content">
-                    <p>
-                        A <b>proof by strong induction</b> is a variation of a <a href="../proof-by-induction">proof by induction</a> in which all preceding cases can be assumed true to prove the next case, strengthening the inductive hypothesis. By contrast, a proof by induction is restricted to only being able to use the immediately preceding case to prove the next case.
-                    </p>
-                    <p>
-                        Still, the two types of proof share the same goal: to prove that a predicate \(P(n)\) holds true for all \(n \geq b\). What's new is that in a proof by strong induction, there are multiple <i>base cases</i>, ranging from \(P(a)\) to \(P(b)\), where \(a \leq b\), and taking an <i>inductive step</i> involves assuming \(P(k)\) as well as all the cases that came before it hold true (with \(P(a)\) being the first case), in order to show \(P(k + 1)\) holds true, where \(k \geq b\). All cases will then be proven by the <i>principle of strong mathematical induction</i>:
-                    </p>
-                    <div class="math-definition">
-                        The predicate \(P(n)\) holds true for every integer \(n \geq a\) if:
-                        <ol>
-                            <li>The base cases, \(P(a)\) through \(P(b)\), are all true.</li>
-                            <li>For any integer \(k \geq b\), \((P(a) \land ... \land P(k)) \rightarrow P(k+1)\), meaning that the assumption that all preceding cases are true is enough to imply the next case. This is the inductive step.</li>
-                        </ol>
-                    </div>
-                    <div class="math-notice">
-                        ⚠ Notice how the inductive hypothesis is a much broader, "stronger" assumption. Rather than only assuming \(P(k)\) holds true for \(k \geq b\), you assume \(P(j)\) holds true for every \(j\) in the range \(a \leq j \leq k\), where \(k \geq b\). Don't get intimidated, that's just a rigorous way of saying you're assuming \(P(k)\) and every case before it holds true.
-                    </div>
-                    <p>
-                        Proofs by strong induction are favored when a preceding case does not imply the next case, but rather some case further ahead. With an appropriate number of base cases, you can ensure that all elements are covered.
-                    </p>
-                    <p>
-                        The number of base cases you'll need may depend on the distance between cases. For example, if the trend seems to be that \(P(x)\) implies \(P(x + 3)\), you'll likely end up needing \(3\) base cases: \(P(a), P(a+1), P(a+2)\), where \(b\) would be \(a+2\). As a general rule, your base cases should include every case before the one that is implied by your first base case, \(P(a)\). Any more base cases would be unnecessary as this should be enough to cover all elements.
-                    </p>
-                    <div class="math-notice">
-                        ⚠ Believe it or not, proofs by strong induction are actually logically equivalent to proofs by induction. Any proof by induction can be converted to its strong variation and vice versa. It's just a matter of which one seems more intuitive given a particular theorem to prove efficiently. Proofs by strong induction require a bit more writing, so, for simpler theorems, it may be better to use regular proofs by induction and save yourself time.
-                    </div>
-                    <p>
-                        Here's a recipe you can follow for proofs by strong induction, if you like that sort of thing:
-                    </p>
-                    <ol>
-                        <li>State the variable you intend to perform strong induction on.</li>
-                        <li>Establish base cases by checking each case, starting with using \(a\) as input for the variable, and ending with \(b\). Preferably, the \(b + 1\) case should appear to be implied by the \(a\) case.</li>
-                        <li>To make an inductive step, assume the \(j\) case is true, for every \(j\) in the range \(a \leq j \leq k\), where \(k \geq b\). Use algebra on \(k \geq b\) to determine which cases fall into the range of assumption so that you can use them to show the \(k+1\) case must also be true.</li>
-                        <li>Write out the implication you've just proven. Then, state the principle of strong mathematical induction, and you're done! \(■\)</li>
-                    </ol>
-                    <p>
-                        With all that said, let's dive into some proofs by strong induction!
-                    </p>
-                    <p>
-                        As before, let's start with a heavily-commented version so that the thought process behind the proof is easier to see:
-                    </p>
-                    <div class="math-definition">
-                        <b>Theorem</b>: For every integer \(n \geq 0\), \(f_n \leq 2^n\), where \(f_n\) is the \(n\)th number in the <a href="../fibonacci-sequence">Fibonacci sequence</a>.<br>
-                        <b>Proof by strong induction</b>: Let \(P(n)\) be defined as the following predicate:
-                        $$P(n) : f_n \leq 2^n$$
-                        We will show \(P(n)\) holds true for all non-negative integers by performing strong induction on \(n\).<br><br>
-                        <i>Base cases:</i><br>
-                        Let's start from the base case \(n = 0\):
-                        $$P(0) : f_0 \leq 2^0$$
-                        $$0 \leq 1\checkmark$$
-                        It holds. Next, \(n = 1\):
-                        $$P(1) : f_1 \leq 2^1$$
-                        $$1 \leq 2\checkmark$$
-                        It also holds. We could keep going, but these are the only base cases we really need. Interestingly, the order of the recurrence relation (how far back one needs to go to determine the next element) is \(2\), the same as the number of base cases we need.<br><br>
-                        <i>Inductive step:</i><br>
-                        We need to prove that if \(P(j)\) holds true for every \(j\) in the range \(0 \leq j \leq k\), where \(k \geq 1\), then \(P(k + 1)\) also holds true. In other words, we must deduce:
-                        $$P(k + 1) : f_{k+1} \leq 2^{k+1}$$
-                        From the inductive hypothesis (where we assume every case before and including \(P(k)\) holds true):
-                        $$P(a) \land ... \land P(k)$$
-                        $$f_0 \leq 2^0 \land ... \land f_k \leq 2^k$$
-                        By definition of the Fibonacci sequence, we can begin by writing:
-                        $$f_{k+1} = f_{k} + f_{k-1}$$
-                        Since \(k \geq 1\), \(k\) and \(k - 1\) both fall into the range of our strong inductive hypothesis, \(0 \leq j \leq k\). That means we can use the assumptions \(f_k \leq 2^k\) and \(f_{k-1} \leq 2^{k-1}\). Adding these two inequalities results in \(f_k + f_{k-1} \leq 2^k + 2^{k-1}\). Substituting:
-                        $$f_{k+1} = f_{k} + f_{k-1} \leq 2^k + 2^{k-1}$$
-                        Again, since \(k \geq 1\), we know \(2^{k-1}\) is some positive integer. Adding a positive integer to a number will make it bigger. Therefore:
-                        $$f_{k+1} \leq 2^k + 2^{k-1} \leq 2^k + 2^{k-1} + 2^{k-1}$$
-                        $$= 2^k + 2 \times 2^{k-1}$$
-                        $$= 2^k + 2^k$$
-                        $$= 2 \times 2^k$$
-                        $$= 2^{k+1}$$
-                        Thus, it can be concluded that if \(f_j \leq 2^j\) for all \(j\) in \(0 \leq j \leq k\), and \(k \geq 1\), then \(f_{k+1} \leq 2^{k+1}\). By the principle of strong mathematical induction, \(f_n \leq 2^n\) for \(n \geq 0\). \(■\)
-                    </div>
-                    <p>
-                        The Fibonacci sequence favors proofs by strong induction because of the nature of its recurrence relation. Although, it is best to try standard induction first if you're not sure, so that you can better understand why stronger induction might be needed for your particular theorem.
-                    </p>
-                    <p>
-                        Now, another example, this time written compactly:
-                    </p>
-                    <div class="math-definition">
-                        <b>Theorem</b>: Every integer \(n \geq 12\) can be expressed as a <a href="../linear-combination">linear combination</a> of \(3\) and \(7\).<br>
-                        <b>Proof by strong induction</b>: Let's perform strong induction on \(n\).<br>
-                        <i>Base cases:</i><br>
-                        $$n = 12 : 12 = 3(4) + 7(0)\checkmark$$
-                        $$n = 13 : 13 = 3(2) + 7(1)\checkmark$$
-                        $$n = 14 : 14 = 3(0) + 7(2)\checkmark$$
-                        <i>Inductive step:</i><br>
-                        Assume every \(j\) in the range \(12 \leq j \leq k\), where \(k \geq 14\), can be expressed as a linear combination of \(3\) and \(7\). Since \(k \geq 14\), \(k - 2 \geq 12\), which places \(k - 2\) within the range of assumption, \(12 \leq j \leq k\). According to our strong inductive hypothesis, for some integers \(x\) and \(y\):
-                        $$k - 2 = 3x + 7y$$
-                        Let's add \(3\) to both sides of this equation:
-                        $$k - 2 + 3 = 3x + 7y + 3$$
-                        $$k + 1 = 3(x + 1) + 7y$$
-                        Thus, it can be concluded that if every \(j\) in the range \(12 \leq j \leq k\), where \(k \geq 14\), can be expressed as a linear combination of \(3\) and \(7\), then \(k + 1\) can be expressed as a linear combination of \(3\) and \(7\). All you need to do is add \(3\). By the principle of strong mathematical induction, \(n\) can be expressed as a linear combination of \(3\) and \(7\) for \(n \geq 12\). \(■\)
-                    </div>
-                    <div class="math-notice">
-                        ⚠ The number of base cases that were necessary for this proof seemed to correspond with the smaller integer coefficient, \(3\), of the linear combination. This is the distance of implication between cases, which is certainly not a coincidence.
-                    </div>
-                    <p>
-                        You might remember the fundamental theorem of arithmetic. It can be proven with strong induction:
-                    </p>
-                    <div class="math-definition">
-                        <b>Theorem</b>: Every integer \(n \geq 2\) has a <a href="../prime-factorization">prime factorization</a>, which means it can be written as a product of primes.<br>
-                        <b>Proof by strong induction</b>: Let's perform strong induction on \(n\).<br>
-                        <i>Base case:</i><br>
-                        \(2\) is prime, so it already qualifies as a product of primes (specifically, of one prime, itself):
-                        $$n = 2 : 2 = 2\checkmark$$
-                        <i>Inductive step:</i><br>
-                        Assume every \(j\) in the range \(2 \leq j \leq k\), where \(k \geq 2\), can be expressed as a product of primes. If \(k + 1\) is prime, then, like \(2\), it already qualifies as a product of primes, and our work here is done. So, let's assume \(k + 1\) is composite. By the definition of a composite number, it must have some factor \(a\), where \(1 < a < k + 1\), alternatively written as \(2 \leq a \leq k\), since \(a\) is an integer. Being a factor of \(k + 1\) means \(a\) divides \(k + 1\), so an integer \(b\) must exist such that:
-                        $$k + 1 = ab$$
-                        That means \(b\) is also a factor of the composite number \(k + 1\), so it is likewise restricted to the range \(2 \leq b \leq k\). At this point, we have determined that \(2 \leq a \leq k\) and \(2 \leq b \leq k\), so the integers \(a\) and \(b\) fall into the range of assumption, \(2 \leq j \leq k\). According to our strong inductive hypothesis, \(a\) and \(b\) can therefore both be expressed as products of primes:
-                        $$a = p_1 \times p_2 \times ... \times p_x$$
-                        $$b = q_1 \times q_2 \times ... \times q_y$$
-                        Substituting:
-                        $$k + 1 = (p_1 \times p_2 \times ... \times p_x)(q_1 \times q_2 \times ... \times q_y)$$
-                        Thus, it can be concluded that if every \(j\) in the range \(2 \leq j \leq k\), where \(k \geq 2\), can be expressed as a product of primes, then \(k + 1\) can be expressed as a product of primes. By the principle of strong mathematical induction, every integer \(n\) has a prime factorization for \(n \geq 2\). \(■\)
-                    </div>
-                    <p>
-                        Maybe you've realized a trend in these proofs by strong induction. Generally, the inductive steps involve discovering which cases fall into the range of assumption so that you can make use of the strong inductive hypothesis.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div id="footer-content-container">
-            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
-        </div>
-    </footer>
+        </article>
+    </div>
+</main>
+<footer>
+    <a href="https://johncuysal.com" target="_blank">© 2022 — 2024 John C. Uysal</a>
+</footer>
 </body>
 </html>

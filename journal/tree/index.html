@@ -13,57 +13,196 @@
     <title>Tree - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
-    <header>
-        <div id="wordmark-container">
-            <div id="wordmark" class="centered">
-                <a href="../..">DISCRETOPIA</a>
+<main>
+    <aside>
+        <a id="logo-container" href="../..">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="-8 -8 272 272">
+                <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+            </svg>
+            <div id="wordmark">
+                <span class="wordmark-big">D</span>ISCRETOPI<span class="wordmark-big">A</span>
+            </div>
+        </a>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                <a class="sidebar-link" href="../..">
+                    Main page
+                </a>
+                <a class="sidebar-link" href="..">
+                    View the journal
+                </a>
+                <a class="sidebar-link" href="../../about">
+                    About Discretopia
+                </a>
+                <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                    Donate ♥
+                </a>
             </div>
         </div>
-        <div id="search-container">
-            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
-            <div id="search-results"></div>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                Overview
+                <hr>
+                <a class="sidebar-link" href="..#logic-and-proofs">
+                    Logic & Proofs
+                </a>
+                <a class="sidebar-link" href="..#set-theory">
+                    Set Theory
+                </a>
+                <a class="sidebar-link" href="..#functions">
+                    Functions
+                </a>
+                <a class="sidebar-link" href="..#algorithms">
+                    Algorithms
+                </a>
+                <a class="sidebar-link" href="..#relations">
+                    Relations
+                </a>
+                <a class="sidebar-link" href="..#number-theory">
+                    Number Theory
+                </a>
+                <a class="sidebar-link" href="..#induction">
+                    Induction
+                </a>
+                <a class="sidebar-link" href="..#combinatorics">
+                    Combinatorics
+                </a>
+                <a class="sidebar-link" href="..#graphs">
+                    Graph Theory
+                </a>
+                <a class="sidebar-link" href="..#recursion">
+                    Recursion
+                </a>
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="side-container">
-            <div id="logo-container">
-                <a href="../..">
-                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
-                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
-                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
+    </aside>
+    <div id="content-container">
+        <nav id="top-navigation">
+            <div id="link-menu">
+                <button id="mobile-menu">
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                </button>
+                <div id="mobile-menu-dropdown">
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            <a class="sidebar-link" href="../..">
+                                Main page
+                            </a>
+                            <a class="sidebar-link" href="..">
+                                View the journal
+                            </a>
+                            <a class="sidebar-link" href="../../about">
+                                About Discretopia
+                            </a>
+                            <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                                Donate ♥
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            Overview
+                            <hr>
+                            <a class="sidebar-link" href="..#logic-and-proofs">
+                                Logic & Proofs
+                            </a>
+                            <a class="sidebar-link" href="..#set-theory">
+                                Set Theory
+                            </a>
+                            <a class="sidebar-link" href="..#functions">
+                                Functions
+                            </a>
+                            <a class="sidebar-link" href="..#algorithms">
+                                Algorithms
+                            </a>
+                            <a class="sidebar-link" href="..#relations">
+                                Relations
+                            </a>
+                            <a class="sidebar-link" href="..#number-theory">
+                                Number Theory
+                            </a>
+                            <a class="sidebar-link" href="..#induction">
+                                Induction
+                            </a>
+                            <a class="sidebar-link" href="..#combinatorics">
+                                Combinatorics
+                            </a>
+                            <a class="sidebar-link" href="..#graphs">
+                                Graph Theory
+                            </a>
+                            <a class="sidebar-link" href="..#recursion">
+                                Recursion
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a id="top-navigation-logo-container" href="../..">
+                    <svg id="top-navigation-logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
                         <circle cx="128" cy="0" r="2" stroke-width="0"/>
                         <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
                         <circle cx="256" cy="128" r="2" stroke-width="0"/>
@@ -73,142 +212,322 @@
                         <circle cx="0" cy="128" r="2" stroke-width="0"/>
                         <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
                     </svg>
+                    <div id="top-navigation-wordmark">
+                        <span class="top-navigation-wordmark-big">D</span>ISCRETOPI<span class="top-navigation-wordmark-big">A</span>
+                    </div>
                 </a>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="../..">
-                        Main page
-                    </a>
-                    <a class="sidebar-link" href="..">
-                        View the journal
-                    </a>
-                    <a class="sidebar-link" href="../../about">
-                        About Discretopia
-                    </a>
-                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
-                        Donate ♥
-                    </a>
+            <div id="search">
+                <label for="search-field"></label>
+                <input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+                <button id="go-button">Go</button>
+                <div id="search-results"></div>
+            </div>
+        </nav>
+        <article>
+            <h1>Tree</h1>
+            <hr>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
+            </div>
+            <blockquote>
+                A tall plant that lives a long time.
+            </blockquote>
+            <figure class="right-floated">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Tree_graph.svg" alt="A free tree.">
+                <figcaption>A free tree.</figcaption>
+            </figure>
+            <p>
+                A <b>tree</b> is a connected <a href="../graph">graph</a> with no <a href="../walk#cycle">cycles</a>.
+                One of its vertices is designated to be the <i>root</i>. If not, then it's a <i>free tree</i> instead of
+                a <i>rooted tree</i>. A group of trees is a <a href="../forest">forest</a>.
+            </p>
+            <p>
+                If you add an edge to a tree, a cycle is created. If you remove an edge from a tree, it's disconnected.
+            </p>
+            <p>
+                Trees pop up in many <a href="../algorithm">algorithms</a> because they're great at representing
+                decisions that branch off into several outcomes. The solution to a certain problem may be cleverly
+                equated to traversing a tree in a particular way.
+            </p>
+            <p>
+                Trees are also good for visualizing the steps of a <a href="../recursive-algorithm">recursive
+                algorithm</a>.
+            </p>
+            <p>
+                When you play a game against a computer player, it may be the case that its artificial intelligence is
+                based on a decision tree program that analyzes the state of the game to optimize strategy, even
+                considering probabilities when there's luck involved. However, playing too many steps ahead can still be
+                computationally difficult so the decision tree may have a cap on its height.
+            </p>
+            <div id="list-of-contents">
+                <div class="center-aligned">
+                    <b>Contents</b>
+                </div>
+                <hr>
+            </div>
+            <h2>Uniqueness of paths</h2>
+            <hr>
+            <p>
+                Here's a super-important property about trees... don't forget it! For any \(2\) vertices in a tree,
+                there is exactly \(1\) <a href="../walk#path">path</a> between them. Therefore, for any \(2\) vertices
+                in a tree, there is only \(1\) way to travel between them. That path connecting them is unique.
+            </p>
+            <div class="math-definition">
+                Let \(T = (V, E)\) be a tree, with \(v, w \in V.\) Then, there is only \(1\) path connecting \(v\) and
+                \(w.\)
+            </div>
+            <h2>Number of edges</h2>
+            <hr>
+            <p>
+                It is true for every tree that the number of edges is exactly \(1\) fewer than the number of vertices.
+            </p>
+            <div class="math-definition">
+                Let \(T = (V, E)\) be a tree. Then:
+                $$|E| = |V| - 1$$
+            </div>
+            <h2>Rooted tree</h2>
+            <hr>
+            <p>
+                Rooted trees are typically drawn with the root at the top and all other vertices are organized into
+                lower <i>levels</i>, each defined by their distance from the root. The <i>distance</i> between two
+                vertices is defined as the number of edges in the shortest path between them. The <i>height</i> of a
+                rooted tree is simply the greatest distance any vertex has from the root.
+            </p>
+            <p>
+                Let's talk a bit about the vertices in a rooted tree. Every non-root vertex in a rooted tree has exactly
+                \(1\) <i>parent</i> (of which it is a <i>child</i>), which is the unique vertex that is visited
+                immediately after it in a path to the root. All the vertices that come after a non-root vertex in a path
+                to the root are its <i>ancestors</i> (of which it is a <i>descendant</i>). Rooted trees are drawn such
+                that ancestors appear above their descendants. A vertex without children is a <i>leaf</i>. A vertex
+                without a parent is the root. Vertices with the same parent are <i>siblings</i>.
+            </p>
+            <p>
+                A <i>subtree</i> is a rooted tree contained entirely within another rooted tree. To build a subtree,
+                pick any vertex in a rooted tree. That vertex and all its descendants together make up a new rooted
+                tree, rooted at the vertex that was picked.
+            </p>
+            <h2>Free tree</h2>
+            <hr>
+            <p>
+                A vertex in a free tree is a leaf if its degree is \(1.\) Also, when a free tree consists of a single
+                vertex, that vertex is a leaf. A vertex in a free tree is <i>internal</i> if its degree is \(\geq 2.\)
+            </p>
+            <p>
+                Here's a statement you might find useful. Any free tree with at least \(2\) vertices has at least \(2\)
+                leaves:
+            </p>
+            <div class="math-definition">
+                Let \(T = (V, E)\) be a free tree such that \(|V| \geq 2.\) Then, the number of leaves in \(T\) is at
+                least \(2.\)
+            </div>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
+            </div>
+            <div id="entry-navbox-container">
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Logic & Proofs</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer">Integer</a> •
+                        <a class="entry-navbox-link" href="/journal/rational-number">Rational number</a> •
+                        <a class="entry-navbox-link" href="/journal/inequality">Inequality</a> •
+                        <a class="entry-navbox-link" href="/journal/real-number">Real number</a> •
+                        <a class="entry-navbox-link" href="/journal/theorem">Theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/proof">Proof</a> •
+                        <a class="entry-navbox-link" href="/journal/statement">Statement</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-exhaustion">Proof by exhaustion</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-generalization">Universal generalization</a> •
+                        <a class="entry-navbox-link" href="/journal/counterexample">Counterexample</a> •
+                        <a class="entry-navbox-link" href="/journal/existence-proof">Existence proof</a> •
+                        <a class="entry-navbox-link" href="/journal/existential-instantiation">Existential instantiation</a> •
+                        <a class="entry-navbox-link" href="/journal/axiom">Axiom</a> •
+                        <a class="entry-navbox-link" href="/journal/logic">Logic</a> •
+                        <a class="entry-navbox-link" href="/journal/truth">Truth</a> •
+                        <a class="entry-navbox-link" href="/journal/proposition">Proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/compound-proposition">Compound proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-operation">Logical operation</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-equivalence">Logical equivalence</a> •
+                        <a class="entry-navbox-link" href="/journal/tautology">Tautology</a> •
+                        <a class="entry-navbox-link" href="/journal/contradiction">Contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/logic-law">Logic law</a> •
+                        <a class="entry-navbox-link" href="/journal/predicate">Predicate</a> •
+                        <a class="entry-navbox-link" href="/journal/domain">Domain</a> •
+                        <a class="entry-navbox-link" href="/journal/quantifier">Quantifier</a> •
+                        <a class="entry-navbox-link" href="/journal/argument">Argument</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-inference">Rule of inference</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-proof">Logical proof</a> •
+                        <a class="entry-navbox-link" href="/journal/direct-proof">Direct proof</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contrapositive">Proof by contrapositive</a> •
+                        <a class="entry-navbox-link" href="/journal/irrational-number">Irrational number</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contradiction">Proof by contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-cases">Proof by cases</a> •
+                        <a class="entry-navbox-link" href="/journal/summation">Summation</a> •
+                        <a class="entry-navbox-link" href="/journal/disjunctive-normal-form">Disjunctive normal form</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Set Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/set">Set</a> •
+                        <a class="entry-navbox-link" href="/journal/element">Element</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-set">Empty set</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-set">Universal set</a> •
+                        <a class="entry-navbox-link" href="/journal/subset">Subset</a> •
+                        <a class="entry-navbox-link" href="/journal/power-set">Power set</a> •
+                        <a class="entry-navbox-link" href="/journal/cartesian-product">Cartesian product</a> •
+                        <a class="entry-navbox-link" href="/journal/string">String</a> •
+                        <a class="entry-navbox-link" href="/journal/binary-string">Binary string</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-string">Empty string</a> •
+                        <a class="entry-navbox-link" href="/journal/set-operation">Set operation</a> •
+                        <a class="entry-navbox-link" href="/journal/set-identity">Set identity</a> •
+                        <a class="entry-navbox-link" href="/journal/set-proof">Set proof</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Functions</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/function">Function</a> •
+                        <a class="entry-navbox-link" href="/journal/floor-function">Floor function</a> •
+                        <a class="entry-navbox-link" href="/journal/ceiling-function">Ceiling function</a> •
+                        <a class="entry-navbox-link" href="/journal/inverse-function">Inverse function</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Algorithms</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/algorithm">Algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/pseudocode">Pseudocode</a> •
+                        <a class="entry-navbox-link" href="/journal/command">Command</a> •
+                        <a class="entry-navbox-link" href="/journal/asymptotic-notation">Asymptotic notation</a> •
+                        <a class="entry-navbox-link" href="/journal/time-complexity">Time complexity</a> •
+                        <a class="entry-navbox-link" href="/journal/atomic-operation">Atomic operation</a> •
+                        <a class="entry-navbox-link" href="/journal/brute-force-algorithm">Brute-force algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Relations</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/relation">Relation</a> •
+                        <a class="entry-navbox-link" href="/journal/reflexive-relation">Reflexive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/symmetric-relation">Symmetric relation</a> •
+                        <a class="entry-navbox-link" href="/journal/transitive-relation">Transitive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/relation-composition">Relation composition</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-relation">Equivalence relation</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-class">Equivalence class</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Number Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer-division">Integer division</a> •
+                        <a class="entry-navbox-link" href="/journal/linear-combination">Linear combination</a> •
+                        <a class="entry-navbox-link" href="/journal/division-algorithm">Division algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/modular-arithmetic">Modular arithmetic</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-factorization">Prime factorization</a> •
+                        <a class="entry-navbox-link" href="/journal/greatest-common-divisor">Greatest common divisor</a> •
+                        <a class="entry-navbox-link" href="/journal/least-common-multiple">Least common multiple</a> •
+                        <a class="entry-navbox-link" href="/journal/primality-test">Primality test</a> •
+                        <a class="entry-navbox-link" href="/journal/factoring-algorithm">Factoring algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/euclids-theorem">Euclid's theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-number-theorem">Prime number theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/euclidean-algorithm">Euclidean algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Induction</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/proof-by-induction">Proof by induction</a> •
+                        <a class="entry-navbox-link" href="/journal/fibonacci-sequence">Fibonacci sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-strong-induction">Proof by strong induction</a> •
+                        <a class="entry-navbox-link" href="/journal/well-ordering-principle">Well-ordering principle</a> •
+                        <a class="entry-navbox-link" href="/journal/sequence">Sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/factorial">Factorial</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-definition">Recursive definition</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Combinatorics</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/rule-of-product">Rule of product</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-sum">Rule of sum</a> •
+                        <a class="entry-navbox-link" href="/journal/bijection-rule">Bijection rule</a> •
+                        <a class="entry-navbox-link" href="/journal/permutation">Permutation</a> •
+                        <a class="entry-navbox-link" href="/journal/combination">Combination</a> •
+                        <a class="entry-navbox-link" href="/journal/complement-rule">Complement rule</a> •
+                        <a class="entry-navbox-link" href="/journal/experiment">Experiment</a> •
+                        <a class="entry-navbox-link" href="/journal/outcome">Outcome</a> •
+                        <a class="entry-navbox-link" href="/journal/sample-space">Sample space</a> •
+                        <a class="entry-navbox-link" href="/journal/event">Event</a> •
+                        <a class="entry-navbox-link" href="/journal/probability">Probability</a> •
+                        <a class="entry-navbox-link" href="/journal/probability-distribution">Probability distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/uniform-distribution">Uniform distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/multiset">Multiset</a> •
+                        <a class="entry-navbox-link" href="/journal/sixfold-way">Sixfold way</a> •
+                        <a class="entry-navbox-link" href="/journal/inclusion-exclusion-principle">Inclusion-exclusion principle</a> •
+                        <a class="entry-navbox-link" href="/journal/pigeonhole-principle">Pigeonhole principle</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Graph Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/graph">Graph</a> •
+                        <a class="entry-navbox-link" href="/journal/walk">Walk</a> •
+                        <a class="entry-navbox-link" href="/journal/subgraph">Subgraph</a> •
+                        <a class="entry-navbox-link" href="/journal/regular-graph">Regular graph</a> •
+                        <a class="entry-navbox-link" href="/journal/complete-graph">Complete graph</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-graph">Empty graph</a> •
+                        <a class="entry-navbox-link" href="/journal/cycle-graph">Cycle graph</a> •
+                        <a class="entry-navbox-link" href="/journal/hypercube-graph">Hypercube graph</a> •
+                        <a class="entry-navbox-link" href="/journal/bipartite-graph">Bipartite graph</a> •
+                        <a class="entry-navbox-link" href="/journal/component">Component</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-circuit">Eulerian circuit</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-trail">Eulerian trail</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-cycle">Hamiltonian cycle</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-path">Hamiltonian path</a> •
+                        <a class="entry-navbox-link" href="/journal/tree">Tree</a> •
+                        <a class="entry-navbox-link" href="/journal/huffman-tree">Huffman tree</a> •
+                        <a class="entry-navbox-link" href="/journal/substring">Substring</a> •
+                        <a class="entry-navbox-link" href="/journal/forest">Forest</a> •
+                        <a class="entry-navbox-link" href="/journal/path-graph">Path graph</a> •
+                        <a class="entry-navbox-link" href="/journal/star">Star</a> •
+                        <a class="entry-navbox-link" href="/journal/spanning-tree">Spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/weighted-graph">Weighted graph</a> •
+                        <a class="entry-navbox-link" href="/journal/minimum-spanning-tree">Minimum spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/greedy-algorithm">Greedy algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/prims-algorithm">Prim's algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Recursion</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/recursion">Recursion</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-algorithm">Recursive algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/correctness-proof">Correctness proof</a> •
+                        <a class="entry-navbox-link" href="/journal/divide-and-conquer-algorithm">Divide-and-conquer algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/sorting-algorithm">Sorting algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/merge-sort">Merge sort</a>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="..#logic-and-proofs">
-                        Logic & Proofs
-                    </a>
-                    <a class="sidebar-link" href="..#set-theory">
-                        Set Theory
-                    </a>
-                    <a class="sidebar-link" href="..#functions">
-                        Functions
-                    </a>
-                    <a class="sidebar-link" href="..#algorithms">
-                        Algorithms
-                    </a>
-                    <a class="sidebar-link" href="..#relations">
-                        Relations
-                    </a>
-                    <a class="sidebar-link" href="..#integer-properties">
-                        Number Theory
-                    </a>
-                    <a class="sidebar-link" href="..#induction">
-                        Induction
-                    </a>
-                    <a class="sidebar-link" href="..#combinatorics">
-                        Combinatorics
-                    </a>
-                    <a class="sidebar-link" href="..#graphs">
-                        Graph Theory
-                    </a>
-                    <a class="sidebar-link" href="..#recursion">
-                        Recursion
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="content-container">
-            <div id="content">
-                <div id="title-box">
-                    <h1>Tree</h1>
-                    <hr>
-                    <i>Last Updated: 13 March 2024</i>
-                </div>
-                <div id="written-content">
-                    <blockquote>
-                        A tall plant that lives a long time.
-                    </blockquote>
-                    <figure class="right-floated">
-                        <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Tree_graph.svg" alt="A free tree.">
-                        <figcaption>A free tree.</figcaption>
-                    </figure>
-                    <p>
-                        A <b>tree</b> is a connected <a href="../graph">graph</a> with no <a href="../walk#cycle">cycles</a>. One of its vertices is designated to be the <i>root</i>. If not, then it's a <i>free tree</i> instead of a <i>rooted tree</i>. A group of trees is a <a href="../forest">forest</a>.
-                    </p>
-                    <p>
-                        If you add an edge to a tree, a cycle is created. If you remove an edge from a tree, it's disconnected.
-                    </p>
-                    <p>
-                        Trees pop up in many <a href="../algorithm">algorithms</a> because they're great at representing decisions that branch off into several outcomes. The solution to a certain problem may be cleverly equated to traversing a tree in a particular way.
-                    </p>
-                    <p>
-                        Trees are also good for visualizing the steps of a <a href="../recursive-algorithm">recursive algorithm</a>.
-                    </p>
-                    <p>
-                        When you play a game against a computer player, it may be the case that its artificial intelligence is based on a decision tree program that analyzes the state of the game to optimize strategy, even considering probabilities when there's luck involved. However, playing too many steps ahead can still be computationally difficult so the decision tree may have a cap on its height.
-                    </p>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>Uniqueness of paths</h2>
-                    <hr>
-                    <p>
-                        Here's a super-important property about trees... don't forget it! For any \(2\) vertices in a tree, there is exactly \(1\) <a href="../walk#path">path</a> between them. Therefore, for any \(2\) vertices in a tree, there is only \(1\) way to travel between them. That path connecting them is unique.
-                    </p>
-                    <div class="math-definition">
-                        Let \(T = (V, E)\) be a tree, with \(v, w \in V\). Then, there is only \(1\) path connecting \(v\) and \(w\).
-                    </div>
-                    <h2>Number of edges</h2>
-                    <hr>
-                    <p>
-                        It is true for every tree that the number of edges is exactly \(1\) fewer than the number of vertices.
-                    </p>
-                    <div class="math-definition">
-                        Let \(T = (V, E)\) be a tree. Then:
-                        $$|E| = |V| - 1$$
-                    </div>
-                    <h2>Rooted tree</h2>
-                    <hr>
-                    <p>
-                        Rooted trees are typically drawn with the root at the top and all other vertices are organized into lower <i>levels</i>, each defined by their distance from the root. The <i>distance</i> between two vertices is defined as the number of edges in the shortest path between them. The <i>height</i> of a rooted tree is simply the greatest distance any vertex has from the root.
-                    </p>
-                    <p>
-                        Let's talk a bit about the vertices in a rooted tree. Every non-root vertex in a rooted tree has exactly \(1\) <i>parent</i> (of which it is a <i>child</i>), which is the unique vertex that is visited immediately after it in a path to the root. All the vertices that come after a non-root vertex in a path to the root are its <i>ancestors</i> (of which it is a <i>descendant</i>). Rooted trees are drawn such that ancestors appear above their descendants. A vertex without children is a <i>leaf</i>. A vertex without a parent is the root. Vertices with the same parent are <i>siblings</i>.
-                    </p>
-                    <p>
-                        A <i>subtree</i> is a rooted tree contained entirely within another rooted tree. To build a subtree, pick any vertex in a rooted tree. That vertex and all its descendants together make up a new rooted tree, rooted at the vertex that was picked.
-                    </p>
-                    <h2>Free tree</h2>
-                    <hr>
-                    <p>
-                        A vertex in a free tree is a leaf if its degree is \(1\). Also, when a free tree consists of a single vertex, that vertex is a leaf. A vertex in a free tree is <i>internal</i> if its degree is \(\geq 2\).
-                    </p>
-                    <p>
-                        Here's a statement you might find useful. Any free tree with at least \(2\) vertices has at least \(2\) leaves:
-                    </p>
-                    <div class="math-definition">
-                        Let \(T = (V, E)\) be a free tree such that \(|V| \geq 2\). Then, the number of leaves in \(T\) is at least \(2\).
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div id="footer-content-container">
-            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
-        </div>
-    </footer>
+        </article>
+    </div>
+</main>
+<footer>
+    <a href="https://johncuysal.com" target="_blank">© 2022 — 2024 John C. Uysal</a>
+</footer>
 </body>
 </html>

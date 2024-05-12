@@ -13,57 +13,196 @@
     <title>Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
-    <header>
-        <div id="wordmark-container">
-            <div id="wordmark" class="centered">
-                <a href="">DISCRETOPIA</a>
+<main>
+    <aside>
+        <a id="logo-container" href="">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="-8 -8 272 272">
+                <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+            </svg>
+            <div id="wordmark">
+                <span class="wordmark-big">D</span>ISCRETOPI<span class="wordmark-big">A</span>
+            </div>
+        </a>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                <a class="sidebar-link" href="">
+                    Main page
+                </a>
+                <a class="sidebar-link" href="journal">
+                    View the journal
+                </a>
+                <a class="sidebar-link" href="about">
+                    About Discretopia
+                </a>
+                <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                    Donate ♥
+                </a>
             </div>
         </div>
-        <div id="search-container">
-            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
-            <div id="search-results"></div>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                Overview
+                <hr>
+                <a class="sidebar-link" href="journal#logic-and-proofs">
+                    Logic & Proofs
+                </a>
+                <a class="sidebar-link" href="journal#set-theory">
+                    Set Theory
+                </a>
+                <a class="sidebar-link" href="journal#functions">
+                    Functions
+                </a>
+                <a class="sidebar-link" href="journal#algorithms">
+                    Algorithms
+                </a>
+                <a class="sidebar-link" href="journal#relations">
+                    Relations
+                </a>
+                <a class="sidebar-link" href="journal#number-theory">
+                    Number Theory
+                </a>
+                <a class="sidebar-link" href="journal#induction">
+                    Induction
+                </a>
+                <a class="sidebar-link" href="journal#combinatorics">
+                    Combinatorics
+                </a>
+                <a class="sidebar-link" href="journal#graphs">
+                    Graph Theory
+                </a>
+                <a class="sidebar-link" href="journal#recursion">
+                    Recursion
+                </a>
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="side-container">
-            <div id="logo-container">
-                <a href="">
-                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
-                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
-                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
+    </aside>
+    <div id="content-container">
+        <nav id="top-navigation">
+            <div id="link-menu">
+                <button id="mobile-menu">
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                </button>
+                <div id="mobile-menu-dropdown">
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            <a class="sidebar-link" href="">
+                                Main page
+                            </a>
+                            <a class="sidebar-link" href="journal">
+                                View the journal
+                            </a>
+                            <a class="sidebar-link" href="about">
+                                About Discretopia
+                            </a>
+                            <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                                Donate ♥
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            Overview
+                            <hr>
+                            <a class="sidebar-link" href="journal#logic-and-proofs">
+                                Logic & Proofs
+                            </a>
+                            <a class="sidebar-link" href="journal#set-theory">
+                                Set Theory
+                            </a>
+                            <a class="sidebar-link" href="journal#functions">
+                                Functions
+                            </a>
+                            <a class="sidebar-link" href="journal#algorithms">
+                                Algorithms
+                            </a>
+                            <a class="sidebar-link" href="journal#relations">
+                                Relations
+                            </a>
+                            <a class="sidebar-link" href="journal#number-theory">
+                                Number Theory
+                            </a>
+                            <a class="sidebar-link" href="journal#induction">
+                                Induction
+                            </a>
+                            <a class="sidebar-link" href="journal#combinatorics">
+                                Combinatorics
+                            </a>
+                            <a class="sidebar-link" href="journal#graphs">
+                                Graph Theory
+                            </a>
+                            <a class="sidebar-link" href="journal#recursion">
+                                Recursion
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a id="top-navigation-logo-container" href="">
+                    <svg id="top-navigation-logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
                         <circle cx="128" cy="0" r="2" stroke-width="0"/>
                         <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
                         <circle cx="256" cy="128" r="2" stroke-width="0"/>
@@ -73,135 +212,133 @@
                         <circle cx="0" cy="128" r="2" stroke-width="0"/>
                         <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
                     </svg>
+                    <div id="top-navigation-wordmark">
+                        <span class="top-navigation-wordmark-big">D</span>ISCRETOPI<span class="top-navigation-wordmark-big">A</span>
+                    </div>
                 </a>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="">
-                        Main page
-                    </a>
-                    <a class="sidebar-link" href="journal">
-                        View the journal
-                    </a>
-                    <a class="sidebar-link" href="about">
-                        About Discretopia
-                    </a>
-                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
-                        Donate ♥
-                    </a>
+            <div id="search">
+                <label for="search-field"></label>
+                <input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+                <button id="go-button">Go</button>
+                <div id="search-results"></div>
+            </div>
+        </nav>
+        <article>
+            <header id="homepage-header">
+                <div id="homepage-header-title">
+                    Welcome to <a href="about">Discretopia</a>,
+                </div>
+                <div id="homepage-header-subtitle">
+                    the friendly discrete math reference
+                </div>
+                <div id="homepage-header-statistic">
+                    133 entries
+                </div>
+            </header>
+            <div id="homepage-news-block-container">
+                <div class="homepage-news-block">
+                    <h1>Featured</h1>
+                    <section>
+                        <figure class="left-floated">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Tree_graph.svg"
+                                 alt="A free tree.">
+                            <figcaption>A free tree.</figcaption>
+                        </figure>
+                        <p>
+                            A <a href="journal/tree"><b>tree</b></a> is a connected <a href="journal/graph">graph</a>
+                            with no <a href="journal/walk#cycle">cycles</a>. One of its vertices is designated to be the
+                            <i>root</i>. If not, then it's a <i>free tree</i> instead of a <i>rooted tree</i>. A group
+                            of trees is a <a href="journal/forest">forest</a>.
+                        </p>
+                        <p>
+                            If you add an edge to a tree, a cycle is created. If you remove an edge from a tree, it's
+                            disconnected.
+                        </p>
+                        <a id="read-more-button" href="journal/tree">Read more...</a>
+                    </section>
+                    <h1>Did you know ...</h1>
+                    <section>
+                        <ul>
+                            <li>
+                                ... that any two consecutive <a href="journal/integer">integers</a> have opposite <a
+                                    href="journal/integer#parity">parity</a>?
+                            </li>
+                            <li>
+                                ... that \(0\) is <a href="journal/real-number#sign">not positive or negative, but
+                                instead non-positive and non-negative</a>?
+                            </li>
+                            <li>
+                                ... that <a href="journal/statement#existential-statements">to disprove an existential
+                                statement, you need to prove a universal statement</a>?
+                            </li>
+                            <li>
+                                ... that any <a href="journal/compound-proposition">compound proposition</a> can be
+                                rewritten as a <a href="journal/disjunctive-normal-form">disjunction of conjunctions</a>?
+                            </li>
+                            <li>
+                                ... that the act of using a <a href="journal/compound-proposition#truth-table">truth
+                                table</a> to determine the <a href="journal/logical-equivalence">logical equivalence</a>
+                                of two <a href="journal/compound-proposition">compound propositions</a> has an
+                                exponential <a href="journal/time-complexity">time complexity</a>?
+                            </li>
+                            <li>
+                                ... that <a href="journal/logical-operation#the-conditional-operation">implication</a>
+                                is a <a href="journal/transitive-relation">transitive relation</a> on the <a
+                                        href="journal/set">set</a> of <a href="journal/proposition">propositions</a>?
+                            </li>
+                            <li>
+                                ... that knowing the <a href="journal/prime-factorization">prime factorizations</a> of
+                                two integers allows for their <a href="journal/greatest-common-divisor">greatest common
+                                    divisor</a> and <a href="journal/least-common-multiple">least common multiple</a> to
+                                be efficiently computed?
+                            </li>
+                            <li>
+                                ... that after over \(1000\) years, the <a href="journal/euclidean-algorithm">Euclidean
+                                algorithm</a> is still in use?
+                            </li>
+                            <li>
+                                ... that the <a href="journal/proof-by-induction">principle of mathematical induction</a>, the <a href="journal/proof-by-strong-induction">principle of strong mathematical induction</a>, and the <a href="journal/well-ordering-principle">well-ordering principle</a> are all <a href="journal/logical-equivalence">logically equivalent</a> to each other?
+                            </li>
+                            <li>
+                                ... that <a href="journal/pigeonhole-principle">there exists a pair of Londoners who have the exact same number of hairs on their heads</a>?
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="homepage-news-block">
+                    <h1>News</h1>
+                    <section>
+                        <h2>May 12, 2024</h2>
+                        <p>
+                            Discretopia is complete! After over 500 days, the project has come to an end.
+                        </p>
+                        <p>
+                            It's been a long journey, and I've learned so much along the way, both about discrete math and making websites. To have made it this far means a lot to me.
+                        </p>
+                        <p>
+                            Readers, I hope this website helps you learn something, or simply makes you smile :)
+                        </p>
+                    </section>
+                    <section>
+                        <h2>March 13, 2024</h2>
+                        <p>
+                            With 133 entries, Discretopia is now officially content-complete. All the topics I set out to cover back in December 2022 can be found in the journal.
+                        </p>
+                        <p>
+                            In the last stage of development, I'll add a few more features, review every entry one last time, improve the mobile experience, and then finalize the website's overall design.
+                        </p>
+                        <p>
+                            This is a major milestone! My vision for this website will soon be fully realized. For now, enjoy the most comprehensive version of Discretopia yet!
+                        </p>
+                    </section>
                 </div>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="journal#logic-and-proofs">
-                        Logic & Proofs
-                    </a>
-                    <a class="sidebar-link" href="journal#set-theory">
-                        Set Theory
-                    </a>
-                    <a class="sidebar-link" href="journal#functions">
-                        Functions
-                    </a>
-                    <a class="sidebar-link" href="journal#algorithms">
-                        Algorithms
-                    </a>
-                    <a class="sidebar-link" href="journal#relations">
-                        Relations
-                    </a>
-                    <a class="sidebar-link" href="journal#integer-properties">
-                        Number Theory
-                    </a>
-                    <a class="sidebar-link" href="journal#induction">
-                        Induction
-                    </a>
-                    <a class="sidebar-link" href="journal#combinatorics">
-                        Combinatorics
-                    </a>
-                    <a class="sidebar-link" href="journal#graphs">
-                        Graph Theory
-                    </a>
-                    <a class="sidebar-link" href="journal#recursion">
-                        Recursion
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="content-container">
-            <div id="content">
-                <div id="written-content">
-                    <div class="main-page-block">
-                        <div class="centered main-page-block-title">
-                            Welcome to <a href="about">Discretopia</a>,
-                        </div>
-                        <div class="centered main-page-block-subtitle">
-                            the friendly discrete math reference.
-                        </div>
-                        <div class="centered main-page-block-statistic">
-                            133 <a href="journal">journal</a> entries as of 13 March 2024
-                        </div>
-                    </div>
-                    <div class="news-block-container">
-                        <div class="news-block-left">
-                            <div class="news-block-title">
-                                Featured entry: <a href="journal/hamiltonian-cycle">Hamiltonian cycle</a>
-                            </div>
-                            <div class="news-block-entry">
-                                <figure class="news-size right-floated">
-                                    <img class="basic-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Dodecahedron_Hamiltonian_Cycle.svg" alt="A Hamiltonian cycle on the edge graph of a dodecahedron.">
-                                    <figcaption>A Hamiltonian cycle on the edge graph of a dodecahedron.</figcaption>
-                                </figure>
-                                <p>
-                                    A <b>Hamiltonian cycle</b> is a <a href="journal/walk">walk</a> that uses each vertex in a connected <a href="journal/graph">graph</a> exactly once and loops back to the starting vertex. Graphs that have Hamiltonian cycles are <i>Hamiltonian</i>.
-                                </p>
-                                <p>
-                                    (<a href="journal/hamiltonian-cycle">Read more...</a>)
-                                </p>
-                            </div>
-                            <div class="news-block-title">
-                                Did you know ...
-                            </div>
-                            <div class="news-block-entry">
-                                <ul>
-                                    <li>... that any two consecutive <a href="journal/integer">integers</a> have opposite <a href="journal/integer#parity">parity</a>?</li>
-                                    <li>... that \(0\) is <a href="journal/real-number#sign">not positive or negative, but instead non-positive and non-negative</a>?</li>
-                                    <li>... that to <a href="journal/statement#existential-statements">disprove an existential statement, you need to prove a universal statement</a>?</li>
-                                    <li>... that any <a href="journal/compound-proposition">compound proposition</a> can be rewritten as a <a href="journal/disjunctive-normal-form">disjunction of conjunctions</a>?</li>
-                                    <li>... that the act of using a <a href="journal/compound-proposition#truth-table">truth table</a> to determine the <a href="journal/logical-equivalence">logical equivalence</a> of two <a href="journal/compound-proposition">compound propositions</a> has an exponential <a href="journal/time-complexity">time complexity</a>?</li>
-                                    <li>... that <a href="journal/logical-operation#the-conditional-operation">implication</a> is a <a href="journal/transitive-relation">transitive relation</a> on the <a href="journal/set">set</a> of <a href="journal/proposition">propositions</a>?</li>
-                                    <li>... that knowing the <a href="journal/prime-factorization">prime factorizations</a> of two integers allows for their <a href="journal/greatest-common-divisor">greatest common divisor</a> and <a href="journal/least-common-multiple">least common multiple</a> to be efficiently computed?</li>
-                                    <li>... that after over \(1000\) years, the <a href="journal/euclidean-algorithm">Euclidean algorithm</a> is still in use?</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="news-block-right">
-                            <div class="news-block-title">
-                                What's new?
-                            </div>
-                            <div class="news-block-entry">
-                                <h2><i>Discretopia</i> v0.9 Update!</h2>
-                                <p>
-                                    The sections on <a href="journal#graph-theory">Graph Theory</a> and <a href="journal#recursion">Recursion</a> are now complete. At this point, I've covered every topic I set out to cover all the way back in December 2022.
-                                </p>
-                                <p>
-                                    <i>Discretopia</i> has come a long way. It's been so much work writing \(133\) entries, but now they're all done, more or less. I hope people find this website to be a truly helpful guide to discrete math!
-                                </p>
-                                <p>
-                                    Before releasing version \(1.0\), I'll take a look at everything I've done so far and see if I can make a few little improvements here and there. No big sweeping changes, so don't worry about that. My primary focus will be on making <i>Discretopia</i> even more beautiful.
-                                </p>
-                                <p>
-                                    Thank you so much for reading!<br>— John
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div id="footer-content-container">
-            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
-        </div>
-    </footer>
+        </article>
+    </div>
+</main>
+<footer>
+    <a href="https://johncuysal.com" target="_blank">© 2022 — 2024 John C. Uysal</a>
+</footer>
 </body>
 </html>

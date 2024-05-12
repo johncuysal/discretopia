@@ -13,57 +13,196 @@
     <title>Primality test - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
-    <header>
-        <div id="wordmark-container">
-            <div id="wordmark" class="centered">
-                <a href="../..">DISCRETOPIA</a>
+<main>
+    <aside>
+        <a id="logo-container" href="../..">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="-8 -8 272 272">
+                <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+            </svg>
+            <div id="wordmark">
+                <span class="wordmark-big">D</span>ISCRETOPI<span class="wordmark-big">A</span>
+            </div>
+        </a>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                <a class="sidebar-link" href="../..">
+                    Main page
+                </a>
+                <a class="sidebar-link" href="..">
+                    View the journal
+                </a>
+                <a class="sidebar-link" href="../../about">
+                    About Discretopia
+                </a>
+                <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                    Donate ♥
+                </a>
             </div>
         </div>
-        <div id="search-container">
-            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
-            <div id="search-results"></div>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                Overview
+                <hr>
+                <a class="sidebar-link" href="..#logic-and-proofs">
+                    Logic & Proofs
+                </a>
+                <a class="sidebar-link" href="..#set-theory">
+                    Set Theory
+                </a>
+                <a class="sidebar-link" href="..#functions">
+                    Functions
+                </a>
+                <a class="sidebar-link" href="..#algorithms">
+                    Algorithms
+                </a>
+                <a class="sidebar-link" href="..#relations">
+                    Relations
+                </a>
+                <a class="sidebar-link" href="..#number-theory">
+                    Number Theory
+                </a>
+                <a class="sidebar-link" href="..#induction">
+                    Induction
+                </a>
+                <a class="sidebar-link" href="..#combinatorics">
+                    Combinatorics
+                </a>
+                <a class="sidebar-link" href="..#graphs">
+                    Graph Theory
+                </a>
+                <a class="sidebar-link" href="..#recursion">
+                    Recursion
+                </a>
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="side-container">
-            <div id="logo-container">
-                <a href="../..">
-                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
-                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
-                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
+    </aside>
+    <div id="content-container">
+        <nav id="top-navigation">
+            <div id="link-menu">
+                <button id="mobile-menu">
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                </button>
+                <div id="mobile-menu-dropdown">
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            <a class="sidebar-link" href="../..">
+                                Main page
+                            </a>
+                            <a class="sidebar-link" href="..">
+                                View the journal
+                            </a>
+                            <a class="sidebar-link" href="../../about">
+                                About Discretopia
+                            </a>
+                            <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                                Donate ♥
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            Overview
+                            <hr>
+                            <a class="sidebar-link" href="..#logic-and-proofs">
+                                Logic & Proofs
+                            </a>
+                            <a class="sidebar-link" href="..#set-theory">
+                                Set Theory
+                            </a>
+                            <a class="sidebar-link" href="..#functions">
+                                Functions
+                            </a>
+                            <a class="sidebar-link" href="..#algorithms">
+                                Algorithms
+                            </a>
+                            <a class="sidebar-link" href="..#relations">
+                                Relations
+                            </a>
+                            <a class="sidebar-link" href="..#number-theory">
+                                Number Theory
+                            </a>
+                            <a class="sidebar-link" href="..#induction">
+                                Induction
+                            </a>
+                            <a class="sidebar-link" href="..#combinatorics">
+                                Combinatorics
+                            </a>
+                            <a class="sidebar-link" href="..#graphs">
+                                Graph Theory
+                            </a>
+                            <a class="sidebar-link" href="..#recursion">
+                                Recursion
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a id="top-navigation-logo-container" href="../..">
+                    <svg id="top-navigation-logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
                         <circle cx="128" cy="0" r="2" stroke-width="0"/>
                         <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
                         <circle cx="256" cy="128" r="2" stroke-width="0"/>
@@ -73,118 +212,293 @@
                         <circle cx="0" cy="128" r="2" stroke-width="0"/>
                         <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
                     </svg>
+                    <div id="top-navigation-wordmark">
+                        <span class="top-navigation-wordmark-big">D</span>ISCRETOPI<span class="top-navigation-wordmark-big">A</span>
+                    </div>
                 </a>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="../..">
-                        Main page
-                    </a>
-                    <a class="sidebar-link" href="..">
-                        View the journal
-                    </a>
-                    <a class="sidebar-link" href="../../about">
-                        About Discretopia
-                    </a>
-                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
-                        Donate ♥
-                    </a>
-                </div>
+            <div id="search">
+                <label for="search-field"></label>
+                <input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+                <button id="go-button">Go</button>
+                <div id="search-results"></div>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="..#logic-and-proofs">
-                        Logic & Proofs
-                    </a>
-                    <a class="sidebar-link" href="..#set-theory">
-                        Set Theory
-                    </a>
-                    <a class="sidebar-link" href="..#functions">
-                        Functions
-                    </a>
-                    <a class="sidebar-link" href="..#algorithms">
-                        Algorithms
-                    </a>
-                    <a class="sidebar-link" href="..#relations">
-                        Relations
-                    </a>
-                    <a class="sidebar-link" href="..#integer-properties">
-                        Number Theory
-                    </a>
-                    <a class="sidebar-link" href="..#induction">
-                        Induction
-                    </a>
-                    <a class="sidebar-link" href="..#combinatorics">
-                        Combinatorics
-                    </a>
-                    <a class="sidebar-link" href="..#graphs">
-                        Graph Theory
-                    </a>
-                    <a class="sidebar-link" href="..#recursion">
-                        Recursion
-                    </a>
-                </div>
+        </nav>
+        <article>
+            <h1>Primality test</h1>
+            <hr>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
             </div>
-        </div>
-        <div id="content-container">
-            <div id="content">
-                <div id="title-box">
-                    <h1>Primality test</h1>
-                    <hr>
-                    <i>Last Updated: 5 June 2023</i>
+            <p>
+                A <b>primality test</b> is an <a href="../algorithm">algorithm</a> that determines whether an <a
+                    href="../integer">integer</a> is prime.
+            </p>
+            <p>
+                Unlike <a href="../factoring-algorithm">factoring algorithms</a>, efficient primality tests actually do
+                exist, but there is a slight catch.
+            </p>
+            <div id="list-of-contents">
+                <div class="center-aligned">
+                    <b>Contents</b>
                 </div>
-                <div id="written-content">
-                    <p>
-                        A <b>primality test</b> is an <a href="../algorithm">algorithm</a> that determines whether an <a href="../integer">integer</a> is prime.
-                    </p>
-                    <p>
-                        Unlike <a href="../factoring-algorithm">factoring algorithms</a>, efficient primality tests actually do exist, but there is a slight catch.
-                    </p>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
+                <hr>
+            </div>
+            <h2>Trial division</h2>
+            <hr>
+            <p>
+                Trial division is the most basic <a href="../brute-force-algorithm">brute-force</a> implementation of a
+                primality test:
+            </p>
+            <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>for</b> f = 2 <b>to</b> (n - 1)<br>        <b>if</b> n <b>mod</b> f = 0<br>            <b>return</b> false<br>    <b>return</b> true<br></pre>
+            <p>
+                This algorithm can be made more efficient if we understand that, for any two integers whose product is
+                the integer \(n\), one of the integers must be greater than or equal to \(\sqrt{n}\), while the other
+                must be less than or equal to \(\sqrt{n}.\) If this is not the case, their imbalanced product will end
+                up being either larger or smaller than \(n.\) Here's the improved algorithm:
+            </p>
+            <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>for</b> f = 2 <b>to</b> floor(√n) <span
+                    class="code-comment">(floor function ensures √n is an integer)</span><br>        <b>if</b> n <b>mod</b> f = 0<br>            <b>return</b> false<br>    <b>return</b> true<br></pre>
+            <p>
+                With the \(6k \pm 1\) optimization, the algorithm can be further improved to skip any factors that are
+                multiples of \(2\) or \(3\), making it faster to check larger integers for primality:
+            </p>
+            <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>if</b> n ≤ 3<br>        <b>return</b> true<br>    <b>if</b> n <b>mod</b> 2 = 0 <b>or</b> n <b>mod</b> 3 = 0<br>        <b>return</b> false<br>    f ← 5<br>    <b>while</b> f ≤ floor(√n) <span
+                    class="code-comment">(floor function ensures √n is an integer)</span><br>        <b>if</b> n <b>mod</b> f = 0 <b>or</b> n <b>mod</b> (f + 2) = 0<br>            <b>return</b> false<br>        f ← f + 6<br>    <b>return</b> true<br></pre>
+            <p>
+                Even though we've improved trial division a lot, it could still be much better. Notice that, if we
+                wanted to, we could report the factor that divided \(n\) instead of returning false. Trial division
+                always provides information about which factor divided \(n.\) However, in primality testing, all we want
+                to know is whether an integer is prime or composite, not what the specific factors are.
+            </p>
+            <p>
+                You might think this is really weird, but it's actually possible to quickly determine that an integer is
+                composite without having <i>any idea what its factors are</i>, as is the case in probabilistic tests.
+            </p>
+            <h2>Probabilistic tests</h2>
+            <hr>
+            <p>
+                Sacrificing absolute certainty, probabilistic primality tests significantly reduce computational
+                complexity. This means that, rather than guaranteeing an integer is prime, these kinds of tests can
+                guess with a high degree of correctness that an integer is "probably prime." The probability of error
+                can be minimized with more iterations, making this method ideal for large integers.
+            </p>
+            <p>
+                Due to having polynomial <a href="../time-complexity">time complexity</a>, probabilistic tests are
+                considered efficient.
+            </p>
+            <p>
+                I'd show you an example of a probabilistic test, but for now, I'm just going to say they involve testing
+                integers for properties that only primes can have, and making guesses based on that. If you're really
+                curious, check out the Miller-Rabin primality test.
+            </p>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
+            </div>
+            <div id="entry-navbox-container">
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Logic & Proofs</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer">Integer</a> •
+                        <a class="entry-navbox-link" href="/journal/rational-number">Rational number</a> •
+                        <a class="entry-navbox-link" href="/journal/inequality">Inequality</a> •
+                        <a class="entry-navbox-link" href="/journal/real-number">Real number</a> •
+                        <a class="entry-navbox-link" href="/journal/theorem">Theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/proof">Proof</a> •
+                        <a class="entry-navbox-link" href="/journal/statement">Statement</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-exhaustion">Proof by exhaustion</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-generalization">Universal generalization</a> •
+                        <a class="entry-navbox-link" href="/journal/counterexample">Counterexample</a> •
+                        <a class="entry-navbox-link" href="/journal/existence-proof">Existence proof</a> •
+                        <a class="entry-navbox-link" href="/journal/existential-instantiation">Existential instantiation</a> •
+                        <a class="entry-navbox-link" href="/journal/axiom">Axiom</a> •
+                        <a class="entry-navbox-link" href="/journal/logic">Logic</a> •
+                        <a class="entry-navbox-link" href="/journal/truth">Truth</a> •
+                        <a class="entry-navbox-link" href="/journal/proposition">Proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/compound-proposition">Compound proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-operation">Logical operation</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-equivalence">Logical equivalence</a> •
+                        <a class="entry-navbox-link" href="/journal/tautology">Tautology</a> •
+                        <a class="entry-navbox-link" href="/journal/contradiction">Contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/logic-law">Logic law</a> •
+                        <a class="entry-navbox-link" href="/journal/predicate">Predicate</a> •
+                        <a class="entry-navbox-link" href="/journal/domain">Domain</a> •
+                        <a class="entry-navbox-link" href="/journal/quantifier">Quantifier</a> •
+                        <a class="entry-navbox-link" href="/journal/argument">Argument</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-inference">Rule of inference</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-proof">Logical proof</a> •
+                        <a class="entry-navbox-link" href="/journal/direct-proof">Direct proof</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contrapositive">Proof by contrapositive</a> •
+                        <a class="entry-navbox-link" href="/journal/irrational-number">Irrational number</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contradiction">Proof by contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-cases">Proof by cases</a> •
+                        <a class="entry-navbox-link" href="/journal/summation">Summation</a> •
+                        <a class="entry-navbox-link" href="/journal/disjunctive-normal-form">Disjunctive normal form</a>
                     </div>
-                    <h2>Trial division</h2>
-                    <hr>
-                    <p>
-                        Trial division is the most basic <a href="../brute-force-algorithm">brute-force</a> implementation of a primality test:
-                    </p>
-                    <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>for</b> f = 2 <b>to</b> (n - 1)<br>        <b>if</b> n <b>mod</b> f = 0<br>            <b>return</b> false<br>    <b>return</b> true<br></pre>
-                    <p>
-                        This algorithm can be made more efficient if we understand that, for any two integers whose product is the integer \(n\), one of the integers must be greater than or equal to \(\sqrt{n}\), while the other must be less than or equal to \(\sqrt{n}\). If this is not the case, their imbalanced product will end up being either larger or smaller than \(n\). Here's the improved algorithm:
-                    </p>
-                    <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>for</b> f = 2 <b>to</b> floor(√n) <span class="code-comment">(floor function ensures √n is an integer)</span><br>        <b>if</b> n <b>mod</b> f = 0<br>            <b>return</b> false<br>    <b>return</b> true<br></pre>
-                    <p>
-                        With the \(6k \pm 1\) optimization, the algorithm can be further improved to skip any factors that are multiples of \(2\) or \(3\), making it faster to check larger integers for primality:
-                    </p>
-                    <pre class="code-block"><b>algorithm</b> is_prime <b>is</b><br>    <b>input:</b> one integer, n > 1<br>    <b>output:</b> true if n is prime, false if n is composite<br><br>    <b>if</b> n ≤ 3<br>        <b>return</b> true<br>    <b>if</b> n <b>mod</b> 2 = 0 <b>or</b> n <b>mod</b> 3 = 0<br>        <b>return</b> false<br>    f ← 5<br>    <b>while</b> f ≤ floor(√n) <span class="code-comment">(floor function ensures √n is an integer)</span><br>        <b>if</b> n <b>mod</b> f = 0 <b>or</b> n <b>mod</b> (f + 2) = 0<br>            <b>return</b> false<br>        f ← f + 6<br>    <b>return</b> true<br></pre>
-                    <p>
-                        Even though we've improved trial division a lot, it could still be much better. Notice that, if we wanted to, we could report the factor that divided \(n\) instead of returning false. Trial division always provides information about which factor divided \(n\). However, in primality testing, all we want to know is whether an integer is prime or composite, not what the specific factors are.
-                    </p>
-                    <p>
-                        You might think this is really weird, but it's actually possible to quickly determine that an integer is composite without having <i>any idea what its factors are</i>, as is the case in probabilistic tests.
-                    </p>
-                    <h2>Probabilistic tests</h2>
-                    <hr>
-                    <p>
-                        Sacrificing absolute certainty, probabilistic primality tests significantly reduce computational complexity. This means that, rather than guaranteeing an integer is prime, these kinds of tests can guess with a high degree of correctness that an integer is "probably prime." The probability of error can be minimized with more iterations, making this method ideal for large integers.
-                    </p>
-                    <p>
-                        Due to having polynomial <a href="../time-complexity">time complexity</a>, probabilistic tests are considered efficient.
-                    </p>
-                    <p>
-                        I'd show you an example of a probabilistic test, but for now, I'm just going to say they involve testing integers for properties that only primes can have, and making guesses based on that. If you're really curious, check out the Miller-Rabin primality test.
-                    </p>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Set Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/set">Set</a> •
+                        <a class="entry-navbox-link" href="/journal/element">Element</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-set">Empty set</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-set">Universal set</a> •
+                        <a class="entry-navbox-link" href="/journal/subset">Subset</a> •
+                        <a class="entry-navbox-link" href="/journal/power-set">Power set</a> •
+                        <a class="entry-navbox-link" href="/journal/cartesian-product">Cartesian product</a> •
+                        <a class="entry-navbox-link" href="/journal/string">String</a> •
+                        <a class="entry-navbox-link" href="/journal/binary-string">Binary string</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-string">Empty string</a> •
+                        <a class="entry-navbox-link" href="/journal/set-operation">Set operation</a> •
+                        <a class="entry-navbox-link" href="/journal/set-identity">Set identity</a> •
+                        <a class="entry-navbox-link" href="/journal/set-proof">Set proof</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Functions</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/function">Function</a> •
+                        <a class="entry-navbox-link" href="/journal/floor-function">Floor function</a> •
+                        <a class="entry-navbox-link" href="/journal/ceiling-function">Ceiling function</a> •
+                        <a class="entry-navbox-link" href="/journal/inverse-function">Inverse function</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Algorithms</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/algorithm">Algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/pseudocode">Pseudocode</a> •
+                        <a class="entry-navbox-link" href="/journal/command">Command</a> •
+                        <a class="entry-navbox-link" href="/journal/asymptotic-notation">Asymptotic notation</a> •
+                        <a class="entry-navbox-link" href="/journal/time-complexity">Time complexity</a> •
+                        <a class="entry-navbox-link" href="/journal/atomic-operation">Atomic operation</a> •
+                        <a class="entry-navbox-link" href="/journal/brute-force-algorithm">Brute-force algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Relations</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/relation">Relation</a> •
+                        <a class="entry-navbox-link" href="/journal/reflexive-relation">Reflexive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/symmetric-relation">Symmetric relation</a> •
+                        <a class="entry-navbox-link" href="/journal/transitive-relation">Transitive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/relation-composition">Relation composition</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-relation">Equivalence relation</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-class">Equivalence class</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Number Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer-division">Integer division</a> •
+                        <a class="entry-navbox-link" href="/journal/linear-combination">Linear combination</a> •
+                        <a class="entry-navbox-link" href="/journal/division-algorithm">Division algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/modular-arithmetic">Modular arithmetic</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-factorization">Prime factorization</a> •
+                        <a class="entry-navbox-link" href="/journal/greatest-common-divisor">Greatest common divisor</a> •
+                        <a class="entry-navbox-link" href="/journal/least-common-multiple">Least common multiple</a> •
+                        <a class="entry-navbox-link" href="/journal/primality-test">Primality test</a> •
+                        <a class="entry-navbox-link" href="/journal/factoring-algorithm">Factoring algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/euclids-theorem">Euclid's theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-number-theorem">Prime number theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/euclidean-algorithm">Euclidean algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Induction</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/proof-by-induction">Proof by induction</a> •
+                        <a class="entry-navbox-link" href="/journal/fibonacci-sequence">Fibonacci sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-strong-induction">Proof by strong induction</a> •
+                        <a class="entry-navbox-link" href="/journal/well-ordering-principle">Well-ordering principle</a> •
+                        <a class="entry-navbox-link" href="/journal/sequence">Sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/factorial">Factorial</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-definition">Recursive definition</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Combinatorics</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/rule-of-product">Rule of product</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-sum">Rule of sum</a> •
+                        <a class="entry-navbox-link" href="/journal/bijection-rule">Bijection rule</a> •
+                        <a class="entry-navbox-link" href="/journal/permutation">Permutation</a> •
+                        <a class="entry-navbox-link" href="/journal/combination">Combination</a> •
+                        <a class="entry-navbox-link" href="/journal/complement-rule">Complement rule</a> •
+                        <a class="entry-navbox-link" href="/journal/experiment">Experiment</a> •
+                        <a class="entry-navbox-link" href="/journal/outcome">Outcome</a> •
+                        <a class="entry-navbox-link" href="/journal/sample-space">Sample space</a> •
+                        <a class="entry-navbox-link" href="/journal/event">Event</a> •
+                        <a class="entry-navbox-link" href="/journal/probability">Probability</a> •
+                        <a class="entry-navbox-link" href="/journal/probability-distribution">Probability distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/uniform-distribution">Uniform distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/multiset">Multiset</a> •
+                        <a class="entry-navbox-link" href="/journal/sixfold-way">Sixfold way</a> •
+                        <a class="entry-navbox-link" href="/journal/inclusion-exclusion-principle">Inclusion-exclusion principle</a> •
+                        <a class="entry-navbox-link" href="/journal/pigeonhole-principle">Pigeonhole principle</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Graph Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/graph">Graph</a> •
+                        <a class="entry-navbox-link" href="/journal/walk">Walk</a> •
+                        <a class="entry-navbox-link" href="/journal/subgraph">Subgraph</a> •
+                        <a class="entry-navbox-link" href="/journal/regular-graph">Regular graph</a> •
+                        <a class="entry-navbox-link" href="/journal/complete-graph">Complete graph</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-graph">Empty graph</a> •
+                        <a class="entry-navbox-link" href="/journal/cycle-graph">Cycle graph</a> •
+                        <a class="entry-navbox-link" href="/journal/hypercube-graph">Hypercube graph</a> •
+                        <a class="entry-navbox-link" href="/journal/bipartite-graph">Bipartite graph</a> •
+                        <a class="entry-navbox-link" href="/journal/component">Component</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-circuit">Eulerian circuit</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-trail">Eulerian trail</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-cycle">Hamiltonian cycle</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-path">Hamiltonian path</a> •
+                        <a class="entry-navbox-link" href="/journal/tree">Tree</a> •
+                        <a class="entry-navbox-link" href="/journal/huffman-tree">Huffman tree</a> •
+                        <a class="entry-navbox-link" href="/journal/substring">Substring</a> •
+                        <a class="entry-navbox-link" href="/journal/forest">Forest</a> •
+                        <a class="entry-navbox-link" href="/journal/path-graph">Path graph</a> •
+                        <a class="entry-navbox-link" href="/journal/star">Star</a> •
+                        <a class="entry-navbox-link" href="/journal/spanning-tree">Spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/weighted-graph">Weighted graph</a> •
+                        <a class="entry-navbox-link" href="/journal/minimum-spanning-tree">Minimum spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/greedy-algorithm">Greedy algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/prims-algorithm">Prim's algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Recursion</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/recursion">Recursion</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-algorithm">Recursive algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/correctness-proof">Correctness proof</a> •
+                        <a class="entry-navbox-link" href="/journal/divide-and-conquer-algorithm">Divide-and-conquer algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/sorting-algorithm">Sorting algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/merge-sort">Merge sort</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div id="footer-content-container">
-            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
-        </div>
-    </footer>
+        </article>
+    </div>
+</main>
+<footer>
+    <a href="https://johncuysal.com" target="_blank">© 2022 — 2024 John C. Uysal</a>
+</footer>
 </body>
 </html>

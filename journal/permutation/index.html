@@ -13,57 +13,196 @@
     <title>Permutation - Discretopia, the friendly discrete math reference</title>
 </head>
 <body>
-    <header>
-        <div id="wordmark-container">
-            <div id="wordmark" class="centered">
-                <a href="../..">DISCRETOPIA</a>
+<main>
+    <aside>
+        <a id="logo-container" href="../..">
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="-8 -8 272 272">
+                <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                <circle cx="128" cy="0" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
+                <circle cx="256" cy="128" r="2" stroke-width="0"/>
+                <circle cx="218.51" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="128" cy="256" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="218.51" r="2" stroke-width="0"/>
+                <circle cx="0" cy="128" r="2" stroke-width="0"/>
+                <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
+            </svg>
+            <div id="wordmark">
+                <span class="wordmark-big">D</span>ISCRETOPI<span class="wordmark-big">A</span>
+            </div>
+        </a>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                <a class="sidebar-link" href="../..">
+                    Main page
+                </a>
+                <a class="sidebar-link" href="..">
+                    View the journal
+                </a>
+                <a class="sidebar-link" href="../../about">
+                    About Discretopia
+                </a>
+                <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                    Donate ♥
+                </a>
             </div>
         </div>
-        <div id="search-container">
-            <label for="search-field"></label><input id="search-field" type="text" placeholder="Search Discretopia" name="search">
-            <div id="search-results"></div>
+        <div class="sidebar-block">
+            <div class="sidebar-section">
+                Overview
+                <hr>
+                <a class="sidebar-link" href="..#logic-and-proofs">
+                    Logic & Proofs
+                </a>
+                <a class="sidebar-link" href="..#set-theory">
+                    Set Theory
+                </a>
+                <a class="sidebar-link" href="..#functions">
+                    Functions
+                </a>
+                <a class="sidebar-link" href="..#algorithms">
+                    Algorithms
+                </a>
+                <a class="sidebar-link" href="..#relations">
+                    Relations
+                </a>
+                <a class="sidebar-link" href="..#number-theory">
+                    Number Theory
+                </a>
+                <a class="sidebar-link" href="..#induction">
+                    Induction
+                </a>
+                <a class="sidebar-link" href="..#combinatorics">
+                    Combinatorics
+                </a>
+                <a class="sidebar-link" href="..#graphs">
+                    Graph Theory
+                </a>
+                <a class="sidebar-link" href="..#recursion">
+                    Recursion
+                </a>
+            </div>
         </div>
-    </header>
-    <main>
-        <div id="side-container">
-            <div id="logo-container">
-                <a href="../..">
-                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" class="home-button" width="150" height="150" viewBox="-8 -8 272 272">
-                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4" />
-                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4" />
-                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4" />
-                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4" />
-                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4" />
-                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4" />
-
-                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4" />
-
+    </aside>
+    <div id="content-container">
+        <nav id="top-navigation">
+            <div id="link-menu">
+                <button id="mobile-menu">
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                    <span class="mobile-menu-bar"></span>
+                </button>
+                <div id="mobile-menu-dropdown">
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            <a class="sidebar-link" href="../..">
+                                Main page
+                            </a>
+                            <a class="sidebar-link" href="..">
+                                View the journal
+                            </a>
+                            <a class="sidebar-link" href="../../about">
+                                About Discretopia
+                            </a>
+                            <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
+                                Donate ♥
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <div class="sidebar-section">
+                            Overview
+                            <hr>
+                            <a class="sidebar-link" href="..#logic-and-proofs">
+                                Logic & Proofs
+                            </a>
+                            <a class="sidebar-link" href="..#set-theory">
+                                Set Theory
+                            </a>
+                            <a class="sidebar-link" href="..#functions">
+                                Functions
+                            </a>
+                            <a class="sidebar-link" href="..#algorithms">
+                                Algorithms
+                            </a>
+                            <a class="sidebar-link" href="..#relations">
+                                Relations
+                            </a>
+                            <a class="sidebar-link" href="..#number-theory">
+                                Number Theory
+                            </a>
+                            <a class="sidebar-link" href="..#induction">
+                                Induction
+                            </a>
+                            <a class="sidebar-link" href="..#combinatorics">
+                                Combinatorics
+                            </a>
+                            <a class="sidebar-link" href="..#graphs">
+                                Graph Theory
+                            </a>
+                            <a class="sidebar-link" href="..#recursion">
+                                Recursion
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a id="top-navigation-logo-container" href="../..">
+                    <svg id="top-navigation-logo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-8 -8 272 272">
+                        <line x1="128" y1="0" x2="218.51" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="0" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="256" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="37.49" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="218.51" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="256" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="128" y2="256" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="218.51" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="218.51" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="128" y1="256" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="0" y2="128" stroke-width="4"/>
+                        <line x1="37.49" y1="218.51" x2="37.49" y2="37.49" stroke-width="4"/>
+                        <line x1="0" y1="128" x2="37.49" y2="37.49" stroke-width="4"/>
                         <circle cx="128" cy="0" r="2" stroke-width="0"/>
                         <circle cx="218.51" cy="37.49" r="2" stroke-width="0"/>
                         <circle cx="256" cy="128" r="2" stroke-width="0"/>
@@ -73,155 +212,377 @@
                         <circle cx="0" cy="128" r="2" stroke-width="0"/>
                         <circle cx="37.49" cy="37.49" r="2" stroke-width="0"/>
                     </svg>
+                    <div id="top-navigation-wordmark">
+                        <span class="top-navigation-wordmark-big">D</span>ISCRETOPI<span class="top-navigation-wordmark-big">A</span>
+                    </div>
                 </a>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="../..">
-                        Main page
-                    </a>
-                    <a class="sidebar-link" href="..">
-                        View the journal
-                    </a>
-                    <a class="sidebar-link" href="../../about">
-                        About Discretopia
-                    </a>
-                    <a class="donation-type sidebar-link" href="https://www.buymeacoffee.com/johncuysal" target="_blank">
-                        Donate ♥
-                    </a>
+            <div id="search">
+                <label for="search-field"></label>
+                <input id="search-field" type="text" placeholder="Search Discretopia" name="search">
+                <button id="go-button">Go</button>
+                <div id="search-results"></div>
+            </div>
+        </nav>
+        <article>
+            <h1>Permutation</h1>
+            <hr>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
+            </div>
+            <blockquote>
+                Countable sequences!
+            </blockquote>
+            <p>
+                Broadly speaking, a <b>permutation</b> of a <a href="../set">set</a> is a <a
+                    href="../sequence">sequence</a> made from its <a href="../element">elements</a>. The <a
+                    href="../rule-of-product#generalized-rule-of-product">generalized rule of product</a> can be applied
+                to count the number of permutations, or in other words, different arrangements, that can be made from a
+                set.
+            </p>
+            <p>
+                Since permutations are sequences, the order of their elements matters, unlike <a href="../combination">combinations</a>.
+            </p>
+            <div id="list-of-contents">
+                <div class="center-aligned">
+                    <b>Contents</b>
+                </div>
+                <hr>
+            </div>
+            <h2>\(r\)-permutation</h2>
+            <hr>
+            <p>
+                An <i>\(r\)-permutation</i> of a set is a sequence of \(r\) of its elements, with no repetitions. For
+                example, \((9, 5, 6)\) and \((6, 1, 7)\) are both \(3\)-permutations of the set \(\set{9, 1, 6, 5, 7,
+                8}.\) However, \((7, 7, 9)\) would not be a \(3\)-permutation of that set, because it repeats \(7.\) By
+                the generalized rule of product, the total number of \(3\)-permutations that can be made from that set
+                is \(6 * 5 * 4 = 120.\) This is because, when an element is selected, there is \(1\) fewer choice for
+                the next element, as repetitions are not allowed in \(r\)-permutations. This line of thinking leads to
+                the following formula:
+            </p>
+            <div class="math-definition">
+                The number of \(r\)-permutations that can be made from a set of \(n\) elements, denoted \(P(n, r)\), is:
+                $$P(n, r) = \frac{n!}{(n-r)!}$$
+            </div>
+            <div class="math-notice">
+                ⚠ This formula originates from a pattern that arises in the generalized rule of product when counting
+                \(r\)-permutations of a set with \(n\) elements. It seems that you always have to multiply \(n\) by
+                progressively smaller integers, with the last integer being \(n - r + 1.\) Written out, it's \(n * (n -
+                1) * ... * (n - r + 1)\), which is formalized above.
+            </div>
+            <div class="math-notice">
+                ⚠ \(nPr\) is another way of writing \(P(n, r).\) Both are read "\(n\) permute \(r.\)"
+            </div>
+            <div class="math-notice">
+                ⚠ It is assumed that \(n\) and \(r\) are always non-negative in these equations, and satisfy \(n \geq
+                r.\) You probably wouldn't want to count the number of \(-2\)-permutations of a set with \(-5\)
+                elements... that would just be weird and make no sense.
+            </div>
+            <p>
+                Plenty of problems can be solved by counting \(r\)-permutations. Here's some quick examples. How many
+                ways are there to elect a president, vice president, and treasurer from \(6\) people? How many ways can
+                \(3\) people be seated at \(6\) desks? How many ways can \(3\) dice all show different numbers? Though
+                the wording may vary, these questions are all asking for the number of \(3\)-permutations that can be
+                made from a set of \(6\) elements. The answer, as you know by now, is \(P(6, 3) = \frac{6!}{(6 - 3)!} =
+                6 * 5 * 4 = 120.\)
+            </p>
+            <p>
+                \(r\)-permutations happen between two sets. Previously, it was asked how many ways \(3\) dice could all
+                roll different numbers. Let's arrange the dice in an arbitrary order, \((\text{dice}_1, \text{dice}_2,
+                \text{dice}_3)\), and consider the set of numbers that could be rolled \(\set{1, 2, 3, 4, 5, 6}.\) If we
+                make the decisions in order, \(\text{dice}_1\) has \(6\) choices of numbers, then \(\text{dice}_2\) has
+                \(5\) choices, and finally \(\text{dice}_3\) has \(4\) choices, with the result being \(6 * 5 * 4 =
+                120.\) This may be a more intuitive way of thinking about counting \(r\)-permutations.
+            </p>
+            <p>
+                In the event that \(n = r\), \(r\)-permutations are called "permutations" and the formula from above
+                simplifies greatly:
+            </p>
+            <div class="math-definition">
+                The number of permutations that can be made from a set of \(n\) elements, denoted \(P(n, n)\), is:
+                $$P(n, n) = n!$$
+            </div>
+            <p>
+                Here, what is being counted is the number of different sequences which use each element of a set exactly
+                once, which is essentially just how many ways the elements of that set can be ordered. Consider the set
+                \(\set{a, b, c}.\) It has \(6\) permutations in total: \((a, b, c), (a, c, b), (b, a, c), (b, c, a), (c,
+                a, b), (c, b, a).\)
+            </p>
+            <p>
+                A bride, a groom, \(3\) bridesmaids, and \(3\) groomsmen line up for a photo at a wedding. How many ways
+                can the party line up with the bride next to the groom? Well, the bride could be either left or right of
+                the groom, meaning there are \(2\) ways for them to be next to each other. Treat the bride+groom pair as
+                if it represented \(1\) person. Now, we only need to figure out how many ways a bride+groom pair, \(3\)
+                bridesmaids, and \(3\) groomsmen can be arranged. This is a permutation of \(7\) things. There are
+                \(7!\) ways to arrange \(7\) things. Therefore, taking into account the \(2\) ways the bride and groom
+                can be next to each other, there are, in total, \(2 * 7! = 10,080\) ways the party could be lined up
+                with the bride and groom next to each other.
+            </p>
+            <p>
+                If a password must be \(10\) characters long, consist of only lowercase alphabetical characters, and
+                characters cannot be repeated, then there are \(P(26, 10)\) different passwords that can be made.
+            </p>
+            <h2>Permutation with repetition</h2>
+            <hr>
+            <p>
+                A <i>permutation with repetition</i> of a sequence (in which some elements appear more than once) is a
+                sequence that uses all of its elements the same number of times they appeared in the original sequence.
+                For instance, \(P(3,3) = 3! = 6\) permutations of \(ANT\) (\(ANT\), \(ATN\), \(NAT\), \(NTA\), \(TAN\),
+                \(TNA\)) exist, but just \(3\) non-identical permutations of \(BEE\) (\(BEE\), \(EBE\), \(EEB\)) exist,
+                because swapping the identical \(E\)'s will have no effect. Since these sequences have repetitions, the
+                previous formula for counting permutations will need a correction to avoid overcounting:
+            </p>
+            <div class="math-definition">
+                The number of permutations with repetition that can be made from a sequence that consists of \(n\)
+                distinct elements \(\set{x_1, x_2, ... x_n}\) such that \(x_1\) is used \(k_1\) times, \(x_2\) is used
+                \(k_2\) times, ... and \(x_n\) is used \(k_n\) times, is:
+                $$\frac{n!}{k_1! \times k_2! \times ... \times k_n!} = \frac{P(n, n)}{k_1! \times k_2! \times ... \times
+                k_n!} = \frac{P(n, n)}{P(k_1, k_1) \times P(k_2, k_2) \times ... \times P(k_n, k_n)}$$
+                It should always be the case that \(n = k_1 + k_2 + ... + k_n.\)
+            </div>
+            <p>
+                Dividing by the factorials of the frequencies of each element has the effect of ensuring identical
+                rearrangements are never counted more than once. Each factorial represents the number of ways
+                rearranging that element will result in an identical sequence.
+            </p>
+            <div class="math-notice">
+                ⚠ The above formula is an application of the <a href="../rule-of-product">rule of product</a>. Wanna see
+                why? There are \(\binom{n}{k_1}\) ways to pick where the \(k_1\) identical versions of \(x_1\) are
+                placed among \(n\) slots. For every way of picking where the \(x_1\)'s are placed, there are \(\binom{n
+                - k_1}{k_2}\) ways to pick where the \(k_2\) identical versions of \(x_2\) are placed among \(n - k_1\)
+                slots (as \(k_1\) are already taken). Further down the line, there are \(\binom{n - k_1 - k_2 - ... -
+                k_{n-1}}{k_n}\) ways to pick where the \(k_n\) identical versions of \(x_n\) are placed among the final
+                remaining slots. By the rule of product, there are, in total, \(\binom{n}{k_1} \times \binom{n -
+                k_1}{k_2} \times ... \times \binom{n - k_1 - k_2 - ... - k_{n-1}}{k_n} = \frac{n!}{k_1! \times k_2!
+                \times ... \times k_n!}\) ways to scramble the original sequence.
+            </div>
+            <p>
+                Let's try this out. How many ways can you uniquely scramble \(TENNESSEE\)? There are \(9\) letters.
+                Since \(T\) is used \(1\) time, \(E\) is used \(4\) times, \(N\) is used \(2\) times, and \(S\) is used
+                \(2\) times, the answer is simply \(\frac{9!}{1! \times 4! \times 2! \times 2!} = 3,780.\)
+            </p>
+            <p>
+                Imagine you have \(4\) slices of pepperoni pizza, \(3\) slices of cheese pizza, and \(1\) slice of
+                Hawaiian pizza to share with \(8\) friends. How many different ways can you give \(1\) slice of pizza to
+                each friend? Let's make use of the <a href="../bijection-rule">bijection rule</a> here. Assign each of
+                your \(8\) friends to a slot in a sequence. Assign each of the \(3\) types of pizza to a letter
+                \(\set{P, C, H}.\) Then, a bijection exists between the number of ways of scrambling \(PPPPCCCH\) and
+                the number of ways of giving slices of pizza to your friends. Counting permutations with repetition, the
+                answer is \(\frac{8!}{4!3!1!} = 280.\)
+            </p>
+            <div class="math-notice">
+                ⚠ You could also just use the rule of product to answer this question. Although, it is important to be
+                able to recognize that this is a situation where the same role (pizza type) is being assigned multiple
+                times to different people. That thought process should guide you to the formula best suited for this
+                situation.
+            </div>
+            <div class="entry-navigation">
+                <a class="preventry-button">
+                    <div class="preventry-triangle"></div>
+                    <div class="entry-button-description"></div>
+                </a>
+                <a class="nextentry-button">
+                    <div class="entry-button-description"></div>
+                    <div class="nextentry-triangle"></div>
+                </a>
+            </div>
+            <div id="entry-navbox-container">
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Logic & Proofs</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer">Integer</a> •
+                        <a class="entry-navbox-link" href="/journal/rational-number">Rational number</a> •
+                        <a class="entry-navbox-link" href="/journal/inequality">Inequality</a> •
+                        <a class="entry-navbox-link" href="/journal/real-number">Real number</a> •
+                        <a class="entry-navbox-link" href="/journal/theorem">Theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/proof">Proof</a> •
+                        <a class="entry-navbox-link" href="/journal/statement">Statement</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-exhaustion">Proof by exhaustion</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-generalization">Universal generalization</a> •
+                        <a class="entry-navbox-link" href="/journal/counterexample">Counterexample</a> •
+                        <a class="entry-navbox-link" href="/journal/existence-proof">Existence proof</a> •
+                        <a class="entry-navbox-link" href="/journal/existential-instantiation">Existential instantiation</a> •
+                        <a class="entry-navbox-link" href="/journal/axiom">Axiom</a> •
+                        <a class="entry-navbox-link" href="/journal/logic">Logic</a> •
+                        <a class="entry-navbox-link" href="/journal/truth">Truth</a> •
+                        <a class="entry-navbox-link" href="/journal/proposition">Proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/compound-proposition">Compound proposition</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-operation">Logical operation</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-equivalence">Logical equivalence</a> •
+                        <a class="entry-navbox-link" href="/journal/tautology">Tautology</a> •
+                        <a class="entry-navbox-link" href="/journal/contradiction">Contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/logic-law">Logic law</a> •
+                        <a class="entry-navbox-link" href="/journal/predicate">Predicate</a> •
+                        <a class="entry-navbox-link" href="/journal/domain">Domain</a> •
+                        <a class="entry-navbox-link" href="/journal/quantifier">Quantifier</a> •
+                        <a class="entry-navbox-link" href="/journal/argument">Argument</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-inference">Rule of inference</a> •
+                        <a class="entry-navbox-link" href="/journal/logical-proof">Logical proof</a> •
+                        <a class="entry-navbox-link" href="/journal/direct-proof">Direct proof</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contrapositive">Proof by contrapositive</a> •
+                        <a class="entry-navbox-link" href="/journal/irrational-number">Irrational number</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-contradiction">Proof by contradiction</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-cases">Proof by cases</a> •
+                        <a class="entry-navbox-link" href="/journal/summation">Summation</a> •
+                        <a class="entry-navbox-link" href="/journal/disjunctive-normal-form">Disjunctive normal form</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Set Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/set">Set</a> •
+                        <a class="entry-navbox-link" href="/journal/element">Element</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-set">Empty set</a> •
+                        <a class="entry-navbox-link" href="/journal/universal-set">Universal set</a> •
+                        <a class="entry-navbox-link" href="/journal/subset">Subset</a> •
+                        <a class="entry-navbox-link" href="/journal/power-set">Power set</a> •
+                        <a class="entry-navbox-link" href="/journal/cartesian-product">Cartesian product</a> •
+                        <a class="entry-navbox-link" href="/journal/string">String</a> •
+                        <a class="entry-navbox-link" href="/journal/binary-string">Binary string</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-string">Empty string</a> •
+                        <a class="entry-navbox-link" href="/journal/set-operation">Set operation</a> •
+                        <a class="entry-navbox-link" href="/journal/set-identity">Set identity</a> •
+                        <a class="entry-navbox-link" href="/journal/set-proof">Set proof</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Functions</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/function">Function</a> •
+                        <a class="entry-navbox-link" href="/journal/floor-function">Floor function</a> •
+                        <a class="entry-navbox-link" href="/journal/ceiling-function">Ceiling function</a> •
+                        <a class="entry-navbox-link" href="/journal/inverse-function">Inverse function</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Algorithms</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/algorithm">Algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/pseudocode">Pseudocode</a> •
+                        <a class="entry-navbox-link" href="/journal/command">Command</a> •
+                        <a class="entry-navbox-link" href="/journal/asymptotic-notation">Asymptotic notation</a> •
+                        <a class="entry-navbox-link" href="/journal/time-complexity">Time complexity</a> •
+                        <a class="entry-navbox-link" href="/journal/atomic-operation">Atomic operation</a> •
+                        <a class="entry-navbox-link" href="/journal/brute-force-algorithm">Brute-force algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Relations</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/relation">Relation</a> •
+                        <a class="entry-navbox-link" href="/journal/reflexive-relation">Reflexive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/symmetric-relation">Symmetric relation</a> •
+                        <a class="entry-navbox-link" href="/journal/transitive-relation">Transitive relation</a> •
+                        <a class="entry-navbox-link" href="/journal/relation-composition">Relation composition</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-relation">Equivalence relation</a> •
+                        <a class="entry-navbox-link" href="/journal/equivalence-class">Equivalence class</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Number Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/integer-division">Integer division</a> •
+                        <a class="entry-navbox-link" href="/journal/linear-combination">Linear combination</a> •
+                        <a class="entry-navbox-link" href="/journal/division-algorithm">Division algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/modular-arithmetic">Modular arithmetic</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-factorization">Prime factorization</a> •
+                        <a class="entry-navbox-link" href="/journal/greatest-common-divisor">Greatest common divisor</a> •
+                        <a class="entry-navbox-link" href="/journal/least-common-multiple">Least common multiple</a> •
+                        <a class="entry-navbox-link" href="/journal/primality-test">Primality test</a> •
+                        <a class="entry-navbox-link" href="/journal/factoring-algorithm">Factoring algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/euclids-theorem">Euclid's theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/prime-number-theorem">Prime number theorem</a> •
+                        <a class="entry-navbox-link" href="/journal/euclidean-algorithm">Euclidean algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Induction</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/proof-by-induction">Proof by induction</a> •
+                        <a class="entry-navbox-link" href="/journal/fibonacci-sequence">Fibonacci sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/proof-by-strong-induction">Proof by strong induction</a> •
+                        <a class="entry-navbox-link" href="/journal/well-ordering-principle">Well-ordering principle</a> •
+                        <a class="entry-navbox-link" href="/journal/sequence">Sequence</a> •
+                        <a class="entry-navbox-link" href="/journal/factorial">Factorial</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-definition">Recursive definition</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Combinatorics</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/rule-of-product">Rule of product</a> •
+                        <a class="entry-navbox-link" href="/journal/rule-of-sum">Rule of sum</a> •
+                        <a class="entry-navbox-link" href="/journal/bijection-rule">Bijection rule</a> •
+                        <a class="entry-navbox-link" href="/journal/permutation">Permutation</a> •
+                        <a class="entry-navbox-link" href="/journal/combination">Combination</a> •
+                        <a class="entry-navbox-link" href="/journal/complement-rule">Complement rule</a> •
+                        <a class="entry-navbox-link" href="/journal/experiment">Experiment</a> •
+                        <a class="entry-navbox-link" href="/journal/outcome">Outcome</a> •
+                        <a class="entry-navbox-link" href="/journal/sample-space">Sample space</a> •
+                        <a class="entry-navbox-link" href="/journal/event">Event</a> •
+                        <a class="entry-navbox-link" href="/journal/probability">Probability</a> •
+                        <a class="entry-navbox-link" href="/journal/probability-distribution">Probability distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/uniform-distribution">Uniform distribution</a> •
+                        <a class="entry-navbox-link" href="/journal/multiset">Multiset</a> •
+                        <a class="entry-navbox-link" href="/journal/sixfold-way">Sixfold way</a> •
+                        <a class="entry-navbox-link" href="/journal/inclusion-exclusion-principle">Inclusion-exclusion principle</a> •
+                        <a class="entry-navbox-link" href="/journal/pigeonhole-principle">Pigeonhole principle</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Graph Theory</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/graph">Graph</a> •
+                        <a class="entry-navbox-link" href="/journal/walk">Walk</a> •
+                        <a class="entry-navbox-link" href="/journal/subgraph">Subgraph</a> •
+                        <a class="entry-navbox-link" href="/journal/regular-graph">Regular graph</a> •
+                        <a class="entry-navbox-link" href="/journal/complete-graph">Complete graph</a> •
+                        <a class="entry-navbox-link" href="/journal/empty-graph">Empty graph</a> •
+                        <a class="entry-navbox-link" href="/journal/cycle-graph">Cycle graph</a> •
+                        <a class="entry-navbox-link" href="/journal/hypercube-graph">Hypercube graph</a> •
+                        <a class="entry-navbox-link" href="/journal/bipartite-graph">Bipartite graph</a> •
+                        <a class="entry-navbox-link" href="/journal/component">Component</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-circuit">Eulerian circuit</a> •
+                        <a class="entry-navbox-link" href="/journal/eulerian-trail">Eulerian trail</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-cycle">Hamiltonian cycle</a> •
+                        <a class="entry-navbox-link" href="/journal/hamiltonian-path">Hamiltonian path</a> •
+                        <a class="entry-navbox-link" href="/journal/tree">Tree</a> •
+                        <a class="entry-navbox-link" href="/journal/huffman-tree">Huffman tree</a> •
+                        <a class="entry-navbox-link" href="/journal/substring">Substring</a> •
+                        <a class="entry-navbox-link" href="/journal/forest">Forest</a> •
+                        <a class="entry-navbox-link" href="/journal/path-graph">Path graph</a> •
+                        <a class="entry-navbox-link" href="/journal/star">Star</a> •
+                        <a class="entry-navbox-link" href="/journal/spanning-tree">Spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/weighted-graph">Weighted graph</a> •
+                        <a class="entry-navbox-link" href="/journal/minimum-spanning-tree">Minimum spanning tree</a> •
+                        <a class="entry-navbox-link" href="/journal/greedy-algorithm">Greedy algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/prims-algorithm">Prim's algorithm</a>
+                    </div>
+                </div>
+                <div class="entry-navbox">
+                    <div class="entry-navbox-title">Recursion</div>
+                    <div class="entry-navbox-link-container">
+                        <a class="entry-navbox-link" href="/journal/recursion">Recursion</a> •
+                        <a class="entry-navbox-link" href="/journal/recursive-algorithm">Recursive algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/correctness-proof">Correctness proof</a> •
+                        <a class="entry-navbox-link" href="/journal/divide-and-conquer-algorithm">Divide-and-conquer algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/sorting-algorithm">Sorting algorithm</a> •
+                        <a class="entry-navbox-link" href="/journal/merge-sort">Merge sort</a>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar-block">
-                <div class="sidebar-section">
-                    <a class="sidebar-link" href="..#logic-and-proofs">
-                        Logic & Proofs
-                    </a>
-                    <a class="sidebar-link" href="..#set-theory">
-                        Set Theory
-                    </a>
-                    <a class="sidebar-link" href="..#functions">
-                        Functions
-                    </a>
-                    <a class="sidebar-link" href="..#algorithms">
-                        Algorithms
-                    </a>
-                    <a class="sidebar-link" href="..#relations">
-                        Relations
-                    </a>
-                    <a class="sidebar-link" href="..#integer-properties">
-                        Number Theory
-                    </a>
-                    <a class="sidebar-link" href="..#induction">
-                        Induction
-                    </a>
-                    <a class="sidebar-link" href="..#combinatorics">
-                        Combinatorics
-                    </a>
-                    <a class="sidebar-link" href="..#graphs">
-                        Graph Theory
-                    </a>
-                    <a class="sidebar-link" href="..#recursion">
-                        Recursion
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="content-container">
-            <div id="content">
-                <div id="title-box">
-                    <h1>Permutation</h1>
-                    <hr>
-                    <i>Last Updated: 19 July 2023</i>
-                </div>
-                <div id="written-content">
-                    <blockquote>
-                        Countable sequences!
-                    </blockquote>
-                    <p>
-                        Broadly speaking, a <b>permutation</b> of a <a href="../set">set</a> is a <a href="../sequence">sequence</a> made from its <a href="../element">elements</a>. The <a href="../rule-of-product#generalized-rule-of-product">generalized rule of product</a> can be applied to count the number of permutations, or in other words, different arrangements, that can be made from a set.
-                    </p>
-                    <p>
-                        Since permutations are sequences, the order of their elements matters, unlike <a href="../combination">combinations</a>.
-                    </p>
-                    <div id="list-of-contents">
-                        <div class="centered">
-                            <b>Contents</b>
-                        </div>
-                        <hr>
-                    </div>
-                    <h2>\(r\)-permutation</h2>
-                    <hr>
-                    <p>
-                        An <i>\(r\)-permutation</i> of a set is a sequence of \(r\) of its elements, with no repetitions. For example, \((9, 5, 6)\) and \((6, 1, 7)\) are both \(3\)-permutations of the set \(\set{9, 1, 6, 5, 7, 8}\). However, \((7, 7, 9)\) would not be a \(3\)-permutation of that set, because it repeats \(7\). By the generalized rule of product, the total number of \(3\)-permutations that can be made from that set is \(6 * 5 * 4 = 120\). This is because, when an element is selected, there is \(1\) fewer choice for the next element, as repetitions are not allowed in \(r\)-permutations. This line of thinking leads to the following formula:
-                    </p>
-                    <div class="math-definition">
-                        The number of \(r\)-permutations that can be made from a set of \(n\) elements, denoted \(P(n, r)\), is:
-                        $$P(n, r) = \frac{n!}{(n-r)!}$$
-                    </div>
-                    <div class="math-notice">
-                        ⚠ This formula originates from a pattern that arises in the generalized rule of product when counting \(r\)-permutations of a set with \(n\) elements. It seems that you always have to multiply \(n\) by progressively smaller integers, with the last integer being \(n - r + 1\). Written out, it's \(n * (n - 1) * ... * (n - r + 1)\), which is formalized above.
-                    </div>
-                    <div class="math-notice">
-                        ⚠ \(nPr\) is another way of writing \(P(n, r)\). Both are read "\(n\) permute \(r\)."
-                    </div>
-                    <div class="math-notice">
-                        ⚠ It is assumed that \(n\) and \(r\) are always non-negative in these equations, and satisfy \(n \geq r\). You probably wouldn't want to count the number of \(-2\)-permutations of a set with \(-5\) elements... that would just be weird and make no sense.
-                    </div>
-                    <p>
-                        Plenty of problems can be solved by counting \(r\)-permutations. Here's some quick examples. How many ways are there to elect a president, vice president, and treasurer from \(6\) people? How many ways can \(3\) people be seated at \(6\) desks? How many ways can \(3\) dice all show different numbers? Though the wording may vary, these questions are all asking for the number of \(3\)-permutations that can be made from a set of \(6\) elements. The answer, as you know by now, is \(P(6, 3) = \frac{6!}{(6 - 3)!} = 6 * 5 * 4 = 120\).
-                    </p>
-                    <p>
-                        \(r\)-permutations happen between two sets. Previously, it was asked how many ways \(3\) dice could all roll different numbers. Let's arrange the dice in an arbitrary order, \((\text{dice}_1, \text{dice}_2, \text{dice}_3)\), and consider the set of numbers that could be rolled \(\set{1, 2, 3, 4, 5, 6}\). If we make the decisions in order, \(\text{dice}_1\) has \(6\) choices of numbers, then \(\text{dice}_2\) has \(5\) choices, and finally \(\text{dice}_3\) has \(4\) choices, with the result being \(6 * 5 * 4 = 120\). This may be a more intuitive way of thinking about counting \(r\)-permutations.
-                    </p>
-                    <p>
-                        In the event that \(n = r\), \(r\)-permutations are called "permutations" and the formula from above simplifies greatly:
-                    </p>
-                    <div class="math-definition">
-                        The number of permutations that can be made from a set of \(n\) elements, denoted \(P(n, n)\), is:
-                        $$P(n, n) = n!$$
-                    </div>
-                    <p>
-                        Here, what is being counted is the number of different sequences which use each element of a set exactly once, which is essentially just how many ways the elements of that set can be ordered. Consider the set \(\set{a, b, c}\). It has \(6\) permutations in total: \((a, b, c), (a, c, b), (b, a, c), (b, c, a), (c, a, b), (c, b, a)\).
-                    </p>
-                    <p>
-                        A bride, a groom, \(3\) bridesmaids, and \(3\) groomsmen line up for a photo at a wedding. How many ways can the party line up with the bride next to the groom? Well, the bride could be either left or right of the groom, meaning there are \(2\) ways for them to be next to each other. Treat the bride+groom pair as if it represented \(1\) person. Now, we only need to figure out how many ways a bride+groom pair, \(3\) bridesmaids, and \(3\) groomsmen can be arranged. This is a permutation of \(7\) things. There are \(7!\) ways to arrange \(7\) things. Therefore, taking into account the \(2\) ways the bride and groom can be next to each other, there are, in total, \(2 * 7! = 10,080\) ways the party could be lined up with the bride and groom next to each other.
-                    </p>
-                    <p>
-                        If a password must be \(10\) characters long, consist of only lowercase alphabetical characters, and characters cannot be repeated, then there are \(P(26, 10)\) different passwords that can be made.
-                    </p>
-                    <h2>Permutation with repetition</h2>
-                    <hr>
-                    <p>
-                        A <i>permutation with repetition</i> of a sequence (in which some elements appear more than once) is a sequence that uses all of its elements the same number of times they appeared in the original sequence. For instance, \(P(3,3) = 3! = 6\) permutations of \(ANT\) (\(ANT\), \(ATN\), \(NAT\), \(NTA\), \(TAN\), \(TNA\)) exist, but just \(3\) non-identical permutations of \(BEE\) (\(BEE\), \(EBE\), \(EEB\)) exist, because swapping the identical \(E\)'s will have no effect. Since these sequences have repetitions, the previous formula for counting permutations will need a correction to avoid overcounting:
-                    </p>
-                    <div class="math-definition">
-                        The number of permutations with repetition that can be made from a sequence that consists of \(n\) distinct elements \(\set{x_1, x_2, ... x_n}\) such that \(x_1\) is used \(k_1\) times, \(x_2\) is used \(k_2\) times, ... and \(x_n\) is used \(k_n\) times, is:
-                        $$\frac{n!}{k_1! \times k_2! \times ... \times k_n!} = \frac{P(n, n)}{k_1! \times k_2! \times ... \times k_n!} = \frac{P(n, n)}{P(k_1, k_1) \times P(k_2, k_2) \times ... \times P(k_n, k_n)}$$
-                        It should always be the case that \(n = k_1 + k_2 + ... + k_n\).
-                    </div>
-                    <p>
-                        Dividing by the factorials of the frequencies of each element has the effect of ensuring identical rearrangements are never counted more than once. Each factorial represents the number of ways rearranging that element will result in an identical sequence.
-                    </p>
-                    <div class="math-notice">
-                        ⚠ The above formula is an application of the <a href="../rule-of-product">rule of product</a>. Wanna see why? There are \(\binom{n}{k_1}\) ways to pick where the \(k_1\) identical versions of \(x_1\) are placed among \(n\) slots. For every way of picking where the \(x_1\)'s are placed, there are \(\binom{n - k_1}{k_2}\) ways to pick where the \(k_2\) identical versions of \(x_2\) are placed among \(n - k_1\) slots (as \(k_1\) are already taken). Further down the line, there are \(\binom{n - k_1 - k_2 - ... - k_{n-1}}{k_n}\) ways to pick where the \(k_n\) identical versions of \(x_n\) are placed among the final remaining slots. By the rule of product, there are, in total, \(\binom{n}{k_1} \times \binom{n - k_1}{k_2} \times ... \times \binom{n - k_1 - k_2 - ... - k_{n-1}}{k_n} = \frac{n!}{k_1! \times k_2! \times ... \times k_n!}\) ways to scramble the original sequence.
-                    </div>
-                    <p>
-                        Let's try this out. How many ways can you uniquely scramble \(TENNESSEE\)? There are \(9\) letters. Since \(T\) is used \(1\) time, \(E\) is used \(4\) times, \(N\) is used \(2\) times, and \(S\) is used \(2\) times, the answer is simply \(\frac{9!}{1! \times 4! \times 2! \times 2!} = 3,780\).
-                    </p>
-                    <p>
-                        Imagine you have \(4\) slices of pepperoni pizza, \(3\) slices of cheese pizza, and \(1\) slice of Hawaiian pizza to share with \(8\) friends. How many different ways can you give \(1\) slice of pizza to each friend? Let's make use of the <a href="../bijection-rule">bijection rule</a> here. Assign each of your \(8\) friends to a slot in a sequence. Assign each of the \(3\) types of pizza to a letter \(\set{P, C, H}\). Then, a bijection exists between the number of ways of scrambling \(PPPPCCCH\) and the number of ways of giving slices of pizza to your friends. Counting permutations with repetition, the answer is \(\frac{8!}{4!3!1!} = 280\).
-                    </p>
-                    <div class="math-notice">
-                        ⚠ You could also just use the rule of product to answer this question. Although, it is important to be able to recognize that this is a situation where the same role (pizza type) is being assigned multiple times to different people. That thought process should guide you to the formula best suited for this situation.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div id="footer-content-container">
-            © 2024 <a class="footer-link" href="https://johncuysal.com" target="_blank">John C. Uysal</a>
-        </div>
-    </footer>
+        </article>
+    </div>
+</main>
+<footer>
+    <a href="https://johncuysal.com" target="_blank">© 2022 — 2024 John C. Uysal</a>
+</footer>
 </body>
 </html>
