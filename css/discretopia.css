@@ -261,6 +261,7 @@ aside { /* contains a #logo-container and .sidebar-block elements */
 .mobile-menu-bar {
     background-color: var(--primary-color);
     height: 1px;
+    width: 24px;
 }
 
 #mobile-menu-dropdown {
@@ -335,6 +336,7 @@ aside { /* contains a #logo-container and .sidebar-block elements */
     background: none;
     color: var(--primary-color);
     transition: background-color 0.3s ease; /* ease into background color changes */
+    border-radius: 0;
 }
 
 #search-field:focus { /* styles applied to #search-field when it receives focus (gets selected by the user) */
@@ -349,6 +351,8 @@ aside { /* contains a #logo-container and .sidebar-block elements */
     border-top: 1px solid var(--hyperlink-color);
     border-right: 1px solid var(--hyperlink-color);
     border-bottom: 1px solid var(--hyperlink-color);
+    font-size: var(--small-font-size);
+    font-family: Liberation Sans, sans-serif;
     width: 32px;
     height: 32px;
     transition: background-color 0.3s ease; /* ease into background color changes */
